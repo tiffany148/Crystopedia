@@ -1,0 +1,34 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Crystal Pairings
+permalink: /pairings/
+description: Traditional crystal combinations by intention (love, protection, calm, sleep, abundance, focus, grounding, creativity), plus a build-your-own combo tool.
+---
+<h1>💞 Crystal Pairings</h1>
+<p class="lead">In crystal tradition, some stones are kept together because they share an intention or chakra. Others are paired because one balances or amplifies the other.</p>
+<p class="disclaimer">These pairings come from crystal lore and modern folk practice. They are <strong>not scientific or medical claims</strong>.</p>
+
+<h2>Combos by intention</h2>
+<div class="intent-grid">
+{% for i in site.intentions %}
+  <section class="intent" id="{{ i.key }}">
+    <h3>{{ i.emoji }} {{ i.title }}</h3>
+    <div class="intent-stones">
+      {% for c in i.stones %}<a class="pair-card mini" href="{{ c.url }}" style="{{ c.style }}"><span class="pair-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="">{% else %}◆{% endif %}</span><strong>{{ c.name }}</strong></a>{% endfor %}
+    </div>
+    <p class="small">{{ i.note }}</p>
+  </section>
+{% endfor %}
+</div>
+
+<h2 id="build">🧩 Build your combo</h2>
+<p class="muted">Pick stones you own or like. You'll see each one's traditional partners, and the stones that pair with several of your picks are listed first.</p>
+<div class="combo-picker">
+  <input id="combo-q" class="filter-input" type="search" placeholder="Type to find a stone, e.g. amethyst" autocomplete="off" list="combo-names">
+  <datalist id="combo-names"></datalist>
+  <div id="combo-quick" class="chips"></div>
+  <div id="combo-selected" class="combo-selected"></div>
+  <div id="combo-out"></div>
+</div>
+<script src="/assets/pairings.js" defer></script>

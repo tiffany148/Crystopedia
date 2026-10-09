@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+bodyClass: hub
 title: Healing Crystals
 permalink: /healing-crystals/
 ---
@@ -12,7 +13,7 @@ permalink: /healing-crystals/
 </div>
 <div class="heal-grid" id="heal">
 {% for e in site.healing %}
-  <a class="heal-card" href="{{ e.url }}" data-chakras="{% for c in e.chakras %}{{ c | slug_ }} {% endfor %}">
+  <a class="heal-card" href="{{ e.url }}" style="{{ e.style }}" data-chakras="{% for c in e.chakras %}{{ c | slug_ }} {% endfor %}">
     <div class="heal-img">{% if e.thumb %}<img loading="lazy" src="{{ e.thumb.src }}" alt="{{ e.name }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
     <div class="heal-body">
       <strong>{{ e.name }}</strong>

@@ -94,3 +94,73 @@ a.chakra:hover{color:#fff;opacity:.85}
 .site-footer a{color:#a5f3fc}.site-footer .muted{color:#9993c7}
 /* pagefind */
 #search{--pagefind-ui-primary:#6d28d9;--pagefind-ui-border:#e7e4f7;--pagefind-ui-border-radius:12px;--pagefind-ui-font:inherit}
+
+/* ---------- stone colour theming ---------- */
+body.hub{background:#faf9ff;background-image:radial-gradient(circle at 0% 0%,rgba(167,139,250,.35) 0,transparent 35%),radial-gradient(circle at 100% 5%,rgba(34,211,238,.30) 0,transparent 35%),radial-gradient(circle at 85% 70%,rgba(244,114,182,.22) 0,transparent 35%),radial-gradient(circle at 10% 80%,rgba(52,211,153,.22) 0,transparent 35%),radial-gradient(circle at 50% 40%,rgba(251,191,36,.14) 0,transparent 40%);background-attachment:fixed}
+body.stone-page{background:linear-gradient(165deg,var(--stone-tint) 0%,var(--stone-tint2) 100%);background-attachment:fixed}
+body.stone-page a{color:var(--stone-accent)}
+body.stone-page .site-footer a{color:#a5f3fc}
+body.stone-page h2{color:var(--stone-accent)}
+body.stone-page .crumbs{color:var(--stone-accent);opacity:.9}
+.stone-hero{background:radial-gradient(circle at 85% 0%,var(--stone-glow) 0,transparent 55%),linear-gradient(135deg,var(--stone) 0%,var(--stone-deep) 100%);color:var(--hero-ink);border-radius:22px;padding:26px;box-shadow:0 18px 40px -12px var(--stone-deep);position:relative;overflow:hidden;margin-top:10px}
+.stone-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.14) 50%,transparent 60%);pointer-events:none}
+.stone-hero h1,.stone-hero .big-formula{color:var(--hero-ink)}
+.stone-hero .lead,.stone-hero p{color:var(--hero-ink-soft)}
+body.stone-page .stone-hero a{color:var(--hero-ink);text-decoration-thickness:2px}
+.stone-hero .badge{background:var(--hero-chip);color:var(--hero-ink);backdrop-filter:blur(4px)}
+.stone-hero .mineral-photo{background:rgba(255,255,255,.92);border:0}
+.stone-hero .mineral-photo figcaption{color:#5b5878}
+body.stone-page .stone-hero .mineral-photo figcaption a{color:#4b4f6b}
+body.stone-page .props th{background:color-mix(in srgb,var(--stone-tint) 70%,#fff)}
+body.stone-page .pill-list a{border-color:color-mix(in srgb,var(--stone) 35%,#fff)}
+body.stone-page .meta-section{background:rgba(255,255,255,.72);border-color:color-mix(in srgb,var(--stone) 30%,#fff);backdrop-filter:blur(6px)}
+body.stone-page .links{background:rgba(255,255,255,.6);border-radius:var(--radius);padding:4px 20px 12px;margin-top:2em}
+body.stone-page .links h2{margin-top:.8em}
+/* tinted cards */
+.card[style],.heal-card[style]{border-top:5px solid var(--stone)}
+.card[style] .card-body,.heal-card[style] .heal-body{background:linear-gradient(180deg,var(--stone-tint),#fff 85%)}
+.card[style]:hover,.heal-card[style]:hover{box-shadow:0 14px 34px -8px var(--stone)}
+.card[style] .card-img,.heal-card[style] .heal-img{background:linear-gradient(135deg,var(--stone-tint),var(--stone))}
+/* fixes: keep header/footer link colours on stone pages; let the tint cover the whole page */
+body.stone-page{background-attachment:scroll;min-height:100vh}
+body.stone-page .site-header a,body.stone-page .site-header .brand{color:#ede9fe}
+body.stone-page .site-header .brand{color:#fff}
+body.stone-page a.chakra{color:#fff}
+.t5{background:linear-gradient(135deg,#ea580c,#db2777)}
+.hero-id{margin-top:12px}.hero-id a{font-weight:600}
+/* identifier */
+.id-form fieldset{border:0;background:rgba(255,255,255,.82);border-radius:var(--radius);padding:14px 18px 16px;margin:0 0 14px;box-shadow:var(--shadow)}
+.id-form legend{font-weight:700;padding:0;float:left;width:100%;margin-bottom:10px;color:#3b2a7a}
+.chips{display:flex;flex-wrap:wrap;gap:8px;clear:both}
+.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:inherit;font-size:.92rem;cursor:pointer;color:var(--ink);transition:all .12s}
+.chip i{width:16px;height:16px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.chip:hover{border-color:var(--violet2)}
+.chip.on{border-color:var(--violet);background:#ede9fe;box-shadow:0 0 0 2px rgba(109,40,217,.25)}
+.chip.wide{flex-direction:column;align-items:flex-start;border-radius:12px;text-align:left;gap:2px;flex:1 1 220px}
+.chip.wide small{color:var(--muted)}
+.id-actions{text-align:right}
+.btn-ghost{border:2px solid var(--line);background:#fff;border-radius:999px;padding:8px 18px;font:inherit;cursor:pointer}
+.id-results{margin-top:10px}
+.id-card .card-img{position:relative}
+.match{position:absolute;top:8px;right:8px;background:var(--stone-accent,#6d28d9);color:#fff;font-weight:700;font-size:.85rem;padding:3px 9px;border-radius:999px;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+/* pairings */
+.t6{background:linear-gradient(135deg,#be185d,#f472b6)}
+.pairs{margin-top:16px}
+.pairs h3{font-size:1.05rem;margin:0 0 10px}
+.pair-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.pair-card{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:12px;text-decoration:none;color:var(--ink);background:linear-gradient(90deg,var(--stone-tint,#f5f3ff),#fff 90%);border-left:5px solid var(--stone,#a78bfa);box-shadow:0 1px 4px rgba(49,32,120,.08);transition:transform .12s}
+body.stone-page .pair-card{color:var(--ink)}
+.pair-card:hover{transform:translateY(-2px);color:var(--ink)}
+.pair-card strong{display:block}
+.pair-card small{display:block;color:#4b4870;font-size:.82rem;line-height:1.35}
+.pair-card em{display:block;color:var(--stone-accent,#6d28d9);font-style:normal}
+.pair-img{flex:0 0 52px;height:52px;border-radius:10px;overflow:hidden;background:var(--stone,#ddd);display:flex;align-items:center;justify-content:center;color:#fff}
+.pair-img img{width:100%;height:100%;object-fit:cover}
+.intent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.intent{background:rgba(255,255,255,.85);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.intent h3{margin:0 0 10px}
+.intent-stones{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pair-card.mini{padding:6px 8px}.pair-card.mini .pair-img{flex-basis:38px;height:38px}
+.combo-picker{background:rgba(255,255,255,.85);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.combo-selected{margin:12px 0;display:flex;flex-wrap:wrap;gap:8px}
+#combo-out h3{margin-top:1.4em}

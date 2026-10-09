@@ -7,11 +7,13 @@ permalink: "{{ m.url }}"
 layout: base.njk
 eleventyComputed:
   title: "{{ m.title }}"
+  bodyStyle: "{{ m.palette.style }}"
+  bodyClass: "stone-page{% if m.palette.dark %} stone-dark{% endif %}"
   description: "{{ m.title }}{% if m.formula %} ({{ m.formula }}){% endif %} – {{ m.typeLabel }}. Properties, crystal system, hardness and more on Crystopedia."
 ---
 <article class="mineral" data-pagefind-body>
   <nav class="crumbs" data-pagefind-ignore><a href="/">Home</a> › <a href="/a-z/{{ m.azSlug }}/">A–Z</a> › {{ m.title }}</nav>
-  <div class="mineral-head">
+  <div class="mineral-head stone-hero">
     <div class="mineral-intro">
       <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}</span>
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>
@@ -72,6 +74,19 @@ eleventyComputed:
         <dt>Zodiac</dt><dd>{{ e.zodiac | join_ }}</dd>
         <dt>Element</dt><dd>{{ e.elements | join_ }}</dd>
       </dl>
+      {% if e.pairs.length %}
+      <div class="pairs">
+        <h3>💞 Pairs well with <span class="muted small">(traditional pairings)</span></h3>
+        <div class="pair-grid">
+        {% for c in e.pairs %}
+          <a class="pair-card" href="{{ c.url }}" style="{{ c.style }}">
+            <span class="pair-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="">{% else %}◆{% endif %}</span>
+            <span><strong>{{ c.name }}</strong><small>{{ c.reason }}</small></span>
+          </a>
+        {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
   </section>

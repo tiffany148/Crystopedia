@@ -1,0 +1,88 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Crystal Identifier
+permalink: /identify/
+description: Identify a crystal, mineral or gemstone by its color, hardness, luster, streak and other simple tests.
+---
+<h1>🔎 Crystal Identifier</h1>
+<p class="lead">Got a mystery stone? Pick what you can observe, and Crystopedia ranks the likely matches. It covers {{ site.stats.healing }} popular crystals and gems with full data, plus about {{ (site.stats.identify - site.stats.healing) | number }} other minerals with recorded properties.</p>
+<p class="disclaimer">This is a rough guide, not a definitive ID. Many minerals look alike, and dyed, heat-treated or fake stones are common. For certainty, ask a gemologist or a local rock club. Never taste-test minerals, and handle acid with care.</p>
+
+<form id="idform" class="id-form" onsubmit="return false">
+  <fieldset>
+    <legend>1 · Color <span class="muted small">(pick one or more)</span></legend>
+    <div class="chips" data-name="color" data-multi="1">
+      {% for c in [["purple","#8e44ad"],["pink","#ef8fae"],["red","#c0392b"],["orange","#e67e22"],["yellow","#e8c31a"],["gold","#d4a017"],["green","#2e9e5b"],["blue","#2f5fb3"],["brown","#8b5a2b"],["black","#1f1f1f"],["gray","#7d7d85"],["silver","#b8bcc2"],["white","#f1efea"],["colorless","#e3ebf2"],["multicolor","linear-gradient(90deg,#e74c3c,#f1c40f,#2ecc71,#3498db,#9b59b6)"]] %}
+      <button type="button" class="chip" data-v="{{ c[0] }}"><i style="background:{{ c[1] }}"></i>{{ c[0] | cap }}</button>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>2 · Hardness: what scratches it? <span class="muted small">(Mohs scale)</span></legend>
+    <div class="chips" data-name="hardness">
+      <button type="button" class="chip wide" data-v="1-2.5"><b>Fingernail scratches it</b><small>H ≈ 1–2.5 · talc, gypsum, amber</small></button>
+      <button type="button" class="chip wide" data-v="2.5-3.5"><b>Copper coin scratches it, fingernail doesn't</b><small>H ≈ 2.5–3.5 · calcite, galena</small></button>
+      <button type="button" class="chip wide" data-v="3.5-5.5"><b>Knife or glass scratches it, coin doesn't</b><small>H ≈ 3.5–5.5 · fluorite, malachite, apatite</small></button>
+      <button type="button" class="chip wide" data-v="5.5-6.5"><b>It scratches glass, but a steel file scratches it</b><small>H ≈ 5.5–6.5 · feldspar, opal, hematite</small></button>
+      <button type="button" class="chip wide" data-v="6.5-10"><b>It scratches a steel file</b><small>H ≈ 6.5–10 · quartz, topaz, corundum</small></button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>3 · Luster: how does the surface shine?</legend>
+    <div class="chips" data-name="luster">
+      {% for l in [["v","Glassy (vitreous)"],["m","Metallic"],["sm","Sub-metallic"],["a","Brilliant (adamantine)"],["p","Pearly"],["s","Silky"],["w","Waxy"],["r","Resinous"],["g","Greasy"],["d","Dull / earthy"]] %}
+      <button type="button" class="chip" data-v="{{ l[0] }}">{{ l[1] }}</button>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>4 · Streak: color of the powder when rubbed on unglazed tile</legend>
+    <div class="chips" data-name="streak">
+      {% for c in [["white","#f6f4ee"],["gray","#8a8a90"],["black","#1f1f1f"],["red","#b03a2e"],["brown","#7a4a25"],["yellow","#e8c31a"],["green","#2e9e5b"],["blue","#2f5fb3"]] %}
+      <button type="button" class="chip" data-v="{{ c[0] }}"><i style="background:{{ c[1] }}"></i>{{ c[0] | cap }}</button>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>5 · Transparency</legend>
+    <div class="chips" data-name="trans">
+      <button type="button" class="chip" data-v="t">Transparent: you can see through it</button>
+      <button type="button" class="chip" data-v="tl">Translucent: light glows through</button>
+      <button type="button" class="chip" data-v="o">Opaque: no light passes</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>6 · Crystal shape <span class="muted small">(skip if it's tumbled or massive)</span></legend>
+    <div class="chips" data-name="system">
+      <button type="button" class="chip" data-v="cubic">Cubes, octahedra, 12-sided balls (cubic)</button>
+      <button type="button" class="chip" data-v="hextri">Six-sided prisms or points (hexagonal / trigonal)</button>
+      <button type="button" class="chip" data-v="tetragonal">Square prisms / pyramids (tetragonal)</button>
+      <button type="button" class="chip" data-v="orthorhombic">Rectangular prisms, blades (orthorhombic)</button>
+      <button type="button" class="chip" data-v="monoclinic">Slanted prisms, plates (monoclinic)</button>
+      <button type="button" class="chip" data-v="triclinic">Wedge-like, no right angles (triclinic)</button>
+      <button type="button" class="chip" data-v="amorphous">No crystals, glassy or blobby (amorphous)</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>7 · Extra tests <span class="muted small">(optional)</span></legend>
+    <div class="chips" data-name="extra" data-multi="1">
+      <button type="button" class="chip" data-v="mag">🧲 Attracted to a magnet</button>
+      <button type="button" class="chip" data-v="fizz">🫧 Fizzes in vinegar or dilute acid</button>
+    </div>
+  </fieldset>
+  <div class="id-actions"><button type="button" id="reset" class="btn-ghost">Start over</button></div>
+</form>
+
+<section id="results" class="id-results" aria-live="polite">
+  <h2>Best matches</h2>
+  <p id="summary" class="muted">Pick at least one property above to see matches.</p>
+  <div class="grid" id="matches"></div>
+</section>
+<script src="/assets/identify.js" defer></script>

@@ -1,6 +1,9 @@
 // Builds every collection the templates need from data/minerals.json + data/metaphysical.json
 import fs from "node:fs";
 import path from "node:path";
+import { pickColor, paletteFor } from "../../lib/palette.js";
+import { CURATED_ID } from "../../lib/identify-curated.js";
+import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
@@ -75,7 +78,7 @@ for (const e of meta) {
   }
   page.metaphysical.push(e);
   page.kindLabel ||= KIND_LABEL[e.kind] || null;
-  healing.push({ ...e, url: page.url, thumb: page.thumb || (page.parentIds[0] && byId.get(page.parentIds[0])?.thumb) || null });
+  healing.push({ ...e, page, url: page.url, thumb: page.thumb || (page.parentIds[0] && byId.get(page.parentIds[0])?.thumb) || null });
 }
 
 // resolve relations to {title,url}
@@ -88,10 +91,21 @@ for (const p of pages) {
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
 }
+// colour palettes: parents first so varieties/hand-made pages can inherit
+const colorOf = new Map();
+const paint = (p) => {
+  if (colorOf.has(p)) return colorOf.get(p);
+  colorOf.set(p, null); // cycle guard
+  const parent = (p.parentIds || []).map((id) => byId.get(id)).find(Boolean);
+  const parentBase = parent ? paint(parent)?.[0] : null;
+  const c = pickColor({ name: p.name, colors: p.colors, elements: p.elements, parentBase: parentBase && parentBase !== "#b9b4e6" ? parentBase : null });
+  colorOf.set(p, c); return c;
+};
+for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
 // --- collections ---------------------------------------------------------------
-const card = (p) => ({ title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
+const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
   items: pages.filter((p) => p.crystalSystems?.includes(s)).map((p) => ({ title: p.title, url: p.url, formula: p.formula })),
@@ -114,6 +128,45 @@ const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite",
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
 
 healing.sort((a, b) => a.name.localeCompare(b.name));
+for (const e of healing) { const own = pickColor({ name: e.name, colors: [], elements: [] }); e.style = (own[1] === "neutral" ? e.page.palette : paletteFor(own[0], own[1])).cardStyle; delete e.page; }
+// --- pairings ----------------------------------------------------------------------
+const PAIRS = buildPairings(meta);
+const healByName = new Map(healing.map((e) => [e.name, e]));
+const mini = (e) => ({ name: e.name, url: e.url, style: e.style, thumb: e.thumb, chakras: e.chakras });
+for (const p of pages) for (const e of p.metaphysical) {
+  e.pairs = (PAIRS[e.name] || []).map((x) => ({ ...mini(healByName.get(x.name)), reason: x.reason })).filter((x) => x.url && x.url !== p.url);
+}
+const intentions = INTENTIONS.map((i) => ({ ...i, stones: i.stones.map((n) => healByName.get(n)).filter(Boolean).map(mini) }));
+const pairingsData = healing.map((e) => ({ n: e.name, u: e.url, st: e.style, th: e.thumb?.src || null, ch: e.chakras,
+  p: (PAIRS[e.name] || []).map((x) => [x.name, x.reason]) }));
+
+// --- identifier dataset ------------------------------------------------------------
+const VOCAB = [["purple", /purple|violet|lilac|lavender|amethyst/], ["pink", /pink|rose/], ["red", /\bred|crimson|scarlet|blood/], ["orange", /orange|peach/],
+  ["yellow", /yellow|lemon|straw|champagne|honey/], ["gold", /gold|brass/], ["green", /green|olive|emerald|lime/], ["blue", /blue|azure|indigo|cyan|turquoise|teal/],
+  ["brown", /brown|bronze|tan\b|rust/], ["black", /black/], ["gray", /gr[ae]y|lead/], ["silver", /silver|steel|tin-white/], ["white", /white|milky|cream/],
+  ["colorless", /colou?rless|clear|transparent/]];
+const vocab = (arr) => [...new Set((arr || []).flatMap((c) => VOCAB.filter(([, re]) => re.test(String(c).toLowerCase())).map(([k]) => k)))];
+const LUSTER_MAP = [["m", /metallic/], ["a", /adamantine/], ["v", /vitreous|glassy/], ["p", /pearly/], ["s", /silky/], ["r", /resinous/], ["g", /greasy/], ["w", /waxy/], ["d", /dull|earthy/]];
+const parseH = (h) => { const [a, b] = h.split("-").map(Number); return [a, b ?? a]; };
+const identify = [];
+const coveredPages = new Set();
+for (const e of healing) {
+  const raw = CURATED_ID[e.name]; if (!raw) continue;
+  const [h, l, t, st, col, sys, flags] = raw.split("|");
+  const page = pages.find((p) => p.url === e.url);
+  coveredPages.add(e.url);
+  identify.push({ n: e.name, u: e.url, st: e.style, th: e.thumb?.src || null, k: page?.typeLabel || "", p: 1,
+    h: parseH(h), l: l.split(","), t: t.split(","), s: st.split(","), c: col.split(","), y: sys.split(","), f: flags ? flags.split(",") : [] });
+}
+for (const p of pages) {
+  if (coveredPages.has(p.url) || p.handmade) continue;
+  const c = vocab(p.colors), s = vocab(p.streak);
+  if (p.mohsMin == null && !c.length && !s.length) continue;
+  const l = LUSTER_MAP.filter(([, re]) => p.luster.some((x) => re.test(x))).map(([k]) => k);
+  identify.push({ n: p.title, u: p.url, st: p.palette.cardStyle, th: p.thumb?.src || null, k: p.typeLabel, p: 0,
+    h: p.mohsMin == null ? null : [p.mohsMin, p.mohsMax], l, t: [], s, c, y: p.crystalSystems, f: [] });
+}
+
 const stats = {
   total: pages.length,
   species: pages.filter((p) => p.type === "species").length,
@@ -121,7 +174,8 @@ const stats = {
   other: pages.filter((p) => !["species", "variety"].includes(p.type)).length,
   withImage: pages.filter((p) => p.img).length,
   healing: healing.length,
+  identify: identify.length,
   built: new Date().toISOString().slice(0, 10),
 };
 
-export default { pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

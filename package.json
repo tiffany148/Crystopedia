@@ -8,7 +8,8 @@
     "fetch": "node scripts/fetch-wikidata.mjs",
     "metaphysical": "python3 scripts/build_metaphysical.py",
     "build": "eleventy && pagefind --site _site",
-    "serve": "npx http-server _site -p 8080 -s"
+    "serve": "npx http-server _site -p 8080 -s",
+    "pairings": "node scripts/export-pairings.mjs"
   },
   "keywords": [],
   "author": "",

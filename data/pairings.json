@@ -1,0 +1,4092 @@
+{
+ "intentions": [
+  {
+   "key": "love",
+   "title": "Love & self-love",
+   "emoji": "💗",
+   "stones": [
+    "Rose Quartz",
+    "Rhodonite",
+    "Moonstone",
+    "Rhodochrosite"
+   ],
+   "note": "Rose quartz opens the heart, rhodonite brings forgiveness, moonstone balances emotions and rhodochrosite deepens self-love."
+  },
+  {
+   "key": "protection",
+   "title": "Protection",
+   "emoji": "🛡️",
+   "stones": [
+    "Black Tourmaline",
+    "Obsidian",
+    "Smoky Quartz",
+    "Selenite"
+   ],
+   "note": "Three dark stones are traditionally used to shield and ground, and selenite to clear the space they protect."
+  },
+  {
+   "key": "calm",
+   "title": "Calm & anxiety relief",
+   "emoji": "🌊",
+   "stones": [
+    "Amethyst",
+    "Lepidolite",
+    "Blue Lace Agate",
+    "Howlite"
+   ],
+   "note": "Soft purples and blues long associated with soothing worry and quieting an overactive mind."
+  },
+  {
+   "key": "sleep",
+   "title": "Restful sleep",
+   "emoji": "🌙",
+   "stones": [
+    "Amethyst",
+    "Howlite",
+    "Selenite",
+    "Moonstone"
+   ],
+   "note": "Classic bedside stones in crystal lore for peaceful sleep and gentle dreams."
+  },
+  {
+   "key": "abundance",
+   "title": "Abundance & luck",
+   "emoji": "🍀",
+   "stones": [
+    "Citrine",
+    "Pyrite",
+    "Aventurine",
+    "Jade"
+   ],
+   "note": "The 'merchant's stone', fool's gold, the 'stone of opportunity' and jade, the traditional good-luck stone."
+  },
+  {
+   "key": "focus",
+   "title": "Focus & study",
+   "emoji": "🎯",
+   "stones": [
+    "Fluorite",
+    "Clear Quartz",
+    "Sodalite",
+    "Hematite"
+   ],
+   "note": "Fluorite organizes thoughts, clear quartz clarifies, sodalite favors logic and hematite keeps you grounded at the desk."
+  },
+  {
+   "key": "grounding",
+   "title": "Grounding",
+   "emoji": "🌳",
+   "stones": [
+    "Hematite",
+    "Smoky Quartz",
+    "Red Jasper",
+    "Petrified Wood"
+   ],
+   "note": "Heavy, earthy root-chakra stones used to feel present and steady."
+  },
+  {
+   "key": "creativity",
+   "title": "Creativity & motivation",
+   "emoji": "🎨",
+   "stones": [
+    "Carnelian",
+    "Citrine",
+    "Sunstone",
+    "Tiger's Eye"
+   ],
+   "note": "Warm orange and gold stones of the sacral and solar plexus chakras, linked to inspiration and drive."
+  }
+ ],
+ "pairings": {
+  "Clear Quartz": [
+   {
+    "name": "Amethyst",
+    "reason": "Amplifies amethyst's calm for meditation."
+   },
+   {
+    "name": "Citrine",
+    "reason": "A bright pairing for clarity and manifesting goals."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Boosts rose quartz's loving energy."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Clarity plus protection: a popular home grid pair."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both are used to cleanse and recharge other stones."
+   }
+  ],
+  "Amethyst": [
+   {
+    "name": "Rose Quartz",
+    "reason": "Calm meets compassion. A classic bedside duo for gentle sleep."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Said to amplify amethyst's meditative calm."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Keeps a meditation space clear and peaceful."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Two soothing purples often paired against worry."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Grounds amethyst's dreamy, high energy."
+   }
+  ],
+  "Rose Quartz": [
+   {
+    "name": "Amethyst",
+    "reason": "Adds tranquility to rose quartz's tenderness."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "Pairs self-love with forgiveness."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "A traditional duo for new love and emotional balance."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Heart-chakra partners for love and luck."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Thought to magnify loving intentions."
+   },
+   {
+    "name": "Rhodochrosite",
+    "reason": "Deepens self-love work on the heart."
+   }
+  ],
+  "Citrine": [
+   {
+    "name": "Pyrite",
+    "reason": "The two classic abundance stones of crystal lore."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Luck and prosperity combined."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Said to amplify citrine's optimism."
+   },
+   {
+    "name": "Carnelian",
+    "reason": "Warm, energizing partners for motivation."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Confidence and drive for career goals."
+   }
+  ],
+  "Smoky Quartz": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Grounding and protection."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Balances calm with groundedness."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Dark and light quartz for balance."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Releases negativity, invites optimism."
+   }
+  ],
+  "Ametrine": [
+   {
+    "name": "Opal",
+    "reason": "Paired in tradition for creativity, with Opal bringing inspiration as well."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Shares the Solar Plexus & Crown chakra; adds energy cleansing to ametrine's decision making."
+   },
+   {
+    "name": "Carnelian",
+    "reason": "A natural partner for creativity; Carnelian also adds motivation."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Works the same Crown chakra, adding focus and clarity."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance ametrine's high, spiritual energy."
+   }
+  ],
+  "Rutilated Quartz": [
+   {
+    "name": "Amber",
+    "reason": "A natural partner for vitality; Amber also adds warmth."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Sacral & Solar Plexus & Crown chakra, adding energy cleansing."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Shares the Solar Plexus & Sacral chakra; adds prosperity rituals to rutilated quartz's vitality."
+   },
+   {
+    "name": "Sunstone",
+    "reason": "Another Sacral & Solar Plexus chakra stone, used alongside rutilated quartz for joy."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance rutilated quartz's high, spiritual energy."
+   }
+  ],
+  "Tourmalinated Quartz": [
+   {
+    "name": "Tourmaline",
+    "reason": "Paired in tradition for balance, with Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Malachite",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for protection, with Black Tourmaline bringing grounding as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost tourmalinated quartz's protection."
+   }
+  ],
+  "Strawberry Quartz": [
+   {
+    "name": "Amazonite",
+    "reason": "Works the same Heart chakra, adding communication."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Shares the Heart chakra; adds communication to strawberry quartz's joy."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Another Heart chakra stone, used alongside strawberry quartz for love."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Works the same Heart chakra, adding calm."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost strawberry quartz's joy."
+   }
+  ],
+  "Prasiolite": [
+   {
+    "name": "Aventurine",
+    "reason": "Another Heart chakra stone, used alongside prasiolite for luck."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Works the same Heart chakra, adding courage."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Shares the Heart chakra; adds hope to prasiolite's kindness."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Another Heart chakra stone, used alongside prasiolite for love."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost prasiolite's kindness."
+   }
+  ],
+  "Herkimer Diamond": [
+   {
+    "name": "Amethyst",
+    "reason": "A natural partner for meditation; Amethyst also adds peaceful sleep."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for meditation, with Apophyllite bringing clarity as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Another Third Eye & Crown chakra stone, used alongside herkimer diamond for study."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance herkimer diamond's high, spiritual energy."
+   }
+  ],
+  "Spirit Quartz": [
+   {
+    "name": "Amethyst",
+    "reason": "Another Third Eye & Crown chakra stone, used alongside spirit quartz for meditation."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Works the same Crown & Third Eye chakra, adding meditation."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Shares the Third Eye & Crown chakra; adds study to spirit quartz's group harmony."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Another Third Eye & Crown chakra stone, used alongside spirit quartz for intuition."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance spirit quartz's high, spiritual energy."
+   }
+  ],
+  "Agate": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for protection, with Black Tourmaline bringing grounding as well."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Shungite",
+    "reason": "A natural partner for protection; Shungite also adds purification."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Paired in tradition for protection, with Smoky Quartz bringing grounding as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies agate's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Blue Lace Agate": [
+   {
+    "name": "Amazonite",
+    "reason": "Both carry the theme of soothing, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Both carry the theme of self-expression, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost blue lace agate's calm speech."
+   }
+  ],
+  "Moss Agate": [
+   {
+    "name": "Aventurine",
+    "reason": "A natural partner for luck; Aventurine also adds prosperity."
+   },
+   {
+    "name": "Jade",
+    "reason": "Paired in tradition for good luck, with Jade bringing harmony as well."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Both carry the theme of abundance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "A natural partner for ancestral connection; Petrified Wood also adds patience."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies moss agate's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Fire Agate": [
+   {
+    "name": "Amber",
+    "reason": "A natural partner for protection; Amber also adds warmth."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Paired in tradition for vitality, with Ruby bringing passion as well."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "A natural partner for courage; Bloodstone also adds endurance."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies fire agate's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Crazy Lace Agate": [
+   {
+    "name": "Tiger's Eye",
+    "reason": "Another Solar Plexus & Root chakra stone, used alongside crazy lace agate for confidence."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Paired in tradition for optimism, with Aventurine bringing luck as well."
+   },
+   {
+    "name": "Agate",
+    "reason": "Shares the Root chakra; adds stability to crazy lace agate's optimism."
+   },
+   {
+    "name": "Amber",
+    "reason": "Another Solar Plexus chakra stone, used alongside crazy lace agate for warmth."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies crazy lace agate's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Botswana Agate": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Paired in tradition for focus and clarity, with Clear Quartz bringing programming intentions as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of comfort, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for clarity; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Paired in tradition for clarity, with Selenite bringing cleansing as well."
+   }
+  ],
+  "Dendritic Agate": [
+   {
+    "name": "Unakite",
+    "reason": "Both carry the theme of patience, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "A natural partner for abundance; Moss Agate also adds gardening luck."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Paired in tradition for abundance, with Peridot bringing renewal as well."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of patience, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies dendritic agate's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Carnelian": [
+   {
+    "name": "Citrine",
+    "reason": "Bright, motivating sacral and solar plexus pair."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "Stamina and courage."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Confidence for public speaking."
+   },
+   {
+    "name": "Sunstone",
+    "reason": "Joyful, creative energy."
+   }
+  ],
+  "Onyx": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Shungite",
+    "reason": "Paired in tradition for protection, with Shungite bringing purification as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies onyx's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Sardonyx": [
+   {
+    "name": "Bloodstone",
+    "reason": "Paired in tradition for courage, with Bloodstone bringing endurance as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of courage, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for stability; Agate also adds composure."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Paired in tradition for courage, with Ruby bringing passion as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies sardonyx's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Chrysoprase": [
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for renewal, with Emerald bringing love as well."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "A natural partner for forgiveness; Rhodonite also adds emotional balance."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Works the same Heart chakra, adding luck."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost chrysoprase's hope."
+   }
+  ],
+  "Bloodstone": [
+   {
+    "name": "Ruby",
+    "reason": "A natural partner for courage; Ruby also adds passion."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for courage, with Hematite bringing grounding as well."
+   },
+   {
+    "name": "Garnet",
+    "reason": "Shares the Root & Heart chakra; adds passion to bloodstone's courage."
+   },
+   {
+    "name": "Shungite",
+    "reason": "A natural partner for purification; Shungite also adds protection."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies bloodstone's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Jasper": [
+   {
+    "name": "Red Jasper",
+    "reason": "Both carry the theme of stamina, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Red Jasper": [
+   {
+    "name": "Jasper",
+    "reason": "A natural partner for grounding; Jasper also adds stamina."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies red jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Ocean Jasper": [
+   {
+    "name": "Amazonite",
+    "reason": "Shares the Heart & Throat chakra; adds communication to ocean jasper's relaxation."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Another Throat & Heart chakra stone, used alongside ocean jasper for communication."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Works the same Throat & Heart chakra, adding calm."
+   },
+   {
+    "name": "Unakite",
+    "reason": "Both carry the theme of patience, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost ocean jasper's relaxation."
+   }
+  ],
+  "Picture Jasper": [
+   {
+    "name": "Jasper",
+    "reason": "Paired in tradition for grounding, with Jasper bringing stamina as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "Paired in tradition for grounding, with Petrified Wood bringing patience as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies picture jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Dalmatian Jasper": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "A natural partner for grounding; Petrified Wood also adds patience."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies dalmatian jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Mookaite": [
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for vitality, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Both carry the theme of vitality, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Another Sacral & Root chakra stone, used alongside mookaite for confidence."
+   },
+   {
+    "name": "Agate",
+    "reason": "Works the same Root chakra, adding stability."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies mookaite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Chalcedony": [
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for communication, with Chrysocolla bringing calm as well."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "A natural partner for communication; Amazonite also adds soothing."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost chalcedony's calm."
+   }
+  ],
+  "Aventurine": [
+   {
+    "name": "Jade",
+    "reason": "A natural partner for good luck; Jade also adds harmony."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for gardening luck, with Moss Agate bringing abundance as well."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Shares the Heart chakra; adds courage to aventurine's luck."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Another Heart chakra stone, used alongside aventurine for hope."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost aventurine's luck."
+   }
+  ],
+  "Tiger's Eye": [
+   {
+    "name": "Citrine",
+    "reason": "Confidence meets abundance."
+   },
+   {
+    "name": "Carnelian",
+    "reason": "Courage and motivation together."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "Willpower and success for business."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Grounded focus and resolve."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Protection while pursuing goals."
+   }
+  ],
+  "Hawk's Eye": [
+   {
+    "name": "Sodalite",
+    "reason": "A natural partner for calm speaking; Sodalite also adds logic."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Paired in tradition for calm speech, with Blue Lace Agate bringing soothing anxiety as well."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Another Throat & Third Eye chakra stone, used alongside hawk's eye for alignment."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance hawk's eye's high, spiritual energy."
+   }
+  ],
+  "Tiger Iron": [
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for stamina; Red Jasper also adds motivation."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Paired in tradition for grounding, with Jasper bringing stamina as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "A natural partner for grounding; Snowflake Obsidian also adds balance."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies tiger iron's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Labradorite": [
+   {
+    "name": "Moonstone",
+    "reason": "Both shimmer with lunar, intuitive lore."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Supports intuition and spiritual insight."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Grounds and protects while exploring intuition."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Third-eye partners for wisdom and inner vision."
+   }
+  ],
+  "Moonstone": [
+   {
+    "name": "Labradorite",
+    "reason": "Intuitive, lunar partners."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Emotional balance and love."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Intuition and peaceful dreams."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Moon-named stones often used together at full moon."
+   }
+  ],
+  "Sunstone": [
+   {
+    "name": "Amber",
+    "reason": "Works the same Sacral & Solar Plexus chakra, adding warmth."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Shares the Sacral & Solar Plexus chakra; adds energy cleansing to sunstone's joy."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Another Solar Plexus & Sacral chakra stone, used alongside sunstone for prosperity rituals."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Works the same Solar Plexus & Sacral chakra, adding confidence."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost sunstone's joy."
+   }
+  ],
+  "Amazonite": [
+   {
+    "name": "Aquamarine",
+    "reason": "Soothing, truthful communication."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Calm expression."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Heart and throat harmony."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Calm with protection."
+   }
+  ],
+  "Larvikite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Shungite",
+    "reason": "A natural partner for protection; Shungite also adds purification."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Paired in tradition for grounding, with Smoky Quartz bringing releasing stress as well."
+   },
+   {
+    "name": "Agate",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies larvikite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Black Tourmaline": [
+   {
+    "name": "Smoky Quartz",
+    "reason": "A double grounding and protection pair."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Tourmaline shields while selenite clears, a common doorway duo."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Protection with clarity."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "Two dark protectors for heavy energy."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Strong grounding for busy, scattered days."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Calm plus protection for restful sleep."
+   }
+  ],
+  "Pink Tourmaline": [
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of self-love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "A natural partner for self-love; Rose Quartz also adds emotional healing."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for love, with Emerald bringing renewal as well."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Both carry the theme of unconditional love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost pink tourmaline's love."
+   }
+  ],
+  "Watermelon Tourmaline": [
+   {
+    "name": "Emerald",
+    "reason": "Both carry the theme of love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "A natural partner for self-love; Rose Quartz also adds emotional healing."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Paired in tradition for balance, with Amazonite bringing communication as well."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Both carry the theme of unconditional love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost watermelon tourmaline's balance."
+   }
+  ],
+  "Green Tourmaline": [
+   {
+    "name": "Rhodonite",
+    "reason": "A natural partner for compassion; Rhodonite also adds forgiveness."
+   },
+   {
+    "name": "Unakite",
+    "reason": "Paired in tradition for growth, with Unakite bringing emotional balance as well."
+   },
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of compassion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Ruby",
+    "reason": "A natural partner for vitality; Ruby also adds passion."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost green tourmaline's vitality."
+   }
+  ],
+  "Indicolite": [
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for communication, with Chrysocolla bringing calm as well."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "A natural partner for communication; Blue Kyanite also adds alignment."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance indicolite's high, spiritual energy."
+   }
+  ],
+  "Tourmaline": [
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for protection, with Black Tourmaline bringing grounding as well."
+   },
+   {
+    "name": "Malachite",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "A natural partner for protection; Obsidian also adds truth."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies tourmaline's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Garnet": [
+   {
+    "name": "Ruby",
+    "reason": "Passion and vitality."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Grounding and protection."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Passion softened with tenderness."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Root-chakra steadiness."
+   }
+  ],
+  "Pyrope": [
+   {
+    "name": "Ruby",
+    "reason": "Both carry the theme of passion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "A natural partner for courage; Bloodstone also adds endurance."
+   },
+   {
+    "name": "Garnet",
+    "reason": "Paired in tradition for passion, with Garnet bringing commitment as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of courage, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies pyrope's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Almandine": [
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for grounding; Red Jasper also adds stamina."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Paired in tradition for grounding, with Snowflake Obsidian bringing balance as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies almandine's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Spessartine": [
+   {
+    "name": "Carnelian",
+    "reason": "Paired in tradition for creativity, with Carnelian bringing motivation as well."
+   },
+   {
+    "name": "Amber",
+    "reason": "Both carry the theme of warmth, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Citrine",
+    "reason": "A natural partner for confidence; Citrine also adds prosperity rituals."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Paired in tradition for confidence, with Tiger's Eye bringing focus as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost spessartine's creativity."
+   }
+  ],
+  "Tsavorite": [
+   {
+    "name": "Moss Agate",
+    "reason": "Both carry the theme of abundance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Peridot",
+    "reason": "A natural partner for abundance; Peridot also adds renewal."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "Paired in tradition for compassion, with Rhodonite bringing forgiveness as well."
+   },
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of compassion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost tsavorite's abundance."
+   }
+  ],
+  "Hessonite": [
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of confidence, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "A natural partner for protection; Pyrite also adds abundance."
+   },
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for protection, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Both carry the theme of confidence, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost hessonite's self-confidence."
+   }
+  ],
+  "Emerald": [
+   {
+    "name": "Rose Quartz",
+    "reason": "Love and loyalty."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Heart-centered abundance."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Classic royal pairing of love and passion."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Romance and emotional balance."
+   }
+  ],
+  "Aquamarine": [
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Calm, clear communication."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Soothing throat-chakra partners."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Water-element stones for emotional flow."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Sea-colored companions for tranquility."
+   }
+  ],
+  "Morganite": [
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of self-love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Emerald",
+    "reason": "A natural partner for love; Emerald also adds renewal."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Paired in tradition for self-love, with Rose Quartz bringing emotional healing as well."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Both carry the theme of unconditional love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost morganite's compassion."
+   }
+  ],
+  "Heliodor": [
+   {
+    "name": "Sunstone",
+    "reason": "Paired in tradition for leadership, with Sunstone bringing joy as well."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Shares the Solar Plexus & Crown chakra; adds energy cleansing to heliodor's optimism."
+   },
+   {
+    "name": "Amber",
+    "reason": "Another Solar Plexus chakra stone, used alongside heliodor for warmth."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Paired in tradition for optimism, with Aventurine bringing luck as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance heliodor's high, spiritual energy."
+   }
+  ],
+  "Goshenite": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Both carry the theme of focus and clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for clarity; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Paired in tradition for clarity, with Selenite bringing cleansing as well."
+   },
+   {
+    "name": "Sapphire",
+    "reason": "Both carry the theme of focus, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance goshenite's high, spiritual energy."
+   }
+  ],
+  "Ruby": [
+   {
+    "name": "Bloodstone",
+    "reason": "A natural partner for courage; Bloodstone also adds endurance."
+   },
+   {
+    "name": "Garnet",
+    "reason": "Paired in tradition for passion, with Garnet bringing commitment as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of courage, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Another Heart & Root chakra stone, used alongside ruby for gardening luck."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies ruby's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Sapphire": [
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Paired in tradition for wisdom, with Lapis Lazuli bringing truth as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Shares the Throat & Third Eye chakra; adds alignment to sapphire's wisdom."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "Another Third Eye & Throat chakra stone, used alongside sapphire for intuition."
+   },
+   {
+    "name": "Sodalite",
+    "reason": "Works the same Throat & Third Eye chakra, adding logic."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance sapphire's high, spiritual energy."
+   }
+  ],
+  "Diamond": [
+   {
+    "name": "Clear Quartz",
+    "reason": "A natural partner for focus and clarity; Clear Quartz also adds programming intentions."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for clarity, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Garnet",
+    "reason": "A natural partner for commitment; Garnet also adds passion."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance diamond's high, spiritual energy."
+   }
+  ],
+  "Topaz": [
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for clear communication, with Aquamarine bringing calm as well."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "Both carry the theme of abundance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Peridot",
+    "reason": "A natural partner for abundance; Peridot also adds renewal."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Solar Plexus chakra, adding energy cleansing."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost topaz's joy."
+   }
+  ],
+  "Peridot": [
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for emotional renewal; Chrysoprase also adds hope."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for renewal, with Emerald bringing love as well."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Both carry the theme of abundance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "A natural partner for abundance; Pyrite also adds protection."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost peridot's renewal."
+   }
+  ],
+  "Spinel": [
+   {
+    "name": "Bloodstone",
+    "reason": "Shares the Root & Heart chakra; adds courage to spinel's revitalization."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for hope; Chrysoprase also adds forgiveness."
+   },
+   {
+    "name": "Garnet",
+    "reason": "Works the same Root & Heart chakra, adding passion."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Shares the Root & Heart chakra; adds passion to spinel's revitalization."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies spinel's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Zircon": [
+   {
+    "name": "Amethyst",
+    "reason": "Both carry the theme of peaceful sleep, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Celestite",
+    "reason": "A natural partner for sleep; Celestite also adds peace."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Paired in tradition for sleep, with Howlite bringing patience as well."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Both carry the theme of sleep, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost zircon's prosperity."
+   }
+  ],
+  "Tanzanite": [
+   {
+    "name": "Labradorite",
+    "reason": "Both carry the theme of intuition, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "A natural partner for meditation; Amethyst also adds peaceful sleep."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Paired in tradition for meditation, with Blue Kyanite bringing alignment as well."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance tanzanite's high, spiritual energy."
+   }
+  ],
+  "Iolite": [
+   {
+    "name": "Labradorite",
+    "reason": "Both carry the theme of intuition, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "A natural partner for intuition; Moonstone also adds new beginnings."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Works the same Third Eye chakra, adding meditation."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Shares the Third Eye chakra; adds alignment to iolite's intuition."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance iolite's high, spiritual energy."
+   }
+  ],
+  "Kunzite": [
+   {
+    "name": "Rhodochrosite",
+    "reason": "A natural partner for compassion; Rhodochrosite also adds self-love."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "A natural partner for calm; Lepidolite also adds transition."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost kunzite's compassion."
+   }
+  ],
+  "Hiddenite": [
+   {
+    "name": "Chrysoprase",
+    "reason": "Both carry the theme of emotional renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Emerald",
+    "reason": "A natural partner for renewal; Emerald also adds love."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Paired in tradition for renewal, with Peridot bringing abundance as well."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Shares the Heart chakra; adds luck to hiddenite's renewal."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost hiddenite's renewal."
+   }
+  ],
+  "Blue Kyanite": [
+   {
+    "name": "Amethyst",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "A natural partner for communication; Amazonite also adds soothing."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for meditation, with Apophyllite bringing clarity as well."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Both carry the theme of clear communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance blue kyanite's high, spiritual energy."
+   }
+  ],
+  "Fluorite": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Focus and mental clarity for study."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Calm, organized thinking."
+   },
+   {
+    "name": "Sodalite",
+    "reason": "Logic and concentration."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Keeps a busy mind grounded and focused."
+   }
+  ],
+  "Calcite": [
+   {
+    "name": "Carnelian",
+    "reason": "A natural partner for motivation; Carnelian also adds creativity."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Paired in tradition for cleansing, with Selenite bringing peace as well."
+   },
+   {
+    "name": "Amber",
+    "reason": "Shares the Sacral & Solar Plexus chakra; adds warmth to calcite's energy cleansing."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Another Solar Plexus & Sacral chakra stone, used alongside calcite for prosperity rituals."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance calcite's high, spiritual energy."
+   }
+  ],
+  "Iceland Spar": [
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Selenite",
+    "reason": "A natural partner for clarity; Selenite also adds cleansing."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Works the same Third Eye & Crown chakra, adding meditation."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Both carry the theme of focus and clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance iceland spar's high, spiritual energy."
+   }
+  ],
+  "Mangano Calcite": [
+   {
+    "name": "Chrysocolla",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Larimar",
+    "reason": "A natural partner for calm; Larimar also adds feminine energy."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Paired in tradition for calm, with Lepidolite bringing transition as well."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Both carry the theme of forgiveness, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost mangano calcite's forgiveness."
+   }
+  ],
+  "Selenite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Clear and shield, a classic home-cleansing pair."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Peaceful spiritual space."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Two cleansing, high-vibration stones."
+   },
+   {
+    "name": "Celestite",
+    "reason": "Soft, serene crown energy for calm."
+   }
+  ],
+  "Desert Rose": [
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for clarity, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "A natural partner for focus and clarity; Clear Quartz also adds programming intentions."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   }
+  ],
+  "Celestite": [
+   {
+    "name": "Amethyst",
+    "reason": "Both carry the theme of peaceful sleep, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for connection; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Paired in tradition for sleep, with Howlite bringing patience as well."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both carry the theme of peace, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance celestite's high, spiritual energy."
+   }
+  ],
+  "Angelite": [
+   {
+    "name": "Celestite",
+    "reason": "Paired in tradition for peace, with Celestite bringing sleep as well."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Both carry the theme of peaceful expression, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Selenite",
+    "reason": "A natural partner for peace; Selenite also adds cleansing."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Paired in tradition for self-expression, with Lapis Lazuli bringing wisdom as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance angelite's high, spiritual energy."
+   }
+  ],
+  "Apophyllite": [
+   {
+    "name": "Amethyst",
+    "reason": "Paired in tradition for meditation, with Amethyst bringing peaceful sleep as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Celestite",
+    "reason": "A natural partner for spiritual connection; Celestite also adds peace."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Paired in tradition for focus and clarity, with Clear Quartz bringing programming intentions as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance apophyllite's high, spiritual energy."
+   }
+  ],
+  "Prehnite": [
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for love, with Emerald bringing renewal as well."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Both carry the theme of self-love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "A natural partner for calm; Chrysocolla also adds communication."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Paired in tradition for calm, with Larimar bringing feminine energy as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost prehnite's calm."
+   }
+  ],
+  "Epidote": [
+   {
+    "name": "Aventurine",
+    "reason": "A natural partner for optimism; Aventurine also adds luck."
+   },
+   {
+    "name": "Unakite",
+    "reason": "Paired in tradition for growth, with Unakite bringing emotional balance as well."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Shares the Heart chakra; adds courage to epidote's optimism."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Another Heart chakra stone, used alongside epidote for hope."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost epidote's optimism."
+   }
+  ],
+  "Unakite": [
+   {
+    "name": "Rhodonite",
+    "reason": "A natural partner for emotional balance; Rhodonite also adds forgiveness."
+   },
+   {
+    "name": "Tourmaline",
+    "reason": "Paired in tradition for balance, with Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Both carry the theme of balance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "A natural partner for patience; Petrified Wood also adds grounding."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost unakite's emotional balance."
+   }
+  ],
+  "Malachite": [
+   {
+    "name": "Azurite",
+    "reason": "They grow together in nature and are paired for insight and transformation."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Softens malachite's intense heart work."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Copper-mineral cousins for heart and throat."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Grounds the energy of transformation."
+   }
+  ],
+  "Azurite": [
+   {
+    "name": "Labradorite",
+    "reason": "A natural partner for intuition; Labradorite also adds transformation."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Paired in tradition for intuition, with Moonstone bringing new beginnings as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Shares the Throat & Third Eye chakra; adds alignment to azurite's insight."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "A natural partner for study; Fluorite also adds organization."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance azurite's high, spiritual energy."
+   }
+  ],
+  "Chrysocolla": [
+   {
+    "name": "Larimar",
+    "reason": "Paired in tradition for calm, with Larimar bringing feminine energy as well."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "A natural partner for communication; Amazonite also adds soothing."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Paired in tradition for communication, with Blue Kyanite bringing alignment as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost chrysocolla's communication."
+   }
+  ],
+  "Turquoise": [
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Ancient protective blues."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Amplifies healing intentions."
+   },
+   {
+    "name": "Malachite",
+    "reason": "Copper-mineral protection pair."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "Grounding with protection."
+   }
+  ],
+  "Lapis Lazuli": [
+   {
+    "name": "Sodalite",
+    "reason": "Blue partners for truth and clear thinking."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Amplifies wisdom and insight."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Intuition and spiritual wisdom."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Gentle, honest communication."
+   }
+  ],
+  "Sodalite": [
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Truth and logic."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Study and focus."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Calms an overactive mind."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for calm, with Aquamarine bringing courage as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance sodalite's high, spiritual energy."
+   }
+  ],
+  "Larimar": [
+   {
+    "name": "Chrysocolla",
+    "reason": "A natural partner for communication; Chrysocolla also adds calm."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for calm, with Aquamarine bringing courage as well."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Both carry the theme of communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "A natural partner for communication; Blue Kyanite also adds alignment."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost larimar's calm."
+   }
+  ],
+  "Howlite": [
+   {
+    "name": "Amethyst",
+    "reason": "Calm and restful sleep."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Stress relief together."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Patience and gentle words."
+   },
+   {
+    "name": "Celestite",
+    "reason": "A natural partner for sleep; Celestite also adds peace."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance howlite's high, spiritual energy."
+   }
+  ],
+  "Magnesite": [
+   {
+    "name": "Lepidolite",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "A natural partner for calm; Prehnite also adds intuition."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Paired in tradition for meditation, with Amethyst bringing peaceful sleep as well."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance magnesite's high, spiritual energy."
+   }
+  ],
+  "Rhodochrosite": [
+   {
+    "name": "Rose Quartz",
+    "reason": "A natural partner for self-love; Rose Quartz also adds emotional healing."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for love, with Emerald bringing renewal as well."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Both carry the theme of unconditional love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "A natural partner for compassion; Rhodonite also adds forgiveness."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost rhodochrosite's self-love."
+   }
+  ],
+  "Rhodonite": [
+   {
+    "name": "Chrysoprase",
+    "reason": "Both carry the theme of forgiveness, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tourmaline",
+    "reason": "A natural partner for balance; Tourmaline also adds protection."
+   },
+   {
+    "name": "Unakite",
+    "reason": "Paired in tradition for emotional balance, with Unakite bringing patience as well."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Both carry the theme of balance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost rhodonite's forgiveness."
+   }
+  ],
+  "Lepidolite": [
+   {
+    "name": "Amethyst",
+    "reason": "Two calming purples for anxiety."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Comfort during transitions."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Quiets a restless mind before sleep."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Peaceful, clear energy."
+   }
+  ],
+  "Charoite": [
+   {
+    "name": "Labradorite",
+    "reason": "Paired in tradition for transformation, with Labradorite bringing intuition as well."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Shares the Third Eye & Crown chakra; adds meditation to charoite's transformation."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Another Third Eye & Crown chakra stone, used alongside charoite for intuition."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Works the same Crown & Third Eye chakra, adding meditation."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance charoite's high, spiritual energy."
+   }
+  ],
+  "Sugilite": [
+   {
+    "name": "Labradorite",
+    "reason": "Paired in tradition for protection, with Labradorite bringing intuition as well."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Shares the Third Eye & Crown chakra; adds meditation to sugilite's spiritual love."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Another Crown & Third Eye chakra stone, used alongside sugilite for meditation."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Works the same Third Eye & Crown chakra, adding study."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance sugilite's high, spiritual energy."
+   }
+  ],
+  "Seraphinite": [
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for connection, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Celestite",
+    "reason": "Both carry the theme of spiritual connection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for emotional renewal; Chrysoprase also adds hope."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for renewal, with Emerald bringing love as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance seraphinite's high, spiritual energy."
+   }
+  ],
+  "Serpentine": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Shungite",
+    "reason": "Paired in tradition for protection, with Shungite bringing purification as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tourmaline",
+    "reason": "A natural partner for protection; Tourmaline also adds balance."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies serpentine's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Jade": [
+   {
+    "name": "Aventurine",
+    "reason": "A natural partner for luck; Aventurine also adds prosperity."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for gardening luck, with Moss Agate bringing abundance as well."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Both carry the theme of harmony at home, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Another Heart chakra stone, used alongside jade for courage."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost jade's good luck."
+   }
+  ],
+  "Jadeite": [
+   {
+    "name": "Aventurine",
+    "reason": "A natural partner for prosperity; Aventurine also adds luck."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for wisdom, with Emerald bringing love as well."
+   },
+   {
+    "name": "Jade",
+    "reason": "Both carry the theme of harmony, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "A natural partner for harmony at home; Rose Quartz also adds self-love."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost jadeite's harmony."
+   }
+  ],
+  "Nephrite": [
+   {
+    "name": "Jade",
+    "reason": "Paired in tradition for good luck, with Jade bringing harmony as well."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Both carry the theme of luck, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Malachite",
+    "reason": "A natural partner for protection; Malachite also adds transformation."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for gardening luck, with Moss Agate bringing abundance as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost nephrite's protection."
+   }
+  ],
+  "Hematite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Grounding and protection."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Focus with clarity."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "Root-chakra stamina."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Deep calm grounding."
+   }
+  ],
+  "Magnetite": [
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Both carry the theme of balance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies magnetite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Lodestone": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Paired in tradition for grounding, with Jasper bringing stamina as well."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Both carry the theme of gardening luck, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies lodestone's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Pyrite": [
+   {
+    "name": "Citrine",
+    "reason": "The abundance pair."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Luck plus willpower."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Drive and good judgement."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Amplifies intentions for success."
+   }
+  ],
+  "Chalcopyrite": [
+   {
+    "name": "Tourmaline",
+    "reason": "Both carry the theme of energy flow, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Another Crown chakra stone, used alongside chalcopyrite for energy cleansing."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Works the same Crown chakra, adding focus and clarity."
+   },
+   {
+    "name": "Opal",
+    "reason": "Shares the Crown chakra; adds creativity to chalcopyrite's energy flow."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance chalcopyrite's high, spiritual energy."
+   }
+  ],
+  "Bornite": [
+   {
+    "name": "Calcite",
+    "reason": "Another Solar Plexus & Crown chakra stone, used alongside bornite for energy cleansing."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Paired in tradition for renewal, with Peridot bringing abundance as well."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Opal",
+    "reason": "Another Crown chakra stone, used alongside bornite for creativity."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance bornite's high, spiritual energy."
+   }
+  ],
+  "Galena": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Paired in tradition for grounding, with Jasper bringing stamina as well."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies galena's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Shungite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Double shielding stones in modern lore."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Purify and clarify."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Grounding and cleansing."
+   },
+   {
+    "name": "Agate",
+    "reason": "Paired in tradition for protection, with Agate bringing stability as well."
+   }
+  ],
+  "Obsidian": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Two powerful protective stones."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Gentle grounding to soften obsidian's intensity."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Balances shadow work with self-compassion."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Deep grounding for emotional storms."
+   }
+  ],
+  "Snowflake Obsidian": [
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for grounding; Red Jasper also adds stamina."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for grounding, with Black Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies snowflake obsidian's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Apache Tear": [
+   {
+    "name": "Obsidian",
+    "reason": "Paired in tradition for protection, with Obsidian bringing truth as well."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for protection, with Black Tourmaline bringing grounding as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies apache tear's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Mahogany Obsidian": [
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for vitality, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for grounding; Red Jasper also adds stamina."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Paired in tradition for grounding, with Snowflake Obsidian bringing balance as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies mahogany obsidian's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Rainbow Obsidian": [
+   {
+    "name": "Tourmaline",
+    "reason": "A natural partner for protection; Tourmaline also adds balance."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "Paired in tradition for protection, with Obsidian bringing truth as well."
+   },
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of healing the past, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "A natural partner for protection; Tiger's Eye also adds confidence."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies rainbow obsidian's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Moldavite": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Said to amplify moldavite's transformative energy."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Grounds moldavite's intensity."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Keeps intense experiences grounded."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Insight during spiritual growth."
+   }
+  ],
+  "Tektite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Shungite",
+    "reason": "Paired in tradition for protection, with Shungite bringing purification as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost tektite's expansion."
+   }
+  ],
+  "Libyan Desert Glass": [
+   {
+    "name": "Citrine",
+    "reason": "A natural partner for confidence; Citrine also adds prosperity rituals."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "Paired in tradition for confidence, with Pyrite bringing abundance as well."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of confidence, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Carnelian",
+    "reason": "A natural partner for stage confidence; Carnelian also adds motivation."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost libyan desert glass's willpower."
+   }
+  ],
+  "Amber": [
+   {
+    "name": "Tiger's Eye",
+    "reason": "Paired in tradition for protection, with Tiger's Eye bringing confidence as well."
+   },
+   {
+    "name": "Pyrite",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Malachite",
+    "reason": "A natural partner for protection; Malachite also adds transformation."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Sacral & Solar Plexus chakra, adding energy cleansing."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost amber's warmth."
+   }
+  ],
+  "Pearl": [
+   {
+    "name": "Lepidolite",
+    "reason": "Paired in tradition for calm, with Lepidolite bringing transition as well."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Shares the Sacral & Crown chakra; adds energy cleansing to pearl's calm."
+   },
+   {
+    "name": "Howlite",
+    "reason": "A natural partner for calm; Howlite also adds patience."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Works the same Sacral & Crown chakra, adding intuition."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance pearl's high, spiritual energy."
+   }
+  ],
+  "Jet": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Shungite",
+    "reason": "A natural partner for protection; Shungite also adds purification."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Paired in tradition for grounding, with Smoky Quartz bringing releasing stress as well."
+   },
+   {
+    "name": "Agate",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies jet's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Coral": [
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for protection, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for protection, with Black Tourmaline bringing grounding as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies coral's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Ammolite": [
+   {
+    "name": "Ruby",
+    "reason": "Paired in tradition for vitality, with Ruby bringing passion as well."
+   },
+   {
+    "name": "Amber",
+    "reason": "Both carry the theme of vitality, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "A natural partner for prosperity; Aventurine also adds luck."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "Paired in tradition for transformation, with Labradorite bringing intuition as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost ammolite's prosperity."
+   }
+  ],
+  "Petrified Wood": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for grounding, with Black Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Jasper",
+    "reason": "A natural partner for grounding; Jasper also adds stamina."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for connection to nature, with Moss Agate bringing gardening luck as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies petrified wood's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Opal": [
+   {
+    "name": "Lepidolite",
+    "reason": "Another Heart & Crown chakra stone, used alongside opal for calm."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Works the same Heart & Crown chakra, adding study."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Both carry the theme of peaceful expression, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Another Crown chakra stone, used alongside opal for energy cleansing."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance opal's high, spiritual energy."
+   }
+  ],
+  "Fire Opal": [
+   {
+    "name": "Ruby",
+    "reason": "Both carry the theme of passion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amber",
+    "reason": "Another Sacral & Solar Plexus chakra stone, used alongside fire opal for warmth."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Sacral & Solar Plexus chakra, adding energy cleansing."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Shares the Solar Plexus & Sacral chakra; adds prosperity rituals to fire opal's passion."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost fire opal's passion."
+   }
+  ],
+  "Precious Opal": [
+   {
+    "name": "Opal",
+    "reason": "A natural partner for inspiration; Opal also adds creativity."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Works the same Crown chakra, adding meditation."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Shares the Crown chakra; adds energy cleansing to precious opal's imagination."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Another Crown chakra stone, used alongside precious opal for calm."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance precious opal's high, spiritual energy."
+   }
+  ],
+  "Aragonite": [
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of patience, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies aragonite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Smithsonite": [
+   {
+    "name": "Lepidolite",
+    "reason": "Paired in tradition for calm, with Lepidolite bringing transition as well."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Larimar",
+    "reason": "A natural partner for calm; Larimar also adds feminine energy."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Paired in tradition for calm, with Howlite bringing patience as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance smithsonite's high, spiritual energy."
+   }
+  ],
+  "Hemimorphite": [
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Both carry the theme of calm speech, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Both carry the theme of self-expression, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance hemimorphite's high, spiritual energy."
+   }
+  ],
+  "Vanadinite": [
+   {
+    "name": "Tiger's Eye",
+    "reason": "A natural partner for focus; Tiger's Eye also adds confidence."
+   },
+   {
+    "name": "Carnelian",
+    "reason": "Paired in tradition for creativity, with Carnelian bringing motivation as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of focus, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for stamina; Red Jasper also adds motivation."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies vanadinite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Wulfenite": [
+   {
+    "name": "Carnelian",
+    "reason": "Both carry the theme of creativity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Opal",
+    "reason": "A natural partner for creativity; Opal also adds inspiration."
+   },
+   {
+    "name": "Amber",
+    "reason": "Works the same Sacral chakra, adding warmth."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Both carry the theme of optimism, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost wulfenite's creativity."
+   }
+  ],
+  "Sphalerite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "A natural partner for grounding; Petrified Wood also adds patience."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies sphalerite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Staurolite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Shungite",
+    "reason": "Paired in tradition for protection, with Shungite bringing purification as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Jade",
+    "reason": "A natural partner for good luck; Jade also adds harmony."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies staurolite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Chiastolite": [
+   {
+    "name": "Tourmaline",
+    "reason": "Paired in tradition for balance, with Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Agate",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "Paired in tradition for protection, with Obsidian bringing truth as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies chiastolite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Andalusite": [
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "A natural partner for balance; Snowflake Obsidian also adds purity."
+   },
+   {
+    "name": "Tourmaline",
+    "reason": "Paired in tradition for balance, with Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies andalusite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Dioptase": [
+   {
+    "name": "Rhodochrosite",
+    "reason": "Paired in tradition for self-love, with Rhodochrosite bringing compassion as well."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Both carry the theme of self-love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Emerald",
+    "reason": "A natural partner for love; Emerald also adds renewal."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Paired in tradition for forgiveness, with Chrysoprase bringing hope as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost dioptase's emotional healing."
+   }
+  ],
+  "Sulfur": [
+   {
+    "name": "Bloodstone",
+    "reason": "Both carry the theme of purification, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amber",
+    "reason": "Another Solar Plexus chakra stone, used alongside sulfur for warmth."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Solar Plexus chakra, adding energy cleansing."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Shares the Solar Plexus chakra; adds prosperity rituals to sulfur's willpower."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost sulfur's willpower."
+   }
+  ],
+  "Copper": [
+   {
+    "name": "Tourmaline",
+    "reason": "Both carry the theme of balance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amber",
+    "reason": "A natural partner for vitality; Amber also adds warmth."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Paired in tradition for vitality, with Ruby bringing passion as well."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Both carry the theme of balance, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies copper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Gold": [
+   {
+    "name": "Pyrite",
+    "reason": "A natural partner for abundance; Pyrite also adds protection."
+   },
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for vitality, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Both carry the theme of confidence, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "A natural partner for confidence; Tiger's Eye also adds focus."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance gold's high, spiritual energy."
+   }
+  ],
+  "Silver": [
+   {
+    "name": "Moonstone",
+    "reason": "Both carry the theme of intuition, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "A natural partner for intuition; Labradorite also adds transformation."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Paired in tradition for calm, with Lepidolite bringing transition as well."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance silver's high, spiritual energy."
+   }
+  ],
+  "Apatite": [
+   {
+    "name": "Calcite",
+    "reason": "A natural partner for motivation; Calcite also adds energy cleansing."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Works the same Throat & Third Eye chakra, adding alignment."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "Shares the Third Eye & Throat chakra; adds intuition to apatite's motivation."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Another Throat & Third Eye chakra stone, used alongside apatite for wisdom."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance apatite's high, spiritual energy."
+   }
+  ],
+  "Danburite": [
+   {
+    "name": "Celestite",
+    "reason": "Both carry the theme of peace, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "A natural partner for calm; Lepidolite also adds transition."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for connection, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance danburite's high, spiritual energy."
+   }
+  ],
+  "Petalite": [
+   {
+    "name": "Amethyst",
+    "reason": "Paired in tradition for meditation, with Amethyst bringing peaceful sleep as well."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for meditation; Apophyllite also adds clarity."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Paired in tradition for calm, with Howlite bringing patience as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance petalite's high, spiritual energy."
+   }
+  ],
+  "Phenakite": [
+   {
+    "name": "Amethyst",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for meditation; Apophyllite also adds clarity."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Paired in tradition for meditation, with Blue Kyanite bringing alignment as well."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Shares the Third Eye & Crown chakra; adds study to phenakite's meditation."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance phenakite's high, spiritual energy."
+   }
+  ],
+  "Scolecite": [
+   {
+    "name": "Amethyst",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Celestite",
+    "reason": "A natural partner for peace; Celestite also adds sleep."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for meditation, with Apophyllite bringing clarity as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Both carry the theme of meditation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance scolecite's high, spiritual energy."
+   }
+  ],
+  "Stilbite": [
+   {
+    "name": "Lepidolite",
+    "reason": "Paired in tradition for calm, with Lepidolite bringing transition as well."
+   },
+   {
+    "name": "Opal",
+    "reason": "Both carry the theme of creativity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Howlite",
+    "reason": "A natural partner for calm; Howlite also adds patience."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance stilbite's high, spiritual energy."
+   }
+  ],
+  "Okenite": [
+   {
+    "name": "Lepidolite",
+    "reason": "A natural partner for calm; Lepidolite also adds transition."
+   },
+   {
+    "name": "Howlite",
+    "reason": "Paired in tradition for calm, with Howlite bringing patience as well."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "A natural partner for calm speech; Blue Lace Agate also adds soothing anxiety."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance okenite's high, spiritual energy."
+   }
+  ],
+  "Cavansite": [
+   {
+    "name": "Blue Kyanite",
+    "reason": "Both carry the theme of communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "A natural partner for intuition; Labradorite also adds transformation."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Paired in tradition for communication, with Amazonite bringing soothing as well."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Both carry the theme of clear communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance cavansite's high, spiritual energy."
+   }
+  ],
+  "Dumortierite": [
+   {
+    "name": "Sodalite",
+    "reason": "Both carry the theme of calm speaking, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Paired in tradition for calm speech, with Blue Lace Agate bringing soothing anxiety as well."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance dumortierite's high, spiritual energy."
+   }
+  ],
+  "Chrysoberyl": [
+   {
+    "name": "Calcite",
+    "reason": "Works the same Solar Plexus & Crown chakra, adding energy cleansing."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amber",
+    "reason": "Another Solar Plexus chakra stone, used alongside chrysoberyl for warmth."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Paired in tradition for optimism, with Aventurine bringing luck as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance chrysoberyl's high, spiritual energy."
+   }
+  ],
+  "Alexandrite": [
+   {
+    "name": "Jade",
+    "reason": "Paired in tradition for good luck, with Jade bringing harmony as well."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Shares the Heart & Crown chakra; adds calm to alexandrite's adaptability."
+   },
+   {
+    "name": "Opal",
+    "reason": "Another Heart & Crown chakra stone, used alongside alexandrite for creativity."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Works the same Heart & Crown chakra, adding study."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance alexandrite's high, spiritual energy."
+   }
+  ],
+  "Titanite": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Paired in tradition for focus and clarity, with Clear Quartz bringing programming intentions as well."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Both carry the theme of learning, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "A natural partner for focus; Tiger's Eye also adds confidence."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for focus, with Hematite bringing grounding as well."
+   }
+  ],
+  "Ulexite": [
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for clarity; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Paired in tradition for focus and clarity, with Clear Quartz bringing programming intentions as well."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Another Third Eye chakra stone, used alongside ulexite for meditation."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance ulexite's high, spiritual energy."
+   }
+  ],
+  "Halite": [
+   {
+    "name": "Calcite",
+    "reason": "Both carry the theme of energy cleansing, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Selenite",
+    "reason": "A natural partner for cleansing; Selenite also adds peace."
+   },
+   {
+    "name": "Lepidolite",
+    "reason": "Works the same Heart & Crown chakra, adding calm."
+   },
+   {
+    "name": "Malachite",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance halite's high, spiritual energy."
+   }
+  ],
+  "Muscovite": [
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Fluorite",
+    "reason": "Another Heart & Third Eye chakra stone, used alongside muscovite for study."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Paired in tradition for focus and clarity, with Clear Quartz bringing programming intentions as well."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance muscovite's high, spiritual energy."
+   }
+  ],
+  "Fuchsite": [
+   {
+    "name": "Chrysoprase",
+    "reason": "Paired in tradition for emotional renewal, with Chrysoprase bringing hope as well."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Peridot",
+    "reason": "A natural partner for renewal; Peridot also adds abundance."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "Paired in tradition for emotional balance, with Rhodonite bringing forgiveness as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost fuchsite's renewal."
+   }
+  ],
+  "Astrophyllite": [
+   {
+    "name": "Opal",
+    "reason": "A natural partner for inspiration; Opal also adds creativity."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Sacral & Crown chakra, adding energy cleansing."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Shares the Sacral & Crown chakra; adds intuition to astrophyllite's self-discovery."
+   },
+   {
+    "name": "Amethyst",
+    "reason": "Another Crown chakra stone, used alongside astrophyllite for meditation."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance astrophyllite's high, spiritual energy."
+   }
+  ],
+  "Nuummite": [
+   {
+    "name": "Labradorite",
+    "reason": "Paired in tradition for intuition, with Labradorite bringing transformation as well."
+   },
+   {
+    "name": "Obsidian",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "A natural partner for protection; Tiger's Eye also adds confidence."
+   },
+   {
+    "name": "Agate",
+    "reason": "Paired in tradition for protection, with Agate bringing stability as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies nuummite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Septarian": [
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of patience, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for grounding; Black Tourmaline also adds protection."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies septarian's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Zoisite": [
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for emotional renewal; Chrysoprase also adds hope."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for renewal, with Emerald bringing love as well."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Opal",
+    "reason": "A natural partner for creativity; Opal also adds inspiration."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost zoisite's renewal."
+   }
+  ],
+  "Ruby in Zoisite": [
+   {
+    "name": "Ruby",
+    "reason": "Both carry the theme of passion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Garnet",
+    "reason": "A natural partner for passion; Garnet also adds commitment."
+   },
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for connection to nature, with Moss Agate bringing gardening luck as well."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of connection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance ruby in zoisite's high, spiritual energy."
+   }
+  ],
+  "Thulite": [
+   {
+    "name": "Garnet",
+    "reason": "A natural partner for passion; Garnet also adds commitment."
+   },
+   {
+    "name": "Opal",
+    "reason": "Paired in tradition for emotional expression, with Opal bringing creativity as well."
+   },
+   {
+    "name": "Ruby",
+    "reason": "Both carry the theme of passion, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rhodochrosite",
+    "reason": "Another Heart & Sacral chakra stone, used alongside thulite for self-love."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost thulite's joy."
+   }
+  ],
+  "Pietersite": [
+   {
+    "name": "Labradorite",
+    "reason": "A natural partner for transformation; Labradorite also adds intuition."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for clarity, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Malachite",
+    "reason": "Both carry the theme of transformation, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "A natural partner for focus and clarity; Clear Quartz also adds programming intentions."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance pietersite's high, spiritual energy."
+   }
+  ],
+  "Bronzite": [
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "A natural partner for grounding; Snowflake Obsidian also adds balance."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Paired in tradition for confidence, with Tiger's Eye bringing focus as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies bronzite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Variscite": [
+   {
+    "name": "Aventurine",
+    "reason": "Both carry the theme of optimism, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "A natural partner for calm; Prehnite also adds intuition."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Larimar",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost variscite's encouragement."
+   }
+  ],
+  "Eudialyte": [
+   {
+    "name": "Rhodochrosite",
+    "reason": "Both carry the theme of self-love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Another Root & Heart chakra stone, used alongside eudialyte for courage."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "Paired in tradition for forgiveness, with Chrysoprase bringing hope as well."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Both carry the theme of love, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies eudialyte's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Rutile": [
+   {
+    "name": "Clear Quartz",
+    "reason": "Both carry the theme of focus and clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for clarity; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Calcite",
+    "reason": "Works the same Sacral & Crown chakra, adding energy cleansing."
+   },
+   {
+    "name": "Selenite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance rutile's high, spiritual energy."
+   }
+  ],
+  "Stibnite": [
+   {
+    "name": "Tiger's Eye",
+    "reason": "Paired in tradition for focus, with Tiger's Eye bringing confidence as well."
+   },
+   {
+    "name": "Agate",
+    "reason": "Both carry the theme of protection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for focus, with Hematite bringing grounding as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost stibnite's protection."
+   }
+  ],
+  "Cinnabar": [
+   {
+    "name": "Amber",
+    "reason": "Paired in tradition for vitality, with Amber bringing warmth as well."
+   },
+   {
+    "name": "Citrine",
+    "reason": "Both carry the theme of prosperity rituals, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Ruby",
+    "reason": "A natural partner for vitality; Ruby also adds passion."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Works the same Sacral & Root chakra, adding confidence."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies cinnabar's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Benitoite": [
+   {
+    "name": "Labradorite",
+    "reason": "Both carry the theme of intuition, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "A natural partner for intuition; Moonstone also adds new beginnings."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "Paired in tradition for clarity, with Apophyllite bringing meditation as well."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Shares the Throat & Third Eye chakra; adds alignment to benitoite's intuition."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance benitoite's high, spiritual energy."
+   }
+  ],
+  "Covellite": [
+   {
+    "name": "Blue Kyanite",
+    "reason": "Both carry the theme of communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "A natural partner for communication; Amazonite also adds soothing."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for clear communication, with Aquamarine bringing calm as well."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Both carry the theme of communication, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "A grounding root stone to balance covellite's high, spiritual energy."
+   }
+  ],
+  "Beryl": [
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for courage, with Aquamarine bringing calm as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of focus, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Sapphire",
+    "reason": "A natural partner for focus; Sapphire also adds wisdom."
+   },
+   {
+    "name": "Amazonite",
+    "reason": "Works the same Heart & Throat chakra, adding communication."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost beryl's purpose."
+   }
+  ],
+  "Corundum": [
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for focus, with Hematite bringing grounding as well."
+   },
+   {
+    "name": "Tiger's Eye",
+    "reason": "Both carry the theme of focus, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Sapphire",
+    "reason": "A natural partner for focus; Sapphire also adds wisdom."
+   },
+   {
+    "name": "Agate",
+    "reason": "Works the same Root chakra, adding stability."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies corundum's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Gypsum": [
+   {
+    "name": "Lepidolite",
+    "reason": "Both carry the theme of calm, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Howlite",
+    "reason": "A natural partner for calm; Howlite also adds patience."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "Paired in tradition for calm, with Aquamarine bringing courage as well."
+   },
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Both carry the theme of calm speech, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance gypsum's high, spiritual energy."
+   }
+  ],
+  "Barite": [
+   {
+    "name": "Apophyllite",
+    "reason": "Both carry the theme of clarity, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Blue Kyanite",
+    "reason": "Another Throat & Third Eye chakra stone, used alongside barite for alignment."
+   },
+   {
+    "name": "Labradorite",
+    "reason": "Works the same Third Eye & Throat chakra, adding intuition."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Shares the Throat & Third Eye chakra; adds wisdom to barite's dreamwork."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A grounding root stone to balance barite's high, spiritual energy."
+   }
+  ],
+  "Orthoclase": [
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "A natural partner for balance; Snowflake Obsidian also adds purity."
+   },
+   {
+    "name": "Moonstone",
+    "reason": "Paired in tradition for new beginnings, with Moonstone bringing intuition as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Hematite",
+    "reason": "A natural partner for grounding; Hematite also adds focus."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies orthoclase's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Olivine": [
+   {
+    "name": "Peridot",
+    "reason": "A natural partner for renewal; Peridot also adds abundance."
+   },
+   {
+    "name": "Prehnite",
+    "reason": "Paired in tradition for calm, with Prehnite bringing intuition as well."
+   },
+   {
+    "name": "Aventurine",
+    "reason": "Both carry the theme of optimism, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for emotional renewal; Chrysoprase also adds hope."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost olivine's renewal."
+   }
+  ],
+  "Cerussite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Garnet",
+    "reason": "A natural partner for safe travel; Garnet also adds passion."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Paired in tradition for grounding, with Hematite bringing focus as well."
+   },
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies cerussite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Garnierite": [
+   {
+    "name": "Chrysoprase",
+    "reason": "A natural partner for emotional renewal; Chrysoprase also adds hope."
+   },
+   {
+    "name": "Emerald",
+    "reason": "Paired in tradition for renewal, with Emerald bringing love as well."
+   },
+   {
+    "name": "Peridot",
+    "reason": "Both carry the theme of renewal, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Rhodonite",
+    "reason": "A natural partner for compassion; Rhodonite also adds forgiveness."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost garnierite's renewal."
+   }
+  ],
+  "Chrysanthemum Stone": [
+   {
+    "name": "Jade",
+    "reason": "A natural partner for harmony; Jade also adds good luck."
+   },
+   {
+    "name": "Rose Quartz",
+    "reason": "Paired in tradition for harmony at home, with Rose Quartz bringing self-love as well."
+   },
+   {
+    "name": "Unakite",
+    "reason": "Both carry the theme of growth, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "Another Root chakra stone, used alongside chrysanthemum stone for stability."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost chrysanthemum stone's growth."
+   }
+  ],
+  "Meteorite": [
+   {
+    "name": "Petrified Wood",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Apophyllite",
+    "reason": "A natural partner for connection; Apophyllite also adds meditation."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Paired in tradition for grounding, with Black Tourmaline bringing protection as well."
+   },
+   {
+    "name": "Celestite",
+    "reason": "Both carry the theme of spiritual connection, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost meteorite's cosmic connection."
+   }
+  ],
+  "Rhyolite": [
+   {
+    "name": "Moss Agate",
+    "reason": "Paired in tradition for connection to nature, with Moss Agate bringing gardening luck as well."
+   },
+   {
+    "name": "Bloodstone",
+    "reason": "Shares the Root & Heart chakra; adds courage to rhyolite's self-worth."
+   },
+   {
+    "name": "Garnet",
+    "reason": "Another Root & Heart chakra stone, used alongside rhyolite for passion."
+   },
+   {
+    "name": "Petrified Wood",
+    "reason": "Paired in tradition for ancestral connection, with Petrified Wood bringing patience as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies rhyolite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Zebra Jasper": [
+   {
+    "name": "Jasper",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for stamina; Red Jasper also adds motivation."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Paired in tradition for balance, with Snowflake Obsidian bringing purity as well."
+   },
+   {
+    "name": "Black Tourmaline",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies zebra jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Polychrome Jasper": [
+   {
+    "name": "Garnet",
+    "reason": "Paired in tradition for passion, with Garnet bringing commitment as well."
+   },
+   {
+    "name": "Hematite",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Red Jasper",
+    "reason": "A natural partner for grounding; Red Jasper also adds stamina."
+   },
+   {
+    "name": "Snowflake Obsidian",
+    "reason": "Paired in tradition for grounding, with Snowflake Obsidian bringing balance as well."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies polychrome jasper's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ],
+  "Blue Chalcedony": [
+   {
+    "name": "Blue Lace Agate",
+    "reason": "Both carry the theme of calm speech, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Aquamarine",
+    "reason": "A natural partner for calm; Aquamarine also adds courage."
+   },
+   {
+    "name": "Chrysocolla",
+    "reason": "Paired in tradition for calm, with Chrysocolla bringing communication as well."
+   },
+   {
+    "name": "Lapis Lazuli",
+    "reason": "Both carry the theme of self-expression, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Clear quartz is the traditional amplifier, said to boost blue chalcedony's listening."
+   }
+  ],
+  "Black Kyanite": [
+   {
+    "name": "Black Tourmaline",
+    "reason": "A natural partner for protection; Black Tourmaline also adds grounding."
+   },
+   {
+    "name": "Shungite",
+    "reason": "Paired in tradition for protection, with Shungite bringing purification as well."
+   },
+   {
+    "name": "Smoky Quartz",
+    "reason": "Both carry the theme of grounding, so together they're thought to reinforce it."
+   },
+   {
+    "name": "Agate",
+    "reason": "A natural partner for protection; Agate also adds stability."
+   },
+   {
+    "name": "Clear Quartz",
+    "reason": "Lifts and clarifies black kyanite's grounding energy; clear quartz is said to amplify any stone."
+   }
+  ]
+ }
+}

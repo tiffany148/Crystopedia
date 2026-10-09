@@ -24,3 +24,8 @@ npm run serve                # local preview on :8080
 * Density is converted to g/cm³ from its Wikidata unit (kg/m³, g/L…). Values outside 0.5–23 g/cm³ are dropped.
 * A dark or colored streak is dropped when the formula has no chromophore elements (e.g. quartz "black").
 * Unrecognised crystal-system values are dropped. Everything that gets dropped or converted is logged in `data/issues.json`.
+
+## Features added
+* **Stone colors:** `lib/palette.js` picks each page's palette. It uses the curated color map first, then Wikidata colors, color words in the name, the parent stone, chemistry (Cu → green/teal, Fe → rust and so on), and finally a neutral lavender. Hub pages keep the multi-gem gradient.
+* **Crystal Identifier** (`/identify/`): a client-side quiz using `/assets/identify-data.json`. Curated properties for the 185 popular stones live in `lib/identify-curated.js`, and other minerals use their Wikidata properties.
+* **Pairings:** `lib/pairings.js` holds the hand-written pairings for popular stones, generated pairings (shared chakra/intention plus a balancing stone) for the rest, and the intention combos. `/pairings/` has the combo builder. `npm run pairings` exports `data/pairings.json` for review.
