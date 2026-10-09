@@ -6,7 +6,10 @@
 <title>{% if title %}{{ title }} · {% endif %}Crystopedia</title>
 <meta name="description" content="{{ description or 'Crystopedia – an encyclopedia of every known mineral, crystal and gemstone: formulas, crystal systems, hardness, density and more.' }}">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t})()</script>
+<meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/fx.js" defer></script>
 {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}"{% if bodyStyle %} style="{{ bodyStyle }}"{% endif %}>
@@ -17,14 +20,16 @@
     <nav class="nav">
       <a href="/a-z/a/">A–Z</a>
       <a href="/gemstones/">Gemstones</a>
-      <a href="/healing-crystals/">Healing Crystals</a>
+      <a href="/healing-crystals/">Healing</a>
       <a href="/pairings/">Pairings</a>
       <a href="/fossils/">Fossils</a>
       <a href="/geodes/">Geodes</a>
-      <a href="/crystal-systems/">Crystal Systems</a>
+      <a href="/uv-reactive/">UV Glow</a>
+      <a href="/crystal-systems/">Systems</a>
       <a href="/identify/">Identify</a>
       <a href="/search/" class="nav-search">🔍 Search</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="tt-icon">🌙</span></button>
   </div>
 </header>
 <main class="wrap">

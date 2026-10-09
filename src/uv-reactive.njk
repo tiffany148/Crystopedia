@@ -1,0 +1,29 @@
+---
+layout: base.njk
+bodyClass: hub uv-hub
+title: UV Reactive Minerals
+permalink: /uv-reactive/
+description: "Minerals and stones that glow under ultraviolet light: fluorite, calcite, willemite, scheelite, hackmanite, tugtupite, Yooperlite and more, with longwave, midwave and shortwave colours."
+---
+<h1>✺ UV Reactive</h1>
+<p class="lead">Under a black light some minerals glow in neon colours. Trace elements and defects in the crystal absorb invisible ultraviolet light and give it back as visible colour.</p>
+<div class="uv-explain">
+  <div><h3>Fluorescence</h3><p>A glow that lasts only while the UV light is on. Colours often differ between <strong>longwave</strong> (~365 nm, common LED flashlights), <strong>midwave</strong> (~310 nm) and <strong>shortwave</strong> (~254 nm) lamps.</p></div>
+  <div><h3>Phosphorescence</h3><p>An afterglow that continues for a moment, or longer, after the lamp is switched off. Willemite and Franklin calcite are classic examples.</p></div>
+  <div><h3>Tenebrescence</h3><p>A reversible colour change caused by light. Hackmanite and tugtupite deepen in colour after UV exposure and fade again.</p></div>
+  <div><h3>Franklin &amp; Sterling Hill</h3><p>The zinc mines of Franklin and Sterling Hill in New Jersey are known as the "Fluorescent Mineral Capital of the World", famous for red calcite and green willemite. Franklinite, the ore mineral named after the town, does <em>not</em> fluoresce.</p></div>
+</div>
+<p class="uv-safety">⚠️ {{ site.uvSafety }} Reactions vary by locality, and many specimens of a "fluorescent" mineral don't glow at all.</p>
+<input class="filter-input" type="search" placeholder="Filter {{ site.uvStones.length }} UV-reactive stones…" oninput="filterCards(this.value)">
+<div class="grid uv-grid" id="cards">{% for c in site.uvStones %}
+<a class="card uv-card" href="{{ c.url }}" style="--glow:{{ c.uv.glow }}">
+  <div class="card-img">{% if c.uv.uvImg %}<img loading="lazy" src="{{ c.uv.uvImg.src | replace('width=480','width=240') }}" alt="{{ c.title }} under UV">{% elif c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">✺</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong>
+    <span class="uv-waves">{% for w in c.uv.waves %}<i>{{ w }}</i>{% endfor %}</span>
+    <span class="uv-line">{{ c.uv.lw or c.uv.sw or c.uv.mw }}</span>
+  </div>
+</a>{% endfor %}</div>
+<p class="muted small">Search tip: the <a href="/search/">search page</a> has a "UV reaction" filter (longwave, midwave, shortwave, phosphorescent, tenebrescent).</p>
+<script>
+function filterCards(q){q=q.toLowerCase();document.querySelectorAll('#cards .card').forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(q)?'':'none'})}
+</script>

@@ -184,3 +184,187 @@ body.stone-page .pair-card{color:var(--ink)}
 .t7{background:linear-gradient(135deg,#92400e,#a16207)}
 .t8{background:linear-gradient(135deg,#5b21b6,#0e7490)}
 .fossil-section{margin-top:2rem}.fossil-section h2{margin-bottom:.2rem}.jump a{font-weight:600;margin-right:.3rem}
+
+/* =====================================================================
+   v3: multi-stop stone gradients, dark mode, liquid-glass controls, glitter
+   ===================================================================== */
+:root{--panel:rgba(255,255,255,.84);--panel-line:rgba(255,255,255,.7);--glass-ink:#241f4a;color-scheme:light}
+html[data-theme=dark]{--ink:#ece9ff;--muted:#b3aed6;--bg:#0c0a18;--card:#17142b;--line:#2d2852;--violet:#c4b5fd;--violet2:#a78bfa;--teal:#67e8f9;--panel:rgba(18,14,34,.8);--panel-line:rgba(255,255,255,.1);--glass-ink:#f1eeff;--shadow:0 2px 6px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);color-scheme:dark}
+html[data-theme=dark] body{background:#0c0a18;background-image:radial-gradient(circle at 10% -10%,rgba(124,58,237,.35) 0,transparent 40%),radial-gradient(circle at 110% 10%,rgba(14,116,144,.35) 0,transparent 35%)}
+html[data-theme=dark] body.hub{background:#0b0918;background-image:radial-gradient(circle at 0% 0%,rgba(124,58,237,.38) 0,transparent 35%),radial-gradient(circle at 100% 5%,rgba(8,145,178,.32) 0,transparent 35%),radial-gradient(circle at 85% 70%,rgba(219,39,119,.25) 0,transparent 35%),radial-gradient(circle at 10% 80%,rgba(5,150,105,.25) 0,transparent 35%)}
+
+/* --- stone page: rich gradient of the stone's own colours + gemmy radial highlights --- */
+body.stone-page{background:
+  radial-gradient(circle at 12% 8%,rgba(255,255,255,.45) 0,transparent 28%),
+  radial-gradient(circle at 88% 22%,rgba(255,255,255,.28) 0,transparent 22%),
+  radial-gradient(circle at 70% 78%,rgba(255,255,255,.22) 0,transparent 26%),
+  radial-gradient(circle at 25% 60%,rgba(255,255,255,.12) 0,transparent 20%),
+  linear-gradient(160deg,var(--pg));background-attachment:scroll;min-height:100vh}
+html[data-theme=dark] body.stone-page{background:
+  radial-gradient(circle at 12% 8%,rgba(255,255,255,.10) 0,transparent 28%),
+  radial-gradient(circle at 88% 22%,color-mix(in srgb,var(--c2) 30%,transparent) 0,transparent 26%),
+  radial-gradient(circle at 70% 78%,color-mix(in srgb,var(--c3) 22%,transparent) 0,transparent 30%),
+  linear-gradient(160deg,var(--dk))}
+.stone-hero{background:linear-gradient(90deg,var(--hero-scrim,transparent),transparent 75%),radial-gradient(circle at 85% 0%,rgba(255,255,255,.35) 0,transparent 45%),radial-gradient(circle at 20% 100%,rgba(255,255,255,.15) 0,transparent 40%),linear-gradient(120deg,var(--hero))}
+.stone-hero h1{text-shadow:0 1px 12px color-mix(in srgb,var(--hero-ink) 18%,transparent)}
+html[data-theme=dark] .stone-hero{--hero-ink:#fff;--hero-ink-soft:rgba(255,255,255,.88);--hero-chip:rgba(255,255,255,.14);background:linear-gradient(90deg,rgba(0,0,0,.35),transparent 80%),radial-gradient(circle at 85% 0%,rgba(255,255,255,.18) 0,transparent 45%),linear-gradient(120deg,var(--dk))}
+/* content sits on frosted panels so text stays readable over any gradient */
+body.stone-page .mineral > section{background:var(--panel);border:1px solid var(--panel-line);border-radius:18px;padding:6px 22px 16px;margin-top:20px;backdrop-filter:blur(10px) saturate(140%);-webkit-backdrop-filter:blur(10px) saturate(140%);box-shadow:var(--shadow)}
+body.stone-page .mineral > section > h2{margin-top:.7em}
+body.stone-page .mineral > section.meta-section{background:var(--panel)}
+body.stone-page .crumbs{display:inline-block;background:var(--panel);padding:3px 12px;border-radius:999px;opacity:1}
+html[data-theme=dark] body.stone-page a,html[data-theme=dark] body.stone-page h2,html[data-theme=dark] body.stone-page .crumbs{color:var(--stone-accent-dk)}
+html[data-theme=dark] body.stone-page .site-footer a{color:#a5f3fc}
+/* mini gradients on cards */
+.card[style],.heal-card[style]{border-top:0;position:relative}
+.card[style]::before,.heal-card[style]::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--c1,var(--stone)),var(--c2,var(--stone)),var(--c3,var(--stone)));z-index:1}
+.card[style] .card-img,.heal-card[style] .heal-img{background:radial-gradient(circle at 25% 20%,rgba(255,255,255,.55),transparent 40%),linear-gradient(135deg,var(--c3,#eee),var(--c2,var(--stone)),var(--c1,var(--stone)))}
+.card[style] .card-body,.heal-card[style] .heal-body{background:linear-gradient(160deg,color-mix(in srgb,var(--c2,var(--stone)) 20%,#fff),color-mix(in srgb,var(--c3,var(--stone)) 14%,#fff) 70%,#fff)}
+.pair-card{background:linear-gradient(90deg,color-mix(in srgb,var(--c2,var(--stone,#a78bfa)) 24%,#fff),color-mix(in srgb,var(--c3,#fff) 12%,#fff) 90%);border-left-color:var(--c1,var(--stone,#a78bfa))}
+html[data-theme=dark] .card[style] .card-body,html[data-theme=dark] .heal-card[style] .heal-body{background:linear-gradient(160deg,color-mix(in srgb,var(--c1,var(--stone)) 40%,#120f22),color-mix(in srgb,var(--c2,var(--stone)) 18%,#120f22) 75%)}
+html[data-theme=dark] .pair-card{background:linear-gradient(90deg,color-mix(in srgb,var(--c1,var(--stone,#a78bfa)) 45%,#15122a),color-mix(in srgb,var(--c2,#333) 15%,#15122a) 90%);color:var(--ink)}
+html[data-theme=dark] .pair-card small{color:#cfcae8}
+html[data-theme=dark] .pair-card em,html[data-theme=dark] .card .formula{color:var(--stone-accent-dk,#c4b5fd)}
+
+/* --- dark mode for fixed light surfaces --- */
+html[data-theme=dark] .lead{color:#d4d0ee}
+html[data-theme=dark] .formula,html[data-theme=dark] .big-formula{color:#a5b4fc}
+html[data-theme=dark] .stone-hero .big-formula{color:var(--hero-ink)}
+html[data-theme=dark] .card,html[data-theme=dark] .heal-card,html[data-theme=dark] .stats div{background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] .card-img,html[data-theme=dark] .heal-img{background:linear-gradient(135deg,#2a1f55,#0f3d4a)}
+html[data-theme=dark] .mineral-photo,html[data-theme=dark] .stone-hero .mineral-photo{background:rgba(20,16,38,.9);border-color:var(--line)}
+html[data-theme=dark] .mineral-photo img{background:#1c1833}
+html[data-theme=dark] .stone-hero .mineral-photo figcaption,html[data-theme=dark] body.stone-page .stone-hero .mineral-photo figcaption a{color:#cfcae8}
+html[data-theme=dark] .props{background:rgba(22,18,40,.85)}
+html[data-theme=dark] .props th,html[data-theme=dark] body.stone-page .props th{background:rgba(255,255,255,.06);color:#d9d4f5}
+html[data-theme=dark] .props th,html[data-theme=dark] .props td{border-color:var(--line)}
+html[data-theme=dark] .meta-section{background:linear-gradient(135deg,#1d1436,#121a33);border-color:#3b2d66}
+html[data-theme=dark] .meta-card{background:rgba(255,255,255,.05)}
+html[data-theme=dark] .meta-dl dt{color:#d9d4f5}
+html[data-theme=dark] .disclaimer{background:#2b1d0e;color:#fcd9a8;border-left-color:#f59e0b}
+html[data-theme=dark] .badge{background:#2e2260;color:#ddd6fe}
+html[data-theme=dark] .badge.gem{background:#0f3b47;color:#a5f3fc}
+html[data-theme=dark] .badge.heal{background:#4a1530;color:#fbcfe8}
+html[data-theme=dark] .id-form fieldset,html[data-theme=dark] .intent,html[data-theme=dark] .combo-picker,html[data-theme=dark] .formation-grid>div{background:rgba(22,18,40,.82);color:var(--ink)}
+html[data-theme=dark] .id-form legend{color:#ddd6fe}
+html[data-theme=dark] .hero-search input,html[data-theme=dark] .filter-input{background:rgba(22,18,40,.85);color:var(--ink);border-color:var(--line)}
+html[data-theme=dark] body.stone-page .links{background:var(--panel)}
+html[data-theme=dark] .where-found .stone-map{border-color:var(--line);background:#11182a}
+html[data-theme=dark] .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.6)}
+html[data-theme=dark] .leaflet-container{background:#11182a}
+html[data-theme=dark] .leaflet-control-attribution{background:rgba(15,12,30,.8)!important;color:#cfcae8}
+html[data-theme=dark] .leaflet-control-attribution a{color:#a5f3fc!important}
+html[data-theme=dark] .leaflet-popup-content-wrapper,html[data-theme=dark] .leaflet-popup-tip{background:#1b1733;color:var(--ink)}
+html[data-theme=dark] .leaflet-bar a{background:#1b1733;color:#ece9ff;border-color:#2d2852}
+html[data-theme=dark] .mk-o{border-color:#ddd}
+html[data-theme=dark] #search{--pagefind-ui-primary:#c4b5fd;--pagefind-ui-text:#ece9ff;--pagefind-ui-background:#15122a;--pagefind-ui-border:#2d2852;--pagefind-ui-tag:#2a2450}
+html[data-theme=dark] .pagefind-ui__result-excerpt mark{background:#5b21b6;color:#fff}
+html[data-theme=dark] .site-footer{background:#08060f}
+html[data-theme=dark] .gem-ph{color:#c4b5fd}
+
+/* --- Liquid Glass controls --- */
+.nav a,.chip,.chakra-filter button,.btn-ghost,.hero-search button,.letters a,.theme-toggle,.jump a,.pill-list a,
+#search .pagefind-ui__button,#search .pagefind-ui__search-clear,.leaflet-bar a.glassy{
+  --gl-tint:color-mix(in srgb,var(--stone,#8b5cf6) 18%,transparent);
+  position:relative;border-radius:999px;color:var(--glass-ink);
+  border:1px solid transparent;
+  background:
+    radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.75),rgba(255,255,255,0) 55%) padding-box,
+    linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,.14)) padding-box,
+    linear-gradient(var(--gl-tint),var(--gl-tint)) padding-box,
+    linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.15) 38%,rgba(255,255,255,.05) 60%,rgba(255,255,255,.75)) border-box;
+  -webkit-backdrop-filter:blur(14px) saturate(180%);backdrop-filter:blur(14px) saturate(180%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -1px 2px rgba(255,255,255,.3),inset 0 0 14px rgba(255,255,255,.22),0 4px 16px -4px rgba(30,20,80,.22);
+  transition:transform .18s cubic-bezier(.2,.9,.3,1.3),box-shadow .2s,background .2s,filter .2s;text-decoration:none}
+.nav a:hover,.chip:hover,.chakra-filter button:hover,.btn-ghost:hover,.hero-search button:hover,.letters a:hover,.theme-toggle:hover,.jump a:hover,.pill-list a:hover{
+  transform:translateY(-1px);filter:brightness(1.06) saturate(1.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 0 18px rgba(255,255,255,.3),0 8px 22px -6px color-mix(in srgb,var(--stone,#7c3aed) 55%,transparent)}
+.nav a:active,.chip:active,.chakra-filter button:active,.btn-ghost:active,.hero-search button:active,.letters a:active,.theme-toggle:active,.pill-list a:active{transform:scale(.96)}
+.chip.on,.letters a.current,.chakra-filter button.active{--gl-tint:color-mix(in srgb,var(--stone,#7c3aed) 45%,transparent);color:var(--glass-ink);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 0 16px rgba(255,255,255,.35),0 0 0 2px color-mix(in srgb,var(--stone,#7c3aed) 60%,transparent),0 6px 20px -6px var(--stone,#7c3aed);font-weight:700}
+.letters a.current{border-color:transparent}
+/* header sits on a dark gradient: darker glass, light text */
+.site-header .nav a,.site-header .theme-toggle{--glass-ink:#fff;color:#fff;
+  background:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%) padding-box,linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04)) padding-box,linear-gradient(135deg,rgba(255,255,255,.55),rgba(255,255,255,.06) 40%,rgba(255,255,255,.4)) border-box;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 10px -4px rgba(0,0,0,.4)}
+body.stone-page .site-header a{color:#fff}
+/* chakra buttons keep their chakra colour under the glass */
+.chakra-filter button{background-image:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.6),rgba(255,255,255,0) 55%),linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 60%);color:#fff;opacity:.8}
+.chakra-filter button.active{opacity:1;color:#fff}
+.hero-search button{color:#fff;background:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.55),rgba(255,255,255,0) 55%) padding-box,linear-gradient(90deg,color-mix(in srgb,var(--violet) 85%,transparent),color-mix(in srgb,var(--teal) 85%,transparent)) padding-box,linear-gradient(135deg,rgba(255,255,255,.9),rgba(255,255,255,.1) 45%,rgba(255,255,255,.6)) border-box}
+html[data-theme=dark] .hero-search button{background:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%) padding-box,linear-gradient(90deg,#6d28d9cc,#0e7490cc) padding-box,linear-gradient(135deg,rgba(255,255,255,.6),rgba(255,255,255,.05) 45%,rgba(255,255,255,.4)) border-box}
+html[data-theme=dark] :is(.chip,.btn-ghost,.letters a,.jump a,.pill-list a,#search .pagefind-ui__button){
+  background:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.2),rgba(255,255,255,0) 55%) padding-box,linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.03)) padding-box,linear-gradient(var(--gl-tint),var(--gl-tint)) padding-box,linear-gradient(135deg,rgba(255,255,255,.5),rgba(255,255,255,.05) 40%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.35)) border-box;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 0 14px rgba(255,255,255,.06),0 4px 16px -4px rgba(0,0,0,.5)}
+.chip.wide{border-radius:16px}
+.chip i{box-shadow:inset 0 1px 2px rgba(255,255,255,.6)}
+.theme-toggle{border:0;cursor:pointer;font-size:1.05rem;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;margin-left:6px;padding:0}
+#search .pagefind-ui__button{color:var(--glass-ink)!important}
+/* solid fallback where backdrop-filter is unsupported */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .chip,.btn-ghost,.letters a,.jump a,.pill-list a{background:#f4f1ff}
+  html[data-theme=dark] :is(.chip,.btn-ghost,.letters a,.jump a,.pill-list a){background:#231e40}
+  .site-header .nav a{background:rgba(255,255,255,.12)}
+  body.stone-page .mineral > section{background:rgba(255,255,255,.95)}
+  html[data-theme=dark] body.stone-page .mineral > section{background:#15122a}
+}
+
+/* --- glitter: canvas particles (fx.js) + shimmer sweeps --- */
+#glitter{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+main.wrap,.site-footer{position:relative;z-index:1}
+.card,.tile,.heal-card{position:relative;overflow:hidden}
+.card::after,.tile::after,.heal-card::after,.hero-search button::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);z-index:2}
+.card:hover::after,.heal-card:hover::after,.tile:hover::after{animation:sweep .9s ease-out}
+.tile::after{animation:sweep 1.4s ease-out 1.2s,sweep-idle 9s ease-in-out 3s infinite}
+.hero-search button::after{border-radius:inherit;animation:sweep-idle 7s ease-in-out 2s infinite}
+.stone-hero::after{animation:hero-glint 9s ease-in-out infinite}
+@keyframes sweep{from{transform:translateX(-120%)}to{transform:translateX(120%)}}
+@keyframes sweep-idle{0%,80%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes hero-glint{0%,100%{opacity:.5;transform:translateX(-8%)}50%{opacity:1;transform:translateX(8%)}}
+h1{position:relative}
+main h1::after{content:"✦";position:absolute;font-size:.38em;margin-left:.35em;top:.15em;color:var(--stone,#a78bfa);text-shadow:0 0 8px currentColor;animation:twinkle 3.2s ease-in-out infinite}
+.stone-hero h1::after{color:var(--hero-ink)}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7) rotate(0)}50%{opacity:1;transform:scale(1.1) rotate(20deg)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  #glitter{display:none}
+}
+/* ---------- UV reactive ---------- */
+.t9{background:radial-gradient(circle at 80% 20%,rgba(57,255,110,.55),transparent 45%),radial-gradient(circle at 20% 80%,rgba(255,74,42,.55),transparent 45%),linear-gradient(135deg,#140b2e,#2a0e4a)}
+.badge.uv{background:#120a26;color:#fff;text-decoration:none;box-shadow:0 0 0 1px var(--glow),0 0 10px var(--glow);text-shadow:0 0 6px var(--glow)}
+body.stone-page .stone-hero a.badge.uv{color:#fff}
+body.uv-hub,html[data-theme=dark] body.uv-hub{background:#07040f;background-image:radial-gradient(circle at 10% 0%,rgba(124,58,237,.35),transparent 40%),radial-gradient(circle at 90% 10%,rgba(57,255,110,.12),transparent 35%),radial-gradient(circle at 70% 90%,rgba(255,74,42,.14),transparent 40%);color:#ece9ff;
+  --ink:#ece9ff;--muted:#b3aed6;--card:#110b22;--line:#2d2852;--glass-ink:#f1eeff}
+body.uv-hub h1{color:#fff;text-shadow:0 0 18px #a855f7,0 0 4px #fff}
+body.uv-hub .lead{color:#d9d4f5}
+body.uv-hub a{color:#c4b5fd}
+.uv-explain{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:18px 0}
+.uv-explain>div{background:rgba(255,255,255,.05);border:1px solid rgba(168,85,247,.35);border-radius:14px;padding:12px 16px;box-shadow:inset 0 0 20px rgba(168,85,247,.12)}
+.uv-explain h3{margin:.2em 0 .3em;color:#e9d5ff}
+.uv-safety{background:rgba(250,204,21,.1);border-left:4px solid #facc15;padding:8px 14px;border-radius:8px;color:#fde68a}
+body.uv-hub .filter-input{background:rgba(255,255,255,.06);color:#fff;border-color:#3b2d66}
+.uv-card{background:#0d0819;border:1px solid color-mix(in srgb,var(--glow) 60%,transparent);box-shadow:0 0 0 1px rgba(0,0,0,.4),0 0 18px -4px var(--glow),inset 0 0 22px -10px var(--glow);color:#ece9ff}
+.uv-card:hover{box-shadow:0 0 28px -2px var(--glow),inset 0 0 26px -8px var(--glow);color:#fff}
+.uv-card .card-img{background:radial-gradient(circle,color-mix(in srgb,var(--glow) 35%,#000),#05030a 70%)}
+.uv-card .card-img img{filter:saturate(1.15)}
+.uv-card .gem-ph{color:var(--glow);text-shadow:0 0 12px var(--glow)}
+.uv-card .card-body{background:linear-gradient(180deg,color-mix(in srgb,var(--glow) 12%,#0d0819),#0d0819)}
+.uv-card strong{color:var(--glow);text-shadow:0 0 8px color-mix(in srgb,var(--glow) 70%,transparent);font-size:1.05rem}
+.uv-waves{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
+.uv-waves i{font-style:normal;font-size:.7rem;padding:1px 7px;border-radius:999px;border:1px solid color-mix(in srgb,var(--glow) 55%,transparent);color:#e9e6ff}
+.uv-line{font-size:.84rem;color:#cfcae8}
+.uv-section{--panel:rgba(10,6,22,.9)!important;color:#ece9ff;border-color:color-mix(in srgb,var(--glow) 55%,transparent)!important;box-shadow:0 0 24px -8px var(--glow)!important}
+body.stone-page .mineral>section.uv-section{background:linear-gradient(160deg,#0d0819,#140c2a)}
+body.stone-page .uv-section h2,html[data-theme=dark] body.stone-page .uv-section h2{color:var(--glow);text-shadow:0 0 10px var(--glow)}
+body.stone-page .uv-section a{color:#c4b5fd}
+.uv-section .props{background:rgba(255,255,255,.04);box-shadow:none}
+.uv-section .props th{background:rgba(255,255,255,.06)!important;color:#e9e6ff}
+.uv-section .props td{color:#f5f3ff}
+.uv-section .props th,.uv-section .props td{border-color:rgba(255,255,255,.1)}
+.uv-section .props small{color:#a9a4cf;font-weight:400}
+.uv-section .muted{color:#b3aed6}
+.uv-body{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;align-items:start}
+@media (max-width:760px){.uv-body{grid-template-columns:1fr}}
+.uv-photo{margin:0}.uv-photo img{width:100%;border-radius:12px;box-shadow:0 0 22px -6px var(--glow)}
+.uv-photo figcaption{font-size:.75rem;color:#a9a4cf;word-break:break-word}
+@media (min-width:761px){.nav{flex-wrap:nowrap;gap:3px}.nav a{padding:6px 10px;font-size:.88rem;white-space:nowrap}.header-inner{gap:14px}}
+@media (min-width:761px) and (max-width:1080px){.brand span{display:none}.nav a{padding:5px 8px;font-size:.82rem}}

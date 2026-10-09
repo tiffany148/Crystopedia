@@ -1,9 +1,11 @@
 // Builds every collection the templates need from data/minerals.json + data/metaphysical.json
 import fs from "node:fs";
 import path from "node:path";
-import { pickColor, paletteFor, CURATED } from "../../lib/palette.js";
+import { pickColor, paletteFor, CURATED, MULTI } from "../../lib/palette.js";
+const MULTI_HAS = (p) => !!MULTI[(p.metaphysical[0]?.name || p.name).toLowerCase()];
 import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
+import { UV, UV_SAFETY } from "../../lib/uv.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 
@@ -92,6 +94,34 @@ for (const e of meta) {
   healing.push({ ...e, page, url: page.url, thumb: page.thumb || (page.parentIds[0] && byId.get(page.parentIds[0])?.thumb) || null });
 }
 
+// --- UV-reactive stones: attach data, create hand-made pages where needed -----------
+{
+  const byName = new Map(pages.map((p) => [p.name.toLowerCase(), p]));
+  for (const u of UV) {
+    let page = byName.get(u.name.toLowerCase());
+    if (!page && u.handmade) {
+      let slug = slugify(u.name);
+      if (usedSlugs.has(slug)) slug += "-stone";
+      usedSlugs.add(slug);
+      const h = u.handmade;
+      page = {
+        id: null, name: u.name, title: u.name, slug, url: `/minerals/${slug}/`, type: "handmade", handmade: true, kindLabel: h.kind,
+        description: null, formula: null, elements: [], crystalSystems: [], streak: [], colors: [], cleavage: [], fracture: [], luster: [],
+        parentIds: h.parent ? [h.parent] : [], metaphysical: [], img: commons(h.img), thumb: commons(h.img, 240),
+        mindatUrl: `https://www.mindat.org/search.php?search=${encodeURIComponent(u.name)}`,
+      };
+      pages.push(page); byId.set(`hand:${slug}`, page); byName.set(u.name.toLowerCase(), page);
+      if (h.parent && byId.get(h.parent)) (byId.get(h.parent).childIds ||= []).push(`hand:${slug}`);
+    }
+    if (!page) { console.warn("UV: no page for", u.name); continue; }
+    if (u.handmade?.facts) page.facts ||= { name: u.name, ...u.handmade.facts };
+    if (u.localities) (page.notable ||= []).push(...u.localities);
+    const waves = [u.lw && "Longwave", u.mw && "Midwave", u.sw && "Shortwave", u.ph && !/^none/i.test(u.ph) && "Phosphorescent", u.tb && "Tenebrescent"].filter(Boolean);
+    page.uv = { glow: u.glow, lw: u.lw, mw: u.mw, sw: u.sw, ph: u.ph, tb: u.tb, note: u.note, waves, uvImg: commons(u.uvImg, 480),
+      sources: u.src.map(([t, url]) => ({ t, url })) };
+  }
+}
+
 // resolve relations to {title,url}
 for (const p of pages) {
   p.parents = (p.parentIds || []).map((id) => byId.get(id)).filter(Boolean).map((x) => ({ title: x.title, url: x.url }));
@@ -136,7 +166,7 @@ const paint = (p) => {
   const c = pickColor({ name: p.name, colors: p.colors, elements: p.elements, parentBase: parentBase && parentBase !== "#b9b4e6" ? parentBase : null });
   colorOf.set(p, c); return c;
 };
-for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src); }
+for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
 // --- collections ---------------------------------------------------------------
@@ -162,13 +192,15 @@ const gems = pages.filter((p) => p.isGem || p.type === "gem" || p.type === "vari
 const collection = (k) => pages.filter((p) => p.collection === k).map((p) => ({ ...card(p), facts: p.facts, group: p.fossilGroup || "other" }))
   .sort((a, b) => a.title.localeCompare(b.title));
 const fossils = collection("fossil");
+const uvStones = pages.filter((p) => p.uv).map((p) => ({ ...card(p), uv: p.uv })).sort((a, b) => a.title.localeCompare(b.title));
+const uvSafety = UV_SAFETY;
 const geodes = collection("geode");
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
 
 healing.sort((a, b) => a.name.localeCompare(b.name));
-for (const e of healing) { const own = pickColor({ name: e.name, colors: [], elements: [] }); e.style = (own[1] === "neutral" ? e.page.palette : paletteFor(own[0], own[1])).cardStyle; delete e.page; }
+for (const e of healing) { const own = pickColor({ name: e.name, colors: [], elements: [] }); e.style = (own[1] === "neutral" ? e.page.palette : paletteFor(own[0], own[1], { name: e.name })).cardStyle; delete e.page; }
 // --- pairings ----------------------------------------------------------------------
 const PAIRS = buildPairings(meta);
 const healByName = new Map(healing.map((e) => [e.name, e]));
@@ -218,4 +250,4 @@ const stats = {
   built: new Date().toLocaleDateString("en-CA"),
 };
 
-export default { fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

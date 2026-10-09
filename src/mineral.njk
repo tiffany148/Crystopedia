@@ -15,7 +15,7 @@ eleventyComputed:
   <nav class="crumbs" data-pagefind-ignore><a href="/">Home</a> › <a href="/a-z/{{ m.azSlug }}/">A–Z</a> › {{ m.title }}</nav>
   <div class="mineral-head stone-hero">
     <div class="mineral-intro">
-      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}</span>
+      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>
       {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
@@ -64,6 +64,24 @@ eleventyComputed:
     </table>
     {% if m.facts.formation %}<h3>How it forms</h3><p>{{ m.facts.formation }}</p>{% endif %}
     {% if m.parents.length %}<p class="muted small">Mineral data: see <a href="{{ m.parents[0].url }}">{{ m.parents[0].title }}</a>.</p>{% endif %}
+  </section>
+  {% endif %}
+
+  {% if m.uv %}
+  <section class="uv-section" style="--glow:{{ m.uv.glow }}">
+    <h2>✺ Glows under UV</h2>
+    <div class="uv-body">
+      <table class="props uv-table">
+        {% if m.uv.lw %}<tr><th>Longwave UV <small>(~365 nm)</small></th><td>{{ m.uv.lw }}</td></tr>{% endif %}
+        {% if m.uv.mw %}<tr><th>Midwave UV <small>(~310 nm)</small></th><td>{{ m.uv.mw }}</td></tr>{% endif %}
+        {% if m.uv.sw %}<tr><th>Shortwave UV <small>(~254 nm)</small></th><td>{{ m.uv.sw }}</td></tr>{% endif %}
+        {% if m.uv.ph %}<tr><th>Phosphorescence <small>(afterglow)</small></th><td>{{ m.uv.ph }}</td></tr>{% endif %}
+        {% if m.uv.tb %}<tr><th>Tenebrescence <small>(colour change)</small></th><td>{{ m.uv.tb }}</td></tr>{% endif %}
+      </table>
+      {% if m.uv.uvImg %}<figure class="uv-photo"><img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light"><figcaption><a href="{{ m.uv.uvImg.credit }}">{{ m.uv.uvImg.file }}</a> · Wikimedia Commons</figcaption></figure>{% endif %}
+    </div>
+    <p>{{ m.uv.note }}</p>
+    <p class="muted small">Reactions vary by locality and specimen; many specimens of a fluorescent species do not glow. {{ site.uvSafety }} Sources: {% for s in m.uv.sources %}<a href="{{ s.url }}" rel="noopener">{{ s.t }}</a>{% if not loop.last %} · {% endif %}{% endfor %}. <a href="/uv-reactive/">More UV-reactive stones →</a></p>
   </section>
   {% endif %}
 
@@ -137,6 +155,7 @@ eleventyComputed:
     {% if m.hardnessBucket %}<span data-pagefind-filter="hardness">{{ m.hardnessBucket }}</span>{% endif %}
     {% for s in m.crystalSystems %}<span data-pagefind-filter="crystal system">{{ s | cap }}</span>{% endfor %}
     {% for c in m.chakras %}<span data-pagefind-filter="chakra">{{ c }}</span>{% endfor %}
+    {% if m.uv %}{% for w in m.uv.waves %}<span data-pagefind-filter="UV reaction">{{ w }}</span>{% endfor %}<span data-pagefind-filter="collection">UV reactive</span>{% endif %}
     {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}
   </div>
 </article>
