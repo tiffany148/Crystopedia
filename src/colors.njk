@@ -1,0 +1,24 @@
+---
+layout: base.njk
+bodyClass: hub colors-hub
+title: Stones by Color
+permalink: /colors/
+description: "Browse minerals, crystals and gemstones by color: red, orange, yellow, gold, green, teal, blue, purple, pink, brown, black, gray, white & clear, and multicolor."
+---
+<h1>🎨 Stones by Color</h1>
+<p class="lead">Pick a color to see every stone that comes in it. Popular gems and healing crystals are listed first. Many minerals come in several colors, so they appear on more than one page.</p>
+<div class="swatch-grid">
+{% for c in site.colorPages %}
+  <a class="swatch-btn" href="{{ c.url }}" style="--stone:{{ c.hex }};--sw:{{ c.grad }}">
+    <span class="swatch" aria-hidden="true"></span>
+    <span class="sw-label"><strong>{{ c.label }}</strong><small>{{ c.count }} stones</small></span>
+  </a>
+{% endfor %}
+</div>
+{% for c in site.colorPages %}{% if c.top.length %}
+<section class="color-row">
+  <h2><a href="{{ c.url }}"><span class="dot" style="--sw:{{ c.grad }}"></span>{{ c.label }}</a> <small class="muted">{{ c.count }}</small></h2>
+  <div class="grid">{% for c2 in c.top %}{% set c = c2 %}{% include "card.njk" %}{% endfor %}</div>
+</section>
+{% endif %}{% endfor %}
+<p class="muted small">Colors come from Wikidata, the color line of Wikipedia mineral infoboxes, and Crystopedia's own palettes. About {{ site.stats.total - site.stats.colored }} rare minerals have no published color in those sources yet, so they aren't listed here.</p>

@@ -19,6 +19,7 @@ eleventyComputed:
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>
       {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
+      {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.parents.length %}<p>Variety of {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
     </div>
     {% set im = m.img or m.parentImg %}
@@ -154,6 +155,7 @@ eleventyComputed:
     <span data-pagefind-filter="type">{{ m.typeLabel }}</span>
     {% if m.hardnessBucket %}<span data-pagefind-filter="hardness">{{ m.hardnessBucket }}</span>{% endif %}
     {% for s in m.crystalSystems %}<span data-pagefind-filter="crystal system">{{ s | cap }}</span>{% endfor %}
+    {% for c in m.colorFamilies %}<span data-pagefind-filter="color">{{ c.label }}</span>{% endfor %}
     {% for c in m.chakras %}<span data-pagefind-filter="chakra">{{ c }}</span>{% endfor %}
     {% if m.uv %}{% for w in m.uv.waves %}<span data-pagefind-filter="UV reaction">{{ w }}</span>{% endfor %}<span data-pagefind-filter="collection">UV reactive</span>{% endif %}
     {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}

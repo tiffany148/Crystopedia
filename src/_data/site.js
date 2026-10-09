@@ -6,12 +6,15 @@ const MULTI_HAS = (p) => !!MULTI[(p.metaphysical[0]?.name || p.name).toLowerCase
 import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
 import { UV, UV_SAFETY } from "../../lib/uv.js";
+import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, "data/metaphysical.json"), "utf8"));
+const wcPath = path.join(ROOT, "data/wiki_colors.json");
+const WIKI_COLORS = fs.existsSync(wcPath) ? JSON.parse(fs.readFileSync(wcPath, "utf8")) : {};
 const imgPath = path.join(ROOT, "data/commons_images.json");
 const HAND_IMAGES = fs.existsSync(imgPath) ? JSON.parse(fs.readFileSync(imgPath, "utf8")) : {};
 for (const [k, v] of Object.entries(EXTRA_COLORS)) CURATED[k.trim()] ||= v;
@@ -169,6 +172,27 @@ const paint = (p) => {
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
+// --- colour families (Wikidata colour words + curated palettes + gradient stops) ------------
+const NAME_COLOR_WORDS = new Set(["red", "pink", "rose", "blue", "green", "yellow", "golden", "gold", "black", "white", "purple", "orange", "smoky", "clear", "rainbow", "honey", "lavender", "violet", "snow", "lemon", "grey", "gray", "silver", "brown"]);
+const MULTI_NAME = /\b(opal|rainbow|iridescent|labradorite|spectrolite|bismuth|ammolite|abalone|bornite|aura|mystic|peacock|fire agate|ocean jasper|unakite)\b/i;
+for (const p of pages) {
+  // varieties/trade stones with a curated colour are defined by that colour: don't inherit broad species colour lists
+  const definedByColor = (p.type === "variety" || p.handmade) && p.palette.source === "curated";
+  const fams = definedByColor ? new Set() : familiesFromWords([...(p.colors || []), p.id && WIKI_COLORS[p.id]].filter(Boolean));
+  const words = [p.name, ...p.metaphysical.map((e) => e.name)].join(" ").toLowerCase().split(/[^a-z]+/).filter((w) => NAME_COLOR_WORDS.has(w));
+  familiesFromWords(words).forEach((f) => fams.add(f));
+  const pal = p.palette;
+  const trusted = ["curated", "wikidata colour", "name", "parent"].includes(pal.source);
+  if (trusted) { const f = familyOfHex(pal.base); if (f) fams.add(f); }
+  if (pal.how === "curated multi-colour") {
+    const sf = new Set(pal.stops.map((h) => familyOfHex(h, { allowExtremes: false })).filter(Boolean));
+    sf.forEach((f) => fams.add(f));
+    if (new Set([...sf].map((f) => GROUP[f]).filter(Boolean)).size >= 3) fams.add("multicolor");
+  }
+  if (MULTI_NAME.test([p.name, ...p.metaphysical.map((e) => e.name)].join(" "))) fams.add("multicolor");
+  p.colorFamilies = FAMILIES.filter((f) => fams.has(f.slug)).map((f) => ({ slug: f.slug, label: f.label, hex: f.hex }));
+}
+
 // --- collections ---------------------------------------------------------------
 const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
@@ -194,6 +218,12 @@ const collection = (k) => pages.filter((p) => p.collection === k).map((p) => ({ 
 const fossils = collection("fossil");
 const uvStones = pages.filter((p) => p.uv).map((p) => ({ ...card(p), uv: p.uv })).sort((a, b) => a.title.localeCompare(b.title));
 const uvSafety = UV_SAFETY;
+const rank = (p) => (p.metaphysical.length ? 4 : 0) + (p.isGem || p.type === "gem" ? 3 : 0) + (p.uv || p.facts ? 1 : 0) + (p.img ? 1 : 0) + (p.type === "variety" ? 1 : 0);
+const colorPages = FAMILIES.map((f) => {
+  const items = pages.filter((p) => p.colorFamilies.some((c) => c.slug === f.slug)).sort((a, b) => rank(b) - rank(a) || a.title.localeCompare(b.title));
+  return { ...f, url: `/colors/${f.slug}/`, count: items.length, featured: items.filter((p) => rank(p) >= 4).length,
+    cards: items.map((p) => ({ ...card(p), heal: p.metaphysical.length > 0 })), top: items.slice(0, 4).map((p) => card(p)) };
+});
 const geodes = collection("geode");
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
@@ -247,7 +277,8 @@ const stats = {
   withImage: pages.filter((p) => p.img).length,
   healing: healing.length,
   identify: identify.length,
+  colored: pages.filter((p) => p.colorFamilies.length).length,
   built: new Date().toLocaleDateString("en-CA"),
 };
 
-export default { uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

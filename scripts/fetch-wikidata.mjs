@@ -8,7 +8,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..")
 const RAW = path.join(ROOT, "data", "raw");
 const OUT = path.join(ROOT, "data", "minerals.json");
 const ENDPOINT = "https://query.wikidata.org/sparql";
-const UA = "CrystopediaBuild/1.0 (https://tiffany148.github.io/; static site generator)";
+const UA = "CrystopediaBuild/1.0 (https://crystopedia.com/; static site generator)";
 const USE_CACHE = !process.argv.includes("--refresh");
 
 const SPECIES = "wd:Q12089225";   // mineral species

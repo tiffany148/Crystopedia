@@ -1,0 +1,24 @@
+---
+pagination:
+  data: site.colorPages
+  size: 1
+  alias: col
+permalink: "{{ col.url }}"
+layout: base.njk
+eleventyComputed:
+  title: "{{ col.label }} stones"
+  bodyStyle: "--stone:{{ col.hex }};--sw:{{ col.grad }}"
+  description: "{{ col.count }} {{ col.label | lower }} minerals, crystals and gemstones on Crystopedia, with popular gems and healing crystals first."
+bodyClass: hub color-page
+---
+<nav class="crumbs"><a href="/">Home</a> › <a href="/colors/">Colors</a> › {{ col.label }}</nav>
+<div class="color-hero">
+  <h1>{{ col.label }} stones</h1>
+  <p>{{ col.count }} stones · {{ col.featured }} popular gems &amp; healing crystals first</p>
+</div>
+<div class="swatch-strip">{% for c in site.colorPages %}<a class="swatch-btn mini{% if c.slug == col.slug %} current{% endif %}" href="{{ c.url }}" style="--stone:{{ c.hex }};--sw:{{ c.grad }}" title="{{ c.label }}"><span class="swatch"></span><span class="sw-label">{{ c.label }}</span></a>{% endfor %}</div>
+<input class="filter-input" type="search" placeholder="Filter {{ col.count }} {{ col.label | lower }} stones…" oninput="filterCards(this.value)">
+<div class="grid" id="cards">{% for c in col.cards %}{% include "card.njk" %}{% endfor %}</div>
+<script>
+function filterCards(q){q=q.toLowerCase();document.querySelectorAll('#cards .card').forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(q)?'':'none'})}
+</script>
