@@ -172,6 +172,29 @@ const paint = (p) => {
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
+// --- cross-links ("see also") -----------------------------------------------------------------
+const SEE_ALSO = {
+  "Iris Agate": [["Iris quartz", "a different rainbow stone: its colours come from fine fractures in quartz crystals, not from banding"], ["Fire Agate", "agate with iridescence from thin iron-oxide layers"]],
+  "Iris quartz": [["Iris Agate", "agate whose ultra-fine banding diffracts light into a rainbow when thin-sliced and backlit"]],
+  "Crazy Lace Agate": [["Laguna Agate", "another vividly banded Chihuahua agate"]],
+  "Adularia": [["White Moonstone", "the classic moonstone: gem-quality adularia with a blue-white glow"]],
+  "White Moonstone": [["Adularia", "the mineral variety behind classic moonstone"], ["Rainbow Moonstone", "looks similar but is actually white labradorite"]],
+  "Rainbow Moonstone": [["Labradorite", "rainbow moonstone is gemmologically a colourless labradorite"], ["White Moonstone", "true (orthoclase/adularia) moonstone"]],
+  "Labradorite": [["Rainbow Moonstone", "the trade name for white labradorite with rainbow flashes"]],
+  "Star Moonstone": [["Cat's-Eye Moonstone", "the single-ray (chatoyant) version"]],
+  "Cat's-Eye Moonstone": [["Star Moonstone", "the multi-ray (asterism) version"], ["Cat's eye", "the classic chrysoberyl cat's-eye"]],
+  "Velvet Obsidian": [["Rainbow Obsidian", "the same Mexican obsidian, known for banded rainbow sheen"]],
+  "Rainbow Obsidian": [["Velvet Obsidian", "rainbow obsidian with a soft, velvety finish"]],
+  "Star Garnet": [["Star Diopside", "another stone that often shows a 4-rayed star"]],
+  "Moss Agate": [["Tree Agate", "white agate with green, tree-like inclusions"], ["Dendritic Agate", "agate with black, fern-like manganese dendrites"]],
+};
+{
+  const byT = new Map(pages.map((p) => [p.title.toLowerCase(), p]));
+  for (const [from, list] of Object.entries(SEE_ALSO)) {
+    const p = byT.get(from.toLowerCase()); if (!p) { console.warn("SEE_ALSO: missing", from); continue; }
+    p.seeAlso = list.map(([t, why]) => { const q = byT.get(t.toLowerCase()); return q && { title: q.title, url: q.url, why }; }).filter(Boolean);
+  }
+}
 // --- colour families (Wikidata colour words + curated palettes + gradient stops) ------------
 const NAME_COLOR_WORDS = new Set(["red", "pink", "rose", "blue", "green", "yellow", "golden", "gold", "black", "white", "purple", "orange", "smoky", "clear", "rainbow", "honey", "lavender", "violet", "snow", "lemon", "grey", "gray", "silver", "brown"]);
 const MULTI_NAME = /\b(opal|rainbow|iridescent|labradorite|spectrolite|bismuth|ammolite|abalone|bornite|aura|mystic|peacock|fire agate|ocean jasper|unakite)\b/i;
@@ -194,6 +217,16 @@ for (const p of pages) {
 }
 
 // --- collections ---------------------------------------------------------------
+// --- Tiffany's own photos (data/own_photos.json): a non-empty src replaces the Commons photo ---
+{
+  const op = path.join(ROOT, "data/own_photos.json");
+  const OWN = fs.existsSync(op) ? JSON.parse(fs.readFileSync(op, "utf8")) : {};
+  for (const [n, o] of Object.entries(OWN)) {
+    if (n.startsWith("_") || !o?.src) continue;
+    const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase()); if (!p) { console.warn("own_photos: missing", n); continue; }
+    p.img = p.thumb = { src: o.src, own: true, credit: o.credit || "Photo © Tiffany Stark", file: o.credit || "Own photo" };
+  }
+}
 const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
@@ -225,6 +258,14 @@ const colorPages = FAMILIES.map((f) => {
     cards: items.map((p) => ({ ...card(p), heal: p.metaphysical.length > 0 })), top: items.slice(0, 4).map((p) => card(p)) };
 });
 const geodes = collection("geode");
+const grp = (g, extra = []) => [...pages.filter((p) => p.facts?.group === g), ...extra.map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean)]
+  .filter((p, i, a) => a.indexOf(p) === i).map((p) => ({ ...card(p), facts: p.facts })).sort((a, b) => a.title.localeCompare(b.title));
+const starStones = grp("star", ["Star quartz"]);
+const catsEyes = grp("cats-eye", ["Cat's eye", "Cat's-Eye Moonstone", "Tiger's Eye", "Hawk's Eye", "Albite cat’s-eye"]);
+const obsidians = grp("obsidian", ["Obsidian", "Snowflake Obsidian", "Apache tears", "Mahogany Obsidian", "Rainbow Obsidian"]);
+const moonstones = grp("moonstone", ["Moonstone", "Adularia", "Albite Moonstone", "Star Moonstone"]);
+for (const [fam, label, list] of [["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
+  for (const c of list) { const p = pages.find((x) => x.url === c.url); if (p) p.family = { label, cards: list.filter((x) => x.url !== c.url) }; }
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
@@ -281,4 +322,4 @@ const stats = {
   built: new Date().toLocaleDateString("en-CA"),
 };
 
-export default { colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

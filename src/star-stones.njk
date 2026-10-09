@@ -1,0 +1,28 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Star Stones & Cat's-Eyes
+permalink: /star-stones/
+description: "Asterism explained: how rutile and other needle inclusions make 4-, 6- and 12-rayed stars in sapphire, ruby, garnet, rose quartz, diopside and more, plus cat's-eye stones."
+---
+<h1>⭐ Star Stones</h1>
+<div class="collection-intro">
+<p class="lead"><strong>Asterism</strong> is a star of light that seems to float on the surface of a domed (cabochon) gem. It moves as you tilt the stone or move the light.</p>
+</div>
+<div class="formation-grid">
+  <div><h3>Needle inclusions</h3><p>Microscopic needles, usually <strong>rutile</strong> (titanium oxide), grow in the crystal in neat, parallel sets. In some stones the needles are hematite, ilmenite or magnetite. Each set reflects light as a bright line at right angles to the needles.</p></div>
+  <div><h3>Crossing rays</h3><p>Sets of needles in different directions make the lines cross. In hexagonal crystals like corundum and quartz, three sets give a <strong>6-rayed</strong> star. Two sets give a <strong>4-rayed</strong> star, as in diopside, most Idaho garnet and moonstone.</p></div>
+  <div><h3>12-ray stars</h3><p>When two different kinds of inclusions overlap, a stone can show <strong>12 rays</strong>. This happens, for example, in some Thai black star sapphires, where rutile and hematite needles sit at offset angles.</p></div>
+  <div><h3>Cut matters</h3><p>The star appears only when the stone is cut as a smooth dome with its base parallel to the needles. Strong single light (sunlight or a penlight) shows it best. Synthetic and diffusion-treated star stones exist, and their stars often look unnaturally sharp and perfect.</p></div>
+</div>
+<div class="grid" id="cards">{% for c in site.starStones %}
+<a class="card" href="{{ c.url }}" style="{{ c.style }}">
+  <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">✦</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span></div>
+</a>{% endfor %}</div>
+<section class="chatoyancy-box">
+  <h2>🐈 Cat's-eye stones (chatoyancy)</h2>
+  <p>Asterism has a single-ray relative. When a stone has only <strong>one</strong> set of parallel needles or fibres, a cabochon shows a single bright band that slides across the dome like light in a cat's eye. The most prized example is chrysoberyl cat's-eye ("cymophane"). Tiger's eye gets its shimmer from fibres replaced by quartz.</p>
+  <div class="grid">{% for c in site.catsEyes %}
+  <a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span></div></a>{% endfor %}</div>
+</section>

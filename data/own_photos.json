@@ -1,0 +1,11 @@
+{
+ "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo.",
+ "Iris Agate": {
+  "src": "",
+  "credit": "Photo \u00a9 Tiffany Stark"
+ },
+ "Sea Biscuit": {
+  "src": "",
+  "credit": "Photo \u00a9 Tiffany Stark"
+ }
+}

@@ -5073,5 +5073,723 @@
   ],
   "wikidata": null,
   "slug": "fossil-shell"
+ },
+ {
+  "name": "Iris Agate",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "Its rainbow is hidden until light shines through a thin slice, so crystal lore links iris agate to revealing hidden beauty, joy and insight.",
+  "uses": [
+   "revealing hidden gifts",
+   "joy",
+   "insight"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "iris-agate"
+ },
+ {
+  "name": "Lake Superior Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Minnesota's state gemstone, carried south by glaciers. It is tied in lore to grounding, endurance and a deep sense of home and place.",
+  "uses": [
+   "grounding",
+   "endurance",
+   "connection to home"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "lake-superior-agate"
+ },
+ {
+  "name": "Laguna Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral",
+   "Heart"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Famous for vivid, tightly packed bands, Laguna agate is linked in lore to passion, vitality and inner strength.",
+  "uses": [
+   "vitality",
+   "passion",
+   "inner strength"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "laguna-agate"
+ },
+ {
+  "name": "Condor Agate",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Bright orange and red Condor agate is associated in crystal lore with creativity, courage and fresh perspective.",
+  "uses": [
+   "creativity",
+   "courage",
+   "new perspectives"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "condor-agate"
+ },
+ {
+  "name": "Plume Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Throat"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Air",
+   "Earth"
+  ],
+  "meaning": "Its feathery plumes are read in lore as a sign of growth, inspiration and rising above limits.",
+  "uses": [
+   "inspiration",
+   "personal growth",
+   "optimism"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "plume-agate"
+ },
+ {
+  "name": "Tree Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "White agate laced with green, branch-like patterns, tied in lore to peaceful growth, patience and a connection to nature.",
+  "uses": [
+   "patience",
+   "peaceful growth",
+   "connection to nature"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "tree-agate"
+ },
+ {
+  "name": "Fortification Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Named for bands that look like a castle's walls, fortification agate is a traditional stone of protection, stability and strong boundaries.",
+  "uses": [
+   "protection",
+   "stability",
+   "healthy boundaries"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "fortification-agate"
+ },
+ {
+  "name": "Dryhead Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Prized orange-red nodules from Montana are linked in lore to warmth, motivation and steady, grounded energy.",
+  "uses": [
+   "motivation",
+   "grounding",
+   "warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "dryhead-agate"
+ },
+ {
+  "name": "Fairburn Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "South Dakota's state gemstone. Its bold, colourful bands are associated in lore with courage, vitality and personal strength.",
+  "uses": [
+   "courage",
+   "vitality",
+   "strength"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "fairburn-agate"
+ },
+ {
+  "name": "Eye Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Agates with ring-shaped 'eyes' have been worn as amulets against the evil eye since ancient Mesopotamia. They are a traditional stone of protection and watchfulness.",
+  "uses": [
+   "protection",
+   "watchfulness",
+   "warding off envy"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "eye-agate"
+ },
+ {
+  "name": "Star Sapphire",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Libra"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "The six-rayed star was once seen as a guiding light, and travellers wore star sapphires as talismans of protection, hope and destiny.",
+  "uses": [
+   "guidance",
+   "hope",
+   "protection on journeys"
+  ],
+  "wikidata": null,
+  "parent": "Q127583",
+  "slug": "star-sapphire"
+ },
+ {
+  "name": "Black Star Sapphire",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Dark star sapphire is tied in crystal lore to grounding, protection and focused intention.",
+  "uses": [
+   "grounding",
+   "protection",
+   "focus"
+  ],
+  "wikidata": null,
+  "parent": "Q127583",
+  "slug": "black-star-sapphire"
+ },
+ {
+  "name": "Star Ruby",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aries"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "A ruby with a star was prized as a stone of courage and vitality. Old lore says the star's three crossing lines stand for faith, hope and destiny.",
+  "uses": [
+   "courage",
+   "vitality",
+   "passion"
+  ],
+  "wikidata": null,
+  "parent": "Q43088",
+  "slug": "star-ruby"
+ },
+ {
+  "name": "Star Garnet",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Idaho's state gem is linked in crystal lore to commitment, inner strength and grounded energy.",
+  "uses": [
+   "commitment",
+   "inner strength",
+   "grounding"
+  ],
+  "wikidata": "Q122418066"
+ },
+ {
+  "name": "Star Rose Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Rose quartz with a hidden star is said in crystal lore to add hope and guidance to rose quartz's gentle love.",
+  "uses": [
+   "self-love",
+   "hope",
+   "gentle guidance"
+  ],
+  "wikidata": null,
+  "parent": "Q429911",
+  "slug": "star-rose-quartz"
+ },
+ {
+  "name": "Star Diopside",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Black star diopside is called a stone of grounding and emotional release in crystal lore.",
+  "uses": [
+   "grounding",
+   "emotional release",
+   "resilience"
+  ],
+  "wikidata": null,
+  "parent": "Q316671",
+  "slug": "star-diopside"
+ },
+ {
+  "name": "Star Spinel",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Rare star spinel is linked in crystal lore to renewal and revitalization.",
+  "uses": [
+   "renewal",
+   "energy",
+   "hope"
+  ],
+  "wikidata": null,
+  "parent": "Q191310",
+  "slug": "star-spinel"
+ },
+ {
+  "name": "Star Beryl",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Throat"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Rare star beryl is associated in lore with clarity, courage and calm communication.",
+  "uses": [
+   "clarity",
+   "courage",
+   "communication"
+  ],
+  "wikidata": null,
+  "parent": "Q103480",
+  "slug": "star-beryl"
+ },
+ {
+  "name": "Star Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Combining moonstone's glow with a star, it is linked in lore to intuition, dreams and gentle guidance.",
+  "uses": [
+   "intuition",
+   "dreams",
+   "new beginnings"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "star-moonstone"
+ },
+ {
+  "name": "Velvet Obsidian",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Velvet obsidian's soft, shifting sheen is linked in crystal lore to gentle protection and emotional comfort.",
+  "uses": [
+   "gentle protection",
+   "comfort",
+   "self-reflection"
+  ],
+  "wikidata": null,
+  "parent": "Q53754",
+  "slug": "velvet-obsidian"
+ },
+ {
+  "name": "Silver Sheen Obsidian",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Called a mirror stone in crystal lore, silver sheen obsidian is linked to self-reflection, protection and clarity.",
+  "uses": [
+   "self-reflection",
+   "protection",
+   "clarity"
+  ],
+  "wikidata": null,
+  "parent": "Q53754",
+  "slug": "silver-sheen-obsidian"
+ },
+ {
+  "name": "Gold Sheen Obsidian",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Gold sheen obsidian is associated in lore with confidence, insight and protection.",
+  "uses": [
+   "confidence",
+   "insight",
+   "protection"
+  ],
+  "wikidata": null,
+  "parent": "Q53754",
+  "slug": "gold-sheen-obsidian"
+ },
+ {
+  "name": "White Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "The classic moonstone, with its soft blue-white glow, is long associated with the moon, intuition, calm and new beginnings.",
+  "uses": [
+   "intuition",
+   "calm",
+   "new beginnings"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "white-moonstone"
+ },
+ {
+  "name": "Rainbow Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Libra"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Rainbow moonstone is a crystal-shop favourite linked to intuition, dreams and emotional balance. Gemmologically it is not true moonstone but a white labradorite.",
+  "uses": [
+   "intuition",
+   "dreams",
+   "emotional balance"
+  ],
+  "wikidata": null,
+  "parent": "Q430062",
+  "slug": "rainbow-moonstone"
+ },
+ {
+  "name": "Black Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Dark moonstone is linked in lore to new moons, fresh starts and protection.",
+  "uses": [
+   "new beginnings",
+   "protection",
+   "calm"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "black-moonstone"
+ },
+ {
+  "name": "Peach Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Warm peach moonstone is tied in crystal lore to nurturing, gentle love and comfort.",
+  "uses": [
+   "nurturing",
+   "gentle love",
+   "comfort"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "peach-moonstone"
+ },
+ {
+  "name": "Gray Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Gray moonstone is linked in lore to the mysteries of the new moon and inner reflection.",
+  "uses": [
+   "inner reflection",
+   "intuition",
+   "calm"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "gray-moonstone"
+ },
+ {
+  "name": "Green Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Virgo"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Soft green moonstone is associated in lore with harmony, growth and connection to nature.",
+  "uses": [
+   "harmony",
+   "growth",
+   "connection to nature"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "green-moonstone"
+ },
+ {
+  "name": "Blue Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Rare true blue moonstone, with its intense blue glow, is linked in lore to calm communication and intuition.",
+  "uses": [
+   "calm communication",
+   "intuition",
+   "peace"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "blue-moonstone"
+ },
+ {
+  "name": "Cat's-Eye Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Cat's-eye moonstone is traditionally a stone of protection and keen intuition.",
+  "uses": [
+   "protection",
+   "intuition",
+   "focus"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "cats-eye-moonstone"
  }
 ]

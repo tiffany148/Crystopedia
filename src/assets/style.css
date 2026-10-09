@@ -425,3 +425,7 @@ html[data-theme=dark] .color-row h2 a{color:var(--ink)}
 html[data-theme=dark] body.stone-page .stone-hero a.color-chip{color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.05));border-color:rgba(255,255,255,.25)}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.swatch-btn{background:color-mix(in srgb,var(--stone) 15%,#fff)}html[data-theme=dark] .swatch-btn{background:#231e40}}
 body.stone-page .stone-hero a.color-chip{color:var(--hero-ink);background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.08)),var(--hero-chip);border-color:rgba(255,255,255,.45)}
+
+.tile.t11{background:linear-gradient(135deg,#0b1f5c,#2f4fa3 55%,#c8d4ff)}
+.chatoyancy-box{margin:2.5rem 0 1rem;padding:1.2rem 1.4rem;border-radius:22px;background:color-mix(in srgb,var(--card) 70%,transparent);border:1px solid var(--line);backdrop-filter:blur(14px) saturate(1.4)}
+section.family .grid{margin-top:.6rem}

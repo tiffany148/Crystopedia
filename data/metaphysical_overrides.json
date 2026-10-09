@@ -264,5 +264,124 @@
  },
  "Fossil Shell": {
   "qid": null
+ },
+ "Iris Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Lake Superior Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Laguna Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Condor Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Plume Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Tree Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Fortification Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Dryhead Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Fairburn Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Eye Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Star Sapphire": {
+  "qid": null,
+  "parent": "Q127583"
+ },
+ "Black Star Sapphire": {
+  "qid": null,
+  "parent": "Q127583"
+ },
+ "Star Ruby": {
+  "qid": null,
+  "parent": "Q43088"
+ },
+ "Star Garnet": {
+  "qid": "Q122418066"
+ },
+ "Star Rose Quartz": {
+  "qid": null,
+  "parent": "Q429911"
+ },
+ "Star Diopside": {
+  "qid": null,
+  "parent": "Q316671"
+ },
+ "Star Spinel": {
+  "qid": null,
+  "parent": "Q191310"
+ },
+ "Star Beryl": {
+  "qid": null,
+  "parent": "Q103480"
+ },
+ "Star Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Velvet Obsidian": {
+  "qid": null,
+  "parent": "Q53754"
+ },
+ "Silver Sheen Obsidian": {
+  "qid": null,
+  "parent": "Q53754"
+ },
+ "Gold Sheen Obsidian": {
+  "qid": null,
+  "parent": "Q53754"
+ },
+ "White Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Rainbow Moonstone": {
+  "qid": null,
+  "parent": "Q430062"
+ },
+ "Black Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Peach Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Gray Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Green Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Blue Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Cat's-Eye Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
  }
 }
