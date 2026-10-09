@@ -1,0 +1,4031 @@
+[
+ {
+  "name": "Clear Quartz",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Air",
+   "Spirit"
+  ],
+  "meaning": "Often called the 'master healer' in crystal lore, clear quartz is thought to amplify intention and whatever stones sit beside it.",
+  "uses": [
+   "focus and clarity",
+   "programming intentions",
+   "amplifying other crystals"
+  ],
+  "wikidata": "Q43010"
+ },
+ {
+  "name": "Amethyst",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Aquarius",
+   "Virgo",
+   "Capricorn"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "The ancient Greeks linked amethyst with sobriety; today it is a classic stone of calm, intuition and restful sleep.",
+  "uses": [
+   "meditation",
+   "peaceful sleep",
+   "easing overthinking"
+  ],
+  "wikidata": "Q79058"
+ },
+ {
+  "name": "Rose Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "The best-known stone of love, rose quartz is associated with gentleness, self-acceptance and repairing relationships.",
+  "uses": [
+   "self-love",
+   "emotional healing",
+   "harmony at home"
+  ],
+  "wikidata": "Q429911"
+ },
+ {
+  "name": "Citrine",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Aries",
+   "Leo",
+   "Libra"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Nicknamed the 'merchant's stone', citrine is tied to optimism, abundance and personal drive.",
+  "uses": [
+   "prosperity rituals",
+   "confidence",
+   "bright, positive energy"
+  ],
+  "wikidata": "Q334719"
+ },
+ {
+  "name": "Smoky Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Sagittarius",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "A grounding quartz believed to transmute heaviness and help the holder stay calm and practical.",
+  "uses": [
+   "grounding",
+   "releasing stress",
+   "protection"
+  ],
+  "wikidata": "Q429935"
+ },
+ {
+  "name": "Ametrine",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Air",
+   "Fire"
+  ],
+  "meaning": "Blending amethyst and citrine in one crystal, ametrine is said to balance intuition with willpower.",
+  "uses": [
+   "decision making",
+   "balancing emotions",
+   "creativity"
+  ],
+  "wikidata": "Q429774"
+ },
+ {
+  "name": "Rutilated Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Taurus"
+  ],
+  "elements": [
+   "Air",
+   "Fire"
+  ],
+  "meaning": "The golden needles inside are traditionally seen as threads of light that energize and illuminate the spirit.",
+  "uses": [
+   "vitality",
+   "manifesting",
+   "dispelling gloom"
+  ],
+  "wikidata": "Q2496672"
+ },
+ {
+  "name": "Tourmalinated Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "Black tourmaline needles in clear quartz are said to combine protection with clarity of mind.",
+  "uses": [
+   "protection",
+   "breaking negative patterns",
+   "balance"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "tourmalinated-quartz"
+ },
+ {
+  "name": "Strawberry Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "A sweet, playful quartz associated with joy, romance and lightening the heart.",
+  "uses": [
+   "joy",
+   "romance",
+   "self-acceptance"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "strawberry-quartz"
+ },
+ {
+  "name": "Prasiolite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Also sold as green amethyst, prasiolite is linked to compassion and connecting the heart with higher ideals.",
+  "uses": [
+   "kindness",
+   "heart opening",
+   "gratitude"
+  ],
+  "wikidata": "Q285292"
+ },
+ {
+  "name": "Herkimer Diamond",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Air",
+   "Spirit"
+  ],
+  "meaning": "These doubly-terminated quartz crystals from New York are prized as stones of vivid dreams and attunement.",
+  "uses": [
+   "dreamwork",
+   "attunement",
+   "meditation"
+  ],
+  "wikidata": "Q3631266"
+ },
+ {
+  "name": "Spirit Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Spirit"
+  ],
+  "meaning": "Covered in tiny crystal points, spirit quartz is associated with community, cooperation and spiritual growth.",
+  "uses": [
+   "group harmony",
+   "spiritual growth",
+   "forgiveness"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "spirit-quartz"
+ },
+ {
+  "name": "Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Banded agate has been carried as a protective amulet since antiquity and is seen as a steadying, slow-and-steady stone.",
+  "uses": [
+   "stability",
+   "composure",
+   "protection"
+  ],
+  "wikidata": "Q123314"
+ },
+ {
+  "name": "Blue Lace Agate",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Soft blue bands evoke calm skies; this agate is associated with gentle, honest communication.",
+  "uses": [
+   "calm speech",
+   "soothing anxiety",
+   "peaceful expression"
+  ],
+  "wikidata": "Q2103412"
+ },
+ {
+  "name": "Moss Agate",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Root"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "With its plant-like inclusions, moss agate is the traditional gardener's stone, tied to growth and new beginnings.",
+  "uses": [
+   "gardening luck",
+   "abundance",
+   "connection to nature"
+  ],
+  "wikidata": "Q2413388"
+ },
+ {
+  "name": "Fire Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aries",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Iridescent fire agate is associated with courage, passion and a protective shield.",
+  "uses": [
+   "courage",
+   "vitality",
+   "protection"
+  ],
+  "wikidata": "Q2129757"
+ },
+ {
+  "name": "Crazy Lace Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Known as the 'laughter stone', crazy lace agate is linked to joy and finding humor in hard times.",
+  "uses": [
+   "optimism",
+   "joy",
+   "resilience"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "crazy-lace-agate"
+ },
+ {
+  "name": "Botswana Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Fine grey and pink banding gives this agate a reputation for comfort and supporting change.",
+  "uses": [
+   "comfort",
+   "coping with change",
+   "clarity"
+  ],
+  "wikidata": "Q1942868"
+ },
+ {
+  "name": "Dendritic Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Its fern-like dendrites earned it the name 'stone of plenitude', associated with growth and abundance.",
+  "uses": [
+   "abundance",
+   "patience",
+   "inner growth"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "dendritic-agate"
+ },
+ {
+  "name": "Carnelian",
+  "kind": "variety",
+  "chakras": [
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo",
+   "Virgo",
+   "Taurus"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Worn by Egyptian and Roman craftsmen, carnelian is the classic stone of motivation, creativity and courage.",
+  "uses": [
+   "motivation",
+   "creativity",
+   "stage confidence"
+  ],
+  "wikidata": "Q324369"
+ },
+ {
+  "name": "Onyx",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Leo",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Black onyx is associated with self-control, resilience and absorbing negativity.",
+  "uses": [
+   "discipline",
+   "protection",
+   "grounding"
+  ],
+  "wikidata": "Q180884"
+ },
+ {
+  "name": "Sardonyx",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Prized by Roman soldiers for cameos, sardonyx is linked to courage, strength and integrity.",
+  "uses": [
+   "courage",
+   "virtue",
+   "stability in relationships"
+  ],
+  "wikidata": "Q3428905"
+ },
+ {
+  "name": "Chrysoprase",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra",
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Apple-green chrysoprase is associated with hope, forgiveness and lightheartedness.",
+  "uses": [
+   "hope",
+   "forgiveness",
+   "emotional renewal"
+  ],
+  "wikidata": "Q429960"
+ },
+ {
+  "name": "Bloodstone",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Aries",
+   "Pisces",
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Green chalcedony with red spots, bloodstone was linked in medieval lore to courage and vitality.",
+  "uses": [
+   "courage",
+   "endurance",
+   "purification"
+  ],
+  "wikidata": "Q430174"
+ },
+ {
+  "name": "Jasper",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Leo",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Called the 'supreme nurturer', jasper is a steady, grounding stone associated with endurance.",
+  "uses": [
+   "grounding",
+   "stamina",
+   "comfort"
+  ],
+  "wikidata": "Q201175"
+ },
+ {
+  "name": "Red Jasper",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "A stone of stamina and steady motivation, often carried for physical endurance.",
+  "uses": [
+   "stamina",
+   "motivation",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "red-jasper"
+ },
+ {
+  "name": "Ocean Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Heart",
+   "Throat"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Its orb-patterned surface is associated with patience, self-care and gentle joy.",
+  "uses": [
+   "relaxation",
+   "positive self-talk",
+   "patience"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "ocean-jasper"
+ },
+ {
+  "name": "Picture Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Landscape-like patterns earned it a reputation as a stone of earth wisdom and creative vision.",
+  "uses": [
+   "creative visualization",
+   "grounding",
+   "comfort"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "picture-jasper"
+ },
+ {
+  "name": "Dalmatian Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Spotted like its namesake dog, it is associated with loyalty, fun and leaving behind worry.",
+  "uses": [
+   "playfulness",
+   "loyalty",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "dalmatian-jasper"
+ },
+ {
+  "name": "Mookaite",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "This Australian jasper is linked to adventure, flexibility and staying present.",
+  "uses": [
+   "adventure",
+   "decision making",
+   "vitality"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "mookaite"
+ },
+ {
+  "name": "Chalcedony",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Soft-glowing chalcedony is associated with kindness, nurturing and group harmony.",
+  "uses": [
+   "calm",
+   "goodwill",
+   "communication"
+  ],
+  "wikidata": "Q170448"
+ },
+ {
+  "name": "Aventurine",
+  "kind": "rock",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Aries",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Sparkling green aventurine is the 'stone of opportunity', long carried for luck.",
+  "uses": [
+   "luck",
+   "prosperity",
+   "optimism"
+  ],
+  "wikidata": "Q429742"
+ },
+ {
+  "name": "Tiger's Eye",
+  "kind": "rock",
+  "chakras": [
+   "Solar Plexus",
+   "Sacral",
+   "Root"
+  ],
+  "zodiac": [
+   "Leo",
+   "Capricorn"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Shimmering golden bands are linked to courage, clear judgement and confident action.",
+  "uses": [
+   "confidence",
+   "focus",
+   "protection"
+  ],
+  "wikidata": "Q430007"
+ },
+ {
+  "name": "Hawk's Eye",
+  "kind": "rock",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "The blue-grey cousin of tiger's eye, associated with perspective and seeing the bigger picture.",
+  "uses": [
+   "insight",
+   "perspective",
+   "calm"
+  ],
+  "wikidata": "Q430192"
+ },
+ {
+  "name": "Tiger Iron",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Layers of hematite, jasper and tiger's eye give it a reputation for strength and stamina.",
+  "uses": [
+   "stamina",
+   "willpower",
+   "grounding"
+  ],
+  "wikidata": "Q2432856"
+ },
+ {
+  "name": "Labradorite",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Throat"
+  ],
+  "zodiac": [
+   "Leo",
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "The shifting blue-gold flash is said to awaken magic, intuition and protection of the aura.",
+  "uses": [
+   "intuition",
+   "transformation",
+   "protection"
+  ],
+  "wikidata": "Q430062"
+ },
+ {
+  "name": "Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Libra",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Long tied to the moon and its cycles, moonstone is associated with new beginnings and inner rhythms.",
+  "uses": [
+   "intuition",
+   "new beginnings",
+   "emotional balance"
+  ],
+  "wikidata": "Q430034"
+ },
+ {
+  "name": "Sunstone",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Libra"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Glittering sunstone is associated with warmth, leadership and personal power.",
+  "uses": [
+   "joy",
+   "leadership",
+   "independence"
+  ],
+  "wikidata": "Q2729026"
+ },
+ {
+  "name": "Amazonite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Throat"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Aquarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Called the 'stone of courage and truth', amazonite is linked to calm, honest expression.",
+  "uses": [
+   "communication",
+   "soothing",
+   "balance"
+  ],
+  "wikidata": "Q429786"
+ },
+ {
+  "name": "Larvikite",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Leo",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Norway's silvery-blue igneous stone is associated with grounding and calming mental chatter.",
+  "uses": [
+   "grounding",
+   "calm",
+   "protection"
+  ],
+  "wikidata": "Q1397061"
+ },
+ {
+  "name": "Black Tourmaline",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Perhaps the most popular protective stone, black tourmaline is believed to repel negativity.",
+  "uses": [
+   "protection",
+   "grounding",
+   "clearing spaces"
+  ],
+  "wikidata": "Q2411340"
+ },
+ {
+  "name": "Pink Tourmaline",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with compassion, gentleness and opening the heart to love.",
+  "uses": [
+   "love",
+   "compassion",
+   "emotional healing"
+  ],
+  "wikidata": "Q385783"
+ },
+ {
+  "name": "Watermelon Tourmaline",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Pink centers with green rims symbolise balance between the masculine and feminine.",
+  "uses": [
+   "balance",
+   "love",
+   "joy"
+  ],
+  "wikidata": null,
+  "parent": "Q179911",
+  "slug": "watermelon-tourmaline"
+ },
+ {
+  "name": "Green Tourmaline",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Linked to vitality, growth and connection with plants and nature.",
+  "uses": [
+   "vitality",
+   "growth",
+   "compassion"
+  ],
+  "wikidata": "Q4009907"
+ },
+ {
+  "name": "Indicolite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Blue tourmaline is associated with truthful speech and intuition.",
+  "uses": [
+   "communication",
+   "intuition",
+   "calm"
+  ],
+  "wikidata": "Q3798252"
+ },
+ {
+  "name": "Tourmaline",
+  "kind": "group",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The tourmaline family spans every color; in lore each hue carries its own energy, all linked to balance.",
+  "uses": [
+   "balance",
+   "protection",
+   "energy flow"
+  ],
+  "wikidata": "Q179911"
+ },
+ {
+  "name": "Garnet",
+  "kind": "group",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Aquarius",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "January's birthstone; travelers once carried garnet as a protective light in the dark.",
+  "uses": [
+   "passion",
+   "commitment",
+   "safe travel"
+  ],
+  "wikidata": "Q105368"
+ },
+ {
+  "name": "Pyrope",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Its fiery red is linked to vitality and enthusiasm.",
+  "uses": [
+   "vitality",
+   "courage",
+   "passion"
+  ],
+  "wikidata": "Q421814"
+ },
+ {
+  "name": "Almandine",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Deep red almandine is associated with strength, love and commitment.",
+  "uses": [
+   "devotion",
+   "strength",
+   "grounding"
+  ],
+  "wikidata": "Q273663"
+ },
+ {
+  "name": "Spessartine",
+  "kind": "mineral",
+  "chakras": [
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aquarius",
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Orange garnet linked to creativity, sensuality and confidence.",
+  "uses": [
+   "creativity",
+   "confidence",
+   "warmth"
+  ],
+  "wikidata": "Q20653385"
+ },
+ {
+  "name": "Tsavorite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "A vivid green grossular garnet associated with prosperity and kindness.",
+  "uses": [
+   "abundance",
+   "compassion",
+   "vitality"
+  ],
+  "wikidata": "Q2295514"
+ },
+ {
+  "name": "Hessonite",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Known in Vedic tradition as gomed, hessonite is associated with confidence and protection.",
+  "uses": [
+   "self-confidence",
+   "clarity",
+   "protection"
+  ],
+  "wikidata": "Q3501357"
+ },
+ {
+  "name": "Emerald",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Prized by Cleopatra, emerald symbolises love, rebirth and loyal partnership.",
+  "uses": [
+   "love",
+   "renewal",
+   "wisdom"
+  ],
+  "wikidata": "Q43513"
+ },
+ {
+  "name": "Aquamarine",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Sailors carried aquamarine for safe voyages; it is associated with courage and calm like the sea.",
+  "uses": [
+   "calm",
+   "courage",
+   "clear communication"
+  ],
+  "wikidata": "Q58959"
+ },
+ {
+  "name": "Morganite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Taurus"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Peach-pink morganite is linked to divine love, compassion and patience.",
+  "uses": [
+   "compassion",
+   "love",
+   "patience"
+  ],
+  "wikidata": "Q2016530"
+ },
+ {
+  "name": "Heliodor",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Golden beryl named for the sun, associated with willpower and optimism.",
+  "uses": [
+   "optimism",
+   "willpower",
+   "leadership"
+  ],
+  "wikidata": "Q429730"
+ },
+ {
+  "name": "Goshenite",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Colorless beryl associated with truth, clarity and loyalty.",
+  "uses": [
+   "honesty",
+   "clarity",
+   "focus"
+  ],
+  "wikidata": "Q3111417"
+ },
+ {
+  "name": "Ruby",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Leo",
+   "Cancer",
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "The 'king of gems' in Sanskrit lore, ruby is associated with passion, vitality and protection.",
+  "uses": [
+   "passion",
+   "vitality",
+   "courage"
+  ],
+  "wikidata": "Q43088"
+ },
+ {
+  "name": "Sapphire",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Libra",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Long a royal and clerical stone, sapphire is linked to wisdom, loyalty and serenity.",
+  "uses": [
+   "wisdom",
+   "focus",
+   "loyalty"
+  ],
+  "wikidata": "Q127583"
+ },
+ {
+  "name": "Diamond",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo",
+   "Taurus"
+  ],
+  "elements": [
+   "Fire",
+   "Air"
+  ],
+  "meaning": "From the Greek 'adamas', unconquerable, diamond symbolises enduring love, purity and strength.",
+  "uses": [
+   "commitment",
+   "clarity",
+   "strength"
+  ],
+  "wikidata": "Q5283"
+ },
+ {
+  "name": "Topaz",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus",
+   "Throat"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "November's birthstone; topaz is associated with joy, generosity and good fortune.",
+  "uses": [
+   "joy",
+   "abundance",
+   "clear intention"
+  ],
+  "wikidata": "Q134985"
+ },
+ {
+  "name": "Peridot",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Virgo",
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Called the 'gem of the sun' by Egyptians, peridot is linked to warmth, renewal and releasing jealousy.",
+  "uses": [
+   "renewal",
+   "abundance",
+   "emotional release"
+  ],
+  "wikidata": "Q288732"
+ },
+ {
+  "name": "Spinel",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Long mistaken for ruby, spinel is associated with renewed energy and encouragement.",
+  "uses": [
+   "revitalization",
+   "hope",
+   "encouragement"
+  ],
+  "wikidata": "Q191310"
+ },
+ {
+  "name": "Zircon",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "December birthstone said to promote restful sleep and prosperity.",
+  "uses": [
+   "prosperity",
+   "sleep",
+   "wisdom"
+  ],
+  "wikidata": "Q178928"
+ },
+ {
+  "name": "Tanzanite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Gemini",
+   "Libra"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Found only near Kilimanjaro, tanzanite is associated with spiritual awakening and compassion.",
+  "uses": [
+   "intuition",
+   "meditation",
+   "transformation"
+  ],
+  "wikidata": "Q429942"
+ },
+ {
+  "name": "Iolite",
+  "kind": "mineral",
+  "chakras": [
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Libra",
+   "Sagittarius",
+   "Taurus"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Vikings reputedly used iolite as a navigation aid; it is the stone of inner vision.",
+  "uses": [
+   "intuition",
+   "direction",
+   "imagination"
+  ],
+  "wikidata": "Q410336"
+ },
+ {
+  "name": "Kunzite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Leo",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Lilac kunzite is associated with unconditional love and releasing emotional blockages.",
+  "uses": [
+   "compassion",
+   "calm",
+   "heart healing"
+  ],
+  "wikidata": "Q429580"
+ },
+ {
+  "name": "Hiddenite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Green spodumene associated with emotional support and new starts.",
+  "uses": [
+   "renewal",
+   "support",
+   "gratitude"
+  ],
+  "wikidata": "Q430154"
+ },
+ {
+  "name": "Blue Kyanite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Aries",
+   "Taurus",
+   "Libra"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "Kyanite is said never to hold negative energy and is used to align all chakras.",
+  "uses": [
+   "alignment",
+   "communication",
+   "meditation"
+  ],
+  "wikidata": "Q193450"
+ },
+ {
+  "name": "Fluorite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Pisces"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Nicknamed the 'genius stone', fluorite is associated with focus, order and clear thinking.",
+  "uses": [
+   "study",
+   "organization",
+   "clearing confusion"
+  ],
+  "wikidata": "Q102151"
+ },
+ {
+  "name": "Calcite",
+  "kind": "mineral",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "In its many colors, calcite is traditionally an energy amplifier and cleanser.",
+  "uses": [
+   "energy cleansing",
+   "motivation",
+   "learning"
+  ],
+  "wikidata": "Q171917"
+ },
+ {
+  "name": "Iceland Spar",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "Its double refraction inspired lore about seeing more than one perspective at once.",
+  "uses": [
+   "perspective",
+   "clarity",
+   "insight"
+  ],
+  "wikidata": "Q974568"
+ },
+ {
+  "name": "Mangano Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Soft pink calcite associated with forgiveness and gentle emotional healing.",
+  "uses": [
+   "forgiveness",
+   "calm",
+   "self-worth"
+  ],
+  "wikidata": "Q6748802"
+ },
+ {
+  "name": "Selenite",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Named for Selene, goddess of the moon; selenite is used to cleanse other crystals and spaces.",
+  "uses": [
+   "cleansing",
+   "peace",
+   "clarity"
+  ],
+  "wikidata": "Q429768"
+ },
+ {
+  "name": "Desert Rose",
+  "kind": "rock",
+  "chakras": [
+   "Crown",
+   "Root"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "These rosette-shaped gypsum or barite clusters are associated with clarity and letting go.",
+  "uses": [
+   "letting go",
+   "clarity",
+   "grounding"
+  ],
+  "wikidata": "Q509713"
+ },
+ {
+  "name": "Celestite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Sky-blue celestite is linked to peace, serenity and connection with the divine.",
+  "uses": [
+   "peace",
+   "sleep",
+   "spiritual connection"
+  ],
+  "wikidata": "Q407221"
+ },
+ {
+  "name": "Angelite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Blue anhydrite is sold as angelite, associated with compassion and angelic communication.",
+  "uses": [
+   "peace",
+   "compassion",
+   "expression"
+  ],
+  "wikidata": "Q105439"
+ },
+ {
+  "name": "Apophyllite",
+  "kind": "group",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Libra"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Sparkling apophyllite pyramids are prized for meditation and spiritual insight.",
+  "uses": [
+   "meditation",
+   "clarity",
+   "connection"
+  ],
+  "wikidata": "Q261461"
+ },
+ {
+  "name": "Prehnite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Libra",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Called the 'stone to heal the healer', prehnite is linked to inner peace and preparedness.",
+  "uses": [
+   "calm",
+   "intuition",
+   "unconditional love"
+  ],
+  "wikidata": "Q422128"
+ },
+ {
+  "name": "Epidote",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Associated with growth, perception and attracting what one focuses on.",
+  "uses": [
+   "optimism",
+   "growth",
+   "perception"
+  ],
+  "wikidata": "Q272844"
+ },
+ {
+  "name": "Unakite",
+  "kind": "rock",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Pink and green unakite symbolises balance between emotions and the patient path to growth.",
+  "uses": [
+   "emotional balance",
+   "patience",
+   "growth"
+  ],
+  "wikidata": "Q656325"
+ },
+ {
+  "name": "Malachite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "With bold green bands, malachite is known as the stone of transformation and protection.",
+  "uses": [
+   "transformation",
+   "protection",
+   "releasing old patterns"
+  ],
+  "wikidata": "Q164411"
+ },
+ {
+  "name": "Azurite",
+  "kind": "mineral",
+  "chakras": [
+   "Third Eye",
+   "Throat"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Called the 'stone of heaven', azurite is associated with insight and inner vision.",
+  "uses": [
+   "insight",
+   "study",
+   "intuition"
+  ],
+  "wikidata": "Q108212"
+ },
+ {
+  "name": "Chrysocolla",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Virgo",
+   "Gemini"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with gentle feminine strength, patience and wise words.",
+  "uses": [
+   "communication",
+   "calm",
+   "empowerment"
+  ],
+  "wikidata": "Q407485"
+ },
+ {
+  "name": "Turquoise",
+  "kind": "mineral",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Pisces",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Air",
+   "Water"
+  ],
+  "meaning": "Sacred to many cultures from Persia to the American Southwest, turquoise is a protective, healing talisman.",
+  "uses": [
+   "protection",
+   "friendship",
+   "wholeness"
+  ],
+  "wikidata": "Q165254"
+ },
+ {
+  "name": "Lapis Lazuli",
+  "kind": "rock",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Libra",
+   "Taurus"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Ground for ultramarine and worn by pharaohs, lapis is the stone of wisdom and truth.",
+  "uses": [
+   "wisdom",
+   "truth",
+   "self-expression"
+  ],
+  "wikidata": "Q216798"
+ },
+ {
+  "name": "Sodalite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Virgo"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Sodalite is associated with logic, rational thought and calm communication.",
+  "uses": [
+   "logic",
+   "calm speaking",
+   "truth"
+  ],
+  "wikidata": "Q410759"
+ },
+ {
+  "name": "Larimar",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Heart"
+  ],
+  "zodiac": [
+   "Leo",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Found only in the Dominican Republic, larimar evokes the Caribbean sea and tranquility.",
+  "uses": [
+   "calm",
+   "feminine energy",
+   "communication"
+  ],
+  "wikidata": "Q2502146"
+ },
+ {
+  "name": "Howlite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "White howlite is associated with patience and calming an anxious mind.",
+  "uses": [
+   "patience",
+   "sleep",
+   "calm"
+  ],
+  "wikidata": "Q421527"
+ },
+ {
+  "name": "Magnesite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Associated with relaxation and soothing tension.",
+  "uses": [
+   "relaxation",
+   "meditation",
+   "calm"
+  ],
+  "wikidata": "Q425450"
+ },
+ {
+  "name": "Rhodochrosite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo",
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Pink-banded rhodochrosite is the 'stone of the compassionate heart', linked to self-love.",
+  "uses": [
+   "self-love",
+   "compassion",
+   "healing the past"
+  ],
+  "wikidata": "Q409793"
+ },
+ {
+  "name": "Rhodonite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Pink with black veins, rhodonite is associated with emotional balance and forgiveness.",
+  "uses": [
+   "forgiveness",
+   "emotional balance",
+   "compassion"
+  ],
+  "wikidata": "Q409071"
+ },
+ {
+  "name": "Lepidolite",
+  "kind": "group",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Lithium-bearing lepidolite is associated with easing stress and transition.",
+  "uses": [
+   "calm",
+   "transition",
+   "sleep"
+  ],
+  "wikidata": "Q429926"
+ },
+ {
+  "name": "Charoite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Swirling purple charoite from Siberia is linked to transformation and spiritual courage.",
+  "uses": [
+   "transformation",
+   "courage",
+   "insight"
+  ],
+  "wikidata": "Q422167"
+ },
+ {
+  "name": "Sugilite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Associated with spiritual love and wisdom.",
+  "uses": [
+   "spiritual love",
+   "protection",
+   "self-acceptance"
+  ],
+  "wikidata": "Q417368"
+ },
+ {
+  "name": "Seraphinite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Silvery feathering in green clinochlore gave seraphinite its angelic name and association with renewal.",
+  "uses": [
+   "renewal",
+   "self-healing",
+   "spiritual connection"
+  ],
+  "wikidata": "Q7452720"
+ },
+ {
+  "name": "Serpentine",
+  "kind": "group",
+  "chakras": [
+   "Heart",
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Associated with kundalini energy, protection and earth connection.",
+  "uses": [
+   "kundalini meditation",
+   "protection",
+   "grounding"
+  ],
+  "wikidata": "Q335249"
+ },
+ {
+  "name": "Jade",
+  "kind": "rock",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "In China jade has symbolised virtue, longevity and good fortune for millennia.",
+  "uses": [
+   "good luck",
+   "harmony",
+   "longevity"
+  ],
+  "wikidata": "Q175089"
+ },
+ {
+  "name": "Jadeite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The rarer form of jade, associated with wisdom and serenity.",
+  "uses": [
+   "harmony",
+   "wisdom",
+   "prosperity"
+  ],
+  "wikidata": "Q422173"
+ },
+ {
+  "name": "Nephrite",
+  "kind": "rock",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Its name comes from Latin for kidney stone; it is associated with protection and calm.",
+  "uses": [
+   "protection",
+   "calm",
+   "good luck"
+  ],
+  "wikidata": "Q138979"
+ },
+ {
+  "name": "Hematite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Heavy, metallic hematite is the quintessential grounding stone.",
+  "uses": [
+   "grounding",
+   "focus",
+   "courage"
+  ],
+  "wikidata": "Q103223"
+ },
+ {
+  "name": "Magnetite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Gemini",
+   "Capricorn",
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Magnetic magnetite is associated with attraction and balance.",
+  "uses": [
+   "attraction",
+   "grounding",
+   "balance"
+  ],
+  "wikidata": "Q181395"
+ },
+ {
+  "name": "Lodestone",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Naturally magnetized magnetite has been a charm for drawing love and luck since antiquity.",
+  "uses": [
+   "attraction",
+   "luck",
+   "grounding"
+  ],
+  "wikidata": "Q3480938"
+ },
+ {
+  "name": "Pyrite",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Fool's gold is a protective, energizing stone popular for abundance and willpower.",
+  "uses": [
+   "abundance",
+   "protection",
+   "confidence"
+  ],
+  "wikidata": "Q50769"
+ },
+ {
+  "name": "Chalcopyrite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Associated with perception and the flow of energy.",
+  "uses": [
+   "energy flow",
+   "perception",
+   "attunement"
+  ],
+  "wikidata": "Q111044"
+ },
+ {
+  "name": "Bornite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Iridescent 'peacock ore' is linked to happiness and seeing joy in the present.",
+  "uses": [
+   "happiness",
+   "renewal",
+   "joy"
+  ],
+  "wikidata": "Q108694"
+ },
+ {
+  "name": "Galena",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Heavy galena is associated with grounding and harmony; handle with care (lead).",
+  "uses": [
+   "grounding",
+   "harmony",
+   "centering"
+  ],
+  "wikidata": "Q37559"
+ },
+ {
+  "name": "Shungite",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Carbon-rich shungite from Karelia is popular in modern lore for purification and shielding.",
+  "uses": [
+   "purification",
+   "protection",
+   "grounding"
+  ],
+  "wikidata": "Q906641"
+ },
+ {
+  "name": "Obsidian",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Volcanic glass once used for blades and mirrors; obsidian is a stone of truth and protection.",
+  "uses": [
+   "protection",
+   "truth",
+   "shadow work"
+  ],
+  "wikidata": "Q53754"
+ },
+ {
+  "name": "Snowflake Obsidian",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "White snowflake patterns are said to bring balance and calm during change.",
+  "uses": [
+   "balance",
+   "purity",
+   "grounding"
+  ],
+  "wikidata": "Q3886803"
+ },
+ {
+  "name": "Apache Tear",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "These small obsidian nodules are linked to comfort in grief.",
+  "uses": [
+   "comfort in grief",
+   "forgiveness",
+   "protection"
+  ],
+  "wikidata": "Q2918359"
+ },
+ {
+  "name": "Mahogany Obsidian",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Brown-and-black obsidian associated with strength and vitality.",
+  "uses": [
+   "strength",
+   "grounding",
+   "vitality"
+  ],
+  "wikidata": null,
+  "parent": "Q53754",
+  "slug": "mahogany-obsidian"
+ },
+ {
+  "name": "Rainbow Obsidian",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Rainbow sheen obsidian is associated with hope after hardship.",
+  "uses": [
+   "hope",
+   "emotional healing",
+   "protection"
+  ],
+  "wikidata": null,
+  "parent": "Q53754",
+  "slug": "rainbow-obsidian"
+ },
+ {
+  "name": "Moldavite",
+  "kind": "glass",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Spirit"
+  ],
+  "meaning": "Green tektite glass formed by a meteorite impact about 15 million years ago, seen as a stone of rapid transformation.",
+  "uses": [
+   "transformation",
+   "spiritual growth",
+   "awakening"
+  ],
+  "wikidata": "Q1503261"
+ },
+ {
+  "name": "Tektite",
+  "kind": "glass",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Spirit"
+  ],
+  "meaning": "Impact-formed natural glass associated with expanded awareness.",
+  "uses": [
+   "expansion",
+   "protection",
+   "grounding"
+  ],
+  "wikidata": "Q468438"
+ },
+ {
+  "name": "Libyan Desert Glass",
+  "kind": "glass",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Pale yellow glass from the Sahara; a scarab of it adorns Tutankhamun's pectoral.",
+  "uses": [
+   "willpower",
+   "manifestation",
+   "confidence"
+  ],
+  "wikidata": "Q1778748"
+ },
+ {
+  "name": "Amber",
+  "kind": "organic",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Fossilized tree resin, amber has been worn for warmth and protection since the Stone Age.",
+  "uses": [
+   "warmth",
+   "protection",
+   "vitality"
+  ],
+  "wikidata": "Q25381"
+ },
+ {
+  "name": "Pearl",
+  "kind": "organic",
+  "chakras": [
+   "Crown",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Formed inside living mollusks, pearls symbolise purity, wisdom and integrity.",
+  "uses": [
+   "calm",
+   "purity",
+   "integrity"
+  ],
+  "wikidata": "Q43436"
+ },
+ {
+  "name": "Jet",
+  "kind": "organic",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Fossilized wood popular in Victorian mourning jewelry, jet is associated with protection and grief.",
+  "uses": [
+   "protection",
+   "grief support",
+   "grounding"
+  ],
+  "wikidata": null,
+  "slug": "jet"
+ },
+ {
+  "name": "Coral",
+  "kind": "organic",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Precious coral has long been worn by children and sailors as a protective charm.",
+  "uses": [
+   "protection",
+   "vitality",
+   "emotional calm"
+  ],
+  "wikidata": null,
+  "slug": "coral"
+ },
+ {
+  "name": "Ammolite",
+  "kind": "organic",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Iridescent fossil ammonite shell, called the 'seven-color prosperity stone' in feng shui.",
+  "uses": [
+   "prosperity",
+   "transformation",
+   "vitality"
+  ],
+  "wikidata": "Q473346"
+ },
+ {
+  "name": "Petrified Wood",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Ancient trees turned to stone symbolise patience, longevity and ancestral wisdom.",
+  "uses": [
+   "patience",
+   "grounding",
+   "ancestral connection"
+  ],
+  "wikidata": "Q837117"
+ },
+ {
+  "name": "Opal",
+  "kind": "mineraloid",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "The play of color in opal has inspired lore of hope, creativity and emotional expression.",
+  "uses": [
+   "creativity",
+   "inspiration",
+   "emotional expression"
+  ],
+  "wikidata": "Q171058"
+ },
+ {
+  "name": "Fire Opal",
+  "kind": "mineraloid",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Leo",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Mexican fire opal is associated with passion, energy and encouragement.",
+  "uses": [
+   "passion",
+   "energy",
+   "courage"
+  ],
+  "wikidata": "Q65276832"
+ },
+ {
+  "name": "Precious Opal",
+  "kind": "mineraloid",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Opal with full play-of-color, associated with imagination and spontaneity.",
+  "uses": [
+   "imagination",
+   "inspiration",
+   "joy"
+  ],
+  "wikidata": "Q110686457"
+ },
+ {
+  "name": "Aragonite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Star-like aragonite clusters are associated with patience and acceptance.",
+  "uses": [
+   "patience",
+   "grounding",
+   "centering"
+  ],
+  "wikidata": "Q23775"
+ },
+ {
+  "name": "Smithsonite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Soft, pearly smithsonite is associated with kindness and soothing.",
+  "uses": [
+   "kindness",
+   "calm",
+   "leadership"
+  ],
+  "wikidata": "Q152400"
+ },
+ {
+  "name": "Hemimorphite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with self-expression and personal responsibility.",
+  "uses": [
+   "self-expression",
+   "responsibility",
+   "calm"
+  ],
+  "wikidata": "Q408008"
+ },
+ {
+  "name": "Vanadinite",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Bright red vanadinite is linked to creativity and stamina.",
+  "uses": [
+   "creativity",
+   "stamina",
+   "focus"
+  ],
+  "wikidata": "Q407251"
+ },
+ {
+  "name": "Wulfenite",
+  "kind": "mineral",
+  "chakras": [
+   "Sacral"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Thin orange plates linked to creativity and positive outlook.",
+  "uses": [
+   "creativity",
+   "optimism",
+   "manifesting"
+  ],
+  "wikidata": "Q421092"
+ },
+ {
+  "name": "Sphalerite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Associated with grounding and discerning truth.",
+  "uses": [
+   "grounding",
+   "discernment",
+   "vitality"
+  ],
+  "wikidata": "Q105006"
+ },
+ {
+  "name": "Staurolite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Cross-shaped twins called 'fairy crosses' are carried as good-luck charms.",
+  "uses": [
+   "good luck",
+   "grounding",
+   "protection"
+  ],
+  "wikidata": "Q413380"
+ },
+ {
+  "name": "Chiastolite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Andalusite with a dark cross inside, long used as a protective amulet.",
+  "uses": [
+   "protection",
+   "balance",
+   "change"
+  ],
+  "wikidata": "Q1283119"
+ },
+ {
+  "name": "Andalusite",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Associated with balance and self-realization.",
+  "uses": [
+   "balance",
+   "self-reflection",
+   "grounding"
+  ],
+  "wikidata": "Q192637"
+ },
+ {
+  "name": "Dioptase",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Intense emerald-green dioptase is associated with emotional healing.",
+  "uses": [
+   "emotional healing",
+   "forgiveness",
+   "love"
+  ],
+  "wikidata": "Q413369"
+ },
+ {
+  "name": "Sulfur",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Native sulfur is associated with willpower and dispelling negativity.",
+  "uses": [
+   "willpower",
+   "purification",
+   "energy"
+  ],
+  "wikidata": null,
+  "slug": "sulfur"
+ },
+ {
+  "name": "Copper",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Native copper is linked to energy flow and vitality.",
+  "uses": [
+   "energy flow",
+   "vitality",
+   "balance"
+  ],
+  "wikidata": "Q583353"
+ },
+ {
+  "name": "Gold",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Gold has symbolised the sun, purity and wealth across cultures.",
+  "uses": [
+   "abundance",
+   "confidence",
+   "vitality"
+  ],
+  "wikidata": "Q898406"
+ },
+ {
+  "name": "Silver",
+  "kind": "mineral",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with the moon, reflection and intuition.",
+  "uses": [
+   "intuition",
+   "reflection",
+   "calm"
+  ],
+  "wikidata": "Q1057174"
+ },
+ {
+  "name": "Apatite",
+  "kind": "group",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Blue apatite is associated with motivation, learning and inspiration.",
+  "uses": [
+   "motivation",
+   "learning",
+   "appetite control"
+  ],
+  "wikidata": "Q178397"
+ },
+ {
+  "name": "Danburite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Clear, striated danburite is associated with lightness and spiritual connection.",
+  "uses": [
+   "peace",
+   "spiritual connection",
+   "calm"
+  ],
+  "wikidata": "Q424270"
+ },
+ {
+  "name": "Petalite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with tranquility and angelic connection.",
+  "uses": [
+   "calm",
+   "meditation",
+   "protection"
+  ],
+  "wikidata": "Q422823"
+ },
+ {
+  "name": "Phenakite",
+  "kind": "mineral",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Spirit"
+  ],
+  "meaning": "Rare phenakite is said to be one of the highest-vibration crystals in modern lore.",
+  "uses": [
+   "meditation",
+   "insight",
+   "awakening"
+  ],
+  "wikidata": "Q423025"
+ },
+ {
+  "name": "Scolecite",
+  "kind": "mineral",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Needle-like scolecite is associated with peaceful sleep and inner peace.",
+  "uses": [
+   "sleep",
+   "peace",
+   "meditation"
+  ],
+  "wikidata": "Q422100"
+ },
+ {
+  "name": "Stilbite",
+  "kind": "group",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Peach stilbite bowties are linked to creativity and loving support.",
+  "uses": [
+   "creativity",
+   "support",
+   "calm"
+  ],
+  "wikidata": "Q423014"
+ },
+ {
+  "name": "Okenite",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Fuzzy white okenite 'snowballs' are associated with comfort and forgiveness.",
+  "uses": [
+   "comfort",
+   "forgiveness",
+   "calm"
+  ],
+  "wikidata": "Q422063"
+ },
+ {
+  "name": "Cavansite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Vivid blue cavansite rosettes are linked to inspiration and intuition.",
+  "uses": [
+   "intuition",
+   "creativity",
+   "communication"
+  ],
+  "wikidata": "Q422857"
+ },
+ {
+  "name": "Dumortierite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Denim-blue dumortierite is called a stone of patience and self-discipline.",
+  "uses": [
+   "patience",
+   "organization",
+   "calm"
+  ],
+  "wikidata": "Q677619"
+ },
+ {
+  "name": "Chrysoberyl",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Associated with generosity, optimism and new beginnings.",
+  "uses": [
+   "optimism",
+   "generosity",
+   "renewal"
+  ],
+  "wikidata": "Q422179"
+ },
+ {
+  "name": "Alexandrite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Its color change from green to red makes alexandrite a stone of good omens and adaptability.",
+  "uses": [
+   "adaptability",
+   "joy",
+   "good fortune"
+  ],
+  "wikidata": "Q1765371"
+ },
+ {
+  "name": "Titanite",
+  "kind": "mineral",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Also called sphene, titanite is associated with focus and learning.",
+  "uses": [
+   "focus",
+   "learning",
+   "mental clarity"
+  ],
+  "wikidata": "Q377280"
+ },
+ {
+  "name": "Ulexite",
+  "kind": "mineral",
+  "chakras": [
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Fibers that transmit an image earned it the name 'TV stone' and an association with clear vision.",
+  "uses": [
+   "clarity",
+   "insight",
+   "creativity"
+  ],
+  "wikidata": "Q409611"
+ },
+ {
+  "name": "Halite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Rock salt is associated with cleansing and protection.",
+  "uses": [
+   "cleansing",
+   "protection",
+   "release"
+  ],
+  "wikidata": "Q5314"
+ },
+ {
+  "name": "Muscovite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aquarius"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Shimmering mica associated with self-reflection.",
+  "uses": [
+   "self-reflection",
+   "problem solving",
+   "clarity"
+  ],
+  "wikidata": "Q106532"
+ },
+ {
+  "name": "Fuchsite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Green chromian mica associated with renewal and lightheartedness.",
+  "uses": [
+   "renewal",
+   "joy",
+   "balance"
+  ],
+  "wikidata": "Q3753903"
+ },
+ {
+  "name": "Astrophyllite",
+  "kind": "group",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Star-like golden blades associated with self-discovery.",
+  "uses": [
+   "self-discovery",
+   "inspiration",
+   "dreamwork"
+  ],
+  "wikidata": "Q1991431"
+ },
+ {
+  "name": "Nuummite",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "One of the oldest rocks on Earth, called the 'sorcerer's stone' in modern lore.",
+  "uses": [
+   "protection",
+   "inner power",
+   "intuition"
+  ],
+  "wikidata": "Q2005761"
+ },
+ {
+  "name": "Septarian",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Cracked concretions filled with calcite associated with nurturing and patience.",
+  "uses": [
+   "patience",
+   "grounding",
+   "communication"
+  ],
+  "wikidata": "Q583793"
+ },
+ {
+  "name": "Zoisite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Associated with regeneration and transforming negative energy.",
+  "uses": [
+   "renewal",
+   "creativity",
+   "resilience"
+  ],
+  "wikidata": "Q213544"
+ },
+ {
+  "name": "Ruby in Zoisite",
+  "kind": "rock",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Red ruby set in green zoisite is linked to vitality and a joyful heart.",
+  "uses": [
+   "vitality",
+   "passion",
+   "connection"
+  ],
+  "wikidata": "Q174221"
+ },
+ {
+  "name": "Thulite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Gemini"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Pink manganoan zoisite associated with joy and passion for life.",
+  "uses": [
+   "joy",
+   "passion",
+   "self-expression"
+  ],
+  "wikidata": "Q2529534"
+ },
+ {
+  "name": "Pietersite",
+  "kind": "rock",
+  "chakras": [
+   "Third Eye",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire",
+   "Air",
+   "Water"
+  ],
+  "meaning": "Swirling 'tempest stone' associated with clearing storms of the mind.",
+  "uses": [
+   "transformation",
+   "clarity",
+   "insight"
+  ],
+  "wikidata": "Q30132897"
+ },
+ {
+  "name": "Bronzite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Associated with self-assurance and decisiveness.",
+  "uses": [
+   "confidence",
+   "decision making",
+   "grounding"
+  ],
+  "wikidata": "Q849995"
+ },
+ {
+  "name": "Variscite",
+  "kind": "mineral",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Taurus",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Green variscite is associated with encouragement and calm.",
+  "uses": [
+   "encouragement",
+   "calm",
+   "optimism"
+  ],
+  "wikidata": "Q415544"
+ },
+ {
+  "name": "Eudialyte",
+  "kind": "group",
+  "chakras": [
+   "Heart",
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Virgo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Red-pink eudialyte is associated with self-love and forgiveness.",
+  "uses": [
+   "self-love",
+   "forgiveness",
+   "purpose"
+  ],
+  "wikidata": "Q419270"
+ },
+ {
+  "name": "Rutile",
+  "kind": "mineral",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus",
+   "Gemini"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Associated with energy amplification and clarity.",
+  "uses": [
+   "energy",
+   "clarity",
+   "manifestation"
+  ],
+  "wikidata": "Q320603"
+ },
+ {
+  "name": "Stibnite",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Metallic blades associated with protection and resolve; handle with care (antimony).",
+  "uses": [
+   "protection",
+   "resolve",
+   "focus"
+  ],
+  "wikidata": "Q421831"
+ },
+ {
+  "name": "Cinnabar",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Vermilion pigment of ancient China, cinnabar is tied to prosperity in lore; toxic (mercury), never use in elixirs.",
+  "uses": [
+   "prosperity lore",
+   "transformation",
+   "vitality"
+  ],
+  "wikidata": "Q104614"
+ },
+ {
+  "name": "Benitoite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "California's state gem, associated with joy and inner sight.",
+  "uses": [
+   "intuition",
+   "joy",
+   "clarity"
+  ],
+  "wikidata": "Q411137"
+ },
+ {
+  "name": "Covellite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Indigo covellite is associated with insight and communication.",
+  "uses": [
+   "insight",
+   "communication",
+   "psychic awareness"
+  ],
+  "wikidata": "Q325345"
+ },
+ {
+  "name": "Beryl",
+  "kind": "mineral",
+  "chakras": [
+   "Heart",
+   "Throat"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "The beryl family (emerald, aquamarine, morganite) is collectively linked to courage and purpose.",
+  "uses": [
+   "purpose",
+   "courage",
+   "focus"
+  ],
+  "wikidata": "Q103480"
+ },
+ {
+  "name": "Corundum",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The mineral behind ruby and sapphire, associated with steadfastness.",
+  "uses": [
+   "steadfastness",
+   "strength",
+   "focus"
+  ],
+  "wikidata": "Q131777"
+ },
+ {
+  "name": "Gypsum",
+  "kind": "mineral",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with good luck and flexibility in lore.",
+  "uses": [
+   "flexibility",
+   "luck",
+   "calm"
+  ],
+  "wikidata": "Q82658"
+ },
+ {
+  "name": "Barite",
+  "kind": "mineral",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Associated with dreams, insight and independence.",
+  "uses": [
+   "dreamwork",
+   "independence",
+   "clarity"
+  ],
+  "wikidata": "Q184196"
+ },
+ {
+  "name": "Orthoclase",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The feldspar of moonstone, associated with new beginnings.",
+  "uses": [
+   "new beginnings",
+   "balance",
+   "grounding"
+  ],
+  "wikidata": "Q21813710"
+ },
+ {
+  "name": "Olivine",
+  "kind": "group",
+  "chakras": [
+   "Heart",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The mineral family of peridot, linked to renewal.",
+  "uses": [
+   "renewal",
+   "optimism",
+   "calm"
+  ],
+  "wikidata": "Q22693"
+ },
+ {
+  "name": "Cerussite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Sparkling lead carbonate associated with adapting to change; handle with care.",
+  "uses": [
+   "adaptability",
+   "grounding",
+   "travel"
+  ],
+  "wikidata": "Q409122"
+ },
+ {
+  "name": "Garnierite",
+  "kind": "rock",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Green nickel ore sometimes sold as 'green moonstone', associated with renewal.",
+  "uses": [
+   "renewal",
+   "growth",
+   "compassion"
+  ],
+  "wikidata": "Q1494409"
+ },
+ {
+  "name": "Chrysanthemum Stone",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Flower-like celestine or calcite crystals in dark rock, associated with blossoming potential.",
+  "uses": [
+   "growth",
+   "harmony",
+   "self-actualization"
+  ],
+  "wikidata": "Q11619911"
+ },
+ {
+  "name": "Meteorite",
+  "kind": "other",
+  "chakras": [
+   "Crown",
+   "Root"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Spirit"
+  ],
+  "meaning": "Fragments from space are associated with cosmic connection and grounding the extraterrestrial.",
+  "uses": [
+   "cosmic connection",
+   "grounding",
+   "transformation"
+  ],
+  "wikidata": "Q60186"
+ },
+ {
+  "name": "Rhyolite",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Rainforest rhyolite is associated with self-worth and connection to nature.",
+  "uses": [
+   "self-worth",
+   "nature connection",
+   "change"
+  ],
+  "wikidata": "Q190727"
+ },
+ {
+  "name": "Zebra Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Black-and-white jasper symbolising balance of opposites.",
+  "uses": [
+   "balance",
+   "grounding",
+   "stamina"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "zebra-jasper"
+ },
+ {
+  "name": "Polychrome Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Desert jasper of Madagascar associated with creativity and passion.",
+  "uses": [
+   "creativity",
+   "passion",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "polychrome-jasper"
+ },
+ {
+  "name": "Blue Chalcedony",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Soft blue chalcedony is associated with calm speech and listening.",
+  "uses": [
+   "listening",
+   "calm",
+   "expression"
+  ],
+  "wikidata": null,
+  "parent": "Q170448",
+  "slug": "blue-chalcedony"
+ },
+ {
+  "name": "Black Kyanite",
+  "kind": "mineral",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Fan-shaped black kyanite is associated with grounding and alignment.",
+  "uses": [
+   "grounding",
+   "alignment",
+   "protection"
+  ],
+  "wikidata": "Q193450"
+ }
+]

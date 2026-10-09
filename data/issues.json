@@ -1,0 +1,1850 @@
+[
+ {
+  "id": "Q102151",
+  "name": "fluorite",
+  "field": "density",
+  "msg": "converted 3089.83 kg/m³-type unit (Q844211) → 3.09 g/cm³"
+ },
+ {
+  "id": "Q102151",
+  "name": "fluorite",
+  "field": "density",
+  "msg": "converted 3089.83 kg/m³-type unit (Q844211) → 3.09 g/cm³"
+ },
+ {
+  "id": "Q105006",
+  "name": "sphalerite",
+  "field": "density",
+  "msg": "converted 4141.14 kg/m³-type unit (Q844211) → 4.141 g/cm³"
+ },
+ {
+  "id": "Q105006",
+  "name": "sphalerite",
+  "field": "density",
+  "msg": "converted 4141.14 kg/m³-type unit (Q844211) → 4.141 g/cm³"
+ },
+ {
+  "id": "Q105439",
+  "name": "anhydrite",
+  "field": "density",
+  "msg": "converted 2978.72 kg/m³-type unit (Q844211) → 2.979 g/cm³"
+ },
+ {
+  "id": "Q105439",
+  "name": "anhydrite",
+  "field": "density",
+  "msg": "converted 2978.72 kg/m³-type unit (Q844211) → 2.979 g/cm³"
+ },
+ {
+  "id": "Q109746",
+  "name": "realgar",
+  "field": "density",
+  "msg": "converted 3260.27 kg/m³-type unit (Q844211) → 3.26 g/cm³"
+ },
+ {
+  "id": "Q111200",
+  "name": "adamite",
+  "field": "density",
+  "msg": "converted 4233.88 kg/m³-type unit (Q844211) → 4.234 g/cm³"
+ },
+ {
+  "id": "Q114538",
+  "name": "hapkeite",
+  "field": "density",
+  "msg": "converted 6830 kg/m³-type unit (Q844211) → 6.83 g/cm³"
+ },
+ {
+  "id": "Q115060",
+  "name": "luanheite",
+  "field": "density",
+  "msg": "converted 12500 kg/m³-type unit (Q844211) → 12.5 g/cm³"
+ },
+ {
+  "id": "Q118134",
+  "name": "pyrargyrite",
+  "field": "density",
+  "msg": "converted 5802.74 kg/m³-type unit (Q844211) → 5.803 g/cm³"
+ },
+ {
+  "id": "Q118781",
+  "name": "chrysotile",
+  "field": "density",
+  "msg": "converted 2487.48 kg/m³-type unit (Q844211) → 2.487 g/cm³"
+ },
+ {
+  "id": "Q119632",
+  "name": "sillimanite",
+  "field": "density",
+  "msg": "converted 3677.08 kg/m³-type unit (Q844211) → 3.677 g/cm³"
+ },
+ {
+  "id": "Q120618",
+  "name": "safflorite",
+  "field": "density",
+  "msg": "converted 7546.05 kg/m³-type unit (Q844211) → 7.546 g/cm³"
+ },
+ {
+  "id": "Q125177",
+  "name": "niedermayrite",
+  "field": "density",
+  "msg": "converted 3360 kg/m³-type unit (Q844211) → 3.36 g/cm³"
+ },
+ {
+  "id": "Q152400",
+  "name": "smithsonite",
+  "field": "density",
+  "msg": "converted 4456.98 kg/m³-type unit (Q844211) → 4.457 g/cm³"
+ },
+ {
+  "id": "Q152400",
+  "name": "smithsonite",
+  "field": "density",
+  "msg": "converted 4456.98 kg/m³-type unit (Q844211) → 4.457 g/cm³"
+ },
+ {
+  "id": "Q156526",
+  "name": "anglesite",
+  "field": "density",
+  "msg": "converted 6342.86 kg/m³-type unit (Q844211) → 6.343 g/cm³"
+ },
+ {
+  "id": "Q167741",
+  "name": "dolomite",
+  "field": "density",
+  "msg": "converted 2870.01 kg/m³-type unit (Q844211) → 2.87 g/cm³"
+ },
+ {
+  "id": "Q178209",
+  "name": "hsianghualite",
+  "field": "density",
+  "msg": "converted 2873.81 kg/m³-type unit (Q844211) → 2.874 g/cm³"
+ },
+ {
+  "id": "Q182264",
+  "name": "albite",
+  "field": "density",
+  "msg": "converted 2639.96 kg/m³-type unit (Q844211) → 2.64 g/cm³"
+ },
+ {
+  "id": "Q182344",
+  "name": "jadarite",
+  "field": "density",
+  "msg": "converted 2370.12 kg/m³-type unit (Q844211) → 2.37 g/cm³"
+ },
+ {
+  "id": "Q184196",
+  "name": "baryte",
+  "field": "density",
+  "msg": "converted 4423.71 kg/m³-type unit (Q844211) → 4.424 g/cm³"
+ },
+ {
+  "id": "Q184196",
+  "name": "baryte",
+  "field": "density",
+  "msg": "converted 4423.71 kg/m³-type unit (Q844211) → 4.424 g/cm³"
+ },
+ {
+  "id": "Q187295",
+  "name": "zektzerite",
+  "field": "density",
+  "msg": "converted 2670.81 kg/m³-type unit (Q844211) → 2.671 g/cm³"
+ },
+ {
+  "id": "Q189703",
+  "name": "goethite",
+  "field": "density",
+  "msg": "converted 4243.77 kg/m³-type unit (Q844211) → 4.244 g/cm³"
+ },
+ {
+  "id": "Q191310",
+  "name": "spinel",
+  "field": "density",
+  "msg": "converted 3582.14 kg/m³-type unit (Q844211) → 3.582 g/cm³"
+ },
+ {
+  "id": "Q191310",
+  "name": "spinel",
+  "field": "density",
+  "msg": "converted 3582.14 kg/m³-type unit (Q844211) → 3.582 g/cm³"
+ },
+ {
+  "id": "Q191939",
+  "name": "arsenopyrite",
+  "field": "density",
+  "msg": "converted 6347.31 kg/m³-type unit (Q844211) → 6.347 g/cm³"
+ },
+ {
+  "id": "Q193450",
+  "name": "kyanite",
+  "field": "density",
+  "msg": "converted 3677.08 kg/m³-type unit (Q844211) → 3.677 g/cm³"
+ },
+ {
+  "id": "Q193450",
+  "name": "kyanite",
+  "field": "density",
+  "msg": "converted 3677.08 kg/m³-type unit (Q844211) → 3.677 g/cm³"
+ },
+ {
+  "id": "Q193502",
+  "name": "cryolite",
+  "field": "density",
+  "msg": "converted 3064.92 kg/m³-type unit (Q844211) → 3.065 g/cm³"
+ },
+ {
+  "id": "Q5314",
+  "name": "halite",
+  "field": "density",
+  "msg": "converted 2224.55 kg/m³-type unit (Q844211) → 2.225 g/cm³"
+ },
+ {
+  "id": "Q5314",
+  "name": "halite",
+  "field": "density",
+  "msg": "converted 2224.55 kg/m³-type unit (Q844211) → 2.225 g/cm³"
+ },
+ {
+  "id": "Q13098",
+  "name": "huemulite",
+  "field": "density",
+  "msg": "converted 2360 kg/m³-type unit (Q844211) → 2.36 g/cm³"
+ },
+ {
+  "id": "Q13104",
+  "name": "manganvesuvianite",
+  "field": "density",
+  "msg": "converted 3404 kg/m³-type unit (Q844211) → 3.404 g/cm³"
+ },
+ {
+  "id": "Q13109",
+  "name": "paramelaconite",
+  "field": "density",
+  "msg": "converted 6040 kg/m³-type unit (Q844211) → 6.04 g/cm³"
+ },
+ {
+  "id": "Q43010",
+  "name": "quartz",
+  "field": "streak",
+  "msg": "\"black\" implausible for SiO₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q412913",
+  "name": "avogadrite",
+  "field": "density",
+  "msg": "converted 2632.83 kg/m³-type unit (Q844211) → 2.633 g/cm³"
+ },
+ {
+  "id": "Q412947",
+  "name": "gaspéite",
+  "field": "density",
+  "msg": "converted 4432.17 kg/m³-type unit (Q844211) → 4.432 g/cm³"
+ },
+ {
+  "id": "Q413024",
+  "name": "talnakhite",
+  "field": "density",
+  "msg": "converted 4290 kg/m³-type unit (Q844211) → 4.29 g/cm³"
+ },
+ {
+  "id": "Q413516",
+  "name": "allargentum",
+  "field": "density",
+  "msg": "converted 10000 kg/m³-type unit (Q844211) → 10 g/cm³"
+ },
+ {
+  "id": "Q413857",
+  "name": "brianite",
+  "field": "density",
+  "msg": "converted 3048.51 kg/m³-type unit (Q844211) → 3.049 g/cm³"
+ },
+ {
+  "id": "Q414138",
+  "name": "greenockite",
+  "field": "density",
+  "msg": "converted 4702.28 kg/m³-type unit (Q844211) → 4.702 g/cm³"
+ },
+ {
+  "id": "Q414572",
+  "name": "lanarkite",
+  "field": "density",
+  "msg": "converted 6976.19 kg/m³-type unit (Q844211) → 6.976 g/cm³"
+ },
+ {
+  "id": "Q414620",
+  "name": "huttonite",
+  "field": "density",
+  "msg": "converted 6661.04 kg/m³-type unit (Q844211) → 6.661 g/cm³"
+ },
+ {
+  "id": "Q414879",
+  "name": "mooihoekite",
+  "field": "density",
+  "msg": "converted 4360 kg/m³-type unit (Q844211) → 4.36 g/cm³"
+ },
+ {
+  "id": "Q414888",
+  "name": "vulcanite",
+  "field": "density",
+  "msg": "converted 6705.42 kg/m³-type unit (Q844211) → 6.705 g/cm³"
+ },
+ {
+  "id": "Q414989",
+  "name": "thorite",
+  "field": "density",
+  "msg": "converted 6661.04 kg/m³-type unit (Q844211) → 6.661 g/cm³"
+ },
+ {
+  "id": "Q414999",
+  "name": "calaverite",
+  "field": "density",
+  "msg": "converted 8860.25 kg/m³-type unit (Q844211) → 8.86 g/cm³"
+ },
+ {
+  "id": "Q415037",
+  "name": "forsterite",
+  "field": "density",
+  "msg": "converted 3235.69 kg/m³-type unit (Q844211) → 3.236 g/cm³"
+ },
+ {
+  "id": "Q415729",
+  "name": "baddeleyite",
+  "field": "density",
+  "msg": "converted 5777.33 kg/m³-type unit (Q844211) → 5.777 g/cm³"
+ },
+ {
+  "id": "Q415824",
+  "name": "löllingite",
+  "field": "density",
+  "msg": "converted 7601.88 kg/m³-type unit (Q844211) → 7.602 g/cm³"
+ },
+ {
+  "id": "Q415880",
+  "name": "evansite",
+  "field": "density",
+  "msg": "converted 2000 kg/m³-type unit (Q844211) → 2 g/cm³"
+ },
+ {
+  "id": "Q415961",
+  "name": "metacinnabar",
+  "field": "density",
+  "msg": "converted 7375.82 kg/m³-type unit (Q844211) → 7.376 g/cm³"
+ },
+ {
+  "id": "Q415984",
+  "name": "antarcticite",
+  "field": "density",
+  "msg": "converted 1715 kg/m³-type unit (Q844211) → 1.715 g/cm³"
+ },
+ {
+  "id": "Q415990",
+  "name": "milarite",
+  "field": "density",
+  "msg": "converted 2600 kg/m³-type unit (Q844211) → 2.6 g/cm³"
+ },
+ {
+  "id": "Q416203",
+  "name": "patrónite",
+  "field": "density",
+  "msg": "converted 2667.71 kg/m³-type unit (Q844211) → 2.668 g/cm³"
+ },
+ {
+  "id": "Q416275",
+  "name": "fluorapatite",
+  "field": "density",
+  "msg": "converted 3207.82 kg/m³-type unit (Q844211) → 3.208 g/cm³"
+ },
+ {
+  "id": "Q416294",
+  "name": "coloradoite",
+  "field": "density",
+  "msg": "converted 7651.79 kg/m³-type unit (Q844211) → 7.652 g/cm³"
+ },
+ {
+  "id": "Q416672",
+  "name": "altaite",
+  "field": "density",
+  "msg": "converted 7943.36 kg/m³-type unit (Q844211) → 7.943 g/cm³"
+ },
+ {
+  "id": "Q417246",
+  "name": "laurite",
+  "field": "density",
+  "msg": "converted 6146.85 kg/m³-type unit (Q844211) → 6.147 g/cm³"
+ },
+ {
+  "id": "Q417274",
+  "name": "skutterudite",
+  "field": "density",
+  "msg": "converted 6839.79 kg/m³-type unit (Q844211) → 6.84 g/cm³"
+ },
+ {
+  "id": "Q417292",
+  "name": "descloizite",
+  "field": "density",
+  "msg": "converted 6205.14 kg/m³-type unit (Q844211) → 6.205 g/cm³"
+ },
+ {
+  "id": "Q417303",
+  "name": "bromellite",
+  "field": "density",
+  "msg": "converted 3019.44 kg/m³-type unit (Q844211) → 3.019 g/cm³"
+ },
+ {
+  "id": "Q204498",
+  "name": "otavite",
+  "field": "density",
+  "msg": "converted 4956.5 kg/m³-type unit (Q844211) → 4.957 g/cm³"
+ },
+ {
+  "id": "Q204851",
+  "name": "zincite",
+  "field": "density",
+  "msg": "converted 5704.22 kg/m³-type unit (Q844211) → 5.704 g/cm³"
+ },
+ {
+  "id": "Q206467",
+  "name": "uraninite",
+  "field": "density",
+  "msg": "converted 11055.3 kg/m³-type unit (Q844211) → 11.055 g/cm³"
+ },
+ {
+  "id": "Q231506",
+  "name": "zvyagintsevite",
+  "field": "density",
+  "msg": "converted 12878.7 kg/m³-type unit (Q844211) → 12.879 g/cm³"
+ },
+ {
+  "id": "Q252287",
+  "name": "aphthitalite",
+  "field": "density",
+  "msg": "converted 2751.2 kg/m³-type unit (Q844211) → 2.751 g/cm³"
+ },
+ {
+  "id": "Q268188",
+  "name": "laforêtite",
+  "field": "density",
+  "msg": "converted 4930 kg/m³-type unit (Q844211) → 4.93 g/cm³"
+ },
+ {
+  "id": "Q301805",
+  "name": "portlandite",
+  "field": "density",
+  "msg": "converted 2295.85 kg/m³-type unit (Q844211) → 2.296 g/cm³"
+ },
+ {
+  "id": "Q303181",
+  "name": "tetradymite",
+  "field": "density",
+  "msg": "converted 7089.45 kg/m³-type unit (Q844211) → 7.089 g/cm³"
+ },
+ {
+  "id": "Q304018",
+  "name": "groutite",
+  "field": "density",
+  "msg": "converted 4144 kg/m³-type unit (Q844211) → 4.144 g/cm³"
+ },
+ {
+  "id": "Q316671",
+  "name": "diopside",
+  "field": "density",
+  "msg": "converted 3149.49 kg/m³-type unit (Q844211) → 3.149 g/cm³"
+ },
+ {
+  "id": "Q320603",
+  "name": "rutile",
+  "field": "density",
+  "msg": "converted 3856.14 kg/m³-type unit (Q844211) → 3.856 g/cm³"
+ },
+ {
+  "id": "Q320603",
+  "name": "rutile",
+  "field": "density",
+  "msg": "converted 3856.14 kg/m³-type unit (Q844211) → 3.856 g/cm³"
+ },
+ {
+  "id": "Q336394",
+  "name": "kogarkoite",
+  "field": "density",
+  "msg": "converted 2576.5 kg/m³-type unit (Q844211) → 2.577 g/cm³"
+ },
+ {
+  "id": "Q336410",
+  "name": "hibonite",
+  "field": "streak",
+  "msg": "\"brown\" implausible for CaAl₁₂O₁₉ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q339530",
+  "name": "černýite",
+  "field": "density",
+  "msg": "converted 4658.63 kg/m³-type unit (Q844211) → 4.659 g/cm³"
+ },
+ {
+  "id": "Q371695",
+  "name": "weberite",
+  "field": "density",
+  "msg": "converted 2836.96 kg/m³-type unit (Q844211) → 2.837 g/cm³"
+ },
+ {
+  "id": "Q373383",
+  "name": "lueshite",
+  "field": "density",
+  "msg": "converted 4472.89 kg/m³-type unit (Q844211) → 4.473 g/cm³"
+ },
+ {
+  "id": "Q375357",
+  "name": "gahnite",
+  "field": "density",
+  "msg": "converted 4625.89 kg/m³-type unit (Q844211) → 4.626 g/cm³"
+ },
+ {
+  "id": "Q377280",
+  "name": "titanite",
+  "field": "density",
+  "msg": "converted 3416.46 kg/m³-type unit (Q844211) → 3.416 g/cm³"
+ },
+ {
+  "id": "Q377280",
+  "name": "titanite",
+  "field": "density",
+  "msg": "converted 3416.46 kg/m³-type unit (Q844211) → 3.416 g/cm³"
+ },
+ {
+  "id": "Q377399",
+  "name": "sulvanite",
+  "field": "density",
+  "msg": "converted 3966.14 kg/m³-type unit (Q844211) → 3.966 g/cm³"
+ },
+ {
+  "id": "Q381133",
+  "name": "aerinite",
+  "field": "density",
+  "msg": "converted 2480 kg/m³-type unit (Q844211) → 2.48 g/cm³"
+ },
+ {
+  "id": "Q382994",
+  "name": "molybdenite",
+  "field": "density",
+  "msg": "converted 4669.64 kg/m³-type unit (Q844211) → 4.67 g/cm³"
+ },
+ {
+  "id": "Q407221",
+  "name": "celestine",
+  "field": "density",
+  "msg": "converted 3977.67 kg/m³-type unit (Q844211) → 3.978 g/cm³"
+ },
+ {
+  "id": "Q407221",
+  "name": "celestine",
+  "field": "density",
+  "msg": "converted 3977.67 kg/m³-type unit (Q844211) → 3.978 g/cm³"
+ },
+ {
+  "id": "Q408107",
+  "name": "niningerite",
+  "field": "density",
+  "msg": "converted 2649.39 kg/m³-type unit (Q844211) → 2.649 g/cm³"
+ },
+ {
+  "id": "Q408114",
+  "name": "austinite",
+  "field": "density",
+  "msg": "converted 4319.17 kg/m³-type unit (Q844211) → 4.319 g/cm³"
+ },
+ {
+  "id": "Q408166",
+  "name": "cadmoselite",
+  "field": "density",
+  "msg": "converted 5480.14 kg/m³-type unit (Q844211) → 5.48 g/cm³"
+ },
+ {
+  "id": "Q408356",
+  "name": "moschelite",
+  "field": "density",
+  "msg": "converted 7187.59 kg/m³-type unit (Q844211) → 7.188 g/cm³"
+ },
+ {
+  "id": "Q417455",
+  "name": "villiaumite",
+  "field": "density",
+  "msg": "converted 2918.62 kg/m³-type unit (Q844211) → 2.919 g/cm³"
+ },
+ {
+  "id": "Q417462",
+  "name": "tiemannite",
+  "field": "density",
+  "msg": "converted 8307.72 kg/m³-type unit (Q844211) → 8.308 g/cm³"
+ },
+ {
+  "id": "Q417730",
+  "name": "liebigite",
+  "field": "density",
+  "msg": "converted 2410 kg/m³-type unit (Q844211) → 2.41 g/cm³"
+ },
+ {
+  "id": "Q417794",
+  "name": "mackinawite",
+  "field": "density",
+  "msg": "converted 4300 kg/m³-type unit (Q844211) → 4.3 g/cm³"
+ },
+ {
+  "id": "Q417987",
+  "name": "hoelite",
+  "field": "density",
+  "msg": "converted 1420 kg/m³-type unit (Q844211) → 1.42 g/cm³"
+ },
+ {
+  "id": "Q418215",
+  "name": "moissanite",
+  "field": "density",
+  "msg": "converted 3227.67 kg/m³-type unit (Q844211) → 3.228 g/cm³"
+ },
+ {
+  "id": "Q418623",
+  "name": "auricupride",
+  "field": "density",
+  "msg": "converted 12349 kg/m³-type unit (Q844211) → 12.349 g/cm³"
+ },
+ {
+  "id": "Q418863",
+  "name": "hessite",
+  "field": "density",
+  "msg": "converted 8246.59 kg/m³-type unit (Q844211) → 8.247 g/cm³"
+ },
+ {
+  "id": "Q418867",
+  "name": "iodargyrite",
+  "field": "density",
+  "msg": "converted 5809.9 kg/m³-type unit (Q844211) → 5.81 g/cm³"
+ },
+ {
+  "id": "Q419106",
+  "name": "xanthoconite",
+  "field": "density",
+  "msg": "converted 5393.89 kg/m³-type unit (Q844211) → 5.394 g/cm³"
+ },
+ {
+  "id": "Q419238",
+  "name": "thénardite",
+  "field": "density",
+  "msg": "converted 2738.78 kg/m³-type unit (Q844211) → 2.739 g/cm³"
+ },
+ {
+  "id": "Q419241",
+  "name": "glauberite",
+  "field": "density",
+  "msg": "converted 2840.27 kg/m³-type unit (Q844211) → 2.84 g/cm³"
+ },
+ {
+  "id": "Q419250",
+  "name": "brucite",
+  "field": "density",
+  "msg": "converted 2459.02 kg/m³-type unit (Q844211) → 2.459 g/cm³"
+ },
+ {
+  "id": "Q419260",
+  "name": "witherite",
+  "field": "density",
+  "msg": "converted 4244.73 kg/m³-type unit (Q844211) → 4.245 g/cm³"
+ },
+ {
+  "id": "Q419274",
+  "name": "pollucite",
+  "field": "density",
+  "msg": "converted 2900 kg/m³-type unit (Q844211) → 2.9 g/cm³"
+ },
+ {
+  "id": "Q419292",
+  "name": "bismuthinite",
+  "field": "density",
+  "msg": "converted 6602.03 kg/m³-type unit (Q844211) → 6.602 g/cm³"
+ },
+ {
+  "id": "Q419868",
+  "name": "painite",
+  "field": "density",
+  "msg": "converted 4000 kg/m³-type unit (Q844211) → 4 g/cm³"
+ },
+ {
+  "id": "Q420537",
+  "name": "kermesite",
+  "field": "density",
+  "msg": "converted 4680 kg/m³-type unit (Q844211) → 4.68 g/cm³"
+ },
+ {
+  "id": "Q420563",
+  "name": "alabandite",
+  "field": "density",
+  "msg": "converted 4191.81 kg/m³-type unit (Q844211) → 4.192 g/cm³"
+ },
+ {
+  "id": "Q420620",
+  "name": "stishovite",
+  "field": "density",
+  "msg": "converted 2634.24 kg/m³-type unit (Q844211) → 2.634 g/cm³"
+ },
+ {
+  "id": "Q420771",
+  "name": "rammelsbergite",
+  "field": "density",
+  "msg": "converted 7106.58 kg/m³-type unit (Q844211) → 7.107 g/cm³"
+ },
+ {
+  "id": "Q420775",
+  "name": "papagoite",
+  "field": "density",
+  "msg": "converted 3250 kg/m³-type unit (Q844211) → 3.25 g/cm³"
+ },
+ {
+  "id": "Q420793",
+  "name": "gaylussite",
+  "field": "density",
+  "msg": "converted 2000 kg/m³-type unit (Q844211) → 2 g/cm³"
+ },
+ {
+  "id": "Q420853",
+  "name": "clausthalite",
+  "field": "density",
+  "msg": "converted 8046.47 kg/m³-type unit (Q844211) → 8.046 g/cm³"
+ },
+ {
+  "id": "Q420921",
+  "name": "bismutite",
+  "field": "density",
+  "msg": "converted 7860.44 kg/m³-type unit (Q844211) → 7.86 g/cm³"
+ },
+ {
+  "id": "Q420937",
+  "name": "bromargyrite",
+  "field": "density",
+  "msg": "converted 6444.35 kg/m³-type unit (Q844211) → 6.444 g/cm³"
+ },
+ {
+  "id": "Q421078",
+  "name": "kainite",
+  "field": "density",
+  "msg": "converted 2100 kg/m³-type unit (Q844211) → 2.1 g/cm³"
+ },
+ {
+  "id": "Q421115",
+  "name": "wurtzite",
+  "field": "density",
+  "msg": "converted 4141.14 kg/m³-type unit (Q844211) → 4.141 g/cm³"
+ },
+ {
+  "id": "Q421362",
+  "name": "vaterite",
+  "field": "density",
+  "msg": "converted 2703.52 kg/m³-type unit (Q844211) → 2.704 g/cm³"
+ },
+ {
+  "id": "Q409087",
+  "name": "marcasite",
+  "field": "density",
+  "msg": "converted 4939.24 kg/m³-type unit (Q844211) → 4.939 g/cm³"
+ },
+ {
+  "id": "Q409096",
+  "name": "scheelite",
+  "field": "density",
+  "msg": "converted 6099.85 kg/m³-type unit (Q844211) → 6.1 g/cm³"
+ },
+ {
+  "id": "Q409122",
+  "name": "cerussite",
+  "field": "density",
+  "msg": "converted 6604.03 kg/m³-type unit (Q844211) → 6.604 g/cm³"
+ },
+ {
+  "id": "Q409122",
+  "name": "cerussite",
+  "field": "density",
+  "msg": "converted 6604.03 kg/m³-type unit (Q844211) → 6.604 g/cm³"
+ },
+ {
+  "id": "Q409139",
+  "name": "willemite",
+  "field": "density",
+  "msg": "converted 4245.71 kg/m³-type unit (Q844211) → 4.246 g/cm³"
+ },
+ {
+  "id": "Q409270",
+  "name": "nekrasovite",
+  "field": "density",
+  "msg": "converted 4620 kg/m³-type unit (Q844211) → 4.62 g/cm³"
+ },
+ {
+  "id": "Q409385",
+  "name": "lautite",
+  "field": "density",
+  "msg": "converted 4902.44 kg/m³-type unit (Q844211) → 4.902 g/cm³"
+ },
+ {
+  "id": "Q409428",
+  "name": "wiluite",
+  "field": "density",
+  "msg": "converted 3360 kg/m³-type unit (Q844211) → 3.36 g/cm³"
+ },
+ {
+  "id": "Q409733",
+  "name": "uvarovite",
+  "field": "density",
+  "msg": "converted 3833.53 kg/m³-type unit (Q844211) → 3.834 g/cm³"
+ },
+ {
+  "id": "Q409757",
+  "name": "böhmite",
+  "field": "density",
+  "msg": "converted 3410.06 kg/m³-type unit (Q844211) → 3.41 g/cm³"
+ },
+ {
+  "id": "Q409793",
+  "name": "rhodochrosite",
+  "field": "density",
+  "msg": "converted 3736.29 kg/m³-type unit (Q844211) → 3.736 g/cm³"
+ },
+ {
+  "id": "Q409793",
+  "name": "rhodochrosite",
+  "field": "density",
+  "msg": "converted 3736.29 kg/m³-type unit (Q844211) → 3.736 g/cm³"
+ },
+ {
+  "id": "Q409803",
+  "name": "carobbiite",
+  "field": "density",
+  "msg": "converted 2579.08 kg/m³-type unit (Q844211) → 2.579 g/cm³"
+ },
+ {
+  "id": "Q409913",
+  "name": "naldrettite",
+  "field": "density",
+  "msg": "converted 10519.3 kg/m³-type unit (Q844211) → 10.519 g/cm³"
+ },
+ {
+  "id": "Q410312",
+  "name": "metavauxite",
+  "field": "density",
+  "msg": "converted 2345 kg/m³-type unit (Q844211) → 2.345 g/cm³"
+ },
+ {
+  "id": "Q410336",
+  "name": "cordierite",
+  "field": "density",
+  "msg": "converted 2424.74 kg/m³-type unit (Q844211) → 2.425 g/cm³"
+ },
+ {
+  "id": "Q410336",
+  "name": "cordierite",
+  "field": "density",
+  "msg": "converted 2424.74 kg/m³-type unit (Q844211) → 2.425 g/cm³"
+ },
+ {
+  "id": "Q410345",
+  "name": "rambergite",
+  "field": "density",
+  "msg": "converted 4191.81 kg/m³-type unit (Q844211) → 4.192 g/cm³"
+ },
+ {
+  "id": "Q410396",
+  "name": "cobaltite",
+  "field": "density",
+  "msg": "converted 6258.51 kg/m³-type unit (Q844211) → 6.259 g/cm³"
+ },
+ {
+  "id": "Q410587",
+  "name": "monteponite",
+  "field": "density",
+  "msg": "converted 8100.94 kg/m³-type unit (Q844211) → 8.101 g/cm³"
+ },
+ {
+  "id": "Q410592",
+  "name": "chlorargyrite",
+  "field": "density",
+  "msg": "converted 5582.62 kg/m³-type unit (Q844211) → 5.583 g/cm³"
+ },
+ {
+  "id": "Q410609",
+  "name": "brookite",
+  "field": "density",
+  "msg": "converted 3856.14 kg/m³-type unit (Q844211) → 3.856 g/cm³"
+ },
+ {
+  "id": "Q410893",
+  "name": "tridymite",
+  "field": "density",
+  "msg": "converted 2634.24 kg/m³-type unit (Q844211) → 2.634 g/cm³"
+ },
+ {
+  "id": "Q411068",
+  "name": "millerite",
+  "field": "density",
+  "msg": "converted 5374 kg/m³-type unit (Q844211) → 5.374 g/cm³"
+ },
+ {
+  "id": "Q411137",
+  "name": "benitoite",
+  "field": "density",
+  "msg": "converted 3650 kg/m³-type unit (Q844211) → 3.65 g/cm³"
+ },
+ {
+  "id": "Q411137",
+  "name": "benitoite",
+  "field": "density",
+  "msg": "converted 3650 kg/m³-type unit (Q844211) → 3.65 g/cm³"
+ },
+ {
+  "id": "Q411230",
+  "name": "gallite",
+  "field": "density",
+  "msg": "converted 4413.16 kg/m³-type unit (Q844211) → 4.413 g/cm³"
+ },
+ {
+  "id": "Q411243",
+  "name": "sakuraiite",
+  "field": "density",
+  "msg": "converted 4450 kg/m³-type unit (Q844211) → 4.45 g/cm³"
+ },
+ {
+  "id": "Q411526",
+  "name": "kësterite",
+  "field": "density",
+  "msg": "converted 4607.27 kg/m³-type unit (Q844211) → 4.607 g/cm³"
+ },
+ {
+  "id": "Q411587",
+  "name": "rheniite",
+  "field": "density",
+  "msg": "converted 7113.03 kg/m³-type unit (Q844211) → 7.113 g/cm³"
+ },
+ {
+  "id": "Q411817",
+  "name": "proustite",
+  "field": "density",
+  "msg": "converted 5393.89 kg/m³-type unit (Q844211) → 5.394 g/cm³"
+ },
+ {
+  "id": "Q411830",
+  "name": "hawleyite",
+  "field": "density",
+  "msg": "converted 4702.28 kg/m³-type unit (Q844211) → 4.702 g/cm³"
+ },
+ {
+  "id": "Q411891",
+  "name": "diaspore",
+  "field": "density",
+  "msg": "converted 3410.06 kg/m³-type unit (Q844211) → 3.41 g/cm³"
+ },
+ {
+  "id": "Q412658",
+  "name": "paratellurite",
+  "field": "density",
+  "msg": "converted 5600 kg/m³-type unit (Q844211) → 5.6 g/cm³"
+ },
+ {
+  "id": "Q426593",
+  "name": "kolymite",
+  "field": "density",
+  "msg": "converted 13100 kg/m³-type unit (Q844211) → 13.1 g/cm³"
+ },
+ {
+  "id": "Q426635",
+  "name": "periclase",
+  "field": "density",
+  "msg": "converted 3628.9 kg/m³-type unit (Q844211) → 3.629 g/cm³"
+ },
+ {
+  "id": "Q426723",
+  "name": "sanidine",
+  "field": "density",
+  "msg": "converted 2456.77 kg/m³-type unit (Q844211) → 2.457 g/cm³"
+ },
+ {
+  "id": "Q429510",
+  "name": "breithauptite",
+  "field": "density",
+  "msg": "converted 8759.01 kg/m³-type unit (Q844211) → 8.759 g/cm³"
+ },
+ {
+  "id": "Q429534",
+  "name": "celsian",
+  "field": "density",
+  "msg": "converted 3338.02 kg/m³-type unit (Q844211) → 3.338 g/cm³"
+ },
+ {
+  "id": "Q429541",
+  "name": "potarite",
+  "field": "density",
+  "msg": "converted 14410.3 kg/m³-type unit (Q844211) → 14.41 g/cm³"
+ },
+ {
+  "id": "Q429549",
+  "name": "ravatite",
+  "field": "density",
+  "msg": "converted 1110 kg/m³-type unit (Q844211) → 1.11 g/cm³"
+ },
+ {
+  "id": "Q429626",
+  "name": "hambergite",
+  "field": "density",
+  "msg": "converted 2384.35 kg/m³-type unit (Q844211) → 2.384 g/cm³"
+ },
+ {
+  "id": "Q429671",
+  "name": "dawsonite",
+  "field": "density",
+  "msg": "converted 2479.98 kg/m³-type unit (Q844211) → 2.48 g/cm³"
+ },
+ {
+  "id": "Q429803",
+  "name": "stewartite",
+  "field": "density",
+  "msg": "converted 2940 kg/m³-type unit (Q844211) → 2.94 g/cm³"
+ },
+ {
+  "id": "Q429857",
+  "name": "oxammite",
+  "field": "density",
+  "msg": "converted 1500 kg/m³-type unit (Q844211) → 1.5 g/cm³"
+ },
+ {
+  "id": "Q429876",
+  "name": "montroydite",
+  "field": "density",
+  "msg": "converted 10770.2 kg/m³-type unit (Q844211) → 10.77 g/cm³"
+ },
+ {
+  "id": "Q429892",
+  "name": "hunchunite",
+  "field": "density",
+  "msg": "converted 15360.3 kg/m³-type unit (Q844211) → 15.36 g/cm³"
+ },
+ {
+  "id": "Q429968",
+  "name": "jeremejevite",
+  "field": "density",
+  "msg": "converted 3181.03 kg/m³-type unit (Q844211) → 3.181 g/cm³"
+ },
+ {
+  "id": "Q430065",
+  "name": "cupalite",
+  "field": "density",
+  "msg": "converted 5511.28 kg/m³-type unit (Q844211) → 5.511 g/cm³"
+ },
+ {
+  "id": "Q430112",
+  "name": "coccinite",
+  "field": "density",
+  "msg": "converted 5894.83 kg/m³-type unit (Q844211) → 5.895 g/cm³"
+ },
+ {
+  "id": "Q517231",
+  "name": "hafnon",
+  "field": "density",
+  "msg": "converted 7015.95 kg/m³-type unit (Q844211) → 7.016 g/cm³"
+ },
+ {
+  "id": "Q525059",
+  "name": "anduoite",
+  "field": "density",
+  "msg": "converted 8231.19 kg/m³-type unit (Q844211) → 8.231 g/cm³"
+ },
+ {
+  "id": "Q542011",
+  "name": "stibiocolusite",
+  "field": "density",
+  "msg": "converted 4660 kg/m³-type unit (Q844211) → 4.66 g/cm³"
+ },
+ {
+  "id": "Q585765",
+  "name": "kassite",
+  "field": "density",
+  "msg": "converted 3225.15 kg/m³-type unit (Q844211) → 3.225 g/cm³"
+ },
+ {
+  "id": "Q587583",
+  "name": "famatinite",
+  "field": "density",
+  "msg": "converted 4734.19 kg/m³-type unit (Q844211) → 4.734 g/cm³"
+ },
+ {
+  "id": "Q614077",
+  "name": "anyuiite",
+  "field": "density",
+  "msg": "converted 12882.6 kg/m³-type unit (Q844211) → 12.883 g/cm³"
+ },
+ {
+  "id": "Q704772",
+  "name": "arsenopalladinite",
+  "field": "density",
+  "msg": "converted 10400 kg/m³-type unit (Q844211) → 10.4 g/cm³"
+ },
+ {
+  "id": "Q743299",
+  "name": "natalyite",
+  "field": "density",
+  "msg": "converted 3550 kg/m³-type unit (Q844211) → 3.55 g/cm³"
+ },
+ {
+  "id": "Q421841",
+  "name": "microcline",
+  "field": "density",
+  "msg": "converted 2456.77 kg/m³-type unit (Q844211) → 2.457 g/cm³"
+ },
+ {
+  "id": "Q422075",
+  "name": "cristobalite",
+  "field": "density",
+  "msg": "converted 2634.24 kg/m³-type unit (Q844211) → 2.634 g/cm³"
+ },
+ {
+  "id": "Q422179",
+  "name": "chrysoberyl",
+  "field": "density",
+  "msg": "converted 3713.49 kg/m³-type unit (Q844211) → 3.713 g/cm³"
+ },
+ {
+  "id": "Q422179",
+  "name": "chrysoberyl",
+  "field": "density",
+  "msg": "converted 3713.49 kg/m³-type unit (Q844211) → 3.713 g/cm³"
+ },
+ {
+  "id": "Q422318",
+  "name": "hemusite",
+  "field": "density",
+  "msg": "converted 4469 kg/m³-type unit (Q844211) → 4.469 g/cm³"
+ },
+ {
+  "id": "Q422339",
+  "name": "cattierite",
+  "field": "density",
+  "msg": "converted 4849.1 kg/m³-type unit (Q844211) → 4.849 g/cm³"
+ },
+ {
+  "id": "Q422347",
+  "name": "stilleite",
+  "field": "density",
+  "msg": "converted 5274.85 kg/m³-type unit (Q844211) → 5.275 g/cm³"
+ },
+ {
+  "id": "Q422895",
+  "name": "uranocircite",
+  "field": "density",
+  "msg": "converted 3460 kg/m³-type unit (Q844211) → 3.46 g/cm³"
+ },
+ {
+  "id": "Q422903",
+  "name": "crocoite",
+  "field": "density",
+  "msg": "converted 6105.82 kg/m³-type unit (Q844211) → 6.106 g/cm³"
+ },
+ {
+  "id": "Q423010",
+  "name": "enstatite",
+  "field": "streak",
+  "msg": "\"grey\" implausible for Mg₂Si₂O₆ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q423018",
+  "name": "wollastonite",
+  "field": "density",
+  "msg": "converted 2902.93 kg/m³-type unit (Q844211) → 2.903 g/cm³"
+ },
+ {
+  "id": "Q423025",
+  "name": "phenakite",
+  "field": "density",
+  "msg": "converted 2963.11 kg/m³-type unit (Q844211) → 2.963 g/cm³"
+ },
+ {
+  "id": "Q423025",
+  "name": "phenakite",
+  "field": "density",
+  "msg": "converted 2963.11 kg/m³-type unit (Q844211) → 2.963 g/cm³"
+ },
+ {
+  "id": "Q423058",
+  "name": "pectolite",
+  "field": "density",
+  "msg": "converted 2783.32 kg/m³-type unit (Q844211) → 2.783 g/cm³"
+ },
+ {
+  "id": "Q424108",
+  "name": "miargyrite",
+  "field": "density",
+  "msg": "converted 5037.41 kg/m³-type unit (Q844211) → 5.037 g/cm³"
+ },
+ {
+  "id": "Q424114",
+  "name": "lorándite",
+  "field": "density",
+  "msg": "converted 5264.08 kg/m³-type unit (Q844211) → 5.264 g/cm³"
+ },
+ {
+  "id": "Q424112",
+  "name": "galenobismutite",
+  "field": "density",
+  "msg": "converted 7040 kg/m³-type unit (Q844211) → 7.04 g/cm³"
+ },
+ {
+  "id": "Q424127",
+  "name": "minguzzite",
+  "field": "density",
+  "msg": "converted 2110 kg/m³-type unit (Q844211) → 2.11 g/cm³"
+ },
+ {
+  "id": "Q424132",
+  "name": "linnaeite",
+  "field": "density",
+  "msg": "converted 4767.15 kg/m³-type unit (Q844211) → 4.767 g/cm³"
+ },
+ {
+  "id": "Q424328",
+  "name": "mimetite",
+  "field": "density",
+  "msg": "converted 6861.13 kg/m³-type unit (Q844211) → 6.861 g/cm³"
+ },
+ {
+  "id": "Q424335",
+  "name": "coesite",
+  "field": "density",
+  "msg": "converted 2634.24 kg/m³-type unit (Q844211) → 2.634 g/cm³"
+ },
+ {
+  "id": "Q424535",
+  "name": "thortveitite",
+  "field": "density",
+  "msg": "converted 3373.33 kg/m³-type unit (Q844211) → 3.373 g/cm³"
+ },
+ {
+  "id": "Q424535",
+  "name": "thortveitite",
+  "field": "streak",
+  "msg": "\"grey\" implausible for Sc₂Si₂O₇ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q424769",
+  "name": "sassolite",
+  "field": "density",
+  "msg": "converted 1647.93 kg/m³-type unit (Q844211) → 1.648 g/cm³"
+ },
+ {
+  "id": "Q424778",
+  "name": "klockmannite",
+  "field": "density",
+  "msg": "converted 6043.22 kg/m³-type unit (Q844211) → 6.043 g/cm³"
+ },
+ {
+  "id": "Q424910",
+  "name": "stolzite",
+  "field": "density",
+  "msg": "converted 8319.42 kg/m³-type unit (Q844211) → 8.319 g/cm³"
+ },
+ {
+  "id": "Q425132",
+  "name": "ye'elimite",
+  "field": "density",
+  "msg": "converted 2520.69 kg/m³-type unit (Q844211) → 2.521 g/cm³"
+ },
+ {
+  "id": "Q425150",
+  "name": "sperrylite",
+  "field": "density",
+  "msg": "converted 10562.6 kg/m³-type unit (Q844211) → 10.563 g/cm³"
+ },
+ {
+  "id": "Q425316",
+  "name": "troilite",
+  "field": "density",
+  "msg": "converted 4294.01 kg/m³-type unit (Q844211) → 4.294 g/cm³"
+ },
+ {
+  "id": "Q425364",
+  "name": "argyrodite",
+  "field": "density",
+  "msg": "converted 6204.44 kg/m³-type unit (Q844211) → 6.204 g/cm³"
+ },
+ {
+  "id": "Q425429",
+  "name": "quadratite",
+  "field": "density",
+  "msg": "converted 5310 kg/m³-type unit (Q844211) → 5.31 g/cm³"
+ },
+ {
+  "id": "Q425436",
+  "name": "rustenburgite",
+  "field": "density",
+  "msg": "converted 17869.7 kg/m³-type unit (Q844211) → 17.87 g/cm³"
+ },
+ {
+  "id": "Q425572",
+  "name": "thorianite",
+  "field": "density",
+  "msg": "converted 9981.28 kg/m³-type unit (Q844211) → 9.981 g/cm³"
+ },
+ {
+  "id": "Q425639",
+  "name": "cotunnite",
+  "field": "density",
+  "msg": "converted 5772.89 kg/m³-type unit (Q844211) → 5.773 g/cm³"
+ },
+ {
+  "id": "Q425727",
+  "name": "pirquitasite",
+  "field": "density",
+  "msg": "converted 4633.64 kg/m³-type unit (Q844211) → 4.634 g/cm³"
+ },
+ {
+  "id": "Q426112",
+  "name": "plumbopalladinite",
+  "field": "density",
+  "msg": "converted 8320 kg/m³-type unit (Q844211) → 8.32 g/cm³"
+ },
+ {
+  "id": "Q1143781",
+  "name": "cumengeite",
+  "field": "density",
+  "msg": "converted 4660 kg/m³-type unit (Q844211) → 4.66 g/cm³"
+ },
+ {
+  "id": "Q1170510",
+  "name": "willemseite",
+  "field": "density",
+  "msg": "converted 3310 kg/m³-type unit (Q844211) → 3.31 g/cm³"
+ },
+ {
+  "id": "Q1171888",
+  "name": "dashkovaite",
+  "field": "density",
+  "msg": "converted 1750 kg/m³-type unit (Q844211) → 1.75 g/cm³"
+ },
+ {
+  "id": "Q1172805",
+  "name": "daubréelite",
+  "field": "density",
+  "msg": "converted 3810 kg/m³-type unit (Q844211) → 3.81 g/cm³"
+ },
+ {
+  "id": "Q1242102",
+  "name": "donpeacorite",
+  "field": "density",
+  "msg": "converted 3360 kg/m³-type unit (Q844211) → 3.36 g/cm³"
+ },
+ {
+  "id": "Q1301508",
+  "name": "elpasolite",
+  "field": "density",
+  "msg": "converted 2860.81 kg/m³-type unit (Q844211) → 2.861 g/cm³"
+ },
+ {
+  "id": "Q1321235",
+  "name": "eitelite",
+  "field": "density",
+  "msg": "converted 2798.48 kg/m³-type unit (Q844211) → 2.798 g/cm³"
+ },
+ {
+  "id": "Q1408085",
+  "name": "ferruccite",
+  "field": "density",
+  "msg": "converted 2664.62 kg/m³-type unit (Q844211) → 2.665 g/cm³"
+ },
+ {
+  "id": "Q1414958",
+  "name": "miassite",
+  "field": "density",
+  "msg": "converted 7528.84 kg/m³-type unit (Q844211) → 7.529 g/cm³"
+ },
+ {
+  "id": "Q1427157",
+  "name": "larnite",
+  "field": "density",
+  "msg": "converted 2962.86 kg/m³-type unit (Q844211) → 2.963 g/cm³"
+ },
+ {
+  "id": "Q1434223",
+  "name": "fluorvesuvianite",
+  "field": "density",
+  "msg": "converted 3430 kg/m³-type unit (Q844211) → 3.43 g/cm³"
+ },
+ {
+  "id": "Q1469279",
+  "name": "fritzscheite",
+  "field": "density",
+  "msg": "converted 3504 kg/m³-type unit (Q844211) → 3.504 g/cm³"
+ },
+ {
+  "id": "Q1522357",
+  "name": "palladoarsenide",
+  "field": "density",
+  "msg": "converted 10140.6 kg/m³-type unit (Q844211) → 10.141 g/cm³"
+ },
+ {
+  "id": "Q1531923",
+  "name": "velikite",
+  "field": "density",
+  "msg": "converted 5456.98 kg/m³-type unit (Q844211) → 5.457 g/cm³"
+ },
+ {
+  "id": "Q1532374",
+  "name": "glushinskite",
+  "field": "density",
+  "msg": "converted 1850 kg/m³-type unit (Q844211) → 1.85 g/cm³"
+ },
+ {
+  "id": "Q1597739",
+  "name": "stronalsite",
+  "field": "density",
+  "msg": "converted 2920.03 kg/m³-type unit (Q844211) → 2.92 g/cm³"
+ },
+ {
+  "id": "Q1640901",
+  "name": "hypercinnabar",
+  "field": "density",
+  "msg": "converted 7375.82 kg/m³-type unit (Q844211) → 7.376 g/cm³"
+ },
+ {
+  "id": "Q1656448",
+  "name": "icosahedrite",
+  "field": "crystalSystem",
+  "msg": "unrecognised value(s) dropped: quasicrystal"
+ },
+ {
+  "id": "Q1661297",
+  "name": "sogdianite",
+  "field": "density",
+  "msg": "converted 2653.22 kg/m³-type unit (Q844211) → 2.653 g/cm³"
+ },
+ {
+  "id": "Q1672628",
+  "name": "iridarsenite",
+  "field": "density",
+  "msg": "converted 10900 kg/m³-type unit (Q844211) → 10.9 g/cm³"
+ },
+ {
+  "id": "Q1680828",
+  "name": "polkovicite",
+  "field": "density",
+  "msg": "converted 6620 kg/m³-type unit (Q844211) → 6.62 g/cm³"
+ },
+ {
+  "id": "Q1721018",
+  "name": "kafehydrocyanite",
+  "field": "density",
+  "msg": "converted 1980 kg/m³-type unit (Q844211) → 1.98 g/cm³"
+ },
+ {
+  "id": "Q749082",
+  "name": "xanthiosite",
+  "field": "density",
+  "msg": "converted 5555.07 kg/m³-type unit (Q844211) → 5.555 g/cm³"
+ },
+ {
+  "id": "Q755335",
+  "name": "atheneite",
+  "field": "density",
+  "msg": "converted 10200 kg/m³-type unit (Q844211) → 10.2 g/cm³"
+ },
+ {
+  "id": "Q757545",
+  "name": "atokite",
+  "field": "density",
+  "msg": "converted 11303.8 kg/m³-type unit (Q844211) → 11.304 g/cm³"
+ },
+ {
+  "id": "Q769232",
+  "name": "masuyite",
+  "field": "density",
+  "msg": "converted 5080 kg/m³-type unit (Q844211) → 5.08 g/cm³"
+ },
+ {
+  "id": "Q786268",
+  "name": "kiddcreekite",
+  "field": "density",
+  "msg": "converted 4880 kg/m³-type unit (Q844211) → 4.88 g/cm³"
+ },
+ {
+  "id": "Q786358",
+  "name": "spherocobaltite",
+  "field": "density",
+  "msg": "converted 4286 kg/m³-type unit (Q844211) → 4.286 g/cm³"
+ },
+ {
+  "id": "Q806068",
+  "name": "banalsite",
+  "field": "density",
+  "msg": "converted 2951.46 kg/m³-type unit (Q844211) → 2.951 g/cm³"
+ },
+ {
+  "id": "Q807804",
+  "name": "barberiite",
+  "field": "density",
+  "msg": "converted 1860.99 kg/m³-type unit (Q844211) → 1.861 g/cm³"
+ },
+ {
+  "id": "Q808754",
+  "name": "barquillite",
+  "field": "density",
+  "msg": "converted 4618.78 kg/m³-type unit (Q844211) → 4.619 g/cm³"
+ },
+ {
+  "id": "Q924933",
+  "name": "brodtkorbite",
+  "field": "density",
+  "msg": "converted 7770 kg/m³-type unit (Q844211) → 7.77 g/cm³"
+ },
+ {
+  "id": "Q944714",
+  "name": "archerite",
+  "field": "density",
+  "msg": "converted 2385.66 kg/m³-type unit (Q844211) → 2.386 g/cm³"
+ },
+ {
+  "id": "Q953147",
+  "name": "guanajuatite",
+  "field": "density",
+  "msg": "converted 7164.34 kg/m³-type unit (Q844211) → 7.164 g/cm³"
+ },
+ {
+  "id": "Q964097",
+  "name": "rinneite",
+  "field": "density",
+  "msg": "converted 2347 kg/m³-type unit (Q844211) → 2.347 g/cm³"
+ },
+ {
+  "id": "Q989505",
+  "name": "loveringite",
+  "field": "density",
+  "msg": "converted 4420 kg/m³-type unit (Q844211) → 4.42 g/cm³"
+ },
+ {
+  "id": "Q1009724",
+  "name": "bunsenite",
+  "field": "density",
+  "msg": "converted 6762.15 kg/m³-type unit (Q844211) → 6.762 g/cm³"
+ },
+ {
+  "id": "Q1020203",
+  "name": "bøggildite",
+  "field": "density",
+  "msg": "converted 3524.84 kg/m³-type unit (Q844211) → 3.525 g/cm³"
+ },
+ {
+  "id": "Q1050308",
+  "name": "catamarcaite",
+  "field": "density",
+  "msg": "converted 4806.65 kg/m³-type unit (Q844211) → 4.807 g/cm³"
+ },
+ {
+  "id": "Q1057160",
+  "name": "sellaite",
+  "field": "density",
+  "msg": "converted 3187.24 kg/m³-type unit (Q844211) → 3.187 g/cm³"
+ },
+ {
+  "id": "Q1057733",
+  "name": "cetineite",
+  "field": "density",
+  "msg": "converted 4210 kg/m³-type unit (Q844211) → 4.21 g/cm³"
+ },
+ {
+  "id": "Q1058717",
+  "name": "carrollite",
+  "field": "density",
+  "msg": "converted 4919.4 kg/m³-type unit (Q844211) → 4.919 g/cm³"
+ },
+ {
+  "id": "Q1058777",
+  "name": "aurostibite",
+  "field": "density",
+  "msg": "converted 9574.04 kg/m³-type unit (Q844211) → 9.574 g/cm³"
+ },
+ {
+  "id": "Q1058783",
+  "name": "seligmannite",
+  "field": "density",
+  "msg": "converted 5235.31 kg/m³-type unit (Q844211) → 5.235 g/cm³"
+ },
+ {
+  "id": "Q1058797",
+  "name": "oldhamite",
+  "field": "density",
+  "msg": "converted 2581.03 kg/m³-type unit (Q844211) → 2.581 g/cm³"
+ },
+ {
+  "id": "Q1059093",
+  "name": "cooperite",
+  "field": "density",
+  "msg": "converted 10100.5 kg/m³-type unit (Q844211) → 10.101 g/cm³"
+ },
+ {
+  "id": "Q1059826",
+  "name": "chalcostibite",
+  "field": "density",
+  "msg": "converted 4950.92 kg/m³-type unit (Q844211) → 4.951 g/cm³"
+ },
+ {
+  "id": "Q1061935",
+  "name": "changchengite",
+  "field": "density",
+  "msg": "converted 11964.3 kg/m³-type unit (Q844211) → 11.964 g/cm³"
+ },
+ {
+  "id": "Q1063298",
+  "name": "nahcolite",
+  "field": "density",
+  "msg": "converted 2304.87 kg/m³-type unit (Q844211) → 2.305 g/cm³"
+ },
+ {
+  "id": "Q1067100",
+  "name": "langbeinite",
+  "field": "density",
+  "msg": "converted 2840.39 kg/m³-type unit (Q844211) → 2.84 g/cm³"
+ },
+ {
+  "id": "Q1070610",
+  "name": "alarsite",
+  "field": "density",
+  "msg": "converted 3350.11 kg/m³-type unit (Q844211) → 3.35 g/cm³"
+ },
+ {
+  "id": "Q1070833",
+  "name": "leucophanite",
+  "field": "density",
+  "msg": "converted 2974.32 kg/m³-type unit (Q844211) → 2.974 g/cm³"
+ },
+ {
+  "id": "Q1075708",
+  "name": "alamosite",
+  "field": "density",
+  "msg": "converted 6312.26 kg/m³-type unit (Q844211) → 6.312 g/cm³"
+ },
+ {
+  "id": "Q1077131",
+  "name": "eucryptite",
+  "field": "density",
+  "msg": "converted 2688.98 kg/m³-type unit (Q844211) → 2.689 g/cm³"
+ },
+ {
+  "id": "Q1079299",
+  "name": "herderite",
+  "field": "density",
+  "msg": "converted 3020 kg/m³-type unit (Q844211) → 3.02 g/cm³"
+ },
+ {
+  "id": "Q1111766",
+  "name": "spionkopite",
+  "field": "density",
+  "msg": "converted 5130 kg/m³-type unit (Q844211) → 5.13 g/cm³"
+ },
+ {
+  "id": "Q1793830",
+  "name": "toyohaite",
+  "field": "density",
+  "msg": "converted 4940 kg/m³-type unit (Q844211) → 4.94 g/cm³"
+ },
+ {
+  "id": "Q1794660",
+  "name": "kutinaite",
+  "field": "density",
+  "msg": "converted 8390 kg/m³-type unit (Q844211) → 8.39 g/cm³"
+ },
+ {
+  "id": "Q1796630",
+  "name": "yarrowite",
+  "field": "density",
+  "msg": "converted 4890 kg/m³-type unit (Q844211) → 4.89 g/cm³"
+ },
+ {
+  "id": "Q1823777",
+  "name": "liebenbergite",
+  "field": "density",
+  "msg": "converted 4947.91 kg/m³-type unit (Q844211) → 4.948 g/cm³"
+ },
+ {
+  "id": "Q1827977",
+  "name": "lisiguangite",
+  "field": "density",
+  "msg": "converted 7743.42 kg/m³-type unit (Q844211) → 7.743 g/cm³"
+ },
+ {
+  "id": "Q1853054",
+  "name": "alforsite",
+  "field": "density",
+  "msg": "converted 4574.14 kg/m³-type unit (Q844211) → 4.574 g/cm³"
+ },
+ {
+  "id": "Q1885385",
+  "name": "maikainite",
+  "field": "density",
+  "msg": "converted 4540 kg/m³-type unit (Q844211) → 4.54 g/cm³"
+ },
+ {
+  "id": "Q1886005",
+  "name": "majakite",
+  "field": "density",
+  "msg": "converted 9330 kg/m³-type unit (Q844211) → 9.33 g/cm³"
+ },
+ {
+  "id": "Q1923318",
+  "name": "monticellite",
+  "field": "density",
+  "msg": "converted 2957.14 kg/m³-type unit (Q844211) → 2.957 g/cm³"
+ },
+ {
+  "id": "Q1948360",
+  "name": "morozeviczite",
+  "field": "density",
+  "msg": "converted 6620 kg/m³-type unit (Q844211) → 6.62 g/cm³"
+ },
+ {
+  "id": "Q1983903",
+  "name": "kosmochlor",
+  "field": "density",
+  "msg": "converted 3595.53 kg/m³-type unit (Q844211) → 3.596 g/cm³"
+ },
+ {
+  "id": "Q1989690",
+  "name": "niggliite",
+  "field": "density",
+  "msg": "converted 12797 kg/m³-type unit (Q844211) → 12.797 g/cm³"
+ },
+ {
+  "id": "Q2000743",
+  "name": "lópezite",
+  "field": "density",
+  "msg": "converted 2766.63 kg/m³-type unit (Q844211) → 2.767 g/cm³"
+ },
+ {
+  "id": "Q2040729",
+  "name": "beryllonite",
+  "field": "density",
+  "msg": "converted 2711.64 kg/m³-type unit (Q844211) → 2.712 g/cm³"
+ },
+ {
+  "id": "Q2047349",
+  "name": "palarstanide",
+  "field": "density",
+  "msg": "converted 10270 kg/m³-type unit (Q844211) → 10.27 g/cm³"
+ },
+ {
+  "id": "Q2047978",
+  "name": "palladobismutharsenide",
+  "field": "density",
+  "msg": "converted 10800 kg/m³-type unit (Q844211) → 10.8 g/cm³"
+ },
+ {
+  "id": "Q2047980",
+  "name": "palladodymite",
+  "field": "density",
+  "msg": "converted 10140.6 kg/m³-type unit (Q844211) → 10.141 g/cm³"
+ },
+ {
+  "id": "Q2050463",
+  "name": "paolovite",
+  "field": "density",
+  "msg": "converted 10882.4 kg/m³-type unit (Q844211) → 10.882 g/cm³"
+ },
+ {
+  "id": "Q2069329",
+  "name": "pentahydrite",
+  "field": "density",
+  "msg": "converted 1760 kg/m³-type unit (Q844211) → 1.76 g/cm³"
+ },
+ {
+  "id": "Q3297608",
+  "name": "massicot",
+  "field": "density",
+  "msg": "converted 8810.23 kg/m³-type unit (Q844211) → 8.81 g/cm³"
+ },
+ {
+  "id": "Q2362697",
+  "name": "litharge",
+  "field": "density",
+  "msg": "converted 8810.23 kg/m³-type unit (Q844211) → 8.81 g/cm³"
+ },
+ {
+  "id": "Q3613404",
+  "name": "aluminomagnesiohulsite",
+  "field": "streak",
+  "msg": "\"dark brown\" implausible for Mg₂AlO₂(BO₃) (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q3746848",
+  "name": "fluoro-edenite",
+  "field": "streak",
+  "msg": "\"yellow\" implausible for {Na}{Ca₂}{Mg₅}(AlSi₇O₂₂)(F,OH)₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q3909499",
+  "name": "potassic-pargasite",
+  "field": "streak",
+  "msg": "\"green\" implausible for KCa₂(Mg₄Al)(Si₆Al₂)O₂₂(OH)₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q12713259",
+  "name": "akaogiite",
+  "field": "density",
+  "msg": "converted 3856.14 kg/m³-type unit (Q844211) → 3.856 g/cm³"
+ },
+ {
+  "id": "Q17013743",
+  "name": "fluoro-pargasite",
+  "field": "streak",
+  "msg": "\"grey\" implausible for NaCa₂(Mg₄Al)(Si₆Al₂)O₂₂F₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q17484966",
+  "name": "potassic-fluoro-pargasite",
+  "field": "streak",
+  "msg": "\"grey\" implausible for KCa₂(Mg₄Al)(Si₆Al₂)O₂₂F₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q18123026",
+  "name": "fluoro-leakeite",
+  "field": "streak",
+  "msg": "\"blue\" implausible for NaNa₂(Mg₂Al₂Li)Si₈O₂₂F₂ (no chromophore elements) – dropped"
+ },
+ {
+  "id": "Q20821468",
+  "name": "decagonite",
+  "field": "crystalSystem",
+  "msg": "unrecognised value(s) dropped: quasicrystal"
+ },
+ {
+  "id": "Q101084511",
+  "name": "thunderbayite",
+  "field": "density",
+  "msg": "implausible 5.693 (Q21604951) → 0 g/cm³ dropped"
+ },
+ {
+  "id": "Q104142375",
+  "name": "galeaclolusite",
+  "field": "density",
+  "msg": "implausible 2.27 (Q844211) → 0.002 g/cm³ dropped"
+ },
+ {
+  "id": "Q123374980",
+  "name": "karwowskiite",
+  "field": "density",
+  "msg": "implausible 3085 (Q13147228) → 3085 g/cm³ dropped"
+ },
+ {
+  "id": "Q2050687",
+  "name": "rock crystal",
+  "field": "density",
+  "msg": "implausible 50000.86 (Q13147228) → 50000.86 g/cm³ dropped"
+ },
+ {
+  "id": "Q3428905",
+  "name": "sardonyx",
+  "field": "density",
+  "msg": "unknown unit Q25377184; value 2.58 dropped"
+ },
+ {
+  "id": "Q3428905",
+  "name": "sardonyx",
+  "field": "density",
+  "msg": "unknown unit Q25377184; value 2.58 dropped"
+ }
+]

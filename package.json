@@ -1,0 +1,21 @@
+{
+  "name": "crystopedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "node scripts/fetch-wikidata.mjs",
+    "metaphysical": "python3 scripts/build_metaphysical.py",
+    "build": "eleventy && pagefind --site _site",
+    "serve": "npx http-server _site -p 8080 -s"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "pagefind": "^1.5.2"
+  },
+  "type": "module"
+}

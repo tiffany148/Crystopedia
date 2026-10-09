@@ -1,0 +1,26 @@
+# Crystopedia
+
+An encyclopedia of every known mineral, crystal and gemstone, served at https://tiffany148.github.io/.
+
+* **Data:** [Wikidata](https://www.wikidata.org/) (CC0): every *mineral species* (Q12089225), every *mineral variety* (Q429795), a few gem materials, and the items referenced by the metaphysical list.
+* **Images:** hotlinked from Wikimedia Commons through `Special:FilePath?width=…`. Each image links to its Commons file page for credit and license. No images are stored in this repo.
+* **Metaphysical data:** `scripts/metaphysical_src.py`, original short texts for about 185 popular stones. These are traditional beliefs, not scientific claims.
+* **Site:** Eleventy 3 static site plus Pagefind search, deployed by GitHub Actions to GitHub Pages.
+
+## Commands
+
+```bash
+npm ci
+npm run metaphysical         # resolve metaphysical entries -> data/metaphysical.json (uses data/metaphysical_overrides.json)
+npm run fetch                # pull Wikidata -> data/minerals.json (+ data/issues.json); cached in data/raw/
+node scripts/fetch-wikidata.mjs --refresh   # ignore cache
+npm run build                # eleventy + pagefind -> _site/
+npm run serve                # local preview on :8080
+```
+
+## Data sanity checks (scripts/fetch-wikidata.mjs)
+
+* Mohs hardness values outside 1–10 are dropped.
+* Density is converted to g/cm³ from its Wikidata unit (kg/m³, g/L…). Values outside 0.5–23 g/cm³ are dropped.
+* A dark or colored streak is dropped when the formula has no chromophore elements (e.g. quartz "black").
+* Unrecognised crystal-system values are dropped. Everything that gets dropped or converted is logged in `data/issues.json`.

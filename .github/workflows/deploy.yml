@@ -1,0 +1,53 @@
+name: Build and deploy Crystopedia
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 1 * *"   # monthly: refresh data from Wikidata and redeploy
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      # On the monthly schedule (or manual run), refresh the Wikidata snapshot first.
+      # Push builds use the committed data/minerals.json so they are fast and reproducible.
+      - name: Refresh Wikidata snapshot
+        if: github.event_name != 'push'
+        run: |
+          python3 scripts/build_metaphysical.py
+          node scripts/fetch-wikidata.mjs --refresh
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+<section class="hero">
+  <div class="hero-text">
+    <h1>Every mineral, crystal &amp; gem<br><span>in one place.</span></h1>
+    <p>Crystopedia covers all {{ site.stats.species | number }} IMA-recognised mineral species plus popular varieties and gemstones – chemistry, crystal systems, hardness, density and more, with traditional crystal lore for {{ site.stats.healing }} favourite stones.</p>
+    <form class="hero-search" action="/search/" method="get">
+      <input type="search" name="q" placeholder="Search e.g. quartz, emerald, cubic…" aria-label="Search minerals">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <div class="hero-gem" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#6d28d9"/></linearGradient><linearGradient id="g2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5f3fc"/><stop offset="1" stop-color="#4f46e5"/></linearGradient></defs>
+    <polygon points="100,10 160,60 100,190" fill="url(#g1)"/><polygon points="100,10 40,60 100,190" fill="url(#g2)"/><polygon points="40,60 100,10 160,60 100,75" fill="#ede9fe" opacity=".85"/><polygon points="40,60 100,75 100,190" fill="#7c3aed" opacity=".55"/><polygon points="160,60 100,75 100,190" fill="#22d3ee" opacity=".35"/></svg>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>{{ site.stats.total | number }}</strong><span>pages</span></div>
+  <div><strong>{{ site.stats.species | number }}</strong><span>mineral species</span></div>
+  <div><strong>{{ site.stats.varieties | number }}</strong><span>varieties</span></div>
+  <div><strong>{{ site.stats.withImage | number }}</strong><span>with photos</span></div>
+</section>
+
+<section>
+  <h2>Popular crystals</h2>
+  <div class="grid">{% for c in site.popular %}{% include "card.njk" %}{% endfor %}</div>
+</section>
+
+<section class="browse">
+  <h2>Browse</h2>
+  <div class="browse-grid">
+    <a href="/gemstones/" class="tile t1"><strong>💎 Gemstones</strong><span>Precious &amp; semi-precious stones and their parent minerals</span></a>
+    <a href="/healing-crystals/" class="tile t2"><strong>✨ Healing Crystals</strong><span>Traditional meanings, chakras &amp; zodiac – filter by chakra</span></a>
+    <a href="/crystal-systems/" class="tile t3"><strong>🔷 Crystal Systems</strong><span>Cubic, trigonal, monoclinic… the seven lattice families</span></a>
+    <a href="/a-z/a/" class="tile t4"><strong>🔤 A–Z Index</strong><span>Every page, alphabetically</span></a>
+  </div>
+</section>

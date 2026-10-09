@@ -1,0 +1,97 @@
+---
+pagination:
+  data: site.pages
+  size: 1
+  alias: m
+permalink: "{{ m.url }}"
+layout: base.njk
+eleventyComputed:
+  title: "{{ m.title }}"
+  description: "{{ m.title }}{% if m.formula %} ({{ m.formula }}){% endif %} – {{ m.typeLabel }}. Properties, crystal system, hardness and more on Crystopedia."
+---
+<article class="mineral" data-pagefind-body>
+  <nav class="crumbs" data-pagefind-ignore><a href="/">Home</a> › <a href="/a-z/{{ m.azSlug }}/">A–Z</a> › {{ m.title }}</nav>
+  <div class="mineral-head">
+    <div class="mineral-intro">
+      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}</span>
+      <h1 data-pagefind-meta="title">{{ m.title }}</h1>
+      {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
+      {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
+      {% if m.parents.length %}<p>Variety of {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+    </div>
+    {% set im = m.img or m.parentImg %}
+    {% if im %}
+    <figure class="mineral-photo">
+      <img src="{{ im.src }}" alt="{{ m.title }} specimen" width="480" data-pagefind-meta="image[src]">
+      <figcaption data-pagefind-ignore><a href="{{ im.credit }}" rel="noopener">{{ im.file }}</a> · Wikimedia Commons (see file page for author &amp; license){% if not m.img %} · photo of parent mineral{% endif %}</figcaption>
+    </figure>
+    {% endif %}
+  </div>
+
+  {% if not m.handmade %}
+  <section>
+    <h2>Properties</h2>
+    <table class="props">
+      <tr><th>Chemical formula</th><td>{{ m.formula or "—" }}</td></tr>
+      <tr><th>Elements</th><td>{{ m.elements | join_ if m.elements.length else "—" }}</td></tr>
+      <tr><th>Crystal system</th><td>{% if m.crystalSystems.length %}{% for s in m.crystalSystems %}<a href="/crystal-systems/{{ s }}/">{{ s | cap }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% else %}—{% endif %}</td></tr>
+      <tr><th>Mohs hardness</th><td>{{ m.mohs or "—" }}</td></tr>
+      <tr><th>Density</th><td>{% if m.density %}{{ m.density }} g/cm³{% else %}—{% endif %}</td></tr>
+      <tr><th>Streak</th><td>{{ m.streak | join_ if m.streak.length else "—" }}</td></tr>
+      <tr><th>Color</th><td>{{ m.colors | join_ if m.colors.length else "—" }}</td></tr>
+      {% if m.luster.length %}<tr><th>Luster</th><td>{{ m.luster | join_ }}</td></tr>{% endif %}
+      {% if m.cleavage.length %}<tr><th>Cleavage</th><td>{{ m.cleavage | join_ }}</td></tr>{% endif %}
+      {% if m.fracture.length %}<tr><th>Fracture</th><td>{{ m.fracture | join_ }}</td></tr>{% endif %}
+      {% if m.imaSymbol %}<tr><th>IMA symbol</th><td>{{ m.imaSymbol }}</td></tr>{% endif %}
+      {% if m.strunz %}<tr><th>Nickel–Strunz class</th><td>{{ m.strunz }}</td></tr>{% endif %}
+    </table>
+    <p class="muted small">“—” means no reliable value in Wikidata yet. Check <a href="{{ m.mindatUrl }}">Mindat</a> for full data.</p>
+  </section>
+  {% else %}
+  <section><p>{{ m.title }} is a trade name or variety used in the crystal and gem trade{% if m.parents.length %} for a form of <a href="{{ m.parents[0].url }}">{{ m.parents[0].title }}</a>{% endif %}. It is not a separate IMA-recognised mineral, so scientific properties are listed on the parent page.</p></section>
+  {% endif %}
+
+  {% if m.children.length %}
+  <section>
+    <h2>Varieties &amp; related stones</h2>
+    <ul class="pill-list">{% for c in m.children %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  {% if m.metaphysical.length %}
+  <section class="meta-section" data-pagefind-ignore="all">
+    <h2>✨ Metaphysical &amp; Folklore</h2>
+    <p class="disclaimer">These are traditional and folk beliefs from crystal lore. They are <strong>not scientific or medical claims</strong> – crystals are not a substitute for professional care.</p>
+    {% for e in m.metaphysical %}
+    <div class="meta-card">
+      {% if m.metaphysical.length > 1 %}<h3>{{ e.name }}</h3>{% endif %}
+      <p>{{ e.meaning }}</p>
+      <dl class="meta-dl">
+        <dt>Traditional uses</dt><dd>{{ e.uses | join_ }}</dd>
+        <dt>Chakra</dt><dd>{% for c in e.chakras %}<a class="chakra chakra-{{ c | slug_ }}" href="/healing-crystals/#{{ c | slug_ }}">{{ c }}</a> {% endfor %}</dd>
+        <dt>Zodiac</dt><dd>{{ e.zodiac | join_ }}</dd>
+        <dt>Element</dt><dd>{{ e.elements | join_ }}</dd>
+      </dl>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="links" data-pagefind-ignore>
+    <h2>Learn more</h2>
+    <ul>
+      <li><a href="{{ m.mindatUrl }}">{{ m.title }} on Mindat.org</a></li>
+      {% if m.enwiki %}<li><a href="{{ m.enwiki }}">Wikipedia article</a></li>{% endif %}
+      {% if m.id %}<li><a href="{{ m.wikidataUrl }}">Wikidata item {{ m.id }}</a> (source of this page's data – you can correct it there)</li>{% endif %}
+    </ul>
+  </section>
+
+  {# search filters (hidden) #}
+  <div hidden>
+    <span data-pagefind-filter="type">{{ m.typeLabel }}</span>
+    {% if m.hardnessBucket %}<span data-pagefind-filter="hardness">{{ m.hardnessBucket }}</span>{% endif %}
+    {% for s in m.crystalSystems %}<span data-pagefind-filter="crystal system">{{ s | cap }}</span>{% endfor %}
+    {% for c in m.chakras %}<span data-pagefind-filter="chakra">{{ c }}</span>{% endfor %}
+    {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}
+  </div>
+</article>

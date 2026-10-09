@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: Healing Crystals
+permalink: /healing-crystals/
+---
+<h1>✨ Healing Crystals</h1>
+<p class="lead">Traditional meanings, chakra, zodiac and element associations for {{ site.healing.length }} popular crystals and gems.</p>
+<p class="disclaimer">These associations come from crystal lore and folk traditions, and they vary between sources. They are <strong>not scientific or medical claims</strong>. The science for each stone is on its own page.</p>
+<div class="chakra-filter" role="group" aria-label="Filter by chakra">
+  <button class="active" data-chakra="all">All</button>
+  {% for c in site.chakras %}<button data-chakra="{{ c | slug_ }}" class="chakra-{{ c | slug_ }}">{{ c }}</button>{% endfor %}
+</div>
+<div class="heal-grid" id="heal">
+{% for e in site.healing %}
+  <a class="heal-card" href="{{ e.url }}" data-chakras="{% for c in e.chakras %}{{ c | slug_ }} {% endfor %}">
+    <div class="heal-img">{% if e.thumb %}<img loading="lazy" src="{{ e.thumb.src }}" alt="{{ e.name }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
+    <div class="heal-body">
+      <strong>{{ e.name }}</strong>
+      <span class="chakras">{% for c in e.chakras %}<span class="chakra chakra-{{ c | slug_ }}">{{ c }}</span>{% endfor %}</span>
+      <p>{{ e.meaning }}</p>
+      <span class="muted small">{{ e.zodiac | join_ }} · {{ e.elements | join_ }}</span>
+    </div>
+  </a>
+{% endfor %}
+</div>
+<script>
+(function(){
+  const btns=[...document.querySelectorAll('.chakra-filter button')];
+  function apply(k){btns.forEach(b=>b.classList.toggle('active',b.dataset.chakra===k));
+    document.querySelectorAll('#heal .heal-card').forEach(el=>{el.style.display=(k==='all'||el.dataset.chakras.split(' ').includes(k))?'':'none'})}
+  btns.forEach(b=>b.addEventListener('click',()=>{apply(b.dataset.chakra);history.replaceState(null,'',b.dataset.chakra==='all'?location.pathname:'#'+b.dataset.chakra)}));
+  const h=location.hash.slice(1); if(h&&btns.some(b=>b.dataset.chakra===h)) apply(h);
+})();
+</script>

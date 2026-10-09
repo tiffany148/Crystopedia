@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}Crystopedia</title>
+<meta name="description" content="{{ description or 'Crystopedia – an encyclopedia of every known mineral, crystal and gemstone: formulas, crystal systems, hardness, density and more.' }}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="30" height="30"><span>Crystopedia</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    <nav class="nav">
+      <a href="/a-z/a/">A–Z</a>
+      <a href="/gemstones/">Gemstones</a>
+      <a href="/healing-crystals/">Healing Crystals</a>
+      <a href="/crystal-systems/">Crystal Systems</a>
+      <a href="/search/" class="nav-search">🔍 Search</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Crystopedia</strong> · Mineral data from <a href="https://www.wikidata.org/">Wikidata</a> (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>), built {{ site.stats.built }}. Photos are hot-linked from <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>; each image links to its file page with author and license. Species list follows the <a href="https://www.ima-mineralogy.org/">IMA</a> via Wikidata. For deeper data and localities see <a href="https://www.mindat.org/">Mindat.org</a>.</p>
+    <p class="muted">Data may contain errors – values were automatically sanity-checked and implausible ones removed. Metaphysical descriptions are traditional and folk beliefs, not scientific or medical claims.</p>
+  </div>
+</footer>
+</body>
+</html>

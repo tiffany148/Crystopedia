@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: Gemstones
+permalink: /gemstones/
+---
+<h1>💎 Gemstones</h1>
+<p class="lead">Most gemstones are <em>varieties</em> of a mineral species – amethyst and citrine are quartz, ruby and sapphire are corundum, emerald and aquamarine are beryl. Others are rocks (lapis lazuli), mineraloids (opal) or organic (amber, pearl). Each card links to a page with properties and the parent mineral.</p>
+<input class="filter-input" type="search" placeholder="Filter {{ site.gems.length }} gemstones…" oninput="filterCards(this.value)">
+<div class="grid" id="cards">{% for c in site.gems %}{% include "card.njk" %}{% endfor %}</div>
+<script>
+function filterCards(q){q=q.toLowerCase();document.querySelectorAll('#cards .card').forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(q)?'':'none'})}
+</script>

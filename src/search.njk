@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Search
+permalink: /search/
+---
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<h1>🔍 Search</h1>
+<p class="muted">Search by name, formula or element, and narrow results by hardness, crystal system, chakra and type.</p>
+<div id="search"></div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const ui = new PagefindUI({ element: "#search", showSubResults: false, showImages: true, pageSize: 20, openFilters: ["hardness", "crystal system"], resetStyles: false });
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) ui.triggerSearch(q);
+});
+</script>
