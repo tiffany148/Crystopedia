@@ -1,11 +1,11 @@
 """Find a Wikimedia Commons photo for hand-made pages (no Wikidata image). Writes data/commons_images.json.
-Existing entries are kept (edit the file by hand to fix a bad pick)."""
+Existing entries are kept (edit the file by hand to fix a bad pick; null = checked, no suitable photo)."""
 import json, os, urllib.parse, urllib.request, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 meta = json.load(open(os.path.join(ROOT, "data/metaphysical.json")))
 out_p = os.path.join(ROOT, "data/commons_images.json")
 out = json.load(open(out_p)) if os.path.exists(out_p) else {}
-QUERY = {"Megalodon Tooth": "megalodon tooth fossil", "Fossil Coral": "agatized coral", "Amber with Inclusions": "insect in amber",
+QUERY = {"Tampa Bay Agatized Coral": "agatized coral Florida", "Indonesian Agatized Coral": "Indonesian fossil coral polished", "Charlevoix Stone": "Favosites Michigan", "Horn Coral": "rugose horn coral fossil", "Chain Coral": "Halysites", "Honeycomb Coral": "Favosites honeycomb coral fossil", "Fossil Sand Dollar": "fossil sand dollar", "Sea Biscuit": "Clypeaster fossil", "Fossil Sea Urchin": "fossil echinoid", "Micraster": "Micraster", "Shepherd's Crown": "shepherd's crown fossil echinoid", "Fossil Starfish": "fossil starfish", "Fossil Brittle Star": "fossil brittle star ophiuroid", "Blastoid": "Pentremites blastoid", "Fossil Shark Teeth": "fossil shark teeth", "Fossil Gastropod": "fossil gastropod", "Fossil Shell": "fossil bivalve shells", "Megalodon Tooth": "megalodon tooth fossil", "Fossil Coral": "agatized coral", "Amber with Inclusions": "insect in amber",
          "Opalized Fossil": "opalised fossil", "Dinosaur Bone": "agatized dinosaur bone", "Geode": "geode", "Amethyst Geode": "amethyst geode",
          "Quartz Geode": "quartz geode", "Calcite Geode": "calcite geode", "Celestite Geode": "celestine geode Madagascar", "Agate Geode": "agate geode",
          "Keokuk Geode": "Keokuk geode", "Las Choyas Geode": "Las Choyas geode", "Moroccan Geode": "geode Morocco", "Uruguayan Amethyst Geode": "amethyst geode Uruguay",

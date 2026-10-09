@@ -4679,5 +4679,399 @@
   "wikidata": null,
   "parent": "Q79058",
   "slug": "uruguayan-amethyst-geode"
+ },
+ {
+  "name": "Tampa Bay Agatized Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Florida's state stone is ancient coral turned to chalcedony. It is linked in crystal lore to community, renewal and gently flowing emotions.",
+  "uses": [
+   "community",
+   "renewal",
+   "emotional flow"
+  ],
+  "wikidata": null,
+  "slug": "tampa-bay-agatized-coral"
+ },
+ {
+  "name": "Indonesian Agatized Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Colourful polished coral fossils from Indonesia are associated with joy, emotional healing and a bright connection to the sea.",
+  "uses": [
+   "joy",
+   "emotional healing",
+   "connection to the sea"
+  ],
+  "wikidata": null,
+  "slug": "indonesian-agatized-coral"
+ },
+ {
+  "name": "Charlevoix Stone",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Capricorn"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "A Michigan cousin of the Petoskey stone, Charlevoix stone's fine honeycomb pattern is linked with patience, structure and steady community ties.",
+  "uses": [
+   "patience",
+   "structure",
+   "community"
+  ],
+  "wikidata": null,
+  "slug": "charlevoix-stone"
+ },
+ {
+  "name": "Horn Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Solitary horn-shaped corals are carried in crystal lore as stones of grounding, self-reliance and quiet strength.",
+  "uses": [
+   "grounding",
+   "self-reliance",
+   "stability"
+  ],
+  "wikidata": null,
+  "slug": "horn-coral"
+ },
+ {
+  "name": "Chain Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Chain coral's linked loops are read in lore as a symbol of connection, teamwork and the bonds between people.",
+  "uses": [
+   "connection",
+   "teamwork",
+   "loyalty"
+  ],
+  "wikidata": null,
+  "slug": "chain-coral"
+ },
+ {
+  "name": "Honeycomb Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Honeycomb coral's many linked cells are tied to cooperation, home and shared purpose.",
+  "uses": [
+   "cooperation",
+   "home and family",
+   "shared goals"
+  ],
+  "wikidata": null,
+  "slug": "honeycomb-coral"
+ },
+ {
+  "name": "Fossil Sand Dollar",
+  "kind": "fossil",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Sand dollars carry Christian legends of peace (the five 'doves' inside) and are kept in lore as tokens of peace, faith and gentle transitions.",
+  "uses": [
+   "peace",
+   "faith",
+   "gentle change"
+  ],
+  "wikidata": null,
+  "slug": "fossil-sand-dollar"
+ },
+ {
+  "name": "Sea Biscuit",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "The domed fossil sea biscuit is linked in lore to nurturing, shelter and patience.",
+  "uses": [
+   "nurturing",
+   "shelter",
+   "patience"
+  ],
+  "wikidata": null,
+  "slug": "sea-biscuit"
+ },
+ {
+  "name": "Fossil Sea Urchin",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Echinoids were kept as lucky charms since prehistory, placed on windowsills and in graves as protection and good fortune.",
+  "uses": [
+   "protection",
+   "good luck",
+   "continuity"
+  ],
+  "wikidata": null,
+  "slug": "fossil-sea-urchin"
+ },
+ {
+  "name": "Micraster",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "The heart-shaped chalk urchin is linked in collectors' lore to love, steady affection and endurance.",
+  "uses": [
+   "love",
+   "endurance",
+   "protection"
+  ],
+  "wikidata": null,
+  "slug": "micraster"
+ },
+ {
+  "name": "Shepherd's Crown",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "In English folklore, flint urchins called shepherd's crowns or fairy loaves were set on windowsills to keep away lightning, witches and bad luck, and to keep bread from going stale.",
+  "uses": [
+   "protection of the home",
+   "household luck",
+   "folk tradition"
+  ],
+  "wikidata": null,
+  "slug": "shepherds-crown"
+ },
+ {
+  "name": "Fossil Starfish",
+  "kind": "fossil",
+  "chakras": [
+   "Heart",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Starfish are linked in lore to regeneration, healing and finding your way.",
+  "uses": [
+   "regeneration",
+   "guidance",
+   "emotional healing"
+  ],
+  "wikidata": null,
+  "slug": "fossil-starfish"
+ },
+ {
+  "name": "Fossil Brittle Star",
+  "kind": "fossil",
+  "chakras": [
+   "Heart",
+   "Throat"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "The slender, flexible arms of brittle stars are read in lore as a sign of adaptability and graceful movement.",
+  "uses": [
+   "adaptability",
+   "flexibility",
+   "letting go"
+  ],
+  "wikidata": null,
+  "slug": "fossil-brittle-star"
+ },
+ {
+  "name": "Blastoid",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Small 'bud' fossils with perfect five-fold symmetry are tied in lore to balance, harmony and new beginnings.",
+  "uses": [
+   "balance",
+   "harmony",
+   "new beginnings"
+  ],
+  "wikidata": null,
+  "slug": "blastoid"
+ },
+ {
+  "name": "Fossil Shark Teeth",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Shark teeth have been carried as amulets for centuries (once called 'tongue stones'). They are linked to courage, protection and perseverance.",
+  "uses": [
+   "courage",
+   "protection",
+   "perseverance"
+  ],
+  "wikidata": null,
+  "slug": "fossil-shark-teeth"
+ },
+ {
+  "name": "Fossil Gastropod",
+  "kind": "fossil",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "The spiral shells of snails stand in lore for steady growth, patience and life's unfolding journey.",
+  "uses": [
+   "personal growth",
+   "patience",
+   "journeying"
+  ],
+  "wikidata": null,
+  "slug": "fossil-gastropod"
+ },
+ {
+  "name": "Fossil Shell",
+  "kind": "fossil",
+  "chakras": [
+   "Sacral",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Ancient clam and oyster shells are linked to receptivity, emotional protection and the rhythm of the tides. In English folklore, curved Gryphaea oysters were 'devil's toenails'.",
+  "uses": [
+   "receptivity",
+   "emotional protection",
+   "calm"
+  ],
+  "wikidata": null,
+  "slug": "fossil-shell"
  }
 ]

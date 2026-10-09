@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { pickColor, paletteFor, CURATED } from "../../lib/palette.js";
-import { FACTS, EXTRA_COLORS } from "../../lib/collectibles.js";
+import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
@@ -87,6 +87,7 @@ for (const e of meta) {
   if (FACTS[e.name]) page.facts ||= { name: e.name, ...FACTS[e.name] };
   if (!page.collection && (e.kind === "fossil" || e.kind === "geode")) page.collection = e.kind;
   if (FACTS[e.name]?.cat === "fossil" || FACTS[e.name]?.cat === "geode") page.collection ||= FACTS[e.name].cat;
+  if (FOSSIL_GROUP[e.name]) page.fossilGroup ||= FOSSIL_GROUP[e.name];
   if (LOCALITIES[e.name]) (page.notable ||= []).push(...LOCALITIES[e.name]);
   healing.push({ ...e, page, url: page.url, thumb: page.thumb || (page.parentIds[0] && byId.get(page.parentIds[0])?.thumb) || null });
 }
@@ -158,7 +159,7 @@ letters.sort((a, b) => (a.letter === "#") - (b.letter === "#") || a.letter.local
 const gems = pages.filter((p) => p.isGem || p.type === "gem" || p.type === "variety" || p.metaphysical.length && p.type !== "species" ||
   GEM_SPECIES.has(p.name.toLowerCase())).map(card);
 
-const collection = (k) => pages.filter((p) => p.collection === k).map((p) => ({ ...card(p), facts: p.facts }))
+const collection = (k) => pages.filter((p) => p.collection === k).map((p) => ({ ...card(p), facts: p.facts, group: p.fossilGroup || "other" }))
   .sort((a, b) => a.title.localeCompare(b.title));
 const fossils = collection("fossil");
 const geodes = collection("geode");
