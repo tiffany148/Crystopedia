@@ -1,36 +1,217 @@
 {
- "Tourmalinated Quartz": {"qid": null, "parent": "Q43010"},
- "Strawberry Quartz": {"qid": null, "parent": "Q43010"},
- "Spirit Quartz": {"qid": null, "parent": "Q43010"},
- "Crazy Lace Agate": {"qid": null, "parent": "Q123314"},
- "Dendritic Agate": {"qid": null, "parent": "Q123314"},
- "Red Jasper": {"qid": null, "parent": "Q201175"},
- "Ocean Jasper": {"qid": null, "parent": "Q201175"},
- "Picture Jasper": {"qid": null, "parent": "Q201175"},
- "Dalmatian Jasper": {"qid": null, "parent": "Q201175"},
- "Mookaite": {"qid": null, "parent": "Q201175"},
- "Zebra Jasper": {"qid": null, "parent": "Q201175"},
- "Polychrome Jasper": {"qid": null, "parent": "Q201175"},
- "Blue Chalcedony": {"qid": null, "parent": "Q170448"},
- "Watermelon Tourmaline": {"qid": null, "parent": "Q179911"},
- "Mahogany Obsidian": {"qid": null, "parent": "Q53754"},
- "Rainbow Obsidian": {"qid": null, "parent": "Q53754"},
- "Aventurine": {"qid": "Q429742"},
- "Sunstone": {"qid": "Q2729026"},
- "Tourmaline": {"qid": "Q179911"},
- "Desert Rose": {"qid": "Q509713"},
- "Lapis Lazuli": {"qid": "Q216798"},
- "Serpentine": {"qid": "Q335249"},
- "Obsidian": {"qid": "Q53754"},
- "Moldavite": {"qid": "Q1503261"},
- "Amber": {"qid": "Q25381"},
- "Pearl": {"qid": "Q43436"},
- "Jet": {"qid": null},
- "Coral": {"qid": null},
- "Gold": {"qid": "Q898406"},
- "Silver": {"qid": "Q1057174"},
- "Copper": {"qid": "Q583353"},
- "Sulfur": {"qid": null},
- "Barite": {"qid": "Q184196"},
- "Diamond": {"qid": "Q5283"}
+ "Tourmalinated Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Strawberry Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Spirit Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Crazy Lace Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Dendritic Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Red Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Ocean Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Picture Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Dalmatian Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Mookaite": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Zebra Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Polychrome Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Blue Chalcedony": {
+  "qid": null,
+  "parent": "Q170448"
+ },
+ "Watermelon Tourmaline": {
+  "qid": null,
+  "parent": "Q179911"
+ },
+ "Mahogany Obsidian": {
+  "qid": null,
+  "parent": "Q53754"
+ },
+ "Rainbow Obsidian": {
+  "qid": null,
+  "parent": "Q53754"
+ },
+ "Aventurine": {
+  "qid": "Q429742"
+ },
+ "Sunstone": {
+  "qid": "Q2729026"
+ },
+ "Tourmaline": {
+  "qid": "Q179911"
+ },
+ "Desert Rose": {
+  "qid": "Q509713"
+ },
+ "Lapis Lazuli": {
+  "qid": "Q216798"
+ },
+ "Serpentine": {
+  "qid": "Q335249"
+ },
+ "Obsidian": {
+  "qid": "Q53754"
+ },
+ "Moldavite": {
+  "qid": "Q1503261"
+ },
+ "Amber": {
+  "qid": "Q25381"
+ },
+ "Pearl": {
+  "qid": "Q43436"
+ },
+ "Jet": {
+  "qid": null
+ },
+ "Coral": {
+  "qid": null
+ },
+ "Gold": {
+  "qid": "Q898406"
+ },
+ "Silver": {
+  "qid": "Q1057174"
+ },
+ "Copper": {
+  "qid": "Q583353"
+ },
+ "Sulfur": {
+  "qid": null
+ },
+ "Barite": {
+  "qid": "Q184196"
+ },
+ "Diamond": {
+  "qid": "Q5283"
+ },
+ "Fulgurite": {
+  "qid": "Q924408"
+ },
+ "Petoskey Stone": {
+  "qid": "Q2079951"
+ },
+ "Mother of Pearl": {
+  "qid": "Q215865"
+ },
+ "Goldstone": {
+  "qid": "Q1116835"
+ },
+ "Thunderegg": {
+  "qid": "Q7799136"
+ },
+ "Ammonite": {
+  "qid": null
+ },
+ "Orthoceras": {
+  "qid": null
+ },
+ "Dinosaur Bone": {
+  "qid": null
+ },
+ "Trilobite": {
+  "qid": null
+ },
+ "Megalodon Tooth": {
+  "qid": null
+ },
+ "Fossil Coral": {
+  "qid": null
+ },
+ "Amber with Inclusions": {
+  "qid": null,
+  "parent": "Q25381"
+ },
+ "Crinoid": {
+  "qid": null
+ },
+ "Brachiopod": {
+  "qid": null
+ },
+ "Opalized Fossil": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "K2 Jasper": {
+  "qid": null,
+  "parent": "Q108212"
+ },
+ "Kambaba Jasper": {
+  "qid": null,
+  "parent": "Q201175"
+ },
+ "Shiva Lingam": {
+  "qid": null
+ },
+ "Geode": {
+  "qid": null
+ },
+ "Amethyst Geode": {
+  "qid": null,
+  "parent": "Q79058"
+ },
+ "Quartz Geode": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Calcite Geode": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Celestite Geode": {
+  "qid": null,
+  "parent": "Q407221"
+ },
+ "Agate Geode": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Keokuk Geode": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Las Choyas Geode": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Moroccan Geode": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Uruguayan Amethyst Geode": {
+  "qid": null,
+  "parent": "Q79058"
+ }
 }

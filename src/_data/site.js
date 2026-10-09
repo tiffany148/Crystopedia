@@ -1,13 +1,18 @@
 // Builds every collection the templates need from data/minerals.json + data/metaphysical.json
 import fs from "node:fs";
 import path from "node:path";
-import { pickColor, paletteFor } from "../../lib/palette.js";
+import { pickColor, paletteFor, CURATED } from "../../lib/palette.js";
+import { FACTS, EXTRA_COLORS } from "../../lib/collectibles.js";
+import { LOCALITIES } from "../../lib/localities.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, "data/metaphysical.json"), "utf8"));
+const imgPath = path.join(ROOT, "data/commons_images.json");
+const HAND_IMAGES = fs.existsSync(imgPath) ? JSON.parse(fs.readFileSync(imgPath, "utf8")) : {};
+for (const [k, v] of Object.entries(EXTRA_COLORS)) CURATED[k.trim()] ||= v;
 
 const CHAKRAS = ["Root", "Sacral", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"];
 const SYSTEM_ORDER = ["cubic", "tetragonal", "orthorhombic", "hexagonal", "trigonal", "monoclinic", "triclinic", "amorphous"];
@@ -57,7 +62,8 @@ for (const m of minerals) {
 }
 
 // --- metaphysical entries: attach or create hand-made pages ------------------------
-const KIND_LABEL = { mineral: "Mineral", variety: "Mineral variety", rock: "Rock", group: "Mineral group", organic: "Organic gem", mineraloid: "Mineraloid", glass: "Natural glass", other: "Other" };
+const KIND_LABEL = { mineral: "Mineral", variety: "Mineral variety", rock: "Rock", group: "Mineral group", organic: "Organic gem", mineraloid: "Mineraloid", glass: "Natural glass", fossil: "Fossil", geode: "Geode / nodule", other: "Other" };
+const LABEL_OVERRIDE = { "Goldstone": "Man-made glass", "Shiva Lingam": "Rock", "Mother of Pearl": "Organic gem" };
 const healing = [];
 for (const e of meta) {
   let page = e.wikidata ? byId.get(e.wikidata) : null;
@@ -68,7 +74,7 @@ for (const e of meta) {
     page = {
       id: null, name: e.name, title: e.name, slug, url: `/minerals/${slug}/`, type: "handmade", handmade: true,
       description: null, formula: null, elements: [], crystalSystems: [], streak: [], colors: [], cleavage: [], fracture: [], luster: [],
-      parentIds: e.parent ? [e.parent] : [], metaphysical: [], img: null, thumb: null,
+      parentIds: e.parent ? [e.parent] : [], metaphysical: [], img: commons(HAND_IMAGES[e.name]), thumb: commons(HAND_IMAGES[e.name], 240),
       mindatUrl: `https://www.mindat.org/search.php?search=${encodeURIComponent(e.name)}`,
     };
     // inherit the picture from its parent so the card isn't empty
@@ -77,7 +83,11 @@ for (const e of meta) {
     byId.set(`hand:${slug}`, page);
   }
   page.metaphysical.push(e);
-  page.kindLabel ||= KIND_LABEL[e.kind] || null;
+  page.kindLabel ||= LABEL_OVERRIDE[e.name] || KIND_LABEL[e.kind] || null;
+  if (FACTS[e.name]) page.facts ||= { name: e.name, ...FACTS[e.name] };
+  if (!page.collection && (e.kind === "fossil" || e.kind === "geode")) page.collection = e.kind;
+  if (FACTS[e.name]?.cat === "fossil" || FACTS[e.name]?.cat === "geode") page.collection ||= FACTS[e.name].cat;
+  if (LOCALITIES[e.name]) (page.notable ||= []).push(...LOCALITIES[e.name]);
   healing.push({ ...e, page, url: page.url, thumb: page.thumb || (page.parentIds[0] && byId.get(page.parentIds[0])?.thumb) || null });
 }
 
@@ -90,6 +100,30 @@ for (const p of pages) {
   p.typeLabel = p.kindLabel && (p.type === "other" || p.type === "handmade") ? p.kindLabel
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
+}
+// --- "Where it's found" map points ---------------------------------------------------
+const mapStats = { pages: 0, typeLoc: 0, origin: 0, notable: 0, typeLocNoCoords: 0 };
+for (const p of pages) {
+  const pts = [];
+  const seen = new Set();
+  const add = (k, name, lat, lon) => {
+    if (lat == null || lon == null || !isFinite(lat) || !isFinite(lon)) return;
+    const key = `${k}|${(+lat).toFixed(1)}|${(+lon).toFixed(1)}`;
+    if (seen.has(key)) return; seen.add(key);
+    pts.push({ k, n: name, la: +(+lat).toFixed(3), lo: +(+lon).toFixed(3) });
+  };
+  for (const t of p.typeLocalities || []) add("t", [t.name, t.country].filter(Boolean).join(", "), t.lat, t.lon);
+  for (const [n, la, lo] of p.notable || []) add("n", n, la, lo);
+  if (!pts.length) for (const o of p.origins || []) add("o", o.name, o.lat, o.lon);
+  p.typeLocText = (p.typeLocalities || []).map((t) => [t.name, t.country].filter((x, i, a) => x && a.indexOf(x) === i).join(", ")).filter(Boolean);
+  if ((p.typeLocalities || []).length && !(p.typeLocalities || []).some((t) => t.lat != null)) mapStats.typeLocNoCoords++;
+  p.mapPoints = pts.length ? JSON.stringify(pts).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;") : null;
+  if (pts.length) {
+    mapStats.pages++;
+    if (pts.some((x) => x.k === "t")) mapStats.typeLoc++;
+    if (pts.some((x) => x.k === "o")) mapStats.origin++;
+    if (pts.some((x) => x.k === "n")) mapStats.notable++;
+  }
 }
 // colour palettes: parents first so varieties/hand-made pages can inherit
 const colorOf = new Map();
@@ -123,6 +157,11 @@ letters.sort((a, b) => (a.letter === "#") - (b.letter === "#") || a.letter.local
 
 const gems = pages.filter((p) => p.isGem || p.type === "gem" || p.type === "variety" || p.metaphysical.length && p.type !== "species" ||
   GEM_SPECIES.has(p.name.toLowerCase())).map(card);
+
+const collection = (k) => pages.filter((p) => p.collection === k).map((p) => ({ ...card(p), facts: p.facts }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+const fossils = collection("fossil");
+const geodes = collection("geode");
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
@@ -175,7 +214,7 @@ const stats = {
   withImage: pages.filter((p) => p.img).length,
   healing: healing.length,
   identify: identify.length,
-  built: new Date().toISOString().slice(0, 10),
+  built: new Date().toLocaleDateString("en-CA"),
 };
 
-export default { identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

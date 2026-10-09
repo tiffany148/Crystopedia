@@ -45,6 +45,10 @@ const QUERIES = {
   mindat: (S) => `SELECT ?m ?v WHERE { ${S} ?m wdt:P6263 ?v }`,
   imaSymbol: (S) => `SELECT ?m ?v WHERE { ${S} ?m wdt:P10113 ?v }`,
   strunz: (S) => `SELECT ?m ?v WHERE { ${S} ?m wdt:P713 ?v }`,
+  // type locality (P189) with coordinates and country
+  typeLoc: (S) => `SELECT ?m ?loc ?locL ?coord ?cL WHERE { ${S} ?m (wdt:P2695|wdt:P189) ?loc . OPTIONAL { ?loc rdfs:label ?locL FILTER(lang(?locL)="en") } OPTIONAL { ?loc wdt:P625 ?coord } OPTIONAL { ?loc wdt:P17 ?c . ?c rdfs:label ?cL FILTER(lang(?cL)="en") } }`,
+  // type locality: P2695 (geology) or P189 (location of discovery). Country of origin (P495) with the country's centre coordinates
+  origin: (S) => `SELECT ?m ?cL ?coord WHERE { ${S} ?m wdt:P495 ?c . ?c rdfs:label ?cL FILTER(lang(?cL)="en") OPTIONAL { ?c wdt:P625 ?coord } }`,
   // parent links: subclass of (P279) a species or variety
   parent: (S) => `SELECT ?m ?p WHERE { ${S} ?m wdt:P279 ?p . { ?p wdt:P31 ${SPECIES} } UNION { ?p wdt:P31 ${VARIETY} } }`,
 };
@@ -166,6 +170,11 @@ async function main() {
   multi(r.strunz, "strunzIds", "v");
   r.mohs.forEach((x) => { const it = items.get(qid(x.m)); if (it) (it.mohsRaw ||= []).push(x); });
   r.density.forEach((x) => { const it = items.get(qid(x.m)); if (it) (it.densityRaw ||= []).push(x); });
+  const pt = (wkt) => { const m = /Point\(([-\d.eE]+) ([-\d.eE]+)\)/.exec(wkt || ""); return m ? [round(+m[2], 4), round(+m[1], 4)] : null; };
+  r.typeLoc.forEach((x) => { const it = items.get(qid(x.m)); if (!it) return; const c = pt(x.coord);
+    (it.typeLoc ||= []).push({ name: x.locL || null, country: x.cL || null, lat: c?.[0] ?? null, lon: c?.[1] ?? null }); });
+  r.origin.forEach((x) => { const it = items.get(qid(x.m)); if (!it) return; const c = pt(x.coord);
+    if (c) (it.origins ||= []).push({ name: x.cL, lat: c[0], lon: c[1] }); });
   r.parent.forEach((x) => { const it = items.get(qid(x.m)); if (it) (it.parentIds ||= []).push(qid(x.p)); });
 
   const out = [];
@@ -241,6 +250,9 @@ async function main() {
     rec.imaSymbol = uniq(it.imaSymbols || [])[0] || null;
     rec.strunz = uniq(it.strunzIds || [])[0] || null;
     rec.parentIds = uniq(it.parentIds || []).filter((p) => p !== it.id);
+    const seenLoc = new Set();
+    rec.typeLocalities = (it.typeLoc || []).filter((l) => { const k = `${l.name}|${l.lat}`; if (seenLoc.has(k)) return false; seenLoc.add(k); return true; }).slice(0, 5);
+    rec.origins = uniq((it.origins || []).map((o) => JSON.stringify(o))).map((o) => JSON.parse(o)).slice(0, 6);
     out.push(rec);
   }
 
@@ -265,6 +277,7 @@ async function main() {
   await fs.writeFile(path.join(ROOT, "data", "issues.json"), JSON.stringify(issues, null, 1));
   const c = (f) => out.filter(f).length;
   console.log(`\nWrote ${out.length} records: species ${c((x) => x.type === "species")}, varieties ${c((x) => x.type === "variety")}, gem-only ${c((x) => x.type === "gem")}, other (from metaphysical list) ${c((x) => x.type === "other")}, flagged as gem ${c((x) => x.isGem)}`);
+  console.log(`Locations: type locality ${c((x) => x.typeLocalities.length)} (with coords ${c((x) => x.typeLocalities.some((l) => l.lat != null))}), country of origin ${c((x) => x.origins.length)}`);
   console.log(`Coverage: formula ${c((x) => x.formula)}, crystal system ${c((x) => x.crystalSystems.length)}, Mohs ${c((x) => x.mohsMin != null)}, density ${c((x) => x.densityMin != null)}, streak ${c((x) => x.streak.length)}, color ${c((x) => x.colors.length)}, luster ${c((x) => x.luster.length)}, image ${c((x) => x.image)}, enwiki ${c((x) => x.enwiki)}, mindat ${c((x) => x.mindatId)}`);
   const byField = {}; issues.forEach((i) => (byField[i.field] = (byField[i.field] || 0) + 1));
   console.log("Issues by field:", byField);

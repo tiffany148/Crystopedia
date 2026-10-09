@@ -29,3 +29,9 @@ npm run serve                # local preview on :8080
 * **Stone colors:** `lib/palette.js` picks each page's palette. It uses the curated color map first, then Wikidata colors, color words in the name, the parent stone, chemistry (Cu → green/teal, Fe → rust and so on), and finally a neutral lavender. Hub pages keep the multi-gem gradient.
 * **Crystal Identifier** (`/identify/`): a client-side quiz using `/assets/identify-data.json`. Curated properties for the 185 popular stones live in `lib/identify-curated.js`, and other minerals use their Wikidata properties.
 * **Pairings:** `lib/pairings.js` holds the hand-written pairings for popular stones, generated pairings (shared chakra/intention plus a balancing stone) for the rest, and the intention combos. `/pairings/` has the combo builder. `npm run pairings` exports `data/pairings.json` for review.
+- **Fossils & Geodes** – `/fossils/` and `/geodes/` hubs. Facts (age, origin, composition, formation) live in `lib/collectibles.js`. Photos for hand-made pages are listed in `data/commons_images.json`; refresh them with `python3 scripts/find_commons_images.py`, which only fills missing names, so edit the JSON by hand to fix a bad pick.
+- **Where it's found maps** – Leaflet + OpenStreetMap tiles (with attribution), loaded lazily when the map scrolls into view (`src/assets/map.js`).
+  - Type localities (red diamond) come from Wikidata P2695/P189 coordinates.
+  - Notable sources (stone-coloured dots) are curated in `lib/localities.js`.
+  - Country of origin (P495) is shown as a fallback.
+  - The section is hidden when there is no data.

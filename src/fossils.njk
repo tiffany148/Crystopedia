@@ -1,0 +1,23 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Fossils
+permalink: /fossils/
+description: "Fossils loved by collectors – ammonite, trilobite, orthoceras, megalodon tooth, petrified wood, Petoskey stone, amber with inclusions and more: age, origin, composition and lore."
+---
+<h1>🦴 Fossils</h1>
+<div class="collection-intro">
+<p class="lead">A fossil is a trace of ancient life preserved in rock. Collectors' favourites range from coiled ammonites and trilobites to petrified wood, Petoskey stones and insects trapped in amber.</p>
+</div>
+<div class="formation-grid">
+  <div><h3>Burial</h3><p>An organism, shell or tree is buried quickly in mud, sand, volcanic ash or resin, before it can rot or be scavenged.</p></div>
+  <div><h3>Permineralization</h3><p>Groundwater carries dissolved silica, calcite or pyrite into the pores, which slowly fill up. Petrified wood, Petoskey stones and agatized coral form this way.</p></div>
+  <div><h3>Replacement</h3><p>The original material dissolves away and minerals take its place, sometimes copying details down to the cell. Opalized and pyritized fossils are examples.</p></div>
+  <div><h3>Preservation</h3><p>Hard parts such as teeth, bone and calcite shells can survive almost unchanged. Tree resin can harden into amber around an insect.</p></div>
+</div>
+<p class="muted small">Ages are typical ranges for commonly collected material. Fossil collecting is regulated in many places: buy from reputable dealers and check local rules before you collect.</p>
+<div class="grid" id="cards">{% for c in site.fossils %}
+<a class="card" href="{{ c.url }}" style="{{ c.style }}">
+  <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span>{% if c.facts.age %}<span class="facts-mini">{{ c.facts.age }}</span>{% endif %}</div>
+</a>{% endfor %}</div>

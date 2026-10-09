@@ -1,0 +1,22 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Geodes & Nodules
+permalink: /geodes/
+description: "Geodes, nodules and thundereggs: how they form, plus amethyst, quartz, calcite, celestite, agate, Keokuk, Las Choyas, Moroccan and Uruguayan geodes."
+---
+<h1>🪨 Geodes &amp; Nodules</h1>
+<div class="collection-intro">
+<p class="lead">A geode is a rock with a hollow, crystal-lined cavity. A nodule is the same kind of structure filled solid, often with agate. A thunderegg is a nodule that grew inside volcanic rhyolite.</p>
+</div>
+<div class="formation-grid">
+  <div><h3>1 · A cavity forms</h3><p>Gas bubbles in cooling lava, dissolved pockets in limestone, or hollows left by roots, shells or concretions in sediment make an empty space.</p></div>
+  <div><h3>2 · A rind hardens</h3><p>Silica-rich fluids coat the cavity wall with a tough skin of chalcedony. This is why geodes weather out of softer rock as round "rocks".</p></div>
+  <div><h3>3 · Crystals grow inward</h3><p>Over thousands to millions of years, mineral-rich groundwater seeps in. Quartz, amethyst, calcite, celestite or other minerals crystallize from the wall toward the centre.</p></div>
+  <div><h3>Geode, nodule or thunderegg?</h3><p>If the space stays partly open, it is a <strong>geode</strong>. If it fills completely, often with banded agate, it is a <strong>nodule</strong>. A <strong>thunderegg</strong> forms in rhyolite and usually has a star-shaped agate core.</p></div>
+</div>
+<div class="grid" id="cards">{% for c in site.geodes %}
+<a class="card" href="{{ c.url }}" style="{{ c.style }}">
+  <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span>{% if c.facts.age %}<span class="facts-mini">{{ c.facts.age }}</span>{% endif %}</div>
+</a>{% endfor %}</div>

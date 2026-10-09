@@ -30,7 +30,8 @@ eleventyComputed:
     {% endif %}
   </div>
 
-  {% if not m.handmade %}
+  {% set hasProps = m.formula or m.crystalSystems.length or m.mohs or m.density or m.streak.length or m.colors.length %}
+  {% if not m.handmade and (hasProps or not m.facts) %}
   <section>
     <h2>Properties</h2>
     <table class="props">
@@ -49,8 +50,37 @@ eleventyComputed:
     </table>
     <p class="muted small">“—” means no reliable value in Wikidata yet. Check <a href="{{ m.mindatUrl }}">Mindat</a> for full data.</p>
   </section>
-  {% else %}
+  {% elif not m.facts %}
   <section><p>{{ m.title }} is a trade name or variety used in the crystal and gem trade{% if m.parents.length %} for a form of <a href="{{ m.parents[0].url }}">{{ m.parents[0].title }}</a>{% endif %}. It is not a separate IMA-recognised mineral, so scientific properties are listed on the parent page.</p></section>
+  {% endif %}
+
+  {% if m.facts %}
+  <section class="facts-section">
+    <h2>{% if m.collection == "fossil" %}🦴 Fossil facts{% elif m.collection == "geode" %}🪨 Geode facts{% else %}📜 Key facts{% endif %}</h2>
+    <table class="props">
+      {% if m.facts.age %}<tr><th>Age</th><td>{{ m.facts.age }}</td></tr>{% endif %}
+      {% if m.facts.origin %}<tr><th>Origin &amp; sources</th><td>{{ m.facts.origin }}</td></tr>{% endif %}
+      {% if m.facts.composition %}<tr><th>Composition</th><td>{{ m.facts.composition }}</td></tr>{% endif %}
+    </table>
+    {% if m.facts.formation %}<h3>How it forms</h3><p>{{ m.facts.formation }}</p>{% endif %}
+    {% if m.parents.length %}<p class="muted small">Mineral data: see <a href="{{ m.parents[0].url }}">{{ m.parents[0].title }}</a>.</p>{% endif %}
+  </section>
+  {% endif %}
+
+  {% if m.mapPoints or m.typeLocText.length %}
+  <section class="where-found" data-pagefind-ignore>
+    <h2>🌍 Where it's found</h2>
+    {% if m.typeLocText.length %}<p><strong>Type locality</strong> (where it was first described): {{ m.typeLocText | join(" · ") }}</p>{% endif %}
+    {% if m.mapPoints %}
+    <div class="stone-map" data-points="{{ m.mapPoints | safe }}" role="img" aria-label="Map of places where {{ m.title }} is found"><noscript>Map needs JavaScript.</noscript></div>
+    <ul class="map-legend">
+      <li data-k="t"><span class="mk mk-t"></span> Type locality</li>
+      <li data-k="n"><span class="mk mk-n"></span> Notable source / deposit</li>
+      <li data-k="o"><span class="mk mk-o"></span> Country of origin</li>
+    </ul>
+    <p class="muted small">Marker positions are approximate (region or locality level). Type localities from Wikidata; notable sources curated by Crystopedia.</p>
+    {% endif %}
+  </section>
   {% endif %}
 
   {% if m.children.length %}
@@ -110,3 +140,4 @@ eleventyComputed:
     {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}
   </div>
 </article>
+{% if m.mapPoints %}<script src="/assets/map.js" defer></script>{% endif %}

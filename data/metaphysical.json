@@ -4027,5 +4027,657 @@
    "protection"
   ],
   "wikidata": "Q193450"
+ },
+ {
+  "name": "Fulgurite",
+  "kind": "glass",
+  "chakras": [
+   "Crown",
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Aries",
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire",
+   "Air"
+  ],
+  "meaning": "Formed in an instant when lightning fuses sand into a hollow glass tube, fulgurite is linked in lore to sudden insight and channeling raw energy into manifestation.",
+  "uses": [
+   "manifestation",
+   "breakthrough insight",
+   "energizing prayer"
+  ],
+  "wikidata": "Q924408"
+ },
+ {
+  "name": "Petoskey Stone",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Michigan's state stone is fossil Hexagonaria coral from a Devonian sea; it is associated with patience, renewal and connection to ancient waters.",
+  "uses": [
+   "patience",
+   "renewal",
+   "connection to nature"
+  ],
+  "wikidata": "Q2079951"
+ },
+ {
+  "name": "Ammonite",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "The spiral shells of these extinct sea creatures symbolise evolution, continuity and the turning cycles of life.",
+  "uses": [
+   "personal growth",
+   "grounding",
+   "ancestral wisdom"
+  ],
+  "wikidata": null,
+  "slug": "ammonite"
+ },
+ {
+  "name": "K2 Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Third Eye",
+   "Throat",
+   "Root"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "Blue azurite spots in white granite from near the K2 mountain, associated with grounded intuition and mountain-like steadiness.",
+  "uses": [
+   "grounded intuition",
+   "inner calm",
+   "clear perception"
+  ],
+  "wikidata": null,
+  "parent": "Q108212",
+  "slug": "k2-jasper"
+ },
+ {
+  "name": "Kambaba Jasper",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Ancient stromatolite with dark green orbs, one of Earth's oldest life records, associated with tranquility and patience.",
+  "uses": [
+   "tranquility",
+   "patience",
+   "nature connection"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "kambaba-jasper"
+ },
+ {
+  "name": "Orthoceras",
+  "kind": "fossil",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Straight-shelled fossil cephalopods polished in black limestone, linked in lore to longevity and moving forward.",
+  "uses": [
+   "longevity",
+   "progress",
+   "grounding"
+  ],
+  "wikidata": null,
+  "slug": "orthoceras"
+ },
+ {
+  "name": "Dinosaur Bone",
+  "kind": "fossil",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Agatized dinosaur bone ('gembone') is associated with ancient strength, endurance and ancestral memory.",
+  "uses": [
+   "endurance",
+   "grounding",
+   "ancestral connection"
+  ],
+  "wikidata": null,
+  "slug": "dinosaur-bone"
+ },
+ {
+  "name": "Goldstone",
+  "kind": "glass",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "A man-made glittering glass (not a natural stone) traditionally called the 'stone of ambition', associated with drive and optimism.",
+  "uses": [
+   "ambition",
+   "optimism",
+   "confidence"
+  ],
+  "wikidata": "Q1116835"
+ },
+ {
+  "name": "Shiva Lingam",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Egg-shaped stones polished from the Narmada River in India, sacred in Hindu tradition and linked to balance of masculine and feminine energy.",
+  "uses": [
+   "balance",
+   "vitality",
+   "spiritual devotion"
+  ],
+  "wikidata": null,
+  "slug": "shiva-lingam"
+ },
+ {
+  "name": "Mother of Pearl",
+  "kind": "organic",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "The iridescent shell lining that forms pearls, associated with nurturing, calm and protection at sea.",
+  "uses": [
+   "nurturing",
+   "calm",
+   "protection"
+  ],
+  "wikidata": "Q215865"
+ },
+ {
+  "name": "Trilobite",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Among the first animals with eyes, trilobites roamed the seas for nearly 300 million years; in lore they stand for resilience, adaptability and clear perception.",
+  "uses": [
+   "resilience",
+   "adaptability",
+   "perspective"
+  ],
+  "wikidata": null,
+  "slug": "trilobite"
+ },
+ {
+  "name": "Megalodon Tooth",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Teeth of the largest shark that ever lived are carried as talismans of courage, strength and personal power.",
+  "uses": [
+   "courage",
+   "protection",
+   "personal power"
+  ],
+  "wikidata": null,
+  "slug": "megalodon-tooth"
+ },
+ {
+  "name": "Fossil Coral",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Agatized or fossilized coral preserves ancient reef life and is associated with community, flow and adaptability.",
+  "uses": [
+   "community",
+   "emotional flow",
+   "adaptability"
+  ],
+  "wikidata": null,
+  "slug": "fossil-coral"
+ },
+ {
+  "name": "Amber with Inclusions",
+  "kind": "fossil",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Insects and plant fragments frozen in fossil resin are treasured as windows into deep time and symbols of preserved memories.",
+  "uses": [
+   "memory",
+   "patience",
+   "warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q25381",
+  "slug": "amber-with-inclusions"
+ },
+ {
+  "name": "Crinoid",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "The stacked stem discs of 'sea lilies' were once called St Cuthbert's beads and were strung as rosaries; they are tied to prayer and continuity.",
+  "uses": [
+   "prayer",
+   "continuity",
+   "grounding"
+  ],
+  "wikidata": null,
+  "slug": "crinoid"
+ },
+ {
+  "name": "Brachiopod",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Ancient lamp shells, among the most common fossils, associated with nurturing, home and protection.",
+  "uses": [
+   "protection",
+   "home",
+   "stability"
+  ],
+  "wikidata": null,
+  "slug": "brachiopod"
+ },
+ {
+  "name": "Opalized Fossil",
+  "kind": "fossil",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Shells, bones or wood replaced by precious opal, mostly from Australia; linked to transformation and creative renewal.",
+  "uses": [
+   "transformation",
+   "creativity",
+   "renewal"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "opalized-fossil"
+ },
+ {
+  "name": "Geode",
+  "kind": "geode",
+  "chakras": [
+   "Crown",
+   "Root"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "A plain rock that hides a crystal-lined cavity is a classic symbol of inner beauty and hidden potential.",
+  "uses": [
+   "discovering hidden potential",
+   "meditation",
+   "space harmony"
+  ],
+  "wikidata": null,
+  "slug": "geode"
+ },
+ {
+  "name": "Thunderegg",
+  "kind": "geode",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Volcanic nodules with star-shaped agate cores, named in Native American legend as eggs hurled by thunder spirits; linked to inner strength.",
+  "uses": [
+   "inner strength",
+   "grounding",
+   "creativity"
+  ],
+  "wikidata": "Q7799136"
+ },
+ {
+  "name": "Amethyst Geode",
+  "kind": "geode",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Aquarius"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Amethyst-lined geodes are placed in homes as large calming centerpieces in crystal tradition.",
+  "uses": [
+   "peaceful spaces",
+   "meditation",
+   "sleep"
+  ],
+  "wikidata": null,
+  "parent": "Q79058",
+  "slug": "amethyst-geode"
+ },
+ {
+  "name": "Quartz Geode",
+  "kind": "geode",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Clear-quartz-lined geodes are used to amplify and harmonise the energy of a room.",
+  "uses": [
+   "amplifying energy",
+   "clarity",
+   "space cleansing"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "quartz-geode"
+ },
+ {
+  "name": "Calcite Geode",
+  "kind": "geode",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Calcite-filled geodes are associated with cleansing and gentle uplift.",
+  "uses": [
+   "cleansing",
+   "motivation",
+   "learning"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "calcite-geode"
+ },
+ {
+  "name": "Celestite Geode",
+  "kind": "geode",
+  "chakras": [
+   "Throat",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Sky-blue celestite geodes from Madagascar are prized as peaceful, angelic room stones.",
+  "uses": [
+   "peace",
+   "sleep",
+   "spiritual connection"
+  ],
+  "wikidata": null,
+  "parent": "Q407221",
+  "slug": "celestite-geode"
+ },
+ {
+  "name": "Agate Geode",
+  "kind": "geode",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Banded agate geodes and nodules are associated with stability, protection and steady growth.",
+  "uses": [
+   "stability",
+   "protection",
+   "composure"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "agate-geode"
+ },
+ {
+  "name": "Keokuk Geode",
+  "kind": "geode",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Geodes from the Keokuk area where Iowa, Missouri and Illinois meet, often with quartz, calcite and pyrite inside; linked to grounding and discovery.",
+  "uses": [
+   "grounding",
+   "discovery",
+   "patience"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "keokuk-geode"
+ },
+ {
+  "name": "Las Choyas Geode",
+  "kind": "geode",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Sagittarius"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Small 'coconut' geodes from Chihuahua, Mexico, often opened in pairs and shared as tokens of friendship.",
+  "uses": [
+   "friendship",
+   "discovery",
+   "joy"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "las-choyas-geode"
+ },
+ {
+  "name": "Moroccan Geode",
+  "kind": "geode",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Affordable quartz geodes from Morocco are sold whole for 'crack your own' surprises, associated with curiosity and wonder.",
+  "uses": [
+   "curiosity",
+   "wonder",
+   "clarity"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "moroccan-geode"
+ },
+ {
+  "name": "Uruguayan Amethyst Geode",
+  "kind": "geode",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Deep-purple 'cathedral' geodes from Artigas, Uruguay and Rio Grande do Sul, Brazil are prized home centerpieces.",
+  "uses": [
+   "calm spaces",
+   "meditation",
+   "abundance"
+  ],
+  "wikidata": null,
+  "parent": "Q79058",
+  "slug": "uruguayan-amethyst-geode"
  }
 ]
