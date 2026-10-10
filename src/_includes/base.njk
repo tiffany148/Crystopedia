@@ -9,12 +9,14 @@
 <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t})()</script>
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/redesign.css">
 {% if m and m.pattern %}<link rel="stylesheet" href="/assets/patterns/patterns.css"><link rel="preload" as="image" href="/assets/patterns/{{ m.pattern }}.svg">{% endif %}
 <script src="/assets/fx.js" defer></script>
+<script src="/assets/fx2.js" defer></script>
 {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}"{% if bodyStyle %} style="{{ bodyStyle }}"{% endif %}>
-{% if m and m.pattern %}<div id="stone-pattern" class="pat-{{ m.pattern }}" aria-hidden="true"></div>{% endif %}
+{% if m and m.pattern %}<div id="stone-pattern" class="pat-{{ m.pattern }}" aria-hidden="true"></div><div id="stone-pattern2" class="pat-{{ m.pattern }}" aria-hidden="true"></div><div class="nebula" aria-hidden="true"><i></i><i></i></div>{% endif %}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="30" height="30"><span>Crystopedia</span></a>

@@ -11,9 +11,13 @@ eleventyComputed:
   bodyClass: "stone-page{% if m.palette.dark %} stone-dark{% endif %}{% if m.palette.holo %} holo{% endif %}"
   description: "{{ m.title }}{% if m.formula %} ({{ m.formula }}){% endif %} – {{ m.typeLabel }}. Properties, crystal system, hardness and more on Crystopedia."
 ---
+{% set ZG = {"Aries": "♈", "Taurus": "♉", "Gemini": "♊", "Cancer": "♋", "Leo": "♌", "Virgo": "♍", "Libra": "♎", "Scorpio": "♏", "Sagittarius": "♐", "Capricorn": "♑", "Aquarius": "♒", "Pisces": "♓"} %}{% set EG = {"Earth":"🌿","Water":"💧","Fire":"🔥","Air":"🌬","Spirit":"✴","Storm":"⚡"} %}
 <article class="mineral" data-pagefind-body>
   <nav class="crumbs" data-pagefind-ignore><a href="/">Home</a> › <a href="/a-z/{{ m.azSlug }}/">A–Z</a> › {{ m.title }}</nav>
+  {% set im = m.img or m.parentImg %}
   <div class="mineral-head stone-hero">
+    {% if im %}<div class="hero-backdrop" style="background-image:url('{{ im.src }}')" aria-hidden="true"></div>{% endif %}
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="mineral-intro">
       <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.hazard %} <a class="badge hz" href="/handle-with-care/">⚠ Handle with care</a>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
@@ -22,9 +26,8 @@ eleventyComputed:
       {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.parents.length %}<p>Variety of {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
     </div>
-    {% set im = m.img or m.parentImg %}
     {% if im %}
-    <figure class="mineral-photo">
+    <figure class="mineral-photo hero-photo">
       <img src="{{ im.src }}" alt="{{ im.alt or (m.title + ' specimen') }}" width="480" data-pagefind-meta="image[src]">
       <figcaption data-pagefind-ignore>{% if im.own %}{{ im.credit }}{% else %}<a href="{{ im.credit }}" rel="noopener">{{ im.file }}</a> · Wikimedia Commons (see file page for author &amp; license){% if not m.img %} · photo of parent mineral{% endif %}{% endif %}</figcaption>
     </figure>
@@ -33,8 +36,21 @@ eleventyComputed:
 
   {% set hasProps = m.formula or m.crystalSystems.length or m.mohs or m.density or m.streak.length or m.colors.length %}
   {% if not m.handmade and (hasProps or not m.facts) %}
-  <section>
+  <section class="props-section">
     <h2>Properties</h2>
+    <div class="gem-meters" data-pagefind-ignore>
+      {% if m.mohsHi %}<div class="meter mohs" style="--lo:{{ m.mohsLo / 10 }};--hi:{{ m.mohsHi / 10 }}">
+        <div class="meter-label"><span>⛏ Mohs hardness</span><b>{{ m.mohs }}</b></div>
+        <div class="mohs-bar"><span class="fill"></span>{% for i in range(1, 11) %}<i style="--i:{{ i }}">{{ i }}</i>{% endfor %}</div>
+        <div class="mohs-tools"><span style="--at:.25" title="Fingernail ~2.5">💅</span><span style="--at:.35" title="Copper coin ~3.5">🪙</span><span style="--at:.55" title="Glass ~5.5">🍶</span><span style="--at:.65" title="Steel knife ~6.5">🔪</span><span style="--at:.7" title="Quartz 7">💎</span></div>
+        <p class="meter-note">{% if m.mohsHi <= 2.5 %}Scratches with a fingernail.{% elif m.mohsHi <= 3.5 %}A copper coin scratches it.{% elif m.mohsHi < 5.5 %}A steel knife scratches it, it won't scratch glass.{% elif m.mohsHi < 7 %}Scratches glass; quartz scratches it.{% else %}Harder than quartz: scratches glass and steel.{% endif %}</p>
+      </div>{% endif %}
+      {% if m.densityVal %}<div class="meter density" style="--d:{{ m.densityPct }}">
+        <div class="meter-label"><span>⚖ Density</span><b>{{ m.density }} g/cm³</b></div>
+        <div class="gauge"><span class="needle"></span><em>{% if m.densityVal < 2.4 %}Light{% elif m.densityVal < 3.2 %}Average{% elif m.densityVal < 4.5 %}Heavy{% else %}Very heavy{% endif %}</em></div>
+      </div>{% endif %}
+      {% if m.crystalSystems.length %}<div class="gem-chips">{% for s in m.crystalSystems %}<a class="gem-chip" href="/crystal-systems/{{ s }}/">🔷 {{ s | cap }}</a>{% endfor %}{% for l in m.luster %}<span class="gem-chip">✨ {{ l }}</span>{% endfor %}{% for st in m.streak %}<span class="gem-chip">✏️ streak {{ st }}</span>{% endfor %}</div>{% endif %}
+    </div>
     <table class="props">
       <tr><th>Chemical formula</th><td>{{ m.formula or "—" }}</td></tr>
       <tr><th>Elements</th><td>{{ m.elements | join_ if m.elements.length else "—" }}</td></tr>
@@ -156,8 +172,8 @@ eleventyComputed:
       <dl class="meta-dl">
         <dt>Traditional uses</dt><dd>{{ e.uses | join_ }}</dd>
         <dt>Chakra</dt><dd>{% for c in e.chakras %}<a class="chakra chakra-{{ c | slug_ }}" href="/healing-crystals/#{{ c | slug_ }}">{{ c }}</a> {% endfor %}</dd>
-        <dt>Zodiac</dt><dd>{{ e.zodiac | join_ }}</dd>
-        <dt>Element</dt><dd>{{ e.elements | join_ }}</dd>
+        <dt>Zodiac</dt><dd>{% for z in e.zodiac %}<span class="glyph-chip"><b>{{ ZG[z] or "✦" }}</b>{{ z }}</span> {% endfor %}</dd>
+        <dt>Element</dt><dd>{% for z in e.elements %}<span class="glyph-chip el"><b>{{ EG[z] or "◆" }}</b>{{ z }}</span> {% endfor %}</dd>
       </dl>
       {% if e.pairs.length %}
       <div class="pairs">

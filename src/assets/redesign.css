@@ -1,0 +1,142 @@
+/* ===================== Crystopedia redesign layer (loaded after style.css) ===================== */
+:root{--gl-a:rgba(255,255,255,.62);--gl-b:rgba(255,255,255,.34);--gl-edge:rgba(255,255,255,.75);--gl-ink:#1d1631}
+html[data-theme=dark]{--gl-a:rgba(22,16,44,.66);--gl-b:rgba(12,8,28,.5);--gl-edge:rgba(255,255,255,.18);--gl-ink:#f2edff}
+@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+
+/* ---------- Header: glass with animated gradient border ---------- */
+.site-header{background:linear-gradient(120deg,rgba(30,20,80,.72),rgba(76,29,149,.62) 55%,rgba(14,116,144,.62));backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border-bottom:0}
+.site-header::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:linear-gradient(90deg,#f0abfc,#67e8f9,#fde68a,#a78bfa,#f0abfc);background-size:200% 100%;animation:hdr-flow 6s linear infinite;box-shadow:0 0 12px rgba(167,139,250,.8)}
+@keyframes hdr-flow{to{background-position:200% 0}}
+
+/* ---------- Stone page backdrop: jewel gradient, nebula, two pattern layers ---------- */
+body.stone-page{background:radial-gradient(ellipse 80% 60% at 15% 0%,color-mix(in srgb,var(--c3,#c4b5fd) 70%,#fff),transparent 70%),radial-gradient(ellipse 70% 60% at 100% 30%,color-mix(in srgb,var(--c2,#a5f3fc) 55%,#fff),transparent 70%),linear-gradient(160deg,color-mix(in srgb,var(--c1,#8b5cf6) 30%,#fff),color-mix(in srgb,var(--c2,#22d3ee) 35%,#fff) 50%,color-mix(in srgb,var(--c3,#f0abfc) 40%,#fff));background-attachment:fixed}
+html[data-theme=dark] body.stone-page{background:radial-gradient(ellipse 70% 55% at 10% 5%,color-mix(in srgb,var(--c1,#7c3aed) 45%,transparent),transparent 70%),radial-gradient(ellipse 60% 50% at 95% 40%,color-mix(in srgb,var(--c2,#0891b2) 40%,transparent),transparent 70%),radial-gradient(ellipse 60% 45% at 40% 100%,color-mix(in srgb,var(--c3,#db2777) 35%,transparent),transparent 70%),radial-gradient(#0b0820,#04030c);background-attachment:fixed}
+#stone-pattern{opacity:.3!important;animation:pat-shimmer2 12s ease-in-out infinite alternate}
+#stone-pattern2{position:fixed;inset:-20vh -10vw;z-index:0;pointer-events:none;background:linear-gradient(135deg,var(--c3,#fff),var(--c1,#fff));
+  -webkit-mask:var(--pat) 120px 80px/var(--pat2-size,900px) repeat;mask:var(--pat) 120px 80px/var(--pat2-size,900px) repeat;opacity:.16;filter:blur(1.2px);transform:translate3d(0,var(--pat2-y,0px),0) rotate(-8deg);will-change:transform}
+#stone-pattern.pat-agate~#stone-pattern2,#stone-pattern2[class*=pat-fortification],#stone-pattern2[class*=pat-ammonite],#stone-pattern2[class*=pat-woodrings],#stone-pattern2[class*=pat-sunrays],#stone-pattern2[class*=pat-moss]{--pat2-size:1400px}
+html[data-theme=dark] #stone-pattern{opacity:.34!important;background:linear-gradient(135deg,color-mix(in srgb,var(--c3,#fff) 60%,#fff),color-mix(in srgb,var(--c1,#fff) 55%,#fff));animation-name:pat-shimmer2dk}
+html[data-theme=dark] #stone-pattern2{opacity:.14;filter:blur(1.5px) brightness(1.6)}
+@keyframes pat-shimmer2{from{opacity:.24}to{opacity:.38}}
+@keyframes pat-shimmer2dk{from{opacity:.26}to{opacity:.4}}
+.nebula{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.nebula i{position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(70px);opacity:.35;mix-blend-mode:soft-light;background:radial-gradient(circle,var(--c2,#a78bfa),transparent 65%);animation:neb 28s ease-in-out infinite alternate;left:-15vmax;top:-10vmax}
+.nebula i+i{left:auto;right:-20vmax;top:40vh;background:radial-gradient(circle,var(--c3,#22d3ee),transparent 65%);animation-duration:34s;animation-direction:alternate-reverse}
+html[data-theme=dark] .nebula i{mix-blend-mode:screen;opacity:.42}
+@keyframes neb{to{transform:translate(18vw,12vh) scale(1.2)}}
+
+/* ---------- Immersive hero ---------- */
+body.stone-page .mineral-head.stone-hero{position:relative;overflow:hidden;isolation:isolate;min-height:min(78vh,640px);align-items:center;border-radius:28px;padding:clamp(22px,4vw,56px);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--c1,#4c1d95) 85%,#000),color-mix(in srgb,var(--c2,#7c3aed) 70%,#000) 55%,color-mix(in srgb,var(--c3,#22d3ee) 60%,#000));
+  box-shadow:0 30px 80px -20px color-mix(in srgb,var(--c1,#4c1d95) 70%,transparent),inset 0 1px 0 rgba(255,255,255,.35);color:#fff;margin-inline:calc(50% - 50vw + 12px);width:auto}
+@media (min-width:1300px){body.stone-page .mineral-head.stone-hero{margin-inline:-120px}}
+.hero-backdrop{position:absolute;inset:-40px;z-index:-2;background-size:cover;background-position:center;filter:blur(38px) saturate(1.8) brightness(.75);transform:scale(1.15);opacity:.85}
+.stone-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,4,18,.72),rgba(6,4,18,.35) 55%,rgba(6,4,18,.1)),radial-gradient(circle at 75% 45%,color-mix(in srgb,var(--c3,#fff) 40%,transparent),transparent 55%)}
+.stone-hero h1,.stone-hero .lead,.stone-hero .big-formula,.stone-hero p,.stone-hero .aka{color:#fff!important;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.stone-hero h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1;letter-spacing:-.02em;background:linear-gradient(100deg,#fff 20%,color-mix(in srgb,var(--c3,#fff) 50%,#fff) 45%,#fff 60%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:title-sheen 7s ease-in-out infinite;filter:drop-shadow(0 4px 18px rgba(0,0,0,.45));text-shadow:none!important}
+@keyframes title-sheen{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+.stone-hero a{color:#fff}
+.aurora{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;mix-blend-mode:screen}
+.aurora i{position:absolute;width:70%;height:140%;top:-20%;left:-10%;background:linear-gradient(100deg,transparent 30%,color-mix(in srgb,var(--c3,#a5f3fc) 55%,transparent) 50%,transparent 70%);filter:blur(28px);opacity:.55;transform:rotate(18deg);animation:aur 11s ease-in-out infinite alternate}
+.aurora i:nth-child(2){left:30%;background:linear-gradient(100deg,transparent 30%,color-mix(in srgb,var(--c2,#f0abfc) 60%,transparent) 50%,transparent 70%);animation-duration:15s;animation-delay:-4s}
+.aurora i:nth-child(3){left:55%;width:40%;background:linear-gradient(100deg,transparent 35%,rgba(255,255,255,.45) 50%,transparent 65%);animation-duration:9s;animation-delay:-2s}
+@keyframes aur{from{transform:translateX(-12%) rotate(14deg)}to{transform:translateX(18%) rotate(24deg)}}
+.hero-photo{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;position:relative}
+.hero-photo img{border-radius:22px;max-height:460px;object-fit:cover;width:100%;box-shadow:0 0 0 1px rgba(255,255,255,.35),0 0 40px color-mix(in srgb,var(--c3,#fff) 60%,transparent),0 0 110px color-mix(in srgb,var(--c2,#fff) 45%,transparent),0 30px 60px rgba(0,0,0,.45);
+  -webkit-box-reflect:below 6px linear-gradient(transparent 72%,rgba(255,255,255,.22));animation:photo-float 7s ease-in-out infinite}
+@keyframes photo-float{50%{transform:translateY(-8px)}}
+.hero-photo figcaption{color:rgba(255,255,255,.8)!important;margin-top:44px;font-size:.78rem}
+.hero-photo figcaption a{color:#fff}
+.stone-hero .badge{background:rgba(255,255,255,.18);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.35);color:#fff}
+.stone-hero .color-chip{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.35)}
+
+/* ---------- Tinted glass cards replace flat white panels ---------- */
+body.stone-page .mineral>section,.hub main>section:not(.hero):not(.stats){position:relative;isolation:isolate;border-radius:24px;border:1px solid transparent;color:var(--gl-ink);
+  background:linear-gradient(145deg,color-mix(in srgb,var(--c3,#ede9fe) 30%,var(--gl-a)),color-mix(in srgb,var(--c1,#c4b5fd) 18%,var(--gl-b))) padding-box,
+    conic-gradient(from var(--ang),color-mix(in srgb,var(--c1,#a78bfa) 80%,#fff),rgba(255,255,255,.9),color-mix(in srgb,var(--c2,#67e8f9) 80%,#fff),color-mix(in srgb,var(--c3,#f0abfc) 80%,#fff),color-mix(in srgb,var(--c1,#a78bfa) 80%,#fff)) border-box;
+  backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7),inset 0 0 40px color-mix(in srgb,var(--c3,#fff) 25%,transparent),0 18px 50px -18px color-mix(in srgb,var(--c1,#4c1d95) 55%,transparent);animation:edge-spin 10s linear infinite;overflow:hidden}
+html[data-theme=dark] body.stone-page .mineral>section,html[data-theme=dark] .hub main>section:not(.hero):not(.stats){box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 0 50px color-mix(in srgb,var(--c2,#7c3aed) 22%,transparent),0 18px 60px -18px rgba(0,0,0,.8)}
+@keyframes edge-spin{to{--ang:360deg}}
+body.stone-page .mineral>section::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);background-size:250% 100%;animation:card-sweep 9s ease-in-out infinite}
+html[data-theme=dark] body.stone-page .mineral>section::after{background-image:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.07) 50%,transparent 60%)}
+@keyframes card-sweep{0%,60%{background-position:150% 0}100%{background-position:-60% 0}}
+body.stone-page .mineral>section h2{display:flex;align-items:center;gap:.5em;font-size:1.6rem;background:linear-gradient(90deg,color-mix(in srgb,var(--c1,#6d28d9) 75%,#000),color-mix(in srgb,var(--c2,#0e7490) 70%,#000));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+html[data-theme=dark] body.stone-page .mineral>section h2{background-image:linear-gradient(90deg,color-mix(in srgb,var(--c3,#f0abfc) 55%,#fff),color-mix(in srgb,var(--c2,#67e8f9) 50%,#fff))}
+body.stone-page .mineral>section h2::before{content:"";flex:none;width:.9em;height:.9em;clip-path:polygon(50% 0,100% 38%,50% 100%,0 38%);background:linear-gradient(135deg,#fff,var(--c2,#a78bfa) 45%,var(--c1,#6d28d9));box-shadow:0 0 12px var(--c2);filter:drop-shadow(0 0 6px var(--c3,#fff))}
+.props,.props tr,.props th,.props td{background:transparent!important}
+.props{border-collapse:separate;border-spacing:0 6px}
+.props tr{background:rgba(255,255,255,.38)!important}
+html[data-theme=dark] .props tr{background:rgba(255,255,255,.05)!important}
+.props th,.props td{border:0!important}
+.props th{border-radius:12px 0 0 12px}.props td{border-radius:0 12px 12px 0}
+
+/* ---------- Gem meters ---------- */
+.gem-meters{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:8px 0 18px}
+.meter{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.4);border:1px solid var(--gl-edge)}
+html[data-theme=dark] .meter{background:rgba(255,255,255,.06)}
+.meter-label{display:flex;justify-content:space-between;font-weight:600;margin-bottom:10px}
+.meter-label b{font-variant-numeric:tabular-nums}
+.mohs-bar{position:relative;display:grid;grid-template-columns:repeat(10,1fr);height:30px;border-radius:999px;overflow:hidden;background:linear-gradient(90deg,#fde68a,#fdba74,#f9a8d4,#c4b5fd,#93c5fd,#67e8f9,#6ee7b7,#a3e635,#facc15,#e2e8f0)}
+.mohs-bar .fill{position:absolute;top:0;bottom:0;left:0;width:calc(var(--hi)*100%);background:linear-gradient(90deg,transparent calc(var(--lo)/var(--hi)*100% - 8%),rgba(255,255,255,.55));box-shadow:inset -3px 0 0 #fff,0 0 18px #fff;border-radius:999px;animation:fill-in 1.4s cubic-bezier(.2,.8,.2,1) both}
+.mohs-bar::after{content:"";position:absolute;top:0;bottom:0;left:calc(var(--hi)*100%);right:0;background:rgba(20,14,40,.55);backdrop-filter:grayscale(1)}
+@keyframes fill-in{from{width:0}}
+.mohs-bar i{position:relative;z-index:1;font-style:normal;font-size:.72rem;font-weight:700;display:grid;place-items:center;color:#1d1631;border-right:1px solid rgba(255,255,255,.45)}
+.mohs-tools{position:relative;height:26px;margin-top:4px}
+.mohs-tools span{position:absolute;left:calc(var(--at)*100%);transform:translateX(-50%);font-size:1rem;cursor:help}
+.meter-note{margin:.3em 0 0;font-size:.85rem;opacity:.85}
+.gauge{position:relative;width:180px;height:90px;margin:0 auto;border-radius:180px 180px 0 0;overflow:hidden;background:conic-gradient(from 270deg at 50% 100%,#a5f3fc,#a78bfa 25%,#f472b6 37.5%,#f59e0b 50%,transparent 50%)}
+.gauge::before{content:"";position:absolute;left:22px;right:22px;bottom:0;height:68px;border-radius:140px 140px 0 0;background:color-mix(in srgb,var(--c3,#fff) 25%,#fff)}
+html[data-theme=dark] .gauge::before{background:#140f2a}
+.gauge .needle{position:absolute;left:50%;bottom:0;width:4px;height:80px;margin-left:-2px;background:linear-gradient(#fff,var(--c1,#6d28d9));border-radius:4px;transform-origin:50% 100%;transform:rotate(calc(var(--d)*180deg - 90deg));box-shadow:0 0 10px var(--c2);animation:needle 1.6s cubic-bezier(.3,1.4,.4,1) both;z-index:1}
+@keyframes needle{from{transform:rotate(-90deg)}}
+.gauge em{position:absolute;left:0;right:0;bottom:4px;text-align:center;font-style:normal;font-weight:700;font-size:.85rem;z-index:2}
+.gem-chips{display:flex;flex-wrap:wrap;gap:8px;align-self:center}
+.gem-chip,.glyph-chip{display:inline-flex;align-items:center;gap:.35em;padding:.35em .8em;border-radius:999px;font-size:.88rem;font-weight:600;text-decoration:none;color:inherit;
+  background:linear-gradient(135deg,rgba(255,255,255,.75),color-mix(in srgb,var(--c3,#ede9fe) 45%,rgba(255,255,255,.35)));border:1px solid rgba(255,255,255,.8);box-shadow:inset 0 1px 0 #fff,0 3px 10px -4px color-mix(in srgb,var(--c1,#6d28d9) 60%,transparent)}
+html[data-theme=dark] .gem-chip,html[data-theme=dark] .glyph-chip{background:linear-gradient(135deg,rgba(255,255,255,.12),color-mix(in srgb,var(--c2,#7c3aed) 25%,transparent));border-color:rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.15)}
+.glyph-chip b{font-size:1.15em;color:color-mix(in srgb,var(--c1,#6d28d9) 80%,#000)}
+html[data-theme=dark] .glyph-chip b{color:color-mix(in srgb,var(--c3,#f0abfc) 60%,#fff)}
+a.chakra::before{content:"";display:inline-block;width:.75em;height:.75em;border-radius:50%;margin-right:.35em;vertical-align:-.05em;background:var(--ck,#a78bfa);box-shadow:0 0 8px var(--ck,#a78bfa)}
+.chakra-root{--ck:#e11d48}.chakra-sacral{--ck:#f97316}.chakra-solar-plexus{--ck:#facc15}.chakra-heart{--ck:#22c55e}.chakra-throat{--ck:#0ea5e9}.chakra-third-eye{--ck:#6366f1}.chakra-crown{--ck:#a855f7}
+
+/* ---------- Cards & tiles ---------- */
+.card{border-radius:20px!important;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s!important;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.5) 50%,transparent 65%);transform:translateX(-120%);transition:transform .8s}
+.card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 22px 40px -14px color-mix(in srgb,var(--c1,#6d28d9) 70%,transparent),0 0 0 2px color-mix(in srgb,var(--c2,#a78bfa) 60%,#fff)!important}
+.card:hover::after{transform:translateX(120%)}
+.photo-tile{position:relative;overflow:hidden;isolation:isolate;min-height:170px;color:#fff!important;display:flex!important;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.35)!important}
+.photo-tile::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--ph) center/cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.photo-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,6,30,.05) 20%,rgba(10,6,30,.82))}
+.photo-tile:hover::before{transform:scale(1.08)}
+.photo-tile strong{font-size:1.15rem;text-shadow:0 2px 10px rgba(0,0,0,.6);color:#fff!important}
+.photo-tile span{color:rgba(255,255,255,.9)!important;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+
+/* ---------- Home: animated 3D crystal ---------- */
+.hub{background:radial-gradient(ellipse 70% 60% at 0 0,#f5d0fe,transparent 60%),radial-gradient(ellipse 60% 60% at 100% 10%,#a5f3fc,transparent 60%),radial-gradient(ellipse 70% 50% at 50% 100%,#fde68a,transparent 60%),#f6f2ff;background-attachment:fixed}
+html[data-theme=dark] .hub{background:radial-gradient(ellipse 60% 50% at 10% 0,rgba(168,85,247,.35),transparent 65%),radial-gradient(ellipse 55% 50% at 95% 20%,rgba(34,211,238,.25),transparent 65%),radial-gradient(ellipse 60% 50% at 50% 100%,rgba(236,72,153,.22),transparent 65%),radial-gradient(#0b0820,#03020a);background-attachment:fixed}
+.hub .hero h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.04}
+.hub .hero h1 span{background:linear-gradient(90deg,#a855f7,#06b6d4,#f59e0b,#ec4899,#a855f7);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:hdr-flow 8s linear infinite}
+.gem3d-wrap{perspective:900px;display:grid;place-items:center;min-height:320px;position:relative}
+.gem3d{position:relative;width:200px;height:300px;transform-style:preserve-3d;animation:gem-spin 14s linear infinite}
+.gem3d i,.gem3d b{position:absolute;left:50%;width:120px;height:150px;margin-left:-60px;transform-origin:50% 100%;backface-visibility:visible;
+  clip-path:polygon(50% 0,100% 100%,0 100%);transform:rotateY(var(--r)) translateZ(0) rotateX(28deg)}
+.gem3d i{top:0;background:linear-gradient(180deg,rgba(255,255,255,.95),hsl(calc(var(--r) / 1deg + 260) 90% 70% / .85));transform:rotateY(var(--r)) translateZ(51px) rotateX(19deg)}
+.gem3d b{top:150px;transform-origin:50% 0;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(0deg,hsl(calc(var(--r) / 1deg + 200) 85% 45% / .9),hsl(calc(var(--r) / 1deg + 280) 90% 72% / .8));transform:rotateY(var(--r)) translateZ(51px) rotateX(-19deg)}
+@keyframes gem-spin{from{transform:rotateX(-12deg) rotateY(0)}to{transform:rotateX(-12deg) rotateY(360deg)}}
+.gem3d-wrap::before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(196,181,253,.8),rgba(103,232,249,.35) 45%,transparent 70%);filter:blur(20px);animation:neb 6s ease-in-out infinite alternate}
+.gem-shadow{width:160px;height:24px;border-radius:50%;background:radial-gradient(rgba(76,29,149,.45),transparent 70%);margin-top:10px}
+
+/* ---------- Reduced motion & mobile ---------- */
+@media (prefers-reduced-motion:reduce){.site-header::after,.stone-hero h1,.aurora i,.hero-photo img,body.stone-page .mineral>section,body.stone-page .mineral>section::after,.nebula i,.gem3d,.mohs-bar .fill,.gauge .needle,.hub .hero h1 span{animation:none!important}}
+@media (max-width:720px){body.stone-page .mineral-head.stone-hero{min-height:auto;margin-inline:-8px;border-radius:22px;padding:22px 18px}
+  .hero-photo img{max-height:300px}.stone-hero h1{font-size:2.6rem}.gem3d-wrap{min-height:240px;transform:scale(.75)}
+  .gem-meters{grid-template-columns:1fr}}
+@media print{#stone-pattern2,.nebula,.aurora,.hero-backdrop{display:none}}
+.hero-photo figcaption,.hero-photo figcaption *{color:rgba(255,255,255,.85)!important;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.hub main>section:not(.hero):not(.stats){padding:22px clamp(14px,2.5vw,28px)}
+.stats>div{background:linear-gradient(145deg,rgba(255,255,255,.7),rgba(255,255,255,.35))!important;backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.85)!important;border-radius:20px!important;box-shadow:inset 0 1px 0 #fff,0 12px 30px -14px rgba(109,40,217,.45)!important}
+.stats strong{background:linear-gradient(90deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-size:2.2rem!important}
+html[data-theme=dark] .stats>div{background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.03))!important;border-color:rgba(255,255,255,.15)!important}
+html[data-theme=dark] .stats strong{background-image:linear-gradient(90deg,#f0abfc,#67e8f9)}
+.stone-hero .badge.hz{background:linear-gradient(135deg,#fbbf24,#f59e0b)!important;color:#1a1000!important;border-color:#fde68a!important}

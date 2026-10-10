@@ -177,6 +177,9 @@ const paint = (p) => {
   const c = pickColor({ name: p.name, colors: p.colors, elements: p.elements, parentBase: parentBase && parentBase !== "#b9b4e6" ? parentBase : null });
   colorOf.set(p, c); return c;
 };
+for (const p of pages) { const nums = (v) => String(v || "").match(/\d+(\.\d+)?/g)?.map(Number) || [];
+  const mh = nums(p.mohs); if (mh.length) { p.mohsLo = Math.min(...mh); p.mohsHi = Math.max(...mh); }
+  const dn = nums(p.density); if (dn.length) { const d = (Math.min(...dn) + Math.max(...dn)) / 2; p.densityVal = d; p.densityPct = Math.max(0, Math.min(1, (d - 1) / 9)); } }
 for (const p of pages) p.pattern = patternFor(p.title + " " + (p.metaphysical?.[0]?.name || ""), (p.crystalSystems || [])[0]);
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
