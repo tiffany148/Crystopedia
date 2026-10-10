@@ -25,7 +25,7 @@ eleventyComputed:
     {% set im = m.img or m.parentImg %}
     {% if im %}
     <figure class="mineral-photo">
-      <img src="{{ im.src }}" alt="{{ m.title }} specimen" width="480" data-pagefind-meta="image[src]">
+      <img src="{{ im.src }}" alt="{{ im.alt or (m.title + ' specimen') }}" width="480" data-pagefind-meta="image[src]">
       <figcaption data-pagefind-ignore>{% if im.own %}{{ im.credit }}{% else %}<a href="{{ im.credit }}" rel="noopener">{{ im.file }}</a> · Wikimedia Commons (see file page for author &amp; license){% if not m.img %} · photo of parent mineral{% endif %}{% endif %}</figcaption>
     </figure>
     {% endif %}
@@ -89,7 +89,7 @@ eleventyComputed:
         {% if m.uv.ph %}<tr><th>Phosphorescence <small>(afterglow)</small></th><td>{{ m.uv.ph }}</td></tr>{% endif %}
         {% if m.uv.tb %}<tr><th>Tenebrescence <small>(colour change)</small></th><td>{{ m.uv.tb }}</td></tr>{% endif %}
       </table>
-      {% if m.uv.uvImg %}<figure class="uv-photo"><img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light"><figcaption><a href="{{ m.uv.uvImg.credit }}">{{ m.uv.uvImg.file }}</a> · Wikimedia Commons</figcaption></figure>{% endif %}
+      {% if m.uv.uvImg %}<figure class="uv-photo"><img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light"><figcaption>{% if m.uv.uvImg.own %}{{ m.uv.uvImg.credit }} · under UV light{% else %}<a href="{{ m.uv.uvImg.credit }}">{{ m.uv.uvImg.file }}</a> · Wikimedia Commons{% endif %}</figcaption></figure>{% endif %}
     </div>
     <p>{{ m.uv.note }}</p>
     <p class="muted small">Reactions vary by locality and specimen; many specimens of a fluorescent species do not glow. {{ site.uvSafety }} Sources: {% for s in m.uv.sources %}<a href="{{ s.url }}" rel="noopener">{{ s.t }}</a>{% if not loop.last %} · {% endif %}{% endfor %}. <a href="/uv-reactive/">More UV-reactive stones →</a></p>

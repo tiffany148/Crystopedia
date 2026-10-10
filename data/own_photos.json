@@ -1,5 +1,5 @@
 {
- "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo. Optional: thumb (small version) and gallery: a list of {src, thumb, alt}.",
+ "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo. Optional: thumb (small version) and gallery: a list of {src, thumb, alt}. Optional: caption (appended to the credit, e.g. 'under UV light') and uv: {src, thumb, alt}, which replaces the 'Under UV' photo on the page and on the UV hub.",
  "Iris Agate": {
   "src": "",
   "credit": "Photo © Tiffany Stark"
@@ -73,6 +73,127 @@
    "keep": [
     "snow-point"
    ]
+  }
+ },
+ "Thousand Layer Quartz": {
+  "src": "/assets/own/thousand-layer-quartz.jpg",
+  "thumb": "/assets/own/thousand-layer-quartz-sm.jpg",
+  "alt": "Thousand layer quartz tower",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Iolite-Sunstone": {
+  "src": "/assets/own/iolite-sunstone.jpg",
+  "thumb": "/assets/own/iolite-sunstone-sm.jpg",
+  "alt": "Iolite with sunstone sphere",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Hemimorphite": {
+  "src": "/assets/own/hemimorphite.jpg",
+  "thumb": "/assets/own/hemimorphite-sm.jpg",
+  "alt": "Blue banded hemimorphite/smithsonite freeform",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Pink Jelly Agate": {
+  "src": "/assets/own/pink-jelly-agate.jpg",
+  "thumb": "/assets/own/pink-jelly-agate-sm.jpg",
+  "alt": "Pink jelly agate tower",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Needle Quartz": {
+  "src": "/assets/own/needle-quartz.jpg",
+  "thumb": "/assets/own/needle-quartz-sm.jpg",
+  "alt": "Needle quartz cluster",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Grape Agate": {
+  "src": "/assets/own/grape-agate.jpg",
+  "thumb": "/assets/own/grape-agate-sm.jpg",
+  "alt": "Grape agate (botryoidal purple chalcedony) from Indonesia",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Star Rose Quartz": {
+  "src": "/assets/own/star-rose-quartz.jpg",
+  "thumb": "/assets/own/star-rose-quartz-sm.jpg",
+  "alt": "Star rose quartz sphere showing a six-rayed star",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Labradorite": {
+  "src": "/assets/own/labradorite-gold-flash.jpg",
+  "thumb": "/assets/own/labradorite-gold-flash-sm.jpg",
+  "alt": "Labradorite palm stone with orange-gold flash",
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/labradorite-gold-flash.jpg",
+    "thumb": "/assets/own/labradorite-gold-flash-sm.jpg",
+    "alt": "Labradorite palm stone with orange-gold flash"
+   },
+   {
+    "src": "/assets/own/labradorite-blue-gold-flash.jpg",
+    "thumb": "/assets/own/labradorite-blue-gold-flash-sm.jpg",
+    "alt": "Labradorite with blue and gold flash"
+   }
+  ]
+ },
+ "Amethyst Stalactite": {
+  "src": "/assets/own/amethyst-stalactite-slices.jpg",
+  "thumb": "/assets/own/amethyst-stalactite-slices-sm.jpg",
+  "alt": "Amethyst stalactite slices showing flower-like cross-sections",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Pyrite Sun": {
+  "src": "/assets/own/pyrite-sun.jpg",
+  "thumb": "/assets/own/pyrite-sun-sm.jpg",
+  "alt": "Pyrite sun on a stand",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Green Moonstone": {
+  "src": "/assets/own/green-moonstone-uv.jpg",
+  "thumb": "/assets/own/green-moonstone-uv-sm.jpg",
+  "alt": "Green moonstone sphere under UV light",
+  "credit": "Photo © Tiffany Stark",
+  "caption": "under UV light"
+ },
+ "Moonstone": {
+  "gallery": [
+   {
+    "src": "/assets/own/raw-moonstone.jpg",
+    "thumb": "/assets/own/raw-moonstone-sm.jpg",
+    "alt": "Raw (rough) moonstone showing a blue flash"
+   }
+  ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Blue Amber": {
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/blue-amber-uv.jpg",
+   "thumb": "/assets/own/blue-amber-uv-sm.jpg",
+   "alt": "Blue amber under UV light"
+  }
+ },
+ "Yooperlite": {
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/yooperlite-uv.jpg",
+   "thumb": "/assets/own/yooperlite-uv-sm.jpg",
+   "alt": "Yooperlite sphere glowing orange under UV"
+  }
+ },
+ "Petroleum Quartz": {
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/petroleum-quartz-uv.jpg",
+   "thumb": "/assets/own/petroleum-quartz-uv-sm.jpg",
+   "alt": "Petroleum quartz under UV (the bowl is fluorescing orange-pink too)"
+  }
+ },
+ "Manganoan calcite": {
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/mangano-calcite-uv.jpg",
+   "thumb": "/assets/own/mangano-calcite-uv-sm.jpg",
+   "alt": "Mangano calcite grape-cluster carving glowing pink under UV"
   }
  }
 }

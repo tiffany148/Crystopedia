@@ -7220,5 +7220,127 @@
   ],
   "wikidata": null,
   "slug": "bismuth"
+ },
+ {
+  "name": "Thousand Layer Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Root"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "A trade-name stone whose stacked inner layers are linked in lore to patience, perspective and working through things layer by layer.",
+  "uses": [
+   "patience",
+   "perspective",
+   "inner growth"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "thousand-layer-quartz"
+ },
+ {
+  "name": "Iolite-Sunstone",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Libra",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Violet iolite with glittering sunstone is linked in lore to intuition balanced by confidence, and to vision paired with action.",
+  "uses": [
+   "intuition",
+   "confidence",
+   "vision"
+  ],
+  "wikidata": null,
+  "parent": "Q122998805",
+  "slug": "iolite-sunstone"
+ },
+ {
+  "name": "Pink Jelly Agate",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Taurus"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Soft, translucent pink jelly agate is linked in lore to gentle love, emotional comfort and calm.",
+  "uses": [
+   "gentle love",
+   "comfort",
+   "calm"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "pink-jelly-agate"
+ },
+ {
+  "name": "Needle Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Throat"
+  ],
+  "zodiac": [
+   "Gemini"
+  ],
+  "elements": [
+   "Air",
+   "Fire"
+  ],
+  "meaning": "Fine needle quartz is linked in lore to focus, clarity and directing energy.",
+  "uses": [
+   "focus",
+   "clarity",
+   "directing energy"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "needle-quartz"
+ },
+ {
+  "name": "Grape Agate",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aquarius",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Purple 'grape agate' is linked in lore to calm, intuition and spiritual connection.",
+  "uses": [
+   "calm",
+   "intuition",
+   "spiritual connection"
+  ],
+  "wikidata": null,
+  "parent": "Q170448",
+  "slug": "grape-agate"
  }
 ]

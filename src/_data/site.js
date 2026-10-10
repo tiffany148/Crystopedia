@@ -189,6 +189,16 @@ const SEE_ALSO = {
   "Malachite": [["Malachite Stalactite", "Congolese stalactites with bullseye banding"]],
   "Apophyllite": [["Apophyllite Stalactite", "apophyllite-coated chalcedony stalactites from India"], ["Stilbite", "peach zeolite bowties often grow with apophyllite in Indian basalt"]],
   "Bismuth": [["Bismuthinite", "bismuth sulfide, the main natural bismuth ore mineral"]],
+  "Iolite-Sunstone": [["Iolite", "the violet gem cordierite"], ["Sunstone", "feldspar with coppery glitter from iron-oxide platelets"]],
+  "Iolite": [["Iolite-Sunstone", "iolite with glittering sunstone and hematite from Odisha, India"]],
+  "Sunstone": [["Iolite-Sunstone", "sunstone grown together with violet iolite"]],
+  "Hemimorphite": [["Smithsonite", "zinc carbonate: blue 'hemimorphite' on the market is often smithsonite, or a mix of the two"]],
+  "Smithsonite": [["Hemimorphite", "zinc silicate that is easily confused with blue smithsonite"]],
+  "Needle Quartz": [["Rutilated quartz", "'angel hair': golden rutile needles inside clear quartz, unlike needle quartz, where the needles are quartz"], ["Quartz", "the parent mineral"]],
+  "Rutilated quartz": [["Needle Quartz", "quartz that grows as thin needles itself"]],
+  "Grape Agate": [["Chalcedony", "grape agate is botryoidal chalcedony, not banded agate"], ["Agate", "true agate is banded chalcedony"]],
+  "Pink Jelly Agate": [["Agate", "the parent stone"], ["Chalcedony", "the microcrystalline quartz it is made of"]],
+  "Thousand Layer Quartz": [["Quartz", "the parent mineral"]],
   "Desert rose": [["Barite Rose", "the barite form: Oklahoma's state rock"], ["Selenite", "the gypsum mineral that makes Sahara desert roses"]],
   "Barite Rose": [["Desert rose", "the gypsum (selenite) form from the Sahara and Mexico"]],
   "Satin Spar": [["Selenite", "satin spar is fibrous gypsum, the same mineral as selenite"], ["Calcite", "despite the name, most satin spar is not calcite"]],
@@ -252,11 +262,14 @@ for (const p of pages) {
   const op = path.join(ROOT, "data/own_photos.json");
   const OWN = fs.existsSync(op) ? JSON.parse(fs.readFileSync(op, "utf8")) : {};
   for (const [n, o] of Object.entries(OWN)) {
-    if (n.startsWith("_") || !o?.src) continue;
+    if (n.startsWith("_") || !(o?.src || o?.gallery || o?.uv)) continue;
     const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase()); if (!p) { console.warn("own_photos: missing", n); continue; }
-    const credit = o.credit || "Photo © Tiffany Stark";
-    p.img = { src: o.src, own: true, credit, file: credit, alt: o.alt };
-    p.thumb = { src: o.thumb || o.src, own: true, credit, file: credit };
+    const credit = (o.credit || "Photo © Tiffany Stark") + (o.caption ? `, ${o.caption}` : "");
+    if (o.src) {
+      p.img = { src: o.src, own: true, credit, file: credit, alt: o.alt };
+      p.thumb = { src: o.thumb || o.src, own: true, credit, file: credit };
+    }
+    if (o.uv && p.uv) p.uv.uvImg = { src: o.uv.src, thumbSrc: o.uv.thumb, own: true, credit: "Photo © Tiffany Stark", file: "Photo © Tiffany Stark", alt: o.uv.alt };
     if (o.gallery?.length) p.ownGallery = o.gallery.map((g) => ({ ...g, credit }));
   }
 }
@@ -289,8 +302,10 @@ const ALIASES = {
   "Pink Halite": ["Pink salt"], "Blue Halite": ["Blue salt"],
 };
 const NOTES = {
+  "Hemimorphite": "Blue banded 'hemimorphite' on the market is often smithsonite, or an intergrowth of both zinc minerals. Hemimorphite is a zinc silicate (Mohs 4.5–5) and does not fizz in acid. Smithsonite is a zinc carbonate (Mohs 4–4.5) and fizzes in warm dilute acid. Telling them apart reliably needs testing, so specimens are often labelled 'hemimorphite/smithsonite'.",
+  "Smithsonite": "Blue smithsonite and hemimorphite are often mixed up, and many blue banded pieces contain both. Smithsonite is the denser zinc carbonate and fizzes in warm dilute acid, while hemimorphite is a silicate.",
   "Bismuth": "Lab-grown, not natural: almost all the iridescent stair-step bismuth crystals sold are grown from melted bismuth metal. Natural native bismuth looks quite different. It forms silvery-pink, often tarnished grains and masses in ore veins.",
-  "Moonstone": "Raw (rough) moonstone looks quite plain. Expect milky white, cream, peach or grey chunks of feldspar with a glassy to pearly lustre, flat cleavage faces and a waxy feel. The floating blue-white glow (adularescence) shows only as a faint sheen on some faces when you turn the stone under a light. It becomes obvious after the stone is polished into a dome. Raw rainbow 'moonstone' is white labradorite and shows flashes of blue on its cleavage surfaces.",
+  "Moonstone": "Raw (rough) moonstone looks quite plain. Expect milky white, cream, peach or grey chunks of feldspar with a glassy to pearly lustre, flat cleavage faces and a waxy feel. The floating blue-white glow (adularescence) shows only as a faint sheen on some faces when you turn the stone under a light (see the raw moonstone photo in the gallery below). It becomes obvious after the stone is polished into a dome. Raw rainbow 'moonstone' is white labradorite and shows flashes of blue on its cleavage surfaces.",
   "Desert rose": "There are two kinds of 'desert rose'. Gypsum (selenite) roses form in sandy deserts such as the Sahara (Tunisia, Algeria and Morocco) and Chihuahua, Mexico. Barite roses come from central Oklahoma, where the 'rose rock' is the state rock. Gypsum roses are softer (Mohs 2) and slightly water-soluble. Barite roses are heavier and harder (Mohs 3–3.5).",
   "Halite": "Halite colours: clear to white is pure salt. Pink to red usually comes from salt-loving microbes (archaea), as at Searles Lake, California. Blue to violet comes from radiation-damaged colour centres, often next to sylvite. Orange or brown usually comes from iron oxide or clay inclusions.",
   "Fire Opal": "Mexican fire opal comes mostly from the Querétaro and Jalisco highlands. It is the classic transparent orange-red opal and may or may not show play-of-colour.",

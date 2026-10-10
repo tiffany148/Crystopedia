@@ -332,4 +332,10 @@ ENTRIES = [
 ("Chalcedony Stalactite","chalcedony stalactite","variety",[T,C],["Cancer", "Sagittarius"],[W,A],"Chalcedony and quartz stalactites are linked in lore to calm, communication and gentle balance.",["calm", "communication", "balance"]),
 ("Calcite Stalactite","calcite stalactite","variety",[R,C],["Cancer"],[E_,W],"Cave calcite stalactites are linked in lore to patience, steady growth and connection to the earth.",["patience", "steady growth", "grounding"]),
 ("Bismuth","bismuth","other",[R,C],["Aquarius"],[E_,F],"Rainbow bismuth is linked in modern crystal lore to transformation, focus and calm in times of change.",["transformation", "focus", "calm during change"]),
+# --- Tiffany's photo stones ---
+("Thousand Layer Quartz","thousand layer quartz","variety",[C,R],["Aries"],[E_,A],"A trade-name stone whose stacked inner layers are linked in lore to patience, perspective and working through things layer by layer.",["patience", "perspective", "inner growth"]),
+("Iolite-Sunstone","iolite-sunstone","variety",[E,P],["Libra", "Sagittarius"],[W,F],"Violet iolite with glittering sunstone is linked in lore to intuition balanced by confidence, and to vision paired with action.",["intuition", "confidence", "vision"]),
+("Pink Jelly Agate","pink jelly agate","variety",[H,C],["Libra", "Taurus"],[W],"Soft, translucent pink jelly agate is linked in lore to gentle love, emotional comfort and calm.",["gentle love", "comfort", "calm"]),
+("Needle Quartz","needle quartz","variety",[C,T],["Gemini"],[A,F],"Fine needle quartz is linked in lore to focus, clarity and directing energy.",["focus", "clarity", "directing energy"]),
+("Grape Agate","grape agate","variety",[E,C],["Aquarius", "Pisces"],[W,A],"Purple 'grape agate' is linked in lore to calm, intuition and spiritual connection.",["calm", "intuition", "spiritual connection"]),
 ]

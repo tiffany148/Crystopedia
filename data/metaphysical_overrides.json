@@ -622,5 +622,25 @@
  "Bismuth": {
   "qid": null,
   "parent": null
+ },
+ "Thousand Layer Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Iolite-Sunstone": {
+  "qid": null,
+  "parent": "Q122998805"
+ },
+ "Pink Jelly Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Needle Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Grape Agate": {
+  "qid": null,
+  "parent": "Q170448"
  }
 }
