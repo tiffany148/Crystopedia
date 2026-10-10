@@ -1,0 +1,19 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Stalactites
+permalink: /stalactites/
+description: "Mineral stalactites: amethyst flower slices from Uruguay, Indian apophyllite stalactites, Argentine rhodochrosite, Congo malachite, chalcedony and cave calcite."
+---
+<h1>🕳 Stalactites</h1>
+<div class="collection-intro">
+<p class="lead">A stalactite grows downward from a ceiling as mineral-rich water drips, leaving a thin ring of mineral each time. Calcite builds them in limestone caves. Inside volcanic gas pockets, chalcedony, amethyst, apophyllite, rhodochrosite and malachite build them too. Sliced across, they show bullseye rings or a flower-like star.</p>
+</div>
+<div class="formation-grid">
+  <div><h3>1 · A drip</h3><p>Water carrying dissolved minerals seeps through a cavity roof and hangs as a drop.</p></div>
+  <div><h3>2 · A ring</h3><p>The drop loses CO₂ or evaporates slightly and leaves a ring of mineral. Ring by ring, a hollow 'soda straw' grows.</p></div>
+  <div><h3>3 · Thickening</h3><p>Water also runs down the outside and adds layers like tree rings. Later, crystals such as amethyst or apophyllite may coat the column.</p></div>
+  <div><h3>Collecting note</h3><p>Cave formations are protected in many places, including US national parks and federal caves. Buy specimens from mines and reputable dealers.</p></div>
+</div>
+<div class="grid">{% for c in site.stalactites %}
+<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span></div></a>{% endfor %}</div>

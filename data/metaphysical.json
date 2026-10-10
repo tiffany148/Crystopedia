@@ -7051,5 +7051,174 @@
   "wikidata": null,
   "parent": "Q25381",
   "slug": "copal"
+ },
+ {
+  "name": "Amethyst Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Third Eye",
+   "Crown"
+  ],
+  "zodiac": [
+   "Pisces",
+   "Aquarius"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "Sliced amethyst stalactites show a flower or star, and crystal lore links them to calm, intuition and spiritual growth.",
+  "uses": [
+   "calm",
+   "intuition",
+   "spiritual growth"
+  ],
+  "wikidata": null,
+  "parent": "Q79058",
+  "slug": "amethyst-stalactite"
+ },
+ {
+  "name": "Apophyllite Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Libra"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Glittering apophyllite stalactites are linked in lore to clarity, connection and uplifted spirit.",
+  "uses": [
+   "clarity",
+   "connection",
+   "upliftment"
+  ],
+  "wikidata": null,
+  "parent": "Q261461",
+  "slug": "apophyllite-stalactite"
+ },
+ {
+  "name": "Rhodochrosite Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo",
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Argentina's rose-banded 'Inca rose' stalactites are linked in lore to compassion, self-love and emotional healing.",
+  "uses": [
+   "compassion",
+   "self-love",
+   "emotional healing"
+  ],
+  "wikidata": null,
+  "parent": "Q409793",
+  "slug": "rhodochrosite-stalactite"
+ },
+ {
+  "name": "Malachite Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Scorpio",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Banded malachite stalactites are linked in lore to transformation and protection.",
+  "uses": [
+   "transformation",
+   "protection",
+   "growth"
+  ],
+  "wikidata": null,
+  "parent": "Q164411",
+  "slug": "malachite-stalactite"
+ },
+ {
+  "name": "Chalcedony Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Sagittarius"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Chalcedony and quartz stalactites are linked in lore to calm, communication and gentle balance.",
+  "uses": [
+   "calm",
+   "communication",
+   "balance"
+  ],
+  "wikidata": null,
+  "parent": "Q170448",
+  "slug": "chalcedony-stalactite"
+ },
+ {
+  "name": "Calcite Stalactite",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Cave calcite stalactites are linked in lore to patience, steady growth and connection to the earth.",
+  "uses": [
+   "patience",
+   "steady growth",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "calcite-stalactite"
+ },
+ {
+  "name": "Bismuth",
+  "kind": "other",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Rainbow bismuth is linked in modern crystal lore to transformation, focus and calm in times of change.",
+  "uses": [
+   "transformation",
+   "focus",
+   "calm during change"
+  ],
+  "wikidata": null,
+  "slug": "bismuth"
  }
 ]

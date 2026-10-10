@@ -594,5 +594,33 @@
  "Copal": {
   "qid": null,
   "parent": "Q25381"
+ },
+ "Amethyst Stalactite": {
+  "qid": null,
+  "parent": "Q79058"
+ },
+ "Apophyllite Stalactite": {
+  "qid": null,
+  "parent": "Q261461"
+ },
+ "Rhodochrosite Stalactite": {
+  "qid": null,
+  "parent": "Q409793"
+ },
+ "Malachite Stalactite": {
+  "qid": null,
+  "parent": "Q164411"
+ },
+ "Chalcedony Stalactite": {
+  "qid": null,
+  "parent": "Q170448"
+ },
+ "Calcite Stalactite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Bismuth": {
+  "qid": null,
+  "parent": null
  }
 }

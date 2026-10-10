@@ -184,6 +184,11 @@ const SEE_ALSO = {
   "Iris Agate": [["Iris quartz", "a different rainbow stone: its colours come from fine fractures in quartz crystals, not from banding"], ["Fire Agate", "agate with iridescence from thin iron-oxide layers"]],
   "Iris quartz": [["Iris Agate", "agate whose ultra-fine banding diffracts light into a rainbow when thin-sliced and backlit"]],
   "Crazy Lace Agate": [["Laguna Agate", "another vividly banded Chihuahua agate"]],
+  "Amethyst": [["Amethyst Stalactite", "sliced stalactites showing a flower-like star of amethyst"]],
+  "Rhodochrosite": [["Rhodochrosite Stalactite", "Argentina's banded 'Inca rose' stalactites"]],
+  "Malachite": [["Malachite Stalactite", "Congolese stalactites with bullseye banding"]],
+  "Apophyllite": [["Apophyllite Stalactite", "apophyllite-coated chalcedony stalactites from India"], ["Stilbite", "peach zeolite bowties often grow with apophyllite in Indian basalt"]],
+  "Bismuth": [["Bismuthinite", "bismuth sulfide, the main natural bismuth ore mineral"]],
   "Desert rose": [["Barite Rose", "the barite form: Oklahoma's state rock"], ["Selenite", "the gypsum mineral that makes Sahara desert roses"]],
   "Barite Rose": [["Desert rose", "the gypsum (selenite) form from the Sahara and Mexico"]],
   "Satin Spar": [["Selenite", "satin spar is fibrous gypsum, the same mineral as selenite"], ["Calcite", "despite the name, most satin spar is not calcite"]],
@@ -194,7 +199,6 @@ const SEE_ALSO = {
   "Nacre": [["Aragonite", "nacre (mother of pearl) is made of aragonite platelets"], ["Pearl", "pearls are built from nacre"]],
   "Pearl": [["Aragonite", "pearls are mostly aragonite"]],
   "Stilbite": [["Apophyllite", "the classic Indian zeolite partner, often on the same specimen"]],
-  "Apophyllite": [["Stilbite", "peach zeolite bowties often grow with apophyllite in Indian basalt"]],
   "Petroleum Quartz": [["Herkimer Diamond", "New York quartz that sometimes holds bitumen and oil"]],
   "Herkimer Diamond": [["Petroleum Quartz", "quartz with fluorescent oil inclusions"]],
   "Blue Amber": [["Baltic Amber", "the classic European amber"], ["Copal", "younger resin often sold as amber"]],
@@ -270,6 +274,7 @@ for (const p of pages) {
 }
 // --- aliases ("also known as") and notes ---------------------------------------------------
 const ALIASES = {
+  "Bismuth": ["Native bismuth", "Bismuth crystal", "Rainbow bismuth", "Hopper bismuth"], "Amethyst Stalactite": ["Amethyst flower", "Amethyst star slice"], "Rhodochrosite Stalactite": ["Inca rose"],
   "Manganoan calcite": ["Mangano Calcite", "Mangano calcite", "Pink calcite", "Manganocalcite"],
   "Iceland spar": ["Optical calcite", "Optical-grade calcite"],
   "Moonstone": ["Raw moonstone", "Rough moonstone"],
@@ -284,6 +289,7 @@ const ALIASES = {
   "Pink Halite": ["Pink salt"], "Blue Halite": ["Blue salt"],
 };
 const NOTES = {
+  "Bismuth": "Lab-grown, not natural: almost all the iridescent stair-step bismuth crystals sold are grown from melted bismuth metal. Natural native bismuth looks quite different. It forms silvery-pink, often tarnished grains and masses in ore veins.",
   "Moonstone": "Raw (rough) moonstone looks quite plain. Expect milky white, cream, peach or grey chunks of feldspar with a glassy to pearly lustre, flat cleavage faces and a waxy feel. The floating blue-white glow (adularescence) shows only as a faint sheen on some faces when you turn the stone under a light. It becomes obvious after the stone is polished into a dome. Raw rainbow 'moonstone' is white labradorite and shows flashes of blue on its cleavage surfaces.",
   "Desert rose": "There are two kinds of 'desert rose'. Gypsum (selenite) roses form in sandy deserts such as the Sahara (Tunisia, Algeria and Morocco) and Chihuahua, Mexico. Barite roses come from central Oklahoma, where the 'rose rock' is the state rock. Gypsum roses are softer (Mohs 2) and slightly water-soluble. Barite roses are heavier and harder (Mohs 3–3.5).",
   "Halite": "Halite colours: clear to white is pure salt. Pink to red usually comes from salt-loving microbes (archaea), as at Searles Lake, California. Blue to violet comes from radiation-damaged colour centres, often next to sylvite. Orange or brown usually comes from iron oxide or clay inclusions.",
@@ -338,8 +344,9 @@ const aragonites = grp("aragonite", ["Aragonite", "Caribbean Blue Calcite", "Nac
 const halites = grp("halite", ["Halite", "Sylvite"]);
 const ambers = grp("amber", ["Amber", "Amber with Inclusions"]);
 const apophyllites = grp("apophyllite", ["Apophyllite", "Fluorapophyllite-(K)", "Fluorapophyllite-(Na)", "Fluorapophyllite-(NH₄)", "Fluorapophyllite-(Cs)", "Hydroxyapophyllite-(K)", "Hydroxyapophyllite-(NH₄)", "Stilbite"]);
+const stalactites = grp("stalactite", []);
 const desertRoses = grp("desert-rose", ["Desert rose", "Barite Rose", "Selenite"]);
-for (const [fam, label, list] of [["calcite", "Calcite family", calcites], ["opal", "Opal family", opals], ["aragonite", "Aragonite family", aragonites], ["halite", "Halite family", halites], ["amber", "Amber family", ambers], ["apophyllite", "Apophyllite family", apophyllites], ["desert-rose", "Desert rose forms", desertRoses], ["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
+for (const [fam, label, list] of [["stalactite", "Stalactites", stalactites], ["calcite", "Calcite family", calcites], ["opal", "Opal family", opals], ["aragonite", "Aragonite family", aragonites], ["halite", "Halite family", halites], ["amber", "Amber family", ambers], ["apophyllite", "Apophyllite family", apophyllites], ["desert-rose", "Desert rose forms", desertRoses], ["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
   for (const c of list) { const p = pages.find((x) => x.url === c.url); if (p && !p.family) p.family = { label, cards: list.filter((x) => x.url !== c.url) }; }
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
@@ -410,4 +417,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

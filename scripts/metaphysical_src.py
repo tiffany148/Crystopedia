@@ -324,4 +324,12 @@ ENTRIES = [
 ("Blue Amber","blue amber","organic",[T,S],["Leo"],[F,W],"Rare Dominican blue amber is linked in lore to calm, creativity and emotional warmth.",["calm", "creativity", "warmth"]),
 ("Baltic Amber","baltic amber","organic",[S,P],["Leo", "Aquarius"],[F,E_],"Baltic amber is a traditional teething charm and protective amulet in folklore, linked in lore to warmth and calm.",["warmth", "calm", "protection"]),
 ("Copal","copal","organic",[S,C],["Leo"],[F,A],"Copal resin, burned as incense in Mesoamerica for centuries, is linked with cleansing and spiritual offering.",["cleansing", "spiritual offering", "warmth"]),
+# --- stalactites, bismuth ---
+("Amethyst Stalactite","amethyst stalactite","variety",[E,C],["Pisces", "Aquarius"],[A,W],"Sliced amethyst stalactites show a flower or star, and crystal lore links them to calm, intuition and spiritual growth.",["calm", "intuition", "spiritual growth"]),
+("Apophyllite Stalactite","apophyllite stalactite","variety",[H,C],["Gemini", "Libra"],[A],"Glittering apophyllite stalactites are linked in lore to clarity, connection and uplifted spirit.",["clarity", "connection", "upliftment"]),
+("Rhodochrosite Stalactite","rhodochrosite stalactite","variety",[H,S],["Leo", "Scorpio"],[F,W],"Argentina's rose-banded 'Inca rose' stalactites are linked in lore to compassion, self-love and emotional healing.",["compassion", "self-love", "emotional healing"]),
+("Malachite Stalactite","malachite stalactite","variety",[H],["Scorpio", "Capricorn"],[E_],"Banded malachite stalactites are linked in lore to transformation and protection.",["transformation", "protection", "growth"]),
+("Chalcedony Stalactite","chalcedony stalactite","variety",[T,C],["Cancer", "Sagittarius"],[W,A],"Chalcedony and quartz stalactites are linked in lore to calm, communication and gentle balance.",["calm", "communication", "balance"]),
+("Calcite Stalactite","calcite stalactite","variety",[R,C],["Cancer"],[E_,W],"Cave calcite stalactites are linked in lore to patience, steady growth and connection to the earth.",["patience", "steady growth", "grounding"]),
+("Bismuth","bismuth","other",[R,C],["Aquarius"],[E_,F],"Rainbow bismuth is linked in modern crystal lore to transformation, focus and calm in times of change.",["transformation", "focus", "calm during change"]),
 ]

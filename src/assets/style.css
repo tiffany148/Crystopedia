@@ -484,3 +484,4 @@ body.holo .stone-hero{background-image:linear-gradient(120deg,transparent 20%,rg
 @media (prefers-reduced-motion:reduce){body.holo::before,body.holo .stone-hero{animation:none}}
 /* ---- sparkle frame canvas ---- */
 #sparkle-frame{position:fixed;inset:0;pointer-events:none;z-index:40}
+.tile.t14{background:linear-gradient(135deg,#2a1a3a,#8e5bb8 45%,#e0607e 75%,#1e8a4a)}

@@ -7,6 +7,7 @@ const MAXIN = 3.1;
 const part1 = s.pages.filter((p) => p.metaphysical.length || p.handmade || p.facts);
 const section = (p) => {
   const g = p.facts?.group, c = p.collection, t = p.title;
+  if (g === "stalactite") return "Stalactites";
   if (g === "star" || g === "cats-eye") return "Star stones & cat's-eyes";
   if (g === "obsidian") return "Obsidian family";
   if (g === "moonstone" || /moonstone/i.test(t)) return "Moonstone types";
