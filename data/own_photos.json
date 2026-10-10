@@ -55,5 +55,24 @@
     "alt": "Arkansas quartz crystal-pocket matrix plate"
    }
   ]
+ },
+ "_pipeline": "For new own photos: save the EXIF-stripped full-res original to /workspace/crystopedia-book/own-photos/<name>.jpg, then run /workspace/.rawenv/bin/python scripts/own_photo_studio.py <that file> studio|crop|keep [l,t,r,b crop fractions]. 'studio' uses rembg to swap distracting backgrounds for a soft neutral gradient with a soft shadow and a tight crop. Use 'crop' for hand-held shots and 'keep' for nice natural scenes. Originals are kept as *-orig.jpg (book and web). The script writes the 1600px web copy and the 480px -sm thumb to src/assets/own/.",
+ "_photo_modes": {
+  "arkansas-quartz": {
+   "studio": [
+    "iron-stained-matrix",
+    "pocket-matrix-plate"
+   ],
+   "crop": [
+    "cluster-in-hand-1",
+    "cluster-in-hand-2",
+    "striated-point",
+    "smoky-point",
+    "cluster-plate"
+   ],
+   "keep": [
+    "snow-point"
+   ]
+  }
  }
 }
