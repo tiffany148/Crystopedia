@@ -5791,5 +5791,141 @@
   "wikidata": null,
   "parent": "Q430034",
   "slug": "cats-eye-moonstone"
+ },
+ {
+  "name": "Arkansas Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Earth",
+   "Spirit"
+  ],
+  "meaning": "The state mineral of Arkansas. Ouachita quartz is prized in crystal lore as a 'master healer' that amplifies intention and brings clarity.",
+  "uses": [
+   "clarity",
+   "amplifying intention",
+   "energy"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "arkansas-quartz"
+ },
+ {
+  "name": "Novaculite",
+  "kind": "rock",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "The stone behind 'Arkansas whetstones' is linked in lore to sharpening the mind, focus and clear decisions.",
+  "uses": [
+   "focus",
+   "mental sharpness",
+   "clarity"
+  ],
+  "wikidata": null,
+  "slug": "novaculite"
+ },
+ {
+  "name": "Bauxite",
+  "kind": "rock",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "The state rock of Arkansas, the ore of aluminum, is associated in lore with stability, practicality and hard work.",
+  "uses": [
+   "stability",
+   "practicality",
+   "perseverance"
+  ],
+  "wikidata": null,
+  "slug": "bauxite"
+ },
+ {
+  "name": "Lepidodendron",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Diamond-patterned 'scale tree' bark fossils are linked in lore to ancient patience, growth and grounding.",
+  "uses": [
+   "patience",
+   "growth",
+   "grounding"
+  ],
+  "wikidata": null,
+  "slug": "lepidodendron"
+ },
+ {
+  "name": "Stigmaria",
+  "kind": "fossil",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Fossil roots of the giant scale trees are associated in lore with deep roots, stability and endurance.",
+  "uses": [
+   "stability",
+   "deep roots",
+   "endurance"
+  ],
+  "wikidata": null,
+  "slug": "stigmaria"
+ },
+ {
+  "name": "Calamites",
+  "kind": "fossil",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Virgo"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Fossils of these giant horsetails are linked in lore to resilience, renewal and steady growth.",
+  "uses": [
+   "resilience",
+   "renewal",
+   "steady growth"
+  ],
+  "wikidata": null,
+  "slug": "calamites"
  }
 ]

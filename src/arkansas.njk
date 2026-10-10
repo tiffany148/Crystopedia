@@ -1,0 +1,35 @@
+---
+layout: base.njk
+bodyClass: hub ark-hub
+title: Arkansas Stones & Fossils
+permalink: /arkansas/
+description: "Arkansas quartz, Crater of Diamonds, novaculite, bauxite, wavellite, Magnet Cove minerals and Arkansas fossils, with a map of sites and rockhounding rules."
+---
+<h1>💎 Arkansas Stones &amp; Fossils</h1>
+<div class="collection-intro">
+<p class="lead">Arkansas is one of America's richest rockhounding states. It has the world's only public diamond field where you keep what you find, the quartz crystal mines of the Ouachita Mountains, the strange igneous minerals of Magnet Cove, and fossils from ancient seas and coal swamps.</p>
+</div>
+<section class="where-found ark-map">
+  <h2>🗺 Arkansas sites</h2>
+  <div class="stone-map" data-points="{{ site.arkansas.mapPoints | safe }}" role="img" aria-label="Map of Arkansas rock and fossil sites"><noscript>Map needs JavaScript.</noscript></div>
+  <ul class="ark-sites">{% for s in site.arkansas.sites %}<li><strong>{{ s.n }}</strong>: {{ s.note }}</li>{% endfor %}</ul>
+</section>
+{% for sec in site.arkansas.sections %}
+<h2>{{ sec.title }}</h2>
+<p class="collection-intro">{{ sec.intro }}</p>
+<div class="grid">{% for c in sec.cards %}
+<a class="card" href="{{ c.url }}" style="{{ c.style }}">
+  <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong><span class="muted small">{{ c.typeLabel }}</span></div>
+</a>{% endfor %}</div>
+{% endfor %}
+<section class="ark-dino">
+  <h2>🦖 Arkansaurus</h2>
+  <p><em>Arkansaurus fridayi</em> is an ornithomimosaur ("ostrich-mimic" dinosaur) from Early Cretaceous rocks of Sevier County. It is known only from a foot, found by Joe Friday in 1972. It became the Arkansas state dinosaur in 2017. The original fossil is held by the University of Arkansas, and it is not something you can collect. <a href="https://en.wikipedia.org/wiki/Arkansaurus" rel="noopener">Source</a>.</p>
+</section>
+<h2>⛏ Rockhounding tips &amp; rules</h2>
+<div class="formation-grid">{% for t in site.arkansas.tips %}
+  <div><h3>{{ t.title }}</h3><p>{{ t.text }}</p><p class="small">{% for s in t.src %}<a href="{{ s.url }}" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p></div>{% endfor %}
+</div>
+<p class="small muted">Rules change, so always check with the land manager before collecting. This is not legal advice. Sources: {% for s in site.arkansas.sources %}<a href="{{ s.url }}" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}.</p>
+<script src="/assets/map.js" defer></script>

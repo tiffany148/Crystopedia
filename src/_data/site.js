@@ -5,6 +5,7 @@ import { pickColor, paletteFor, CURATED, MULTI } from "../../lib/palette.js";
 const MULTI_HAS = (p) => !!MULTI[(p.metaphysical[0]?.name || p.name).toLowerCase()];
 import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
+import { ARK_SITES, ARK_SECTIONS, ARK_TIPS, ARK_LOCS, ARK_SOURCES } from "../../lib/arkansas.js";
 import { UV, UV_SAFETY } from "../../lib/uv.js";
 import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } from "../../lib/hazards.js";
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
@@ -135,6 +136,11 @@ for (const p of pages) {
   p.typeLabel = p.kindLabel && (p.type === "other" || p.type === "handmade") ? p.kindLabel
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
+}
+for (const [n, list] of Object.entries(ARK_LOCS)) {
+  const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase());
+  if (!p) { console.warn("ARK_LOCS: no page for", n); continue; }
+  (p.notable ||= []).push(...list);
 }
 // --- "Where it's found" map points ---------------------------------------------------
 const mapStats = { pages: 0, typeLoc: 0, origin: 0, notable: 0, typeLocNoCoords: 0 };
@@ -341,4 +347,13 @@ const hazards = HAZARD_GROUPS.map(([key, label]) => ({ key, label, items: pages.
   .sort((a, b) => ["high", "moderate", "low"].indexOf(a.hazard.severity) - ["high", "moderate", "low"].indexOf(b.hazard.severity) || a.title.localeCompare(b.title))
   .map((p) => ({ ...card(p), hazard: p.hazard })) })).filter((g) => g.items.length);
 const hazardIcons = Object.entries(HAZARD_ICONS).map(([key, v]) => ({ key, ...v }));
-export default { hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+const enc = (o) => JSON.stringify(o).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;");
+const arkansas = {
+  sections: ARK_SECTIONS.map(([title, intro, names]) => ({ title, intro, cards: names.map((n) => {
+    const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase()); if (!p) console.warn("ARK: no page for", n); return p && card(p); }).filter(Boolean) })),
+  sites: ARK_SITES.map(([n, la, lo, note]) => ({ n, la, lo, note })),
+  mapPoints: enc(ARK_SITES.map(([n, la, lo, note]) => ({ k: "n", n: `${n}: ${note}`, la, lo }))),
+  tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
+  sources: Object.values(ARK_SOURCES),
+};
+export default { arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

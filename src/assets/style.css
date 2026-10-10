@@ -446,3 +446,7 @@ section.family .grid{margin-top:.6rem}
 .elixir-note{padding:.6rem .9rem;border-radius:14px;border-left:4px solid var(--warn);background:color-mix(in srgb,var(--warn) 14%,transparent)}
 body.hz-hub h1{background:linear-gradient(90deg,#b4540a,#e8a317,#d9381e);-webkit-background-clip:text;background-clip:text;color:transparent}
 html[data-theme=dark] .badge.hz{color:#1a0d00}
+
+.tile.t13{background:linear-gradient(135deg,#5a0f1e,#9b2335 50%,#e8eef4)}
+.ark-sites{columns:2;gap:2rem;font-size:.92rem}@media(max-width:700px){.ark-sites{columns:1}}
+.ark-dino{margin:2rem 0;padding:1rem 1.3rem;border-radius:22px;background:color-mix(in srgb,var(--card) 70%,transparent);border:1px solid var(--line);backdrop-filter:blur(14px) saturate(1.4)}

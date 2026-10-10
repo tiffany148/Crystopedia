@@ -267,4 +267,11 @@ ENTRIES = [
 ("Green Moonstone","green moonstone","variety",[H],["Cancer", "Virgo"],[W,E_],"Soft green moonstone is associated in lore with harmony, growth and connection to nature.",["harmony", "growth", "connection to nature"]),
 ("Blue Moonstone","blue moonstone","variety",[T,E],["Cancer"],[W],"Rare true blue moonstone, with its intense blue glow, is linked in lore to calm communication and intuition.",["calm communication", "intuition", "peace"]),
 ("Cat's-Eye Moonstone","cat's-eye moonstone","variety",[S,E],["Cancer"],[W],"Cat's-eye moonstone is traditionally a stone of protection and keen intuition.",["protection", "intuition", "focus"]),
+# --- Arkansas ---
+("Arkansas Quartz","arkansas quartz","variety",[C,R],["Aries", "Leo"],[E_,SP],"The state mineral of Arkansas. Ouachita quartz is prized in crystal lore as a 'master healer' that amplifies intention and brings clarity.",["clarity", "amplifying intention", "energy"]),
+("Novaculite","novaculite","rock",[T,E],["Virgo"],[E_,A],"The stone behind 'Arkansas whetstones' is linked in lore to sharpening the mind, focus and clear decisions.",["focus", "mental sharpness", "clarity"]),
+("Bauxite","bauxite","rock",[R,S],["Capricorn"],[E_],"The state rock of Arkansas, the ore of aluminum, is associated in lore with stability, practicality and hard work.",["stability", "practicality", "perseverance"]),
+("Lepidodendron","lepidodendron","fossil",[R,H],["Capricorn"],[E_],"Diamond-patterned 'scale tree' bark fossils are linked in lore to ancient patience, growth and grounding.",["patience", "growth", "grounding"]),
+("Stigmaria","stigmaria","fossil",[R],["Taurus"],[E_],"Fossil roots of the giant scale trees are associated in lore with deep roots, stability and endurance.",["stability", "deep roots", "endurance"]),
+("Calamites","calamites","fossil",[R,H],["Virgo"],[E_,W],"Fossils of these giant horsetails are linked in lore to resilience, renewal and steady growth.",["resilience", "renewal", "steady growth"]),
 ]
