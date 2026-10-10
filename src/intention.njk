@@ -1,0 +1,25 @@
+---
+pagination:
+  data: site.intentPages
+  size: 1
+  alias: it
+permalink: "{{ it.url }}"
+layout: base.njk
+bodyClass: hub
+eleventyComputed:
+  title: "{{ it.label }} crystals"
+  description: "{{ it.count }} crystals traditionally used for {{ it.label | lower }} in crystal lore."
+---
+<section class="intent-hub-head">
+  <nav class="crumbs"><a href="/">Home</a> › <a href="/intentions/">Intentions</a> › {{ it.label }}</nav>
+  <h1>{{ it.emoji }} Crystals for {{ it.label }}</h1>
+  <p class="lead">{{ it.blurb }}</p>
+  <p class="lore-note">These are traditional crystal lore, not scientific or medical claims. {{ it.count }} stones.</p>
+  <p class="intent-chips">{% for o in site.intentPages %}<a class="intent-chip{% if o.key == it.key %} on{% endif %}" href="{{ o.url }}">{{ o.emoji }} {{ o.label }}</a>{% endfor %}</p>
+</section>
+{% if it.combo %}
+<section class="intent-combo"><h2>💞 Classic {{ it.label | lower }} combo</h2><p>{{ it.combo.note }}</p><p><a href="/pairings/#{{ it.key }}">See the combo on Crystal Pairings →</a></p></section>
+{% endif %}
+<section>
+  <div class="grid">{% for c in it.items %}<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong>{% if c.knownAs %}<span class="known-mini">{{ c.knownAs }}</span>{% endif %}</div></a>{% endfor %}</div>
+</section>

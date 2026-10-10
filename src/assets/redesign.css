@@ -140,3 +140,29 @@ html[data-theme=dark] .hub{background:radial-gradient(ellipse 60% 50% at 10% 0,r
 html[data-theme=dark] .stats>div{background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.03))!important;border-color:rgba(255,255,255,.15)!important}
 html[data-theme=dark] .stats strong{background-image:linear-gradient(90deg,#f0abfc,#67e8f9)}
 .stone-hero .badge.hz{background:linear-gradient(135deg,#fbbf24,#f59e0b)!important;color:#1a1000!important;border-color:#fde68a!important}
+/* ---------- Known-as badge, intention chips, intentions hub ---------- */
+.known-as{margin:.4em 0 .5em}
+.known-as span{display:inline-block;padding:.45em 1.1em;border-radius:999px;font-weight:800;letter-spacing:.04em;font-size:clamp(1rem,2vw,1.25rem);color:#fff;
+  background:linear-gradient(120deg,color-mix(in srgb,var(--c1,#7c3aed) 70%,#000),color-mix(in srgb,var(--c2,#06b6d4) 60%,#000));border:1px solid rgba(255,255,255,.6);
+  box-shadow:0 0 18px color-mix(in srgb,var(--c3,#f0abfc) 80%,transparent),0 0 42px color-mix(in srgb,var(--c2,#67e8f9) 50%,transparent),inset 0 1px 0 rgba(255,255,255,.5);
+  text-shadow:0 0 10px rgba(255,255,255,.7)!important;animation:ka-glow 3.5s ease-in-out infinite}
+@keyframes ka-glow{50%{box-shadow:0 0 28px color-mix(in srgb,var(--c3,#f0abfc) 95%,transparent),0 0 64px color-mix(in srgb,var(--c2,#67e8f9) 70%,transparent),inset 0 1px 0 rgba(255,255,255,.5)}}
+.intent-chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.intent-chips small{opacity:.85;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-right:2px}
+.intent-chip{display:inline-flex;gap:.3em;align-items:center;padding:.3em .8em;border-radius:999px;font-size:.88rem;font-weight:600;text-decoration:none;color:inherit;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(8px)}
+.stone-hero .intent-chip{color:#fff}
+.intent-chip:hover,.intent-chip.on{background:rgba(255,255,255,.45);box-shadow:0 0 14px rgba(255,255,255,.6)}
+.hub .intent-chip{background:rgba(255,255,255,.6);border-color:rgba(124,58,237,.3);color:#3b1d75}
+.hub .intent-chip.on{background:linear-gradient(135deg,#a855f7,#06b6d4);color:#fff}
+html[data-theme=dark] .hub .intent-chip{background:rgba(255,255,255,.08);color:#ede9fe;border-color:rgba(255,255,255,.2)}
+.intent-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.intent-tile{position:relative;isolation:isolate;overflow:hidden;border-radius:20px;min-height:150px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.4);background:linear-gradient(135deg,#7c3aed,#06b6d4)}
+.intent-tile::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--ph) center/cover;transition:transform .7s}
+.intent-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,50,.1),rgba(20,8,50,.85))}
+.intent-tile:hover::before{transform:scale(1.1)}
+.intent-tile b{font-size:2rem;position:absolute;top:12px;left:14px;filter:drop-shadow(0 0 8px rgba(255,255,255,.8))}
+.intent-tile strong{font-size:1.2rem;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.intent-tile span{font-size:.85rem;opacity:.9}
+.known-mini{display:block;font-size:.8rem;font-weight:700;color:color-mix(in srgb,var(--stone-accent,#6d28d9) 90%,#000);font-style:italic}
+html[data-theme=dark] .known-mini{color:color-mix(in srgb,var(--c3,#f0abfc) 60%,#fff)}
+.lore-note{font-size:.88rem;padding:.5em .9em;border-left:3px solid #f59e0b;background:rgba(245,158,11,.1);border-radius:8px}

@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Crystals by Intention
+bodyClass: hub
+description: Find crystals by their traditional purpose (protection, love, abundance, calm, sleep, focus, grounding and more), according to crystal lore.
+---
+<section class="intent-hub-head">
+  <nav class="crumbs"><a href="/">Home</a> › Crystals by Intention</nav>
+  <h1>🔮 Crystals by Intention</h1>
+  <p class="lead">Every stone in crystal tradition has a purpose it's "known for". Pick an intention to see the stones traditionally used for it.</p>
+  <p class="lore-note">These are traditional and folk beliefs from crystal lore, not scientific or medical claims.</p>
+</section>
+<section>
+  <div class="intent-tiles">
+  {% for i in site.intentPages %}
+    <a class="intent-tile" href="{{ i.url }}"{% if i.cover %} style="--ph:url('{{ i.cover }}')"{% endif %}><b>{{ i.emoji }}</b><strong>{{ i.label }}</strong><span>{{ i.count }} stones</span></a>
+  {% endfor %}
+  </div>
+</section>
+<section>
+  <h2>Famous "known as" titles</h2>
+  <div class="grid">{% for c in site.popular %}{% set pg = c %}<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong>{% if c.knownAs %}<span class="known-mini">{{ c.knownAs }}</span>{% endif %}</div></a>{% endfor %}</div>
+</section>

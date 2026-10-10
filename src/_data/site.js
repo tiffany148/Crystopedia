@@ -15,6 +15,24 @@ import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
+const KNOWN_AS = JSON.parse(fs.readFileSync(path.join(ROOT, "data/known_as.json"), "utf8"));
+const INTENT_INFO = {
+  protection: ["🛡️", "Protection", "Stones traditionally carried to shield, ward off negativity and feel safe."],
+  love: ["💗", "Love", "Heart stones of crystal lore for self-love, romance, compassion and forgiveness."],
+  abundance: ["💰", "Abundance", "Stones of prosperity and success in folk tradition: wealth, manifesting and growth."],
+  calm: ["🌊", "Calm", "Soothing stones long associated with peace, balance and easing worry."],
+  sleep: ["🌙", "Sleep", "Bedside stones traditionally kept for restful sleep and peaceful dreams."],
+  focus: ["🎯", "Focus", "Stones of clarity, study and concentration in crystal lore."],
+  grounding: ["🌳", "Grounding", "Earthy stones traditionally used to feel centred, stable and present."],
+  creativity: ["🎨", "Creativity", "Stones linked with inspiration, joy and creative flow."],
+  intuition: ["🔮", "Intuition", "Stones of insight, meditation and the 'third eye' in crystal tradition."],
+  healing: ["🌿", "Healing", "Stones traditionally associated with vitality and wellbeing (lore, not medicine)."],
+  confidence: ["🔥", "Confidence", "Stones of courage, strength and willpower in crystal lore."],
+  luck: ["🍀", "Luck", "Lucky stones of folk tradition, carried for good fortune and opportunity."],
+  communication: ["💬", "Communication", "Throat-chakra stones traditionally linked with truth and self-expression."],
+  cleansing: ["✨", "Cleansing", "Stones said in crystal lore to purify energy and cleanse other crystals."],
+  transformation: ["🦋", "Transformation", "Stones of change, new beginnings and personal growth in tradition."],
+};
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, "data/metaphysical.json"), "utf8"));
 const wcPath = path.join(ROOT, "data/wiki_colors.json");
 const WIKI_COLORS = fs.existsSync(wcPath) ? JSON.parse(fs.readFileSync(wcPath, "utf8")) : {};
@@ -90,6 +108,7 @@ for (const e of meta) {
     if (e.parent && byId.get(e.parent)) (byId.get(e.parent).childIds ||= []).push(`hand:${slug}`);
     byId.set(`hand:${slug}`, page);
   }
+  { const ka = KNOWN_AS[e.name]; if (ka) { e.knownAs = ka.knownAs; e.intentions = ka.intentions; } }
   page.metaphysical.push(e);
   page.kindLabel ||= LABEL_OVERRIDE[e.name] || KIND_LABEL[e.kind] || null;
   if (FACTS[e.name]) page.facts ||= { name: e.name, ...FACTS[e.name] };
@@ -137,6 +156,8 @@ for (const p of pages) {
   p.typeLabel = p.kindLabel && (p.type === "other" || p.type === "handmade") ? p.kindLabel
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
+  p.knownAs = p.metaphysical.find((m) => m.knownAs)?.knownAs || null;
+  p.intentions = [...new Set(p.metaphysical.flatMap((m) => m.intentions || []))].slice(0, 5).map((k) => ({ key: k, label: INTENT_INFO[k][1], emoji: INTENT_INFO[k][0] }));
 }
 for (const [n, list] of Object.entries(ARK_LOCS)) {
   const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase());
@@ -338,7 +359,7 @@ for (const p of pages) {
   const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
   const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
 }
-const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
+const card = (p) => ({ knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
   items: pages.filter((p) => p.crystalSystems?.includes(s)).map((p) => ({ title: p.title, url: p.url, formula: p.formula })),
@@ -398,6 +419,13 @@ const mini = (e) => ({ name: e.name, url: e.url, style: e.style, thumb: e.thumb,
 for (const p of pages) for (const e of p.metaphysical) {
   e.pairs = (PAIRS[e.name] || []).map((x) => ({ ...mini(healByName.get(x.name)), reason: x.reason })).filter((x) => x.url && x.url !== p.url);
 }
+const intentPages = Object.entries(INTENT_INFO).map(([key, [emoji, label, blurb]]) => {
+  const items = pages.filter((p) => p.intentions?.some((i) => i.key === key))
+    .map((p) => ({ ...card(p), knownAs: p.knownAs, popular: p.metaphysical.some((m) => m.intentions?.[0] === key) }))
+    .sort((a, b) => (b.thumb ? 1 : 0) - (a.thumb ? 1 : 0) || (b.popular - a.popular) || a.title.localeCompare(b.title));
+  const combo = INTENTIONS.find((i) => i.key === key);
+  return { key, emoji, label, blurb, url: `/intentions/${key}/`, items, count: items.length, combo: combo ? { title: combo.title, note: combo.note } : null, cover: items.find((x) => x.thumb)?.thumb?.src || null };
+});
 const intentions = INTENTIONS.map((i) => ({ ...i, stones: i.stones.map((n) => healByName.get(n)).filter(Boolean).map(mini) }));
 const pairingsData = healing.map((e) => ({ n: e.name, u: e.url, st: e.style, th: e.thumb?.src || null, ch: e.chakras,
   p: (PAIRS[e.name] || []).map((x) => [x.name, x.reason]) }));
@@ -454,4 +482,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

@@ -17,7 +17,7 @@ description: Traditional crystal combinations by intention (love, protection, ca
     <div class="intent-stones">
       {% for c in i.stones %}<a class="pair-card mini" href="{{ c.url }}" style="{{ c.style }}"><span class="pair-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="">{% else %}◆{% endif %}</span><strong>{{ c.name }}</strong></a>{% endfor %}
     </div>
-    <p class="small">{{ i.note }}</p>
+    <p class="small">{{ i.note }} <a href="/intentions/{{ i.key }}/">All {{ i.key }} stones →</a></p>
   </section>
 {% endfor %}
 </div>

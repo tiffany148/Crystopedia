@@ -1,0 +1,2700 @@
+{
+ "Clear Quartz": {
+  "knownAs": "The Master Healer",
+  "intentions": [
+   "healing",
+   "focus",
+   "cleansing",
+   "intuition"
+  ]
+ },
+ "Amethyst": {
+  "knownAs": "Stone of Calm & Intuition",
+  "intentions": [
+   "calm",
+   "intuition",
+   "sleep",
+   "protection"
+  ]
+ },
+ "Rose Quartz": {
+  "knownAs": "Stone of Unconditional Love",
+  "intentions": [
+   "love",
+   "calm",
+   "healing"
+  ]
+ },
+ "Citrine": {
+  "knownAs": "The Merchant's Stone",
+  "intentions": [
+   "abundance",
+   "confidence",
+   "creativity",
+   "luck"
+  ]
+ },
+ "Smoky Quartz": {
+  "knownAs": "Stone of Grounding & Release",
+  "intentions": [
+   "grounding",
+   "protection",
+   "cleansing"
+  ]
+ },
+ "Ametrine": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "calm",
+   "creativity",
+   "abundance"
+  ]
+ },
+ "Rutilated Quartz": {
+  "knownAs": "Stone of Vitality",
+  "intentions": [
+   "healing",
+   "abundance",
+   "creativity",
+   "confidence",
+   "intuition"
+  ]
+ },
+ "Tourmalinated Quartz": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "calm",
+   "focus"
+  ]
+ },
+ "Strawberry Quartz": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "love",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Prasiolite": {
+  "knownAs": "Stone of Kindness",
+  "intentions": [
+   "love",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Herkimer Diamond": {
+  "knownAs": "Stone of Attunement",
+  "intentions": [
+   "intuition",
+   "sleep",
+   "cleansing"
+  ]
+ },
+ "Spirit Quartz": {
+  "knownAs": "Stone of Harmony",
+  "intentions": [
+   "intuition",
+   "cleansing",
+   "love"
+  ]
+ },
+ "Agate": {
+  "knownAs": "Stone of Stability",
+  "intentions": [
+   "protection",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Blue Lace Agate": {
+  "knownAs": "Stone of Calm Communication",
+  "intentions": [
+   "communication",
+   "calm"
+  ]
+ },
+ "Moss Agate": {
+  "knownAs": "The Gardener's Stone",
+  "intentions": [
+   "abundance",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Fire Agate": {
+  "knownAs": "Stone of Inner Fire",
+  "intentions": [
+   "confidence",
+   "protection",
+   "creativity"
+  ]
+ },
+ "Crazy Lace Agate": {
+  "knownAs": "Stone of Optimism",
+  "intentions": [
+   "creativity",
+   "grounding",
+   "confidence"
+  ]
+ },
+ "Botswana Agate": {
+  "knownAs": "Stone of Comfort",
+  "intentions": [
+   "transformation",
+   "focus",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Dendritic Agate": {
+  "knownAs": "Stone of Abundance",
+  "intentions": [
+   "transformation",
+   "abundance",
+   "grounding",
+   "love"
+  ]
+ },
+ "Carnelian": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "confidence",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Onyx": {
+  "knownAs": "Stone of Discipline",
+  "intentions": [
+   "protection",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Sardonyx": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "confidence",
+   "love",
+   "grounding"
+  ]
+ },
+ "Chrysoprase": {
+  "knownAs": "Stone of Hope",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Bloodstone": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "confidence",
+   "healing",
+   "grounding"
+  ]
+ },
+ "Jasper": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Red Jasper": {
+  "knownAs": "Stone of Endurance",
+  "intentions": [
+   "grounding",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Ocean Jasper": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "calm",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Picture Jasper": {
+  "knownAs": "Stone of Creative Visualization",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "intuition"
+  ]
+ },
+ "Dalmatian Jasper": {
+  "knownAs": "Stone of Playfulness",
+  "intentions": [
+   "creativity",
+   "protection",
+   "grounding"
+  ]
+ },
+ "Mookaite": {
+  "knownAs": "Stone of Adventure",
+  "intentions": [
+   "confidence",
+   "grounding",
+   "transformation"
+  ]
+ },
+ "Chalcedony": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "communication",
+   "calm",
+   "love"
+  ]
+ },
+ "Aventurine": {
+  "knownAs": "Stone of Opportunity",
+  "intentions": [
+   "luck",
+   "abundance",
+   "healing"
+  ]
+ },
+ "Tiger's Eye": {
+  "knownAs": "Stone of Courage & Focus",
+  "intentions": [
+   "confidence",
+   "focus",
+   "luck",
+   "protection"
+  ]
+ },
+ "Hawk's Eye": {
+  "knownAs": "Stone of Insight",
+  "intentions": [
+   "intuition",
+   "calm",
+   "communication"
+  ]
+ },
+ "Tiger Iron": {
+  "knownAs": "Stone of Stamina",
+  "intentions": [
+   "confidence",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Labradorite": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "protection"
+  ]
+ },
+ "Moonstone": {
+  "knownAs": "Stone of New Beginnings",
+  "intentions": [
+   "intuition",
+   "transformation",
+   "calm",
+   "sleep"
+  ]
+ },
+ "Sunstone": {
+  "knownAs": "Stone of Joy & Leadership",
+  "intentions": [
+   "confidence",
+   "creativity",
+   "abundance"
+  ]
+ },
+ "Amazonite": {
+  "knownAs": "Stone of Hope & Truth",
+  "intentions": [
+   "communication",
+   "calm",
+   "luck"
+  ]
+ },
+ "Larvikite": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "calm",
+   "protection",
+   "focus"
+  ]
+ },
+ "Black Tourmaline": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "cleansing"
+  ]
+ },
+ "Pink Tourmaline": {
+  "knownAs": "Stone of Love",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Watermelon Tourmaline": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "calm",
+   "love",
+   "creativity"
+  ]
+ },
+ "Green Tourmaline": {
+  "knownAs": "Stone of Vitality",
+  "intentions": [
+   "transformation",
+   "healing",
+   "love"
+  ]
+ },
+ "Indicolite": {
+  "knownAs": "Stone of Communication",
+  "intentions": [
+   "intuition",
+   "communication",
+   "calm"
+  ]
+ },
+ "Tourmaline": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "healing",
+   "calm",
+   "protection"
+  ]
+ },
+ "Garnet": {
+  "knownAs": "Stone of Commitment",
+  "intentions": [
+   "love",
+   "confidence",
+   "grounding"
+  ]
+ },
+ "Pyrope": {
+  "knownAs": "Stone of Vitality",
+  "intentions": [
+   "healing",
+   "confidence",
+   "grounding"
+  ]
+ },
+ "Almandine": {
+  "knownAs": "Stone of Devotion",
+  "intentions": [
+   "confidence",
+   "grounding",
+   "love"
+  ]
+ },
+ "Spessartine": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Tsavorite": {
+  "knownAs": "Stone of Abundance",
+  "intentions": [
+   "love",
+   "abundance",
+   "healing"
+  ]
+ },
+ "Hessonite": {
+  "knownAs": "Stone of Self-confidence",
+  "intentions": [
+   "protection",
+   "confidence",
+   "focus"
+  ]
+ },
+ "Emerald": {
+  "knownAs": "Stone of Successful Love",
+  "intentions": [
+   "love",
+   "abundance",
+   "healing"
+  ]
+ },
+ "Aquamarine": {
+  "knownAs": "Stone of Courage at Sea",
+  "intentions": [
+   "calm",
+   "communication",
+   "confidence"
+  ]
+ },
+ "Morganite": {
+  "knownAs": "Stone of Divine Love",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Heliodor": {
+  "knownAs": "Stone of Optimism",
+  "intentions": [
+   "confidence",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Goshenite": {
+  "knownAs": "Stone of Honesty",
+  "intentions": [
+   "focus",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Ruby": {
+  "knownAs": "Stone of Passion & Vitality",
+  "intentions": [
+   "love",
+   "confidence",
+   "protection"
+  ]
+ },
+ "Sapphire": {
+  "knownAs": "Stone of Wisdom",
+  "intentions": [
+   "intuition",
+   "focus",
+   "protection"
+  ]
+ },
+ "Diamond": {
+  "knownAs": "Stone of Invincibility",
+  "intentions": [
+   "confidence",
+   "love",
+   "cleansing"
+  ]
+ },
+ "Topaz": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "creativity",
+   "abundance",
+   "luck"
+  ]
+ },
+ "Peridot": {
+  "knownAs": "Stone of Compassion & Renewal",
+  "intentions": [
+   "abundance",
+   "healing",
+   "love"
+  ]
+ },
+ "Spinel": {
+  "knownAs": "Stone of Revitalization",
+  "intentions": [
+   "confidence",
+   "healing",
+   "grounding",
+   "love"
+  ]
+ },
+ "Zircon": {
+  "knownAs": "Stone of Prosperity",
+  "intentions": [
+   "sleep",
+   "abundance",
+   "intuition"
+  ]
+ },
+ "Tanzanite": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "intuition",
+   "transformation",
+   "love"
+  ]
+ },
+ "Iolite": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "intuition",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Kunzite": {
+  "knownAs": "Stone of Divine Love",
+  "intentions": [
+   "love",
+   "calm"
+  ]
+ },
+ "Hiddenite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "love",
+   "calm"
+  ]
+ },
+ "Blue Kyanite": {
+  "knownAs": "The Aligning Stone",
+  "intentions": [
+   "communication",
+   "calm",
+   "cleansing"
+  ]
+ },
+ "Fluorite": {
+  "knownAs": "The Genius Stone",
+  "intentions": [
+   "focus",
+   "cleansing",
+   "calm"
+  ]
+ },
+ "Calcite": {
+  "knownAs": "Stone of Energy Cleansing",
+  "intentions": [
+   "healing",
+   "cleansing",
+   "confidence"
+  ]
+ },
+ "Iceland Spar": {
+  "knownAs": "Stone of Perspective",
+  "intentions": [
+   "intuition",
+   "focus",
+   "creativity"
+  ]
+ },
+ "Mangano Calcite": {
+  "knownAs": "Stone of Forgiveness",
+  "intentions": [
+   "love",
+   "calm",
+   "healing"
+  ]
+ },
+ "Selenite": {
+  "knownAs": "The Cleansing Stone",
+  "intentions": [
+   "cleansing",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Desert Rose": {
+  "knownAs": "Stone of Mental Clarity",
+  "intentions": [
+   "focus",
+   "calm",
+   "grounding"
+  ]
+ },
+ "Celestite": {
+  "knownAs": "Stone of the Heavens",
+  "intentions": [
+   "calm",
+   "sleep",
+   "intuition",
+   "communication"
+  ]
+ },
+ "Angelite": {
+  "knownAs": "Stone of Awareness",
+  "intentions": [
+   "calm",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Apophyllite": {
+  "knownAs": "Stone of Truth & Awakening",
+  "intentions": [
+   "intuition",
+   "calm",
+   "cleansing"
+  ]
+ },
+ "Prehnite": {
+  "knownAs": "Stone of Unconditional Healing",
+  "intentions": [
+   "healing",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Epidote": {
+  "knownAs": "Stone of Optimism",
+  "intentions": [
+   "transformation",
+   "focus",
+   "love"
+  ]
+ },
+ "Unakite": {
+  "knownAs": "Stone of Vision",
+  "intentions": [
+   "healing",
+   "love",
+   "grounding"
+  ]
+ },
+ "Malachite": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "protection",
+   "healing"
+  ]
+ },
+ "Azurite": {
+  "knownAs": "Stone of Heaven",
+  "intentions": [
+   "intuition",
+   "focus"
+  ]
+ },
+ "Chrysocolla": {
+  "knownAs": "Stone of Empowered Communication",
+  "intentions": [
+   "communication",
+   "calm",
+   "creativity"
+  ]
+ },
+ "Turquoise": {
+  "knownAs": "The Traveller's Stone",
+  "intentions": [
+   "protection",
+   "healing",
+   "communication",
+   "luck"
+  ]
+ },
+ "Lapis Lazuli": {
+  "knownAs": "Stone of Truth & Wisdom",
+  "intentions": [
+   "communication",
+   "intuition",
+   "focus"
+  ]
+ },
+ "Sodalite": {
+  "knownAs": "Stone of Logic & Truth",
+  "intentions": [
+   "communication",
+   "focus",
+   "calm"
+  ]
+ },
+ "Larimar": {
+  "knownAs": "The Dolphin Stone",
+  "intentions": [
+   "calm",
+   "communication",
+   "healing"
+  ]
+ },
+ "Howlite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "sleep",
+   "focus"
+  ]
+ },
+ "Magnesite": {
+  "knownAs": "Stone of Relaxation",
+  "intentions": [
+   "calm",
+   "intuition",
+   "love"
+  ]
+ },
+ "Rhodochrosite": {
+  "knownAs": "Stone of Compassion",
+  "intentions": [
+   "love",
+   "healing",
+   "creativity"
+  ]
+ },
+ "Rhodonite": {
+  "knownAs": "Stone of Forgiveness",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Lepidolite": {
+  "knownAs": "Stone of Transition",
+  "intentions": [
+   "calm",
+   "sleep",
+   "transformation"
+  ]
+ },
+ "Charoite": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "protection"
+  ]
+ },
+ "Sugilite": {
+  "knownAs": "Stone of Spiritual Love",
+  "intentions": [
+   "intuition",
+   "love",
+   "protection"
+  ]
+ },
+ "Seraphinite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "intuition",
+   "love"
+  ]
+ },
+ "Serpentine": {
+  "knownAs": "Stone of Kundalini Meditation",
+  "intentions": [
+   "protection",
+   "grounding",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Jade": {
+  "knownAs": "Stone of Good Fortune",
+  "intentions": [
+   "luck",
+   "abundance",
+   "calm",
+   "healing"
+  ]
+ },
+ "Jadeite": {
+  "knownAs": "Stone of Harmony",
+  "intentions": [
+   "intuition",
+   "abundance",
+   "calm"
+  ]
+ },
+ "Nephrite": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "calm",
+   "luck"
+  ]
+ },
+ "Hematite": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "protection",
+   "focus",
+   "confidence"
+  ]
+ },
+ "Magnetite": {
+  "knownAs": "Stone of Attraction",
+  "intentions": [
+   "calm",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Lodestone": {
+  "knownAs": "Stone of Attraction",
+  "intentions": [
+   "luck",
+   "grounding",
+   "love"
+  ]
+ },
+ "Pyrite": {
+  "knownAs": "Stone of Wealth & Abundance",
+  "intentions": [
+   "abundance",
+   "confidence",
+   "protection",
+   "luck"
+  ]
+ },
+ "Chalcopyrite": {
+  "knownAs": "Stone of Energy Flow",
+  "intentions": [
+   "healing",
+   "intuition",
+   "calm"
+  ]
+ },
+ "Bornite": {
+  "knownAs": "Stone of Happiness",
+  "intentions": [
+   "creativity",
+   "healing",
+   "intuition",
+   "confidence"
+  ]
+ },
+ "Galena": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Shungite": {
+  "knownAs": "Stone of Purification",
+  "intentions": [
+   "cleansing",
+   "protection",
+   "healing"
+  ]
+ },
+ "Obsidian": {
+  "knownAs": "Stone of Truth & Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "cleansing"
+  ]
+ },
+ "Snowflake Obsidian": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "calm",
+   "grounding",
+   "transformation"
+  ]
+ },
+ "Apache Tear": {
+  "knownAs": "Stone of Comfort in Grief",
+  "intentions": [
+   "protection",
+   "love",
+   "grounding"
+  ]
+ },
+ "Mahogany Obsidian": {
+  "knownAs": "Stone of Strength",
+  "intentions": [
+   "healing",
+   "confidence",
+   "grounding"
+  ]
+ },
+ "Rainbow Obsidian": {
+  "knownAs": "Stone of Hope",
+  "intentions": [
+   "protection",
+   "healing",
+   "grounding",
+   "love"
+  ]
+ },
+ "Moldavite": {
+  "knownAs": "Stone of Rapid Transformation",
+  "intentions": [
+   "transformation",
+   "intuition"
+  ]
+ },
+ "Tektite": {
+  "knownAs": "Stone of Expansion",
+  "intentions": [
+   "protection",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Libyan Desert Glass": {
+  "knownAs": "Stone of Willpower",
+  "intentions": [
+   "confidence",
+   "abundance",
+   "healing"
+  ]
+ },
+ "Amber": {
+  "knownAs": "Stone of Warmth",
+  "intentions": [
+   "protection",
+   "healing",
+   "creativity",
+   "confidence"
+  ]
+ },
+ "Pearl": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "intuition",
+   "creativity"
+  ]
+ },
+ "Jet": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Coral": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "healing",
+   "calm"
+  ]
+ },
+ "Ammolite": {
+  "knownAs": "Stone of Prosperity",
+  "intentions": [
+   "abundance",
+   "transformation",
+   "healing"
+  ]
+ },
+ "Petrified Wood": {
+  "knownAs": "Stone of Patience & Ancient Wisdom",
+  "intentions": [
+   "grounding",
+   "calm",
+   "transformation"
+  ]
+ },
+ "Opal": {
+  "knownAs": "Stone of Inspiration",
+  "intentions": [
+   "creativity",
+   "love",
+   "transformation"
+  ]
+ },
+ "Fire Opal": {
+  "knownAs": "Stone of Passion",
+  "intentions": [
+   "healing",
+   "confidence",
+   "creativity"
+  ]
+ },
+ "Precious Opal": {
+  "knownAs": "Stone of Imagination",
+  "intentions": [
+   "creativity",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Aragonite": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Smithsonite": {
+  "knownAs": "Stone of Kindness",
+  "intentions": [
+   "love",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Hemimorphite": {
+  "knownAs": "Stone of Self-expression",
+  "intentions": [
+   "communication",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Vanadinite": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "confidence",
+   "focus"
+  ]
+ },
+ "Wulfenite": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "abundance",
+   "healing"
+  ]
+ },
+ "Sphalerite": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "healing",
+   "communication"
+  ]
+ },
+ "Staurolite": {
+  "knownAs": "Stone of Good Luck",
+  "intentions": [
+   "luck",
+   "protection",
+   "grounding"
+  ]
+ },
+ "Chiastolite": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "transformation",
+   "calm"
+  ]
+ },
+ "Andalusite": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "calm",
+   "grounding",
+   "love"
+  ]
+ },
+ "Dioptase": {
+  "knownAs": "Stone of Emotional Healing",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Sulfur": {
+  "knownAs": "Stone of Willpower",
+  "intentions": [
+   "confidence",
+   "healing",
+   "cleansing",
+   "protection"
+  ]
+ },
+ "Copper": {
+  "knownAs": "Stone of Energy Flow",
+  "intentions": [
+   "healing",
+   "calm",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Gold": {
+  "knownAs": "Stone of Abundance",
+  "intentions": [
+   "abundance",
+   "healing",
+   "confidence"
+  ]
+ },
+ "Silver": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "intuition",
+   "calm",
+   "healing"
+  ]
+ },
+ "Apatite": {
+  "knownAs": "Stone of Motivation",
+  "intentions": [
+   "confidence",
+   "creativity",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Danburite": {
+  "knownAs": "Stone of Peace",
+  "intentions": [
+   "calm",
+   "intuition",
+   "love"
+  ]
+ },
+ "Petalite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "protection",
+   "intuition"
+  ]
+ },
+ "Phenakite": {
+  "knownAs": "Stone of Meditation",
+  "intentions": [
+   "intuition",
+   "healing",
+   "calm"
+  ]
+ },
+ "Scolecite": {
+  "knownAs": "Stone of Deep Peace",
+  "intentions": [
+   "calm",
+   "sleep",
+   "intuition"
+  ]
+ },
+ "Stilbite": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "calm",
+   "love",
+   "intuition"
+  ]
+ },
+ "Okenite": {
+  "knownAs": "Stone of Comfort",
+  "intentions": [
+   "love",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Cavansite": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "intuition",
+   "creativity",
+   "communication"
+  ]
+ },
+ "Dumortierite": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "calm",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Chrysoberyl": {
+  "knownAs": "Stone of Optimism",
+  "intentions": [
+   "healing",
+   "transformation",
+   "confidence",
+   "intuition"
+  ]
+ },
+ "Alexandrite": {
+  "knownAs": "Stone of Adaptability",
+  "intentions": [
+   "luck",
+   "creativity",
+   "transformation"
+  ]
+ },
+ "Titanite": {
+  "knownAs": "Stone of Focus",
+  "intentions": [
+   "focus",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Ulexite": {
+  "knownAs": "Stone of Clarity",
+  "intentions": [
+   "intuition",
+   "focus",
+   "creativity"
+  ]
+ },
+ "Halite": {
+  "knownAs": "Stone of Cleansing",
+  "intentions": [
+   "protection",
+   "cleansing",
+   "love",
+   "intuition"
+  ]
+ },
+ "Muscovite": {
+  "knownAs": "Stone of Self-reflection",
+  "intentions": [
+   "focus",
+   "love",
+   "intuition"
+  ]
+ },
+ "Fuchsite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "creativity",
+   "calm",
+   "love"
+  ]
+ },
+ "Astrophyllite": {
+  "knownAs": "Stone of Self-discovery",
+  "intentions": [
+   "sleep",
+   "creativity",
+   "intuition"
+  ]
+ },
+ "Nuummite": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "intuition",
+   "grounding"
+  ]
+ },
+ "Septarian": {
+  "knownAs": "The Dragon Stone",
+  "intentions": [
+   "grounding",
+   "communication",
+   "calm"
+  ]
+ },
+ "Zoisite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "creativity",
+   "transformation",
+   "protection"
+  ]
+ },
+ "Ruby in Zoisite": {
+  "knownAs": "Stone of Connectedness",
+  "intentions": [
+   "love",
+   "healing",
+   "creativity"
+  ]
+ },
+ "Thulite": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "creativity",
+   "communication",
+   "love"
+  ]
+ },
+ "Pietersite": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "focus"
+  ]
+ },
+ "Bronzite": {
+  "knownAs": "Stone of Confidence",
+  "intentions": [
+   "grounding",
+   "focus",
+   "confidence"
+  ]
+ },
+ "Variscite": {
+  "knownAs": "Stone of Encouragement",
+  "intentions": [
+   "confidence",
+   "calm",
+   "love"
+  ]
+ },
+ "Eudialyte": {
+  "knownAs": "Stone of Self-love",
+  "intentions": [
+   "love",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Rutile": {
+  "knownAs": "Stone of Energy",
+  "intentions": [
+   "healing",
+   "focus",
+   "abundance"
+  ]
+ },
+ "Stibnite": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "focus",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Cinnabar": {
+  "knownAs": "Stone of Prosperity Lore",
+  "intentions": [
+   "abundance",
+   "transformation",
+   "healing"
+  ]
+ },
+ "Benitoite": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "creativity",
+   "intuition",
+   "focus"
+  ]
+ },
+ "Covellite": {
+  "knownAs": "Stone of Insight",
+  "intentions": [
+   "intuition",
+   "communication",
+   "healing"
+  ]
+ },
+ "Beryl": {
+  "knownAs": "Stone of Purpose",
+  "intentions": [
+   "confidence",
+   "focus",
+   "love",
+   "communication"
+  ]
+ },
+ "Corundum": {
+  "knownAs": "Stone of Steadfastness",
+  "intentions": [
+   "focus",
+   "confidence",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Gypsum": {
+  "knownAs": "Stone of Flexibility",
+  "intentions": [
+   "luck",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Barite": {
+  "knownAs": "Stone of Dreamwork",
+  "intentions": [
+   "sleep",
+   "focus",
+   "intuition"
+  ]
+ },
+ "Orthoclase": {
+  "knownAs": "Stone of New Beginnings",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "calm"
+  ]
+ },
+ "Olivine": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "calm",
+   "love",
+   "confidence"
+  ]
+ },
+ "Cerussite": {
+  "knownAs": "Stone of Adaptability",
+  "intentions": [
+   "grounding",
+   "transformation",
+   "healing"
+  ]
+ },
+ "Garnierite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "transformation",
+   "love"
+  ]
+ },
+ "Chrysanthemum Stone": {
+  "knownAs": "Stone of Growth",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Meteorite": {
+  "knownAs": "Stone of Cosmic Connection",
+  "intentions": [
+   "grounding",
+   "transformation",
+   "intuition"
+  ]
+ },
+ "Rhyolite": {
+  "knownAs": "Stone of Self-worth",
+  "intentions": [
+   "love",
+   "transformation",
+   "grounding"
+  ]
+ },
+ "Zebra Jasper": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "grounding",
+   "calm",
+   "confidence"
+  ]
+ },
+ "Polychrome Jasper": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Blue Chalcedony": {
+  "knownAs": "Stone of Listening",
+  "intentions": [
+   "calm",
+   "communication",
+   "healing"
+  ]
+ },
+ "Black Kyanite": {
+  "knownAs": "The Aligning Stone",
+  "intentions": [
+   "grounding",
+   "protection",
+   "cleansing"
+  ]
+ },
+ "Fulgurite": {
+  "knownAs": "Lightning Stone",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "communication"
+  ]
+ },
+ "Petoskey Stone": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "transformation",
+   "calm"
+  ]
+ },
+ "Ammonite": {
+  "knownAs": "Stone of Change & Continuity",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "abundance"
+  ]
+ },
+ "K2 Jasper": {
+  "knownAs": "Stone of Grounded Intuition",
+  "intentions": [
+   "intuition",
+   "grounding",
+   "calm"
+  ]
+ },
+ "Kambaba Jasper": {
+  "knownAs": "Stone of Tranquility",
+  "intentions": [
+   "calm",
+   "grounding",
+   "love"
+  ]
+ },
+ "Orthoceras": {
+  "knownAs": "Stone of Longevity",
+  "intentions": [
+   "grounding",
+   "protection",
+   "healing"
+  ]
+ },
+ "Dinosaur Bone": {
+  "knownAs": "Stone of Endurance",
+  "intentions": [
+   "grounding",
+   "focus",
+   "confidence"
+  ]
+ },
+ "Goldstone": {
+  "knownAs": "Stone of Ambition",
+  "intentions": [
+   "confidence",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Shiva Lingam": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "healing",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Mother of Pearl": {
+  "knownAs": "Stone of Nurturing",
+  "intentions": [
+   "protection",
+   "calm",
+   "love",
+   "intuition"
+  ]
+ },
+ "Trilobite": {
+  "knownAs": "Stone of Resilience",
+  "intentions": [
+   "grounding",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Megalodon Tooth": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "confidence",
+   "protection",
+   "grounding"
+  ]
+ },
+ "Fossil Coral": {
+  "knownAs": "Stone of Community",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Amber with Inclusions": {
+  "knownAs": "Stone of Memory",
+  "intentions": [
+   "focus",
+   "creativity",
+   "confidence"
+  ]
+ },
+ "Crinoid": {
+  "knownAs": "Stone of Prayer",
+  "intentions": [
+   "grounding",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Brachiopod": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Opalized Fossil": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "healing",
+   "creativity"
+  ]
+ },
+ "Geode": {
+  "knownAs": "Stone of Discovering Hidden Potential",
+  "intentions": [
+   "intuition",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Thunderegg": {
+  "knownAs": "Stone of Inner Strength",
+  "intentions": [
+   "confidence",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Amethyst Geode": {
+  "knownAs": "Stone of Peaceful Spaces",
+  "intentions": [
+   "calm",
+   "sleep",
+   "intuition"
+  ]
+ },
+ "Quartz Geode": {
+  "knownAs": "Stone of Amplifying Energy",
+  "intentions": [
+   "healing",
+   "focus",
+   "cleansing"
+  ]
+ },
+ "Calcite Geode": {
+  "knownAs": "Stone of Cleansing",
+  "intentions": [
+   "cleansing",
+   "confidence",
+   "creativity",
+   "intuition"
+  ]
+ },
+ "Celestite Geode": {
+  "knownAs": "Stone of Peace",
+  "intentions": [
+   "calm",
+   "sleep",
+   "intuition"
+  ]
+ },
+ "Agate Geode": {
+  "knownAs": "Stone of Stability",
+  "intentions": [
+   "protection",
+   "grounding",
+   "transformation"
+  ]
+ },
+ "Keokuk Geode": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Las Choyas Geode": {
+  "knownAs": "Stone of Friendship",
+  "intentions": [
+   "love",
+   "creativity",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Moroccan Geode": {
+  "knownAs": "Stone of Curiosity",
+  "intentions": [
+   "focus",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Uruguayan Amethyst Geode": {
+  "knownAs": "Stone of Calm Spaces",
+  "intentions": [
+   "intuition",
+   "calm",
+   "abundance"
+  ]
+ },
+ "Tampa Bay Agatized Coral": {
+  "knownAs": "Stone of Community",
+  "intentions": [
+   "healing",
+   "grounding",
+   "love"
+  ]
+ },
+ "Indonesian Agatized Coral": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "healing",
+   "creativity",
+   "grounding",
+   "love"
+  ]
+ },
+ "Charlevoix Stone": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "grounding",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Horn Coral": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Chain Coral": {
+  "knownAs": "Stone of Connection",
+  "intentions": [
+   "grounding",
+   "love",
+   "healing"
+  ]
+ },
+ "Honeycomb Coral": {
+  "knownAs": "Stone of Cooperation",
+  "intentions": [
+   "grounding",
+   "love",
+   "healing"
+  ]
+ },
+ "Fossil Sand Dollar": {
+  "knownAs": "Stone of Peace",
+  "intentions": [
+   "calm",
+   "transformation",
+   "love",
+   "intuition"
+  ]
+ },
+ "Sea Biscuit": {
+  "knownAs": "Stone of Nurturing",
+  "intentions": [
+   "grounding",
+   "love",
+   "healing"
+  ]
+ },
+ "Fossil Sea Urchin": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "luck",
+   "protection",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Micraster": {
+  "knownAs": "Stone of Love",
+  "intentions": [
+   "love",
+   "protection",
+   "grounding"
+  ]
+ },
+ "Shepherd's Crown": {
+  "knownAs": "Stone of Protection of the Home",
+  "intentions": [
+   "luck",
+   "protection",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Fossil Starfish": {
+  "knownAs": "Stone of Regeneration",
+  "intentions": [
+   "healing",
+   "love",
+   "creativity"
+  ]
+ },
+ "Fossil Brittle Star": {
+  "knownAs": "Stone of Adaptability",
+  "intentions": [
+   "love",
+   "communication",
+   "healing"
+  ]
+ },
+ "Blastoid": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "transformation",
+   "calm",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Fossil Shark Teeth": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "protection",
+   "confidence",
+   "grounding"
+  ]
+ },
+ "Fossil Gastropod": {
+  "knownAs": "Stone of Personal Growth",
+  "intentions": [
+   "transformation",
+   "creativity",
+   "intuition"
+  ]
+ },
+ "Fossil Shell": {
+  "knownAs": "Stone of Receptivity",
+  "intentions": [
+   "protection",
+   "calm",
+   "creativity",
+   "love"
+  ]
+ },
+ "Iris Agate": {
+  "knownAs": "Stone of Revealing Hidden Gifts",
+  "intentions": [
+   "intuition",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Lake Superior Agate": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Laguna Agate": {
+  "knownAs": "Stone of Vitality",
+  "intentions": [
+   "healing",
+   "confidence",
+   "grounding",
+   "creativity",
+   "love"
+  ]
+ },
+ "Condor Agate": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Plume Agate": {
+  "knownAs": "Stone of Inspiration",
+  "intentions": [
+   "transformation",
+   "creativity",
+   "grounding",
+   "communication"
+  ]
+ },
+ "Tree Agate": {
+  "knownAs": "Stone of Plenitude",
+  "intentions": [
+   "grounding",
+   "abundance",
+   "calm"
+  ]
+ },
+ "Fortification Agate": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Dryhead Agate": {
+  "knownAs": "Stone of Motivation",
+  "intentions": [
+   "grounding",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Fairburn Agate": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "confidence",
+   "healing",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Eye Agate": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Star Sapphire": {
+  "knownAs": "Stone of Guidance",
+  "intentions": [
+   "protection",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Black Star Sapphire": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "protection",
+   "grounding",
+   "focus"
+  ]
+ },
+ "Star Ruby": {
+  "knownAs": "Stone of Courage",
+  "intentions": [
+   "healing",
+   "confidence",
+   "grounding",
+   "love"
+  ]
+ },
+ "Star Garnet": {
+  "knownAs": "Stone of Commitment",
+  "intentions": [
+   "grounding",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Star Rose Quartz": {
+  "knownAs": "Stone of Self-love",
+  "intentions": [
+   "love",
+   "intuition",
+   "healing"
+  ]
+ },
+ "Star Diopside": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "love",
+   "healing"
+  ]
+ },
+ "Star Spinel": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Star Beryl": {
+  "knownAs": "Stone of Clarity",
+  "intentions": [
+   "focus",
+   "confidence",
+   "communication",
+   "calm"
+  ]
+ },
+ "Star Moonstone": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "sleep",
+   "intuition",
+   "transformation"
+  ]
+ },
+ "Velvet Obsidian": {
+  "knownAs": "Stone of Gentle Protection",
+  "intentions": [
+   "protection",
+   "transformation",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Silver Sheen Obsidian": {
+  "knownAs": "Stone of Self-reflection",
+  "intentions": [
+   "protection",
+   "focus",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Gold Sheen Obsidian": {
+  "knownAs": "Stone of Confidence",
+  "intentions": [
+   "protection",
+   "intuition",
+   "confidence"
+  ]
+ },
+ "White Moonstone": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "calm"
+  ]
+ },
+ "Rainbow Moonstone": {
+  "knownAs": "Stone of Hope",
+  "intentions": [
+   "intuition",
+   "sleep",
+   "transformation"
+  ]
+ },
+ "Black Moonstone": {
+  "knownAs": "Stone of New Beginnings (dark moon)",
+  "intentions": [
+   "protection",
+   "intuition",
+   "transformation"
+  ]
+ },
+ "Peach Moonstone": {
+  "knownAs": "Stone of Nurturing",
+  "intentions": [
+   "love",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Gray Moonstone": {
+  "knownAs": "Stone of Inner Reflection",
+  "intentions": [
+   "intuition",
+   "calm",
+   "healing"
+  ]
+ },
+ "Green Moonstone": {
+  "knownAs": "Stone of Harmony",
+  "intentions": [
+   "transformation",
+   "love",
+   "healing"
+  ]
+ },
+ "Blue Moonstone": {
+  "knownAs": "Stone of Calm Communication",
+  "intentions": [
+   "calm",
+   "intuition",
+   "communication"
+  ]
+ },
+ "Cat's-Eye Moonstone": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "intuition",
+   "focus"
+  ]
+ },
+ "Arkansas Quartz": {
+  "knownAs": "Arkansas' Master Healer",
+  "intentions": [
+   "healing",
+   "cleansing",
+   "focus",
+   "grounding"
+  ]
+ },
+ "Novaculite": {
+  "knownAs": "Stone of Focus",
+  "intentions": [
+   "focus",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Bauxite": {
+  "knownAs": "Stone of Stability",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Lepidodendron": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "love"
+  ]
+ },
+ "Stigmaria": {
+  "knownAs": "Stone of Stability",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Calamites": {
+  "knownAs": "Stone of Resilience",
+  "intentions": [
+   "transformation",
+   "healing",
+   "grounding",
+   "love"
+  ]
+ },
+ "Pyrite Sun": {
+  "knownAs": "Stone of Abundance",
+  "intentions": [
+   "abundance",
+   "confidence",
+   "luck"
+  ]
+ },
+ "Honey Calcite": {
+  "knownAs": "Stone of Confidence",
+  "intentions": [
+   "confidence",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Orange Calcite": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Blue Calcite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "communication",
+   "healing"
+  ]
+ },
+ "Green Calcite": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "calm",
+   "love"
+  ]
+ },
+ "Mango Calcite": {
+  "knownAs": "Stone of Gentle Joy",
+  "intentions": [
+   "love",
+   "healing",
+   "creativity"
+  ]
+ },
+ "Red Calcite": {
+  "knownAs": "Stone of Vitality",
+  "intentions": [
+   "healing",
+   "grounding",
+   "confidence"
+  ]
+ },
+ "Lemon Calcite": {
+  "knownAs": "Stone of Optimism",
+  "intentions": [
+   "confidence",
+   "focus",
+   "healing"
+  ]
+ },
+ "Black Calcite": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "protection",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Caribbean Blue Calcite": {
+  "knownAs": "Stone of Peace",
+  "intentions": [
+   "calm",
+   "communication",
+   "love"
+  ]
+ },
+ "Dogtooth Calcite": {
+  "knownAs": "Stone of Focus",
+  "intentions": [
+   "focus",
+   "intuition",
+   "confidence"
+  ]
+ },
+ "Stellar Beam Calcite": {
+  "knownAs": "Stone of Spiritual Connection",
+  "intentions": [
+   "intuition",
+   "focus",
+   "healing"
+  ]
+ },
+ "Merkabite Calcite": {
+  "knownAs": "Stone of Meditation",
+  "intentions": [
+   "intuition",
+   "focus",
+   "healing"
+  ]
+ },
+ "Rainbow Calcite": {
+  "knownAs": "Stone of Clarity",
+  "intentions": [
+   "focus",
+   "creativity",
+   "intuition"
+  ]
+ },
+ "Satin Spar": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "cleansing",
+   "intuition"
+  ]
+ },
+ "Black Opal": {
+  "knownAs": "Stone of Protection",
+  "intentions": [
+   "protection",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "White Opal": {
+  "knownAs": "Stone of Joy",
+  "intentions": [
+   "creativity",
+   "intuition",
+   "love"
+  ]
+ },
+ "Boulder Opal": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "confidence"
+  ]
+ },
+ "Crystal Opal": {
+  "knownAs": "Stone of Clarity",
+  "intentions": [
+   "intuition",
+   "focus",
+   "creativity"
+  ]
+ },
+ "Ethiopian Opal": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Matrix Opal": {
+  "knownAs": "Stone of Integration",
+  "intentions": [
+   "grounding",
+   "creativity",
+   "healing"
+  ]
+ },
+ "Common Opal": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "love",
+   "healing"
+  ]
+ },
+ "Pink Opal": {
+  "knownAs": "Stone of Gentle Love",
+  "intentions": [
+   "love",
+   "healing",
+   "calm"
+  ]
+ },
+ "Blue Opal": {
+  "knownAs": "Stone of Communication",
+  "intentions": [
+   "calm",
+   "communication",
+   "healing"
+  ]
+ },
+ "Green Opal": {
+  "knownAs": "Stone of Renewal",
+  "intentions": [
+   "healing",
+   "transformation",
+   "love"
+  ]
+ },
+ "Dendritic Opal": {
+  "knownAs": "Stone of Growth",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "love"
+  ]
+ },
+ "Wood Opal": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "intuition",
+   "grounding",
+   "healing"
+  ]
+ },
+ "Chocolate Opal": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Honey Opal": {
+  "knownAs": "Stone of Warmth",
+  "intentions": [
+   "creativity",
+   "confidence",
+   "healing"
+  ]
+ },
+ "Virgin Valley Opal": {
+  "knownAs": "Stone of Inspiration",
+  "intentions": [
+   "transformation",
+   "creativity",
+   "focus"
+  ]
+ },
+ "Opalite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "transformation",
+   "communication",
+   "calm"
+  ]
+ },
+ "Synthetic Opal": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Opal Doublet & Triplet": {
+  "knownAs": "Stone of Creativity",
+  "intentions": [
+   "creativity",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Aragonite Sputnik": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Blue Aragonite": {
+  "knownAs": "Stone of Communication",
+  "intentions": [
+   "calm",
+   "communication",
+   "love"
+  ]
+ },
+ "Flos Ferri": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "intuition",
+   "calm",
+   "healing"
+  ]
+ },
+ "Cave Aragonite": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Twinned Aragonite": {
+  "knownAs": "Stone of Balance",
+  "intentions": [
+   "focus",
+   "confidence",
+   "calm",
+   "grounding"
+  ]
+ },
+ "Brown Aragonite": {
+  "knownAs": "Stone of Grounding",
+  "intentions": [
+   "grounding",
+   "healing",
+   "calm"
+  ]
+ },
+ "Yellow Aragonite": {
+  "knownAs": "Stone of Confidence",
+  "intentions": [
+   "confidence",
+   "healing",
+   "calm"
+  ]
+ },
+ "Banded Aragonite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Barite Rose": {
+  "knownAs": "Stone of Remembrance",
+  "intentions": [
+   "love",
+   "healing",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Pink Halite": {
+  "knownAs": "Stone of Cleansing",
+  "intentions": [
+   "love",
+   "cleansing",
+   "healing"
+  ]
+ },
+ "Blue Halite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "intuition",
+   "communication",
+   "calm"
+  ]
+ },
+ "Petroleum Quartz": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "creativity"
+  ]
+ },
+ "Blue Amber": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "creativity",
+   "calm",
+   "communication"
+  ]
+ },
+ "Baltic Amber": {
+  "knownAs": "Stone of Warmth",
+  "intentions": [
+   "protection",
+   "calm",
+   "creativity",
+   "confidence"
+  ]
+ },
+ "Copal": {
+  "knownAs": "Stone of Cleansing",
+  "intentions": [
+   "intuition",
+   "cleansing",
+   "creativity"
+  ]
+ },
+ "Amethyst Stalactite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "intuition",
+   "transformation",
+   "calm"
+  ]
+ },
+ "Apophyllite Stalactite": {
+  "knownAs": "Stone of Clarity",
+  "intentions": [
+   "focus",
+   "love",
+   "intuition"
+  ]
+ },
+ "Rhodochrosite Stalactite": {
+  "knownAs": "Stone of Compassion",
+  "intentions": [
+   "love",
+   "healing",
+   "creativity"
+  ]
+ },
+ "Malachite Stalactite": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "protection",
+   "love"
+  ]
+ },
+ "Chalcedony Stalactite": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "communication",
+   "intuition"
+  ]
+ },
+ "Calcite Stalactite": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Bismuth": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "focus",
+   "calm"
+  ]
+ },
+ "Thousand Layer Quartz": {
+  "knownAs": "Stone of Patience",
+  "intentions": [
+   "transformation",
+   "intuition",
+   "grounding"
+  ]
+ },
+ "Iolite-Sunstone": {
+  "knownAs": "Stone of Intuition",
+  "intentions": [
+   "intuition",
+   "confidence",
+   "calm"
+  ]
+ },
+ "Pink Jelly Agate": {
+  "knownAs": "Stone of Gentle Love",
+  "intentions": [
+   "love",
+   "calm",
+   "intuition"
+  ]
+ },
+ "Needle Quartz": {
+  "knownAs": "Stone of Focus",
+  "intentions": [
+   "focus",
+   "healing",
+   "intuition",
+   "communication"
+  ]
+ },
+ "Grape Agate": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "intuition",
+   "calm",
+   "healing"
+  ]
+ },
+ "Freshwater Mussel Shell": {
+  "knownAs": "Stone of Calm",
+  "intentions": [
+   "calm",
+   "creativity",
+   "love"
+  ]
+ },
+ "Red Moonstone": {
+  "knownAs": "Stone of Passion",
+  "intentions": [
+   "healing",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Druzy Fossil Shell": {
+  "knownAs": "Stone of Transformation",
+  "intentions": [
+   "transformation",
+   "grounding",
+   "intuition"
+  ]
+ },
+ "Record Keeper Quartz": {
+  "knownAs": "Keeper of Ancient Wisdom",
+  "intentions": [
+   "intuition",
+   "focus"
+  ]
+ },
+ "Leopard Skin Jasper": {
+  "knownAs": "The Shaman Stone",
+  "intentions": [
+   "grounding",
+   "protection",
+   "confidence"
+  ]
+ }
+}

@@ -20,7 +20,9 @@ eleventyComputed:
     <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="mineral-intro">
       <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.hazard %} <a class="badge hz" href="/handle-with-care/">⚠ Handle with care</a>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
-      <h1 data-pagefind-meta="title">{{ m.title }}</h1>{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
+      <h1 data-pagefind-meta="title">{{ m.title }}</h1>
+      {% if m.knownAs %}<p class="known-as"><span>✦ {{ m.knownAs }} ✦</span></p>{% endif %}
+      {% if m.intentions.length %}<p class="intent-chips" data-pagefind-ignore><small>Crystal lore:</small> {% for i in m.intentions %}<a class="intent-chip" href="/intentions/{{ i.key }}/">{{ i.emoji }} {{ i.label }}</a>{% endfor %}</p>{% endif %}{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
       {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
       {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
@@ -209,6 +211,7 @@ eleventyComputed:
     {% for s in m.crystalSystems %}<span data-pagefind-filter="crystal system">{{ s | cap }}</span>{% endfor %}
     {% for c in m.colorFamilies %}<span data-pagefind-filter="color">{{ c.label }}</span>{% endfor %}
     {% for c in m.chakras %}<span data-pagefind-filter="chakra">{{ c }}</span>{% endfor %}
+    {% for i in m.intentions %}<span data-pagefind-filter="intention">{{ i.label }}</span>{% endfor %}
     {% if m.hazard %}<span data-pagefind-filter="safety">Handle with care</span>{% for i in m.hazard.iconList %}<span data-pagefind-filter="hazard">{{ i.label }}</span>{% endfor %}{% endif %}
     {% if m.uv %}{% for w in m.uv.waves %}<span data-pagefind-filter="UV reaction">{{ w }}</span>{% endfor %}<span data-pagefind-filter="collection">UV reactive</span>{% endif %}
     {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}
