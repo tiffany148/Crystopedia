@@ -419,12 +419,13 @@ const mini = (e) => ({ name: e.name, url: e.url, style: e.style, thumb: e.thumb,
 for (const p of pages) for (const e of p.metaphysical) {
   e.pairs = (PAIRS[e.name] || []).map((x) => ({ ...mini(healByName.get(x.name)), reason: x.reason })).filter((x) => x.url && x.url !== p.url);
 }
+const SIGNATURE = { protection: "Schorl", love: "Rose quartz", abundance: "Pyrite", calm: "Amethyst", sleep: "Lepidolite", focus: "Fluorite", grounding: "Smoky quartz", creativity: "Carnelian", intuition: "Labradorite", healing: "Quartz", confidence: "Tiger's eye", luck: "Aventurine", communication: "Blue lace agate", cleansing: "Selenite", transformation: "Malachite" };
 const intentPages = Object.entries(INTENT_INFO).map(([key, [emoji, label, blurb]]) => {
   const items = pages.filter((p) => p.intentions?.some((i) => i.key === key))
     .map((p) => ({ ...card(p), knownAs: p.knownAs, popular: p.metaphysical.some((m) => m.intentions?.[0] === key) }))
     .sort((a, b) => (b.thumb ? 1 : 0) - (a.thumb ? 1 : 0) || (b.popular - a.popular) || a.title.localeCompare(b.title));
   const combo = INTENTIONS.find((i) => i.key === key);
-  return { key, emoji, label, blurb, url: `/intentions/${key}/`, items, count: items.length, combo: combo ? { title: combo.title, note: combo.note } : null, cover: items.find((x) => x.thumb)?.thumb?.src || null };
+  return { key, emoji, label, blurb, url: `/intentions/${key}/`, items, count: items.length, combo: combo ? { title: combo.title, note: combo.note } : null, cover: (() => { const sp = pages.find((p) => p.title.toLowerCase() === SIGNATURE[key].toLowerCase()); const im = sp && (sp.thumb || sp.img); return im?.src || items.find((x) => x.thumb)?.thumb?.src || null; })(), signature: SIGNATURE[key] };
 });
 const intentions = INTENTIONS.map((i) => ({ ...i, stones: i.stones.map((n) => healByName.get(n)).filter(Boolean).map(mini) }));
 const pairingsData = healing.map((e) => ({ n: e.name, u: e.url, st: e.style, th: e.thumb?.src || null, ch: e.chakras,

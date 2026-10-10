@@ -13,7 +13,7 @@ description: Find crystals by their traditional purpose (protection, love, abund
 <section>
   <div class="intent-tiles">
   {% for i in site.intentPages %}
-    <a class="intent-tile" href="{{ i.url }}"{% if i.cover %} style="--ph:url('{{ i.cover }}')"{% endif %}><b>{{ i.emoji }}</b><strong>{{ i.label }}</strong><span>{{ i.count }} stones</span></a>
+    <a class="intent-tile" href="{{ i.url }}"{% if i.cover %} style="--ph:url('{{ i.cover }}')"{% endif %}><b>{{ i.emoji }}</b><strong>{{ i.label }}</strong><span>{{ i.count }} stones · {{ "Black tourmaline" if i.signature == "Schorl" else i.signature }}</span></a>
   {% endfor %}
   </div>
 </section>

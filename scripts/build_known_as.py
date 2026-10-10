@@ -129,7 +129,14 @@ for e in D:
         u = (e.get("uses") or [""])[0]
         k = "Stone of " + title(u) if u and len(u.split()) <= 4 else "Stone of " + " & ".join(x.title() for x in ints[:2])
     out[n] = {"knownAs": k, "intentions": ints[:5]}
+from known_as_fixes import FIX
+for n, (t, ints) in FIX.items():
+    if n in out:
+        out[n]["knownAs"] = t
+        if ints: out[n]["intentions"] = ints
+    else: print("FIX miss:", n)
 json.dump(out, open("data/known_as.json", "w"), indent=1, ensure_ascii=False)
 import collections; c = collections.Counter(i for v in out.values() for i in v["intentions"])
+dup = collections.Counter(v["knownAs"] for v in out.values()) if False else None
 print(len(out), "stones;", sum(n.lower() in {a.lower() for a in KNOWN} for n in out), "curated;", dict(c))
 print("unused curated:", [k for k in KNOWN if k.lower() not in {n.lower() for n in out}])
