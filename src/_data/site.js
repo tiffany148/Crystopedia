@@ -6,6 +6,7 @@ const MULTI_HAS = (p) => !!MULTI[(p.metaphysical[0]?.name || p.name).toLowerCase
 import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
 import { UV, UV_SAFETY } from "../../lib/uv.js";
+import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } from "../../lib/hazards.js";
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
@@ -177,6 +178,8 @@ const SEE_ALSO = {
   "Iris Agate": [["Iris quartz", "a different rainbow stone: its colours come from fine fractures in quartz crystals, not from banding"], ["Fire Agate", "agate with iridescence from thin iron-oxide layers"]],
   "Iris quartz": [["Iris Agate", "agate whose ultra-fine banding diffracts light into a rainbow when thin-sliced and backlit"]],
   "Crazy Lace Agate": [["Laguna Agate", "another vividly banded Chihuahua agate"]],
+  "Tiger's eye": [["Crocidolite", "the asbestos fibres tiger's eye formed from. They are locked in quartz, so polished stones are safe, but don't cut or grind it"]],
+  "Uranium Glass": [["Hyalite", "natural opal with the same green uranyl glow"], ["Autunite", "a uranium mineral with a similar green fluorescence"]],
   "Adularia": [["White Moonstone", "the classic moonstone: gem-quality adularia with a blue-white glow"]],
   "White Moonstone": [["Adularia", "the mineral variety behind classic moonstone"], ["Rainbow Moonstone", "looks similar but is actually white labradorite"]],
   "Rainbow Moonstone": [["Labradorite", "rainbow moonstone is gemmologically a colourless labradorite"], ["White Moonstone", "true (orthoclase/adularia) moonstone"]],
@@ -226,6 +229,18 @@ for (const p of pages) {
     const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase()); if (!p) { console.warn("own_photos: missing", n); continue; }
     p.img = p.thumb = { src: o.src, own: true, credit: o.credit || "Photo © Tiffany Stark", file: o.credit || "Own photo" };
   }
+}
+// --- Handle With Care ----------------------------------------------------------------
+const SEV = { high: "High", moderate: "Moderate", low: "Low" };
+for (const h of HAZARDS) {
+  const p = pages.find((x) => x.title.toLowerCase() === h.name.toLowerCase());
+  if (!p) { console.warn("HAZARD: no page for", h.name); continue; }
+  p.hazard = { ...h, sevLabel: SEV[h.severity], iconList: h.icons.map((k) => ({ key: k, ...HAZARD_ICONS[k] })) };
+}
+for (const p of pages) {
+  if (!p.metaphysical.length) continue;
+  const note = ELIXIR_NOTES[p.title] || (p.hazard?.icons.includes("noelixir") ? (p.hazard.severity === "low" ? ELIXIR_DEFAULT : "This stone is hazardous: never use it for water or drinking elixirs.") : null);
+  if (note) p.elixirNote = note;
 }
 const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
@@ -322,4 +337,8 @@ const stats = {
   built: new Date().toLocaleDateString("en-CA"),
 };
 
-export default { starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+const hazards = HAZARD_GROUPS.map(([key, label]) => ({ key, label, items: pages.filter((p) => p.hazard?.group === key)
+  .sort((a, b) => ["high", "moderate", "low"].indexOf(a.hazard.severity) - ["high", "moderate", "low"].indexOf(b.hazard.severity) || a.title.localeCompare(b.title))
+  .map((p) => ({ ...card(p), hazard: p.hazard })) })).filter((g) => g.items.length);
+const hazardIcons = Object.entries(HAZARD_ICONS).map(([key, v]) => ({ key, ...v }));
+export default { hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

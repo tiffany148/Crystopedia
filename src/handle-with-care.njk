@@ -1,0 +1,28 @@
+---
+layout: base.njk
+bodyClass: hub hz-hub
+title: Handle With Care
+permalink: /handle-with-care/
+description: "Potentially hazardous minerals: radioactive, arsenic, mercury, lead, asbestos and soluble stones, with hazard types, severity, safe handling and sources."
+---
+<h1>⚠ Handle With Care</h1>
+<div class="collection-intro">
+<p class="lead">Most crystals are perfectly safe to handle. A few contain toxic elements, are radioactive, shed harmful fibres or dust, or dissolve in water. This page lists the well-documented ones, how risky each is, and how to keep and display them safely.</p>
+</div>
+<div class="formation-grid">
+  <div><h3>Golden rules</h3><p>Wash your hands after handling. Don't lick specimens or put them in your mouth. Never cut, sand or grind hazardous stones. Keep them out of reach of children and pets.</p></div>
+  <div><h3>No crystal elixirs</h3><p>Many stones release toxic elements or dissolve in water. Never make drinking water or elixirs with anything on this page. If you use elixirs, use the indirect method (stone in a sealed glass vessel).</p></div>
+  <div><h3>Radioactive storage</h3><p>Keep radioactive specimens in a closed, labelled box in a ventilated area away from bedrooms. Some give off radon or crumble into dust.</p></div>
+  <div><h3>Severity</h3><p><span class="sev sev-high">High</span> needs real precautions. <span class="sev sev-moderate">Moderate</span> is a concern mainly as dust or if swallowed. <span class="sev sev-low">Low</span> means ordinary handling is fine, with simple care.</p></div>
+</div>
+<p class="hz-legend">{% for i in site.hazardIcons %}<span class="hz-icon">{{ i.icon }} {{ i.label }}</span>{% endfor %}</p>
+<nav class="jump">{% for g in site.hazards %}<a class="chip" href="#{{ g.key }}">{{ g.label }}</a>{% endfor %}</nav>
+{% for g in site.hazards %}
+<h2 id="{{ g.key }}">{{ g.label }}</h2>
+<div class="grid">{% for c in g.items %}
+<a class="card hz-card sev-{{ c.hazard.severity }}" href="{{ c.url }}" style="{{ c.style }}">
+  <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">⚠</span>{% endif %}</div>
+  <div class="card-body"><strong>{{ c.title }}</strong><span class="sev sev-{{ c.hazard.severity }}">{{ c.hazard.sevLabel }}</span><span class="hz-mini">{% for i in c.hazard.iconList %}<span title="{{ i.label }}">{{ i.icon }}</span>{% endfor %}</span></div>
+</a>{% endfor %}</div>
+{% endfor %}
+<p class="small muted">Polished tiger's eye and nephrite jade are safe: their fibres are locked in quartz or dense jade. Uranium glass is man-made and also appears in <a href="/uv-reactive/">UV Reactive</a>. This is general safety information, not medical advice. Each stone's page links its sources.</p>

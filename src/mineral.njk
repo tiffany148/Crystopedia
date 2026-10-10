@@ -15,7 +15,7 @@ eleventyComputed:
   <nav class="crumbs" data-pagefind-ignore><a href="/">Home</a> › <a href="/a-z/{{ m.azSlug }}/">A–Z</a> › {{ m.title }}</nav>
   <div class="mineral-head stone-hero">
     <div class="mineral-intro">
-      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
+      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.hazard %} <a class="badge hz" href="/handle-with-care/">⚠ Handle with care</a>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>
       {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
@@ -65,6 +65,16 @@ eleventyComputed:
     </table>
     {% if m.facts.formation %}<h3>How it forms</h3><p>{{ m.facts.formation }}</p>{% endif %}
     {% if m.parents.length %}<p class="muted small">Mineral data: see <a href="{{ m.parents[0].url }}">{{ m.parents[0].title }}</a>.</p>{% endif %}
+  </section>
+  {% endif %}
+
+  {% if m.hazard %}
+  <section class="hz-section sev-{{ m.hazard.severity }}">
+    <h2>⚠ Handle With Care <span class="sev">{{ m.hazard.sevLabel }} caution</span></h2>
+    <p class="hz-icons">{% for i in m.hazard.iconList %}<span class="hz-icon" title="{{ i.label }}">{{ i.icon }} {{ i.label }}</span>{% endfor %}</p>
+    <p><strong>Why:</strong> {{ m.hazard.why }}</p>
+    <p><strong>Safe handling:</strong> {{ m.hazard.safe }}</p>
+    <p class="small muted">Sources: {% for s in m.hazard.src %}<a href="{{ s.url }}" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}. General safety information only, not medical advice. <a href="/handle-with-care/">More on safe handling</a>.</p>
   </section>
   {% endif %}
 
@@ -126,6 +136,7 @@ eleventyComputed:
   {% if m.metaphysical.length %}
   <section class="meta-section" data-pagefind-ignore="all">
     <h2>✨ Metaphysical &amp; Folklore</h2>
+    {% if m.elixirNote %}<p class="elixir-note">💧 <strong>Elixir safety:</strong> {{ m.elixirNote }}</p>{% endif %}
     <p class="disclaimer">These are traditional and folk beliefs from crystal lore. They are <strong>not scientific or medical claims</strong> – crystals are not a substitute for professional care.</p>
     {% for e in m.metaphysical %}
     <div class="meta-card">
@@ -171,6 +182,7 @@ eleventyComputed:
     {% for s in m.crystalSystems %}<span data-pagefind-filter="crystal system">{{ s | cap }}</span>{% endfor %}
     {% for c in m.colorFamilies %}<span data-pagefind-filter="color">{{ c.label }}</span>{% endfor %}
     {% for c in m.chakras %}<span data-pagefind-filter="chakra">{{ c }}</span>{% endfor %}
+    {% if m.hazard %}<span data-pagefind-filter="safety">Handle with care</span>{% for i in m.hazard.iconList %}<span data-pagefind-filter="hazard">{{ i.label }}</span>{% endfor %}{% endif %}
     {% if m.uv %}{% for w in m.uv.waves %}<span data-pagefind-filter="UV reaction">{{ w }}</span>{% endfor %}<span data-pagefind-filter="collection">UV reactive</span>{% endif %}
     {% if m.isGem or m.metaphysical.length %}<span data-pagefind-filter="collection">{% if m.isGem %}Gemstone{% else %}Healing crystal{% endif %}</span>{% endif %}
   </div>

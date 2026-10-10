@@ -429,3 +429,20 @@ body.stone-page .stone-hero a.color-chip{color:var(--hero-ink);background:linear
 .tile.t11{background:linear-gradient(135deg,#0b1f5c,#2f4fa3 55%,#c8d4ff)}
 .chatoyancy-box{margin:2.5rem 0 1rem;padding:1.2rem 1.4rem;border-radius:22px;background:color-mix(in srgb,var(--card) 70%,transparent);border:1px solid var(--line);backdrop-filter:blur(14px) saturate(1.4)}
 section.family .grid{margin-top:.6rem}
+
+/* Handle With Care */
+:root{--warn:#e8a317;--warn-deep:#b4540a}
+.tile.t12{background:linear-gradient(135deg,#3a1a00,#b4540a 50%,#f5c542)}
+.badge.hz{background:linear-gradient(135deg,#f5c542,#e07a10);color:#2a1500;font-weight:700;text-decoration:none;box-shadow:0 0 0 1px #fff6 inset,0 2px 8px #e07a1055}
+.hz-section{border:2px solid var(--warn)!important;background:linear-gradient(135deg,color-mix(in srgb,var(--warn) 18%,var(--card)),color-mix(in srgb,var(--card) 85%,transparent))!important}
+.hz-section.sev-high{border-color:#d9381e!important}
+.hz-icons,.hz-legend{display:flex;flex-wrap:wrap;gap:.4rem}
+.hz-icon{padding:.25rem .7rem;border-radius:999px;font-size:.85rem;background:color-mix(in srgb,var(--warn) 22%,transparent);border:1px solid color-mix(in srgb,var(--warn) 60%,transparent);backdrop-filter:blur(10px) saturate(1.5)}
+.sev{display:inline-block;padding:.1rem .55rem;border-radius:999px;font-size:.75rem;font-weight:700;margin-left:.4rem;color:#fff;background:#c98a10}
+.sev-high .sev,.sev.sev-high{background:#d9381e}.sev.sev-moderate,.sev-moderate .sev{background:#e07a10}.sev.sev-low,.sev-low .sev{background:#5a8a2a}
+.hz-card{outline:2px solid color-mix(in srgb,var(--warn) 55%,transparent);outline-offset:-2px}
+.hz-card.sev-high{outline-color:#d9381e99}
+.hz-mini{font-size:1rem;letter-spacing:.15rem}
+.elixir-note{padding:.6rem .9rem;border-radius:14px;border-left:4px solid var(--warn);background:color-mix(in srgb,var(--warn) 14%,transparent)}
+body.hz-hub h1{background:linear-gradient(90deg,#b4540a,#e8a317,#d9381e);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme=dark] .badge.hz{color:#1a0d00}
