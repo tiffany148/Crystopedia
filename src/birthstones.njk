@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Birthstones by Month
+bodyClass: hub
+description: The modern birthstone for every month (Jewelers of America / AGTA list), plus traditional alternates.
+---
+<section class="intent-hub-head">
+  <nav class="crumbs"><a href="/">Home</a> › Birthstones</nav>
+  <h1>🎂 Birthstones by Month</h1>
+  <p class="lead">The modern US birthstone list (Jewelers of America and AGTA; spinel was added for August in 2016), plus older traditional alternates, marked "traditional".</p>
+  <p class="intent-chips">{% for b in site.birthstones %}<a class="intent-chip" href="#{{ b.slug }}">{{ b.month }}</a>{% endfor %}</p>
+</section>
+{% for b in site.birthstones %}
+<section id="{{ b.slug }}" class="birth-month">
+  <h2>{{ b.month }}</h2>
+  <div class="grid">{% for c in b.stones %}<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong><span class="known-mini">{% if c.traditional %}Traditional{% else %}Modern{% endif %} birthstone</span></div></a>{% endfor %}</div>
+</section>
+{% endfor %}

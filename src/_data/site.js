@@ -1,4 +1,5 @@
 // Builds every collection the templates need from data/minerals.json + data/metaphysical.json
+import { MONTHS, BIRTHSTONES, CARE_INFO, WET, SUN, TOXIC_EXTRA, PAIR } from "../../lib/tags.js";
 import { patternFor } from "../../lib/patterns.js";
 import fs from "node:fs";
 import path from "node:path";
@@ -419,6 +420,27 @@ const mini = (e) => ({ name: e.name, url: e.url, style: e.style, thumb: e.thumb,
 for (const p of pages) for (const e of p.metaphysical) {
   e.pairs = (PAIRS[e.name] || []).map((x) => ({ ...mini(healByName.get(x.name)), reason: x.reason })).filter((x) => x.url && x.url !== p.url);
 }
+// --- birthstones + care tags ---
+const byLower = new Map(pages.flatMap((p) => p.metaphysical.map((m) => [m.name.toLowerCase(), p])));
+for (const p of pages) byLower.set(p.title.toLowerCase(), p);
+for (const p of pages) { p.birthstones = []; p.careTags = []; }
+const birthstones = MONTHS.map((month) => {
+  const B = BIRTHSTONES[month], stones = [];
+  for (const kind of ["modern", "traditional"]) for (const n of B[kind]) { const p = byLower.get(n.toLowerCase()); if (!p) continue;
+    p.birthstones.push({ month, traditional: kind === "traditional" }); stones.push({ ...card(p), traditional: kind === "traditional" }); }
+  return { month, slug: month.toLowerCase(), stones };
+});
+for (const p of pages) {
+  const names = [p.title, ...p.metaphysical.map((m) => m.name)].map((n) => n.toLowerCase());
+  const look = (T) => { for (const n of names) if (T[n]) return T[n]; return null; };
+  const add = (k, why) => p.careTags.push({ key: k, ...CARE_INFO[k], why });
+  const w = look(WET); if (w) add("wet", w);
+  const su = look(SUN); if (su) add("sun", su);
+  const tx = look(TOXIC_EXTRA) || (p.hazard ? p.hazard.why : null);
+  if (tx && !/safe as a polished/.test(tx)) add("toxic", tx);
+  if (p.mohsHi && p.mohsHi < 5) add("soft", `Mohs ${p.mohs}: softer than a steel knife, so it scratches easily. Store it apart from harder stones.`);
+  const pr = look(PAIR); if (pr) add("pair", "Crystal lore: " + pr);
+}
 const SIGNATURE = { protection: "Schorl", love: "Rose quartz", abundance: "Pyrite", calm: "Amethyst", sleep: "Lepidolite", focus: "Fluorite", grounding: "Smoky quartz", creativity: "Carnelian", intuition: "Labradorite", healing: "Quartz", confidence: "Tiger's eye", luck: "Aventurine", communication: "Blue lace agate", cleansing: "Selenite", transformation: "Malachite" };
 const intentPages = Object.entries(INTENT_INFO).map(([key, [emoji, label, blurb]]) => {
   const items = pages.filter((p) => p.intentions?.some((i) => i.key === key))
@@ -483,4 +505,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
