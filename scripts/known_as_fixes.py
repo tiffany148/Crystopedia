@@ -173,4 +173,5 @@ FIX = {
  "Plume Agate": ("Stone of Rising Inspiration", None), "Fossil Starfish": ("Stone of Regrowth", None), "Bloodstone": ("The Martyr's Stone", None),
  "Kunzite": ("Stone of Divine Love", None), "Morganite": ("The Pink Beryl of Love", None), "Black Kyanite": ("The Witch's Broom", None),
  "Zebra Jasper": ("Stone of Balance in Black & White", None), "Charoite": ("Stone of Spiritual Courage", None), "Malachite": ("The Guardian of Travellers", None),
+ "Blue Topaz": ("Stone of Clear Communication", ["communication", "focus", "calm"]),
 }

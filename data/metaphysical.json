@@ -7463,5 +7463,30 @@
   "wikidata": null,
   "parent": "Q201175",
   "slug": "leopard-skin-jasper"
+ },
+ {
+  "name": "Blue Topaz",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Sagittarius",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Blue topaz is linked in crystal lore to clear communication, calm focus and speaking one's truth.",
+  "uses": [
+   "communication",
+   "focus",
+   "calm"
+  ],
+  "wikidata": null,
+  "parent": "Q134985",
+  "slug": "blue-topaz"
  }
 ]

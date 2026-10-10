@@ -345,4 +345,6 @@ ENTRIES = [
 ("Record Keeper Quartz","record keeper quartz","variety",[C,E],["Aries"],[SP,A],"In crystal lore, 'record keepers' are quartz crystals with raised triangles on their faces, traditionally said to hold ancient wisdom.",["meditation", "ancient wisdom", "insight"]),
 # --- leopard skin jasper ---
 ("Leopard Skin Jasper","leopard skin jasper","variety",[R,H],["Gemini", "Virgo"],[E_],"Spotted leopard skin jasper is linked in crystal lore to grounding, stamina and connection with animal spirits.",["grounding", "stamina", "animal connection"]),
+# --- blue topaz ---
+("Blue Topaz","blue topaz","variety",[T,E],["Sagittarius", "Scorpio"],[W,A],"Blue topaz is linked in crystal lore to clear communication, calm focus and speaking one's truth.",["communication", "focus", "calm"]),
 ]
