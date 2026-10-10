@@ -338,4 +338,9 @@ ENTRIES = [
 ("Pink Jelly Agate","pink jelly agate","variety",[H,C],["Libra", "Taurus"],[W],"Soft, translucent pink jelly agate is linked in lore to gentle love, emotional comfort and calm.",["gentle love", "comfort", "calm"]),
 ("Needle Quartz","needle quartz","variety",[C,T],["Gemini"],[A,F],"Fine needle quartz is linked in lore to focus, clarity and directing energy.",["focus", "clarity", "directing energy"]),
 ("Grape Agate","grape agate","variety",[E,C],["Aquarius", "Pisces"],[W,A],"Purple 'grape agate' is linked in lore to calm, intuition and spiritual connection.",["calm", "intuition", "spiritual connection"]),
+# --- Tiffany's photo stones 2 ---
+("Freshwater Mussel Shell","freshwater mussel shell","organic",[S,H],["Cancer", "Pisces"],[W],"Pearly river-mussel shells are linked in lore to emotional calm, nurturing and the flow of water.",["calm", "nurturing", "flow"]),
+("Red Moonstone","red moonstone","variety",[R,S],["Aries", "Cancer"],[F,W],"Sold as 'red moonstone', it is linked in modern crystal lore to passion, vitality and warm emotional energy.",["passion", "vitality", "emotional warmth"]),
+("Druzy Fossil Shell","druzy fossil shell","variety",[R,C],["Cancer", "Capricorn"],[W,E_],"Fossil clams lined with sparkling crystals are linked in lore to transformation, patience and hidden beauty.",["transformation", "patience", "hidden beauty"]),
+("Record Keeper Quartz","record keeper quartz","variety",[C,E],["Aries"],[SP,A],"In crystal lore, 'record keepers' are quartz crystals with raised triangles on their faces, traditionally said to hold ancient wisdom.",["meditation", "ancient wisdom", "insight"]),
 ]

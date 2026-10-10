@@ -53,6 +53,11 @@
     "src": "/assets/own/arkansas-quartz-pocket-matrix-plate.jpg",
     "thumb": "/assets/own/arkansas-quartz-pocket-matrix-plate-sm.jpg",
     "alt": "Arkansas quartz crystal-pocket matrix plate"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-record-keeper.jpg",
+    "thumb": "/assets/own/arkansas-quartz-record-keeper-sm.jpg",
+    "alt": "Arkansas quartz record keeper point"
    }
   ]
  },
@@ -132,6 +137,11 @@
     "src": "/assets/own/labradorite-blue-gold-flash.jpg",
     "thumb": "/assets/own/labradorite-blue-gold-flash-sm.jpg",
     "alt": "Labradorite with blue and gold flash"
+   },
+   {
+    "src": "/assets/own/labradorite-towers.jpg",
+    "thumb": "/assets/own/labradorite-towers-sm.jpg",
+    "alt": "Labradorite towers"
    }
   ]
  },
@@ -195,5 +205,149 @@
    "thumb": "/assets/own/mangano-calcite-uv-sm.jpg",
    "alt": "Mangano calcite grape-cluster carving glowing pink under UV"
   }
+ },
+ "Blue lace agate": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/blue-lace-agate.jpg",
+  "thumb": "/assets/own/blue-lace-agate-sm.jpg",
+  "alt": "Blue lace agate towers, one with druzy"
+ },
+ "Rutilated quartz": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/rutilated-quartz.jpg",
+  "thumb": "/assets/own/rutilated-quartz-sm.jpg",
+  "alt": "Rutilated quartz with golden and silver rutile needles"
+ },
+ "Azurite": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/azurite-malachite.jpg",
+  "thumb": "/assets/own/azurite-malachite-sm.jpg",
+  "alt": "Azurite with malachite"
+ },
+ "Malachite": {
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/azurite-malachite.jpg",
+    "thumb": "/assets/own/azurite-malachite-sm.jpg",
+    "alt": "Azurite with malachite"
+   }
+  ]
+ },
+ "Scolecite": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/scolecite.jpg",
+  "thumb": "/assets/own/scolecite-sm.jpg",
+  "alt": "Scolecite spray inside a geode"
+ },
+ "Apophyllite": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/apophyllite-stilbite-chalcedony.jpg",
+  "thumb": "/assets/own/apophyllite-stilbite-chalcedony-sm.jpg",
+  "alt": "Apophyllite on blue chalcedony with stilbite"
+ },
+ "Stilbite": {
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/apophyllite-stilbite-chalcedony.jpg",
+    "thumb": "/assets/own/apophyllite-stilbite-chalcedony-sm.jpg",
+    "alt": "Stilbite with apophyllite on blue chalcedony"
+   }
+  ]
+ },
+ "Chalcedony": {
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/apophyllite-stilbite-chalcedony.jpg",
+    "thumb": "/assets/own/apophyllite-stilbite-chalcedony-sm.jpg",
+    "alt": "Blue chalcedony with apophyllite and stilbite"
+   }
+  ]
+ },
+ "Ammonite": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/ammonite-split-pair.jpg",
+  "thumb": "/assets/own/ammonite-split-pair-sm.jpg",
+  "alt": "Split ammonite pair",
+  "gallery": [
+   {
+    "src": "/assets/own/ammonite-split-pair.jpg",
+    "thumb": "/assets/own/ammonite-split-pair-sm.jpg",
+    "alt": "Split ammonite pair"
+   },
+   {
+    "src": "/assets/own/ammonite-polished.jpg",
+    "thumb": "/assets/own/ammonite-polished-sm.jpg",
+    "alt": "Whole polished ammonite showing suture pattern"
+   },
+   {
+    "src": "/assets/own/ammonite-half.jpg",
+    "thumb": "/assets/own/ammonite-half-sm.jpg",
+    "alt": "Ammonite half, close-up"
+   }
+  ]
+ },
+ "Desert rose": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/desert-rose.jpg",
+  "thumb": "/assets/own/desert-rose-sm.jpg",
+  "alt": "Gypsum desert rose cluster"
+ },
+ "Wavellite": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/wavellite.jpg",
+  "thumb": "/assets/own/wavellite-sm.jpg",
+  "alt": "Green botryoidal wavellite from Arkansas"
+ },
+ "Freshwater Mussel Shell": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/freshwater-mussel-shell.jpg",
+  "thumb": "/assets/own/freshwater-mussel-shell-sm.jpg",
+  "alt": "Freshwater mussel shell with nacre lining"
+ },
+ "Nacre": {
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/freshwater-mussel-shell.jpg",
+    "thumb": "/assets/own/freshwater-mussel-shell-sm.jpg",
+    "alt": "Freshwater mussel shell (mother of pearl)"
+   }
+  ]
+ },
+ "Red Moonstone": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/red-moonstone.jpg",
+  "thumb": "/assets/own/red-moonstone-sm.jpg",
+  "alt": "Red moonstone sphere"
+ },
+ "Black Moonstone": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/black-moonstone.jpg",
+  "thumb": "/assets/own/black-moonstone-sm.jpg",
+  "alt": "Black moonstone sphere with blue sheen"
+ },
+ "Druzy Fossil Shell": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/druzy-fossil-shell.jpg",
+  "thumb": "/assets/own/druzy-fossil-shell-sm.jpg",
+  "alt": "Fossil clam shells with druzy crystal linings"
+ },
+ "Record Keeper Quartz": {
+  "credit": "Photo © Tiffany Stark",
+  "src": "/assets/own/arkansas-quartz-record-keeper.jpg",
+  "thumb": "/assets/own/arkansas-quartz-record-keeper-sm.jpg",
+  "alt": "Arkansas quartz record keeper point"
+ },
+ "Fluorite": {
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/blue-fluorite-uv.jpg",
+   "thumb": "/assets/own/blue-fluorite-uv-sm.jpg",
+   "alt": "Blue fluorite under UV"
+  },
+  "uvCaption": "blue fluorite under UV"
  }
 }

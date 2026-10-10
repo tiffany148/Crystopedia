@@ -199,6 +199,13 @@ const SEE_ALSO = {
   "Grape Agate": [["Chalcedony", "grape agate is botryoidal chalcedony, not banded agate"], ["Agate", "true agate is banded chalcedony"]],
   "Pink Jelly Agate": [["Agate", "the parent stone"], ["Chalcedony", "the microcrystalline quartz it is made of"]],
   "Thousand Layer Quartz": [["Quartz", "the parent mineral"]],
+  "Record Keeper Quartz": [["Arkansas Quartz", "Arkansas quartz often shows record-keeper triangles"], ["Quartz", "the parent mineral"]],
+  "Arkansas Quartz": [["Record Keeper Quartz", "quartz with triangular growth marks on its faces"]],
+  "Freshwater Mussel Shell": [["Nacre", "the mother-of-pearl lining"], ["Pearl", "freshwater mussels also make pearls"]],
+  "Nacre": [["Freshwater Mussel Shell", "pearly river-mussel shells, e.g. from Arkansas rivers"], ["Aragonite", "nacre is made of aragonite platelets"], ["Pearl", "pearls are built from nacre"]],
+  "Druzy Fossil Shell": [["Fossil Shell", "fossil shells in general"], ["Agatized Coral", "another fossil replaced by silica"]],
+  "Fossil Shell": [["Druzy Fossil Shell", "fossil clams lined with sparkling crystals"]],
+  "Red Moonstone": [["Moonstone", "classic moonstone"], ["Black Moonstone", "another trade-coloured moonstone"]],
   "Desert rose": [["Barite Rose", "the barite form: Oklahoma's state rock"], ["Selenite", "the gypsum mineral that makes Sahara desert roses"]],
   "Barite Rose": [["Desert rose", "the gypsum (selenite) form from the Sahara and Mexico"]],
   "Satin Spar": [["Selenite", "satin spar is fibrous gypsum, the same mineral as selenite"], ["Calcite", "despite the name, most satin spar is not calcite"]],
@@ -206,7 +213,6 @@ const SEE_ALSO = {
   "Caribbean Blue Calcite": [["Aragonite", "Caribbean calcite is a mix of calcite, aragonite and blue copper minerals"], ["Blue Aragonite", "another sky-blue carbonate"]],
   "Fire Opal": [["Black Opal", "Australia's dark precious opal"], ["Opalite", "man-made glass, not opal"]],
   "Opalite": [["Opal", "the real, natural mineraloid"], ["Synthetic Opal", "lab-grown opal (Gilson): a real opal structure, made in a lab"]],
-  "Nacre": [["Aragonite", "nacre (mother of pearl) is made of aragonite platelets"], ["Pearl", "pearls are built from nacre"]],
   "Pearl": [["Aragonite", "pearls are mostly aragonite"]],
   "Stilbite": [["Apophyllite", "the classic Indian zeolite partner, often on the same specimen"]],
   "Petroleum Quartz": [["Herkimer Diamond", "New York quartz that sometimes holds bitumen and oil"]],
@@ -269,7 +275,7 @@ for (const p of pages) {
       p.img = { src: o.src, own: true, credit, file: credit, alt: o.alt };
       p.thumb = { src: o.thumb || o.src, own: true, credit, file: credit };
     }
-    if (o.uv && p.uv) p.uv.uvImg = { src: o.uv.src, thumbSrc: o.uv.thumb, own: true, credit: "Photo © Tiffany Stark", file: "Photo © Tiffany Stark", alt: o.uv.alt };
+    if (o.uv && p.uv) p.uv.uvImg = { src: o.uv.src, thumbSrc: o.uv.thumb, own: true, credit: "Photo © Tiffany Stark", file: "Photo © Tiffany Stark", alt: o.uv.alt, caption: o.uvCaption || "under UV light" };
     if (o.gallery?.length) p.ownGallery = o.gallery.map((g) => ({ ...g, credit }));
   }
 }
@@ -287,6 +293,7 @@ for (const p of pages) {
 }
 // --- aliases ("also known as") and notes ---------------------------------------------------
 const ALIASES = {
+  "Freshwater Mussel Shell": ["Unionidae", "River mussel shell"], "Druzy Fossil Shell": ["Crystal fossil shell", "Fossil clam", "Crystallized clam"], "Record Keeper Quartz": ["Record keeper"],
   "Bismuth": ["Native bismuth", "Bismuth crystal", "Rainbow bismuth", "Hopper bismuth"], "Amethyst Stalactite": ["Amethyst flower", "Amethyst star slice"], "Rhodochrosite Stalactite": ["Inca rose"],
   "Manganoan calcite": ["Mangano Calcite", "Mangano calcite", "Pink calcite", "Manganocalcite"],
   "Iceland spar": ["Optical calcite", "Optical-grade calcite"],

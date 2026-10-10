@@ -7342,5 +7342,102 @@
   "wikidata": null,
   "parent": "Q170448",
   "slug": "grape-agate"
+ },
+ {
+  "name": "Freshwater Mussel Shell",
+  "kind": "organic",
+  "chakras": [
+   "Sacral",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Pearly river-mussel shells are linked in lore to emotional calm, nurturing and the flow of water.",
+  "uses": [
+   "calm",
+   "nurturing",
+   "flow"
+  ],
+  "wikidata": null,
+  "parent": "Q215865",
+  "slug": "freshwater-mussel-shell"
+ },
+ {
+  "name": "Red Moonstone",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aries",
+   "Cancer"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Sold as 'red moonstone', it is linked in modern crystal lore to passion, vitality and warm emotional energy.",
+  "uses": [
+   "passion",
+   "vitality",
+   "emotional warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q430034",
+  "slug": "red-moonstone"
+ },
+ {
+  "name": "Druzy Fossil Shell",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Capricorn"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Fossil clams lined with sparkling crystals are linked in lore to transformation, patience and hidden beauty.",
+  "uses": [
+   "transformation",
+   "patience",
+   "hidden beauty"
+  ],
+  "wikidata": null,
+  "slug": "druzy-fossil-shell"
+ },
+ {
+  "name": "Record Keeper Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Aries"
+  ],
+  "elements": [
+   "Spirit",
+   "Air"
+  ],
+  "meaning": "In crystal lore, 'record keepers' are quartz crystals with raised triangles on their faces, traditionally said to hold ancient wisdom.",
+  "uses": [
+   "meditation",
+   "ancient wisdom",
+   "insight"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "record-keeper-quartz"
  }
 ]

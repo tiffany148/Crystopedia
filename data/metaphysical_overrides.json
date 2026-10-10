@@ -642,5 +642,21 @@
  "Grape Agate": {
   "qid": null,
   "parent": "Q170448"
+ },
+ "Freshwater Mussel Shell": {
+  "qid": null,
+  "parent": "Q215865"
+ },
+ "Red Moonstone": {
+  "qid": null,
+  "parent": "Q430034"
+ },
+ "Druzy Fossil Shell": {
+  "qid": null,
+  "parent": null
+ },
+ "Record Keeper Quartz": {
+  "qid": null,
+  "parent": "Q43010"
  }
 }
