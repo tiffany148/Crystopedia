@@ -233,7 +233,10 @@ for (const p of pages) {
   for (const [n, o] of Object.entries(OWN)) {
     if (n.startsWith("_") || !o?.src) continue;
     const p = pages.find((x) => x.title.toLowerCase() === n.toLowerCase()); if (!p) { console.warn("own_photos: missing", n); continue; }
-    p.img = p.thumb = { src: o.src, own: true, credit: o.credit || "Photo © Tiffany Stark", file: o.credit || "Own photo" };
+    const credit = o.credit || "Photo © Tiffany Stark";
+    p.img = { src: o.src, own: true, credit, file: credit, alt: o.alt };
+    p.thumb = { src: o.thumb || o.src, own: true, credit, file: credit };
+    if (o.gallery?.length) p.ownGallery = o.gallery.map((g) => ({ ...g, credit }));
   }
 }
 // --- Handle With Care ----------------------------------------------------------------

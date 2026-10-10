@@ -112,6 +112,13 @@ eleventyComputed:
   </section>
   {% endif %}
 
+  {% if m.ownGallery %}
+  <section class="own-gallery" data-pagefind-ignore>
+    <h2>📷 Gallery</h2>
+    <div class="gallery-grid">{% for g in m.ownGallery %}<figure><a href="{{ g.src }}"><img loading="lazy" src="{{ g.thumb }}" alt="{{ g.alt }}"></a><figcaption>{{ g.credit }}</figcaption></figure>{% endfor %}</div>
+  </section>
+  {% endif %}
+
   {% if m.seeAlso.length %}
   <section class="see-also">
     <h2>🔗 See also</h2>

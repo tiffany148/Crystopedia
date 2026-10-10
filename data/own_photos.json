@@ -1,11 +1,59 @@
 {
- "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo.",
+ "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo. Optional: thumb (small version) and gallery: a list of {src, thumb, alt}.",
  "Iris Agate": {
   "src": "",
-  "credit": "Photo \u00a9 Tiffany Stark"
+  "credit": "Photo © Tiffany Stark"
  },
  "Sea Biscuit": {
   "src": "",
-  "credit": "Photo \u00a9 Tiffany Stark"
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Arkansas Quartz": {
+  "src": "/assets/own/arkansas-quartz-snow-point.jpg",
+  "thumb": "/assets/own/arkansas-quartz-snow-point-sm.jpg",
+  "credit": "Photo © Tiffany Stark",
+  "alt": "Single Arkansas quartz point in snow",
+  "gallery": [
+   {
+    "src": "/assets/own/arkansas-quartz-snow-point.jpg",
+    "thumb": "/assets/own/arkansas-quartz-snow-point-sm.jpg",
+    "alt": "Single Arkansas quartz point in snow"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-cluster-in-hand-1.jpg",
+    "thumb": "/assets/own/arkansas-quartz-cluster-in-hand-1-sm.jpg",
+    "alt": "Clear Arkansas quartz cluster in hand"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-cluster-in-hand-2.jpg",
+    "thumb": "/assets/own/arkansas-quartz-cluster-in-hand-2-sm.jpg",
+    "alt": "Clear Arkansas quartz cluster in hand"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-cluster-plate.jpg",
+    "thumb": "/assets/own/arkansas-quartz-cluster-plate-sm.jpg",
+    "alt": "Arkansas quartz cluster plate"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-smoky-point.jpg",
+    "thumb": "/assets/own/arkansas-quartz-smoky-point-sm.jpg",
+    "alt": "Smoky, brownish Arkansas quartz point (close-up)"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-striated-point.jpg",
+    "thumb": "/assets/own/arkansas-quartz-striated-point-sm.jpg",
+    "alt": "Arkansas quartz point showing striations"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-iron-stained-matrix.jpg",
+    "thumb": "/assets/own/arkansas-quartz-iron-stained-matrix-sm.jpg",
+    "alt": "Arkansas quartz crystals on iron-stained matrix"
+   },
+   {
+    "src": "/assets/own/arkansas-quartz-pocket-matrix-plate.jpg",
+    "thumb": "/assets/own/arkansas-quartz-pocket-matrix-plate-sm.jpg",
+    "alt": "Arkansas quartz crystal-pocket matrix plate"
+   }
+  ]
  }
 }
