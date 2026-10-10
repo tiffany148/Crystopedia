@@ -21,5 +21,5 @@ eleventyComputed:
 <section class="intent-combo"><h2>💞 Classic {{ it.label | lower }} combo</h2><p>{{ it.combo.note }}</p><p><a href="/pairings/#{{ it.key }}">See the combo on Crystal Pairings →</a></p></section>
 {% endif %}
 <section>
-  <div class="grid">{% for c in it.items %}<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong>{% if c.knownAs %}<span class="known-mini">{{ c.knownAs }}</span>{% endif %}</div></a>{% endfor %}</div>
+  <div class="grid">{% for c in it.items %}<a class="card" href="{{ c.url }}" style="{{ c.style }}"><div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div><div class="card-body"><strong>{{ c.title }}</strong>{% if c.knownAs %}<span class="known-mini">{{ c.knownAs | replace(" (Handle With Care)", "") }}{% if "(Handle With Care)" in c.knownAs %} <em class="hz-mini-tag">⚠ Handle With Care</em>{% endif %}</span>{% endif %}</div></a>{% endfor %}</div>
 </section>

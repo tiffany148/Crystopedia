@@ -166,3 +166,4 @@ html[data-theme=dark] .hub .intent-chip{background:rgba(255,255,255,.08);color:#
 .known-mini{display:block;font-size:.8rem;font-weight:700;color:color-mix(in srgb,var(--stone-accent,#6d28d9) 90%,#000);font-style:italic}
 html[data-theme=dark] .known-mini{color:color-mix(in srgb,var(--c3,#f0abfc) 60%,#fff)}
 .lore-note{font-size:.88rem;padding:.5em .9em;border-left:3px solid #f59e0b;background:rgba(245,158,11,.1);border-radius:8px}
+.known-as .badge.hz{vertical-align:middle;margin-left:.4em}.hz-mini-tag{font-style:normal;color:#b45309;font-weight:800}html[data-theme=dark] .hz-mini-tag{color:#fbbf24}
