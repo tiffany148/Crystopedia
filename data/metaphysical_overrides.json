@@ -402,5 +402,197 @@
  },
  "Calamites": {
   "qid": null
+ },
+ "Pyrite Sun": {
+  "qid": null,
+  "parent": "Q50769"
+ },
+ "Honey Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Orange Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Blue Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Green Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Mango Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Red Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Lemon Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Black Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Caribbean Blue Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Dogtooth Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Stellar Beam Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Merkabite Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Rainbow Calcite": {
+  "qid": null,
+  "parent": "Q171917"
+ },
+ "Satin Spar": {
+  "qid": null,
+  "parent": "Q82658"
+ },
+ "Black Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "White Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Boulder Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Crystal Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Ethiopian Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Matrix Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Common Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Pink Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Blue Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Green Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Dendritic Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Wood Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Chocolate Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Honey Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Virgin Valley Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Opalite": {
+  "qid": null,
+  "parent": null
+ },
+ "Synthetic Opal": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Opal Doublet & Triplet": {
+  "qid": null,
+  "parent": "Q171058"
+ },
+ "Aragonite Sputnik": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Blue Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Flos Ferri": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Cave Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Twinned Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Brown Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Yellow Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Banded Aragonite": {
+  "qid": null,
+  "parent": "Q23775"
+ },
+ "Barite Rose": {
+  "qid": null,
+  "parent": "Q184196"
+ },
+ "Pink Halite": {
+  "qid": null,
+  "parent": "Q5314"
+ },
+ "Blue Halite": {
+  "qid": null,
+  "parent": "Q5314"
+ },
+ "Petroleum Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Blue Amber": {
+  "qid": null,
+  "parent": "Q25381"
+ },
+ "Baltic Amber": {
+  "qid": null,
+  "parent": "Q25381"
+ },
+ "Copal": {
+  "qid": null,
+  "parent": "Q25381"
  }
 }

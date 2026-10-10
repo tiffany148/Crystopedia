@@ -184,6 +184,23 @@ const SEE_ALSO = {
   "Iris Agate": [["Iris quartz", "a different rainbow stone: its colours come from fine fractures in quartz crystals, not from banding"], ["Fire Agate", "agate with iridescence from thin iron-oxide layers"]],
   "Iris quartz": [["Iris Agate", "agate whose ultra-fine banding diffracts light into a rainbow when thin-sliced and backlit"]],
   "Crazy Lace Agate": [["Laguna Agate", "another vividly banded Chihuahua agate"]],
+  "Desert rose": [["Barite Rose", "the barite form: Oklahoma's state rock"], ["Selenite", "the gypsum mineral that makes Sahara desert roses"]],
+  "Barite Rose": [["Desert rose", "the gypsum (selenite) form from the Sahara and Mexico"]],
+  "Satin Spar": [["Selenite", "satin spar is fibrous gypsum, the same mineral as selenite"], ["Calcite", "despite the name, most satin spar is not calcite"]],
+  "Selenite": [["Satin Spar", "fibrous gypsum, often sold as 'selenite' wands"]],
+  "Caribbean Blue Calcite": [["Aragonite", "Caribbean calcite is a mix of calcite, aragonite and blue copper minerals"], ["Blue Aragonite", "another sky-blue carbonate"]],
+  "Fire Opal": [["Black Opal", "Australia's dark precious opal"], ["Opalite", "man-made glass, not opal"]],
+  "Opalite": [["Opal", "the real, natural mineraloid"], ["Synthetic Opal", "lab-grown opal (Gilson): a real opal structure, made in a lab"]],
+  "Nacre": [["Aragonite", "nacre (mother of pearl) is made of aragonite platelets"], ["Pearl", "pearls are built from nacre"]],
+  "Pearl": [["Aragonite", "pearls are mostly aragonite"]],
+  "Stilbite": [["Apophyllite", "the classic Indian zeolite partner, often on the same specimen"]],
+  "Apophyllite": [["Stilbite", "peach zeolite bowties often grow with apophyllite in Indian basalt"]],
+  "Petroleum Quartz": [["Herkimer Diamond", "New York quartz that sometimes holds bitumen and oil"]],
+  "Herkimer Diamond": [["Petroleum Quartz", "quartz with fluorescent oil inclusions"]],
+  "Blue Amber": [["Baltic Amber", "the classic European amber"], ["Copal", "younger resin often sold as amber"]],
+  "Copal": [["Amber", "fully fossilized resin"]],
+  "Pink Halite": [["Blue Halite", "halite coloured by natural radiation"], ["Halite", "rock salt"]],
+  "Blue Halite": [["Sylvite", "the potassium salt that often sits beside blue halite"]],
   "Tiger's eye": [["Crocidolite", "the asbestos fibres tiger's eye formed from. They are locked in quartz, so polished stones are safe, but don't cut or grind it"]],
   "Uranium Glass": [["Hyalite", "natural opal with the same green uranyl glow"], ["Autunite", "a uranium mineral with a similar green fluorescence"]],
   "Adularia": [["White Moonstone", "the classic moonstone: gem-quality adularia with a blue-white glow"]],
@@ -251,6 +268,33 @@ for (const p of pages) {
   const note = ELIXIR_NOTES[p.title] || (p.hazard?.icons.includes("noelixir") ? (p.hazard.severity === "low" ? ELIXIR_DEFAULT : "This stone is hazardous: never use it for water or drinking elixirs.") : null);
   if (note) p.elixirNote = note;
 }
+// --- aliases ("also known as") and notes ---------------------------------------------------
+const ALIASES = {
+  "Manganoan calcite": ["Mangano Calcite", "Mangano calcite", "Pink calcite", "Manganocalcite"],
+  "Iceland spar": ["Optical calcite", "Optical-grade calcite"],
+  "Moonstone": ["Raw moonstone", "Rough moonstone"],
+  "Fire Opal": ["Mexican fire opal"], "Common Opal": ["Potch", "Potch opal"], "Green Opal": ["Prase opal"], "Dendritic Opal": ["Moss opal"],
+  "Ethiopian Opal": ["Welo opal", "Wollo opal"], "Synthetic Opal": ["Gilson opal", "Lab opal"], "Opal Doublet & Triplet": ["Opal doublet", "Opal triplet"],
+  "Opalite": ["Sea opal", "Opal moonstone"], "Pyrite Sun": ["Pyrite dollar", "Miner's dollar", "Pyrite disc"], "Rainbow Calcite": ["Rhomboid calcite"],
+  "Lemon Calcite": ["Yellow calcite"], "Dogtooth Calcite": ["Scalenohedral calcite"], "Merkabite Calcite": ["Merkabite"],
+  "Aragonite Sputnik": ["Aragonite star cluster", "Sputnik aragonite"], "Banded Aragonite": ["Aragonite onyx", "Mexican onyx"], "Cave Aragonite": ["Coralloid aragonite"],
+  "Twinned Aragonite": ["Spanish aragonite", "Hexagonal aragonite"], "Brown Aragonite": ["Moroccan aragonite", "Red aragonite"], "Nacre": ["Mother of pearl"],
+  "Barite Rose": ["Rose rock", "Baryte rose"], "Desert rose": ["Selenite rose", "Gypsum rose", "Sand rose"], "Satin Spar": ["Satin spar selenite"],
+  "Petroleum Quartz": ["Petroleum included quartz", "Oil quartz", "Hydrocarbon quartz"], "Blue Amber": ["Dominican blue amber"], "Herkimer Diamond": ["Herkimer quartz"],
+  "Pink Halite": ["Pink salt"], "Blue Halite": ["Blue salt"],
+};
+const NOTES = {
+  "Moonstone": "Raw (rough) moonstone looks quite plain. Expect milky white, cream, peach or grey chunks of feldspar with a glassy to pearly lustre, flat cleavage faces and a waxy feel. The floating blue-white glow (adularescence) shows only as a faint sheen on some faces when you turn the stone under a light. It becomes obvious after the stone is polished into a dome. Raw rainbow 'moonstone' is white labradorite and shows flashes of blue on its cleavage surfaces.",
+  "Desert rose": "There are two kinds of 'desert rose'. Gypsum (selenite) roses form in sandy deserts such as the Sahara (Tunisia, Algeria and Morocco) and Chihuahua, Mexico. Barite roses come from central Oklahoma, where the 'rose rock' is the state rock. Gypsum roses are softer (Mohs 2) and slightly water-soluble. Barite roses are heavier and harder (Mohs 3–3.5).",
+  "Halite": "Halite colours: clear to white is pure salt. Pink to red usually comes from salt-loving microbes (archaea), as at Searles Lake, California. Blue to violet comes from radiation-damaged colour centres, often next to sylvite. Orange or brown usually comes from iron oxide or clay inclusions.",
+  "Fire Opal": "Mexican fire opal comes mostly from the Querétaro and Jalisco highlands. It is the classic transparent orange-red opal and may or may not show play-of-colour.",
+  "Herkimer Diamond": "Herkimer 'diamonds' are not diamonds. They are naturally double-terminated, very clear quartz crystals from pockets in Cambrian dolostone (about 500 million years old) around Herkimer County, New York. Several fee-dig mines let visitors collect. Some contain black bitumen or fluorescent petroleum inclusions.",
+};
+for (const p of pages) {
+  const k = p.title.toLowerCase();
+  const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
+  const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
+}
 const card = (p) => ({ style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
@@ -288,8 +332,15 @@ const starStones = grp("star", ["Star quartz"]);
 const catsEyes = grp("cats-eye", ["Cat's eye", "Cat's-Eye Moonstone", "Tiger's Eye", "Hawk's Eye", "Albite cat’s-eye"]);
 const obsidians = grp("obsidian", ["Obsidian", "Snowflake Obsidian", "Apache tears", "Mahogany Obsidian", "Rainbow Obsidian"]);
 const moonstones = grp("moonstone", ["Moonstone", "Adularia", "Albite Moonstone", "Star Moonstone"]);
-for (const [fam, label, list] of [["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
-  for (const c of list) { const p = pages.find((x) => x.url === c.url); if (p) p.family = { label, cards: list.filter((x) => x.url !== c.url) }; }
+const calcites = grp("calcite", ["Calcite", "Iceland spar", "Manganoan calcite", "Cobaltocalcite", "Nailhead spar", "Calcite Geode"]);
+const opals = grp("opal", ["Opal", "Precious Opal", "Fire Opal", "Hyalite", "Opalized Fossil"]);
+const aragonites = grp("aragonite", ["Aragonite", "Caribbean Blue Calcite", "Nacre", "Pearl"]);
+const halites = grp("halite", ["Halite", "Sylvite"]);
+const ambers = grp("amber", ["Amber", "Amber with Inclusions"]);
+const apophyllites = grp("apophyllite", ["Apophyllite", "Fluorapophyllite-(K)", "Fluorapophyllite-(Na)", "Fluorapophyllite-(NH₄)", "Fluorapophyllite-(Cs)", "Hydroxyapophyllite-(K)", "Hydroxyapophyllite-(NH₄)", "Stilbite"]);
+const desertRoses = grp("desert-rose", ["Desert rose", "Barite Rose", "Selenite"]);
+for (const [fam, label, list] of [["calcite", "Calcite family", calcites], ["opal", "Opal family", opals], ["aragonite", "Aragonite family", aragonites], ["halite", "Halite family", halites], ["amber", "Amber family", ambers], ["apophyllite", "Apophyllite family", apophyllites], ["desert-rose", "Desert rose forms", desertRoses], ["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
+  for (const c of list) { const p = pages.find((x) => x.url === c.url); if (p && !p.family) p.family = { label, cards: list.filter((x) => x.url !== c.url) }; }
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
@@ -359,4 +410,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };

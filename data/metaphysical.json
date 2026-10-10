@@ -5927,5 +5927,1129 @@
   ],
   "wikidata": null,
   "slug": "calamites"
+ },
+ {
+  "name": "Pyrite Sun",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "A flat golden sunburst of pyrite, linked in crystal lore to confidence, abundance and personal power.",
+  "uses": [
+   "confidence",
+   "abundance",
+   "willpower"
+  ],
+  "wikidata": null,
+  "parent": "Q50769",
+  "slug": "pyrite-sun"
+ },
+ {
+  "name": "Honey Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Warm honey calcite is linked in lore to confidence, motivation and steady effort.",
+  "uses": [
+   "confidence",
+   "motivation",
+   "persistence"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "honey-calcite"
+ },
+ {
+  "name": "Orange Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Sacral"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Leo"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Bright orange calcite is a crystal-shop favourite for creativity, playfulness and joy.",
+  "uses": [
+   "creativity",
+   "joy",
+   "motivation"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "orange-calcite"
+ },
+ {
+  "name": "Blue Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Soft blue calcite is linked in lore to calm, soothing communication and rest.",
+  "uses": [
+   "calm",
+   "communication",
+   "rest"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "blue-calcite"
+ },
+ {
+  "name": "Green Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Green calcite is tied in lore to renewal, emotional balance and fresh starts.",
+  "uses": [
+   "renewal",
+   "balance",
+   "fresh starts"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "green-calcite"
+ },
+ {
+  "name": "Mango Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Peachy mango calcite is linked in lore to gentle joy, self-love and emotional healing.",
+  "uses": [
+   "gentle joy",
+   "self-love",
+   "emotional healing"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "mango-calcite"
+ },
+ {
+  "name": "Red Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Aries"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Red calcite is linked in lore to vitality, courage and grounded energy.",
+  "uses": [
+   "vitality",
+   "courage",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "red-calcite"
+ },
+ {
+  "name": "Lemon Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Air"
+  ],
+  "meaning": "Sunny lemon (yellow) calcite is linked in lore to optimism, clear thinking and willpower.",
+  "uses": [
+   "optimism",
+   "clarity",
+   "willpower"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "lemon-calcite"
+ },
+ {
+  "name": "Black Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Dark calcite is associated in lore with grounding, protection and emotional release.",
+  "uses": [
+   "grounding",
+   "protection",
+   "release"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "black-calcite"
+ },
+ {
+  "name": "Caribbean Blue Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Calm-blue 'Caribbean' calcite is linked in lore to peace, calm and gentle communication.",
+  "uses": [
+   "peace",
+   "calm",
+   "communication"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "caribbean-blue-calcite"
+ },
+ {
+  "name": "Dogtooth Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Fire",
+   "Air"
+  ],
+  "meaning": "Sharp 'dogtooth' calcite is linked in lore to focus, determination and amplified intention.",
+  "uses": [
+   "focus",
+   "determination",
+   "amplification"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "dogtooth-calcite"
+ },
+ {
+  "name": "Stellar Beam Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Fire",
+   "Spirit"
+  ],
+  "meaning": "Long, double-pointed 'stellar beam' calcite is linked in lore to spiritual connection and higher insight.",
+  "uses": [
+   "spiritual connection",
+   "insight",
+   "clarity"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "stellar-beam-calcite"
+ },
+ {
+  "name": "Merkabite Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Spirit",
+   "Air"
+  ],
+  "meaning": "'Merkabite' is a trade name for white calcite with stepped crystal tops. Crystal lore links it to higher consciousness and spiritual journeys.",
+  "uses": [
+   "meditation",
+   "spiritual connection",
+   "clarity"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "merkabite-calcite"
+ },
+ {
+  "name": "Rainbow Calcite",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Air",
+   "Water"
+  ],
+  "meaning": "Clear rhomboid calcite with internal rainbows is linked in lore to clarity, hope and joy.",
+  "uses": [
+   "clarity",
+   "hope",
+   "joy"
+  ],
+  "wikidata": null,
+  "parent": "Q171917",
+  "slug": "rainbow-calcite"
+ },
+ {
+  "name": "Satin Spar",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Taurus"
+  ],
+  "elements": [
+   "Air"
+  ],
+  "meaning": "Silky satin spar is often sold as 'selenite'. Crystal lore links it to calm, peace and cleansing.",
+  "uses": [
+   "calm",
+   "peace",
+   "cleansing"
+  ],
+  "wikidata": null,
+  "parent": "Q82658",
+  "slug": "satin-spar"
+ },
+ {
+  "name": "Black Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Scorpio"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Australia's national gemstone is linked in lore to protection and to drawing out one's hidden potential.",
+  "uses": [
+   "protection",
+   "potential",
+   "emotional depth"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "black-opal"
+ },
+ {
+  "name": "White Opal",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Light opal is linked in lore to joy, creativity and gentle optimism.",
+  "uses": [
+   "joy",
+   "creativity",
+   "optimism"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "white-opal"
+ },
+ {
+  "name": "Boulder Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Opal veins in ironstone are linked in lore to grounding, strength and steady creativity.",
+  "uses": [
+   "grounding",
+   "strength",
+   "creativity"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "boulder-opal"
+ },
+ {
+  "name": "Crystal Opal",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Transparent crystal opal is linked in lore to clarity, inspiration and spiritual light.",
+  "uses": [
+   "clarity",
+   "inspiration",
+   "spiritual light"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "crystal-opal"
+ },
+ {
+  "name": "Ethiopian Opal",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Fire"
+  ],
+  "meaning": "Bright Welo opal is linked in lore to creativity, passion and emotional expression.",
+  "uses": [
+   "creativity",
+   "passion",
+   "expression"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "ethiopian-opal"
+ },
+ {
+  "name": "Matrix Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Opal sparkling through its host rock is linked in lore to integration and grounded creativity.",
+  "uses": [
+   "integration",
+   "grounding",
+   "creativity"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "matrix-opal"
+ },
+ {
+  "name": "Common Opal",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Common opal (potch) is linked in lore to calm emotions and gentle comfort.",
+  "uses": [
+   "calm",
+   "comfort",
+   "emotional balance"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "common-opal"
+ },
+ {
+  "name": "Pink Opal",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Peruvian pink opal is linked in lore to gentle love, peace and emotional healing.",
+  "uses": [
+   "gentle love",
+   "peace",
+   "emotional healing"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "pink-opal"
+ },
+ {
+  "name": "Blue Opal",
+  "kind": "variety",
+  "chakras": [
+   "Throat"
+  ],
+  "zodiac": [
+   "Libra",
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Andean blue opal is linked in lore to calm communication and soothing peace.",
+  "uses": [
+   "communication",
+   "calm",
+   "peace"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "blue-opal"
+ },
+ {
+  "name": "Green Opal",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Green and prase opal are linked in lore to renewal, growth and heart healing.",
+  "uses": [
+   "renewal",
+   "growth",
+   "heart healing"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "green-opal"
+ },
+ {
+  "name": "Dendritic Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Opal with fern-like dendrites (moss opal) is linked in lore to growth and connection to nature.",
+  "uses": [
+   "growth",
+   "nature",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "dendritic-opal"
+ },
+ {
+  "name": "Wood Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Libra",
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Opalized wood is linked in lore to patience, stability and ancient wisdom.",
+  "uses": [
+   "patience",
+   "stability",
+   "ancient wisdom"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "wood-opal"
+ },
+ {
+  "name": "Chocolate Opal",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Brown-bodied 'chocolate' opal is linked in lore to grounding and warmth.",
+  "uses": [
+   "grounding",
+   "warmth",
+   "comfort"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "chocolate-opal"
+ },
+ {
+  "name": "Honey Opal",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Golden honey opal is linked in lore to warmth, joy and confidence.",
+  "uses": [
+   "warmth",
+   "joy",
+   "confidence"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "honey-opal"
+ },
+ {
+  "name": "Virgin Valley Opal",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Nevada's state precious gem is linked in lore to inspiration and transformation.",
+  "uses": [
+   "inspiration",
+   "transformation",
+   "clarity"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "virgin-valley-opal"
+ },
+ {
+  "name": "Opalite",
+  "kind": "glass",
+  "chakras": [
+   "Crown",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "A man-made glass, not a natural stone. Crystal shops nevertheless associate it with calm transitions and communication.",
+  "uses": [
+   "calm",
+   "transitions",
+   "communication"
+  ],
+  "wikidata": null,
+  "slug": "opalite"
+ },
+ {
+  "name": "Synthetic Opal",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Lab-grown opal shares opal's traditional associations with creativity in crystal lore.",
+  "uses": [
+   "creativity",
+   "inspiration",
+   "expression"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "synthetic-opal"
+ },
+ {
+  "name": "Opal Doublet & Triplet",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Assembled opals carry opal's lore of creativity and joy.",
+  "uses": [
+   "creativity",
+   "joy",
+   "expression"
+  ],
+  "wikidata": null,
+  "parent": "Q171058",
+  "slug": "opal-doublet-&-triplet"
+ },
+ {
+  "name": "Aragonite Sputnik",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Spiky 'sputnik' clusters are linked in lore to grounding, stability and patience.",
+  "uses": [
+   "grounding",
+   "stability",
+   "patience"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "aragonite-sputnik"
+ },
+ {
+  "name": "Blue Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Heart"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Soft blue aragonite is linked in lore to calm communication and emotional soothing.",
+  "uses": [
+   "communication",
+   "calm",
+   "soothing"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "blue-aragonite"
+ },
+ {
+  "name": "Flos Ferri",
+  "kind": "variety",
+  "chakras": [
+   "Crown"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Air",
+   "Spirit"
+  ],
+  "meaning": "Snow-white coral-like flos ferri ('flower of iron') is linked in lore to purity, calm and spiritual uplift.",
+  "uses": [
+   "calm",
+   "purity",
+   "spiritual uplift"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "flos-ferri"
+ },
+ {
+  "name": "Cave Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Coralloid cave aragonite is linked in lore to patience and earth connection.",
+  "uses": [
+   "patience",
+   "earth connection",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "cave-aragonite"
+ },
+ {
+  "name": "Twinned Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Spain's six-sided twinned aragonite is linked in lore to balance, focus and grounded strength.",
+  "uses": [
+   "balance",
+   "focus",
+   "strength"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "twinned-aragonite"
+ },
+ {
+  "name": "Brown Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Earthy Moroccan aragonite is linked in lore to grounding, stability and emotional resilience.",
+  "uses": [
+   "grounding",
+   "stability",
+   "resilience"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "brown-aragonite"
+ },
+ {
+  "name": "Yellow Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Fire"
+  ],
+  "meaning": "Yellow aragonite is linked in lore to confidence, optimism and warmth.",
+  "uses": [
+   "confidence",
+   "optimism",
+   "warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "yellow-aragonite"
+ },
+ {
+  "name": "Banded Aragonite",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Capricorn"
+  ],
+  "elements": [
+   "Earth",
+   "Water"
+  ],
+  "meaning": "Banded 'aragonite onyx' is linked in lore to calm, patience and steady progress.",
+  "uses": [
+   "calm",
+   "patience",
+   "steady progress"
+  ],
+  "wikidata": null,
+  "parent": "Q23775",
+  "slug": "banded-aragonite"
+ },
+ {
+  "name": "Barite Rose",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Crown"
+  ],
+  "zodiac": [
+   "Aquarius"
+  ],
+  "elements": [
+   "Earth",
+   "Air"
+  ],
+  "meaning": "Oklahoma's rose rock is linked in Cherokee legend and crystal lore to remembrance, healing and resilience.",
+  "uses": [
+   "remembrance",
+   "resilience",
+   "friendship"
+  ],
+  "wikidata": null,
+  "parent": "Q184196",
+  "slug": "barite-rose"
+ },
+ {
+  "name": "Pink Halite",
+  "kind": "variety",
+  "chakras": [
+   "Heart"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water",
+   "Earth"
+  ],
+  "meaning": "Pink salt crystals are linked in lore to cleansing, self-love and emotional release.",
+  "uses": [
+   "cleansing",
+   "self-love",
+   "release"
+  ],
+  "wikidata": null,
+  "parent": "Q5314",
+  "slug": "pink-halite"
+ },
+ {
+  "name": "Blue Halite",
+  "kind": "variety",
+  "chakras": [
+   "Throat",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Cancer"
+  ],
+  "elements": [
+   "Water"
+  ],
+  "meaning": "Rare blue halite is linked in lore to calm, intuition and clear communication.",
+  "uses": [
+   "calm",
+   "intuition",
+   "communication"
+  ],
+  "wikidata": null,
+  "parent": "Q5314",
+  "slug": "blue-halite"
+ },
+ {
+  "name": "Petroleum Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Scorpio"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Quartz with trapped oil droplets is linked in lore to transformation, insight and releasing old patterns.",
+  "uses": [
+   "transformation",
+   "insight",
+   "release"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "petroleum-quartz"
+ },
+ {
+  "name": "Blue Amber",
+  "kind": "organic",
+  "chakras": [
+   "Throat",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Water"
+  ],
+  "meaning": "Rare Dominican blue amber is linked in lore to calm, creativity and emotional warmth.",
+  "uses": [
+   "calm",
+   "creativity",
+   "warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q25381",
+  "slug": "blue-amber"
+ },
+ {
+  "name": "Baltic Amber",
+  "kind": "organic",
+  "chakras": [
+   "Sacral",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aquarius"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Baltic amber is a traditional teething charm and protective amulet in folklore, linked in lore to warmth and calm.",
+  "uses": [
+   "warmth",
+   "calm",
+   "protection"
+  ],
+  "wikidata": null,
+  "parent": "Q25381",
+  "slug": "baltic-amber"
+ },
+ {
+  "name": "Copal",
+  "kind": "organic",
+  "chakras": [
+   "Sacral",
+   "Crown"
+  ],
+  "zodiac": [
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Air"
+  ],
+  "meaning": "Copal resin, burned as incense in Mesoamerica for centuries, is linked with cleansing and spiritual offering.",
+  "uses": [
+   "cleansing",
+   "spiritual offering",
+   "warmth"
+  ],
+  "wikidata": null,
+  "parent": "Q25381",
+  "slug": "copal"
  }
 ]

@@ -15,6 +15,45 @@
     if (!saved) { root.dataset.theme = e.matches ? "dark" : "light"; icon(); }
   });
 
+  // --- holo: sheen follows pointer / scroll / device tilt (CSS reads --hx/--hy) ---
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (document.body.classList.contains("holo") && !reduce) {
+    const set = (x, y) => { document.body.style.setProperty("--hx", (x * 100).toFixed(1) + "%"); document.body.style.setProperty("--hy", (y * 100).toFixed(1) + "%"); };
+    addEventListener("pointermove", (e) => set(e.clientX / innerWidth, e.clientY / innerHeight), { passive: true });
+    addEventListener("scroll", () => set(0.5, 0.2 + 0.6 * (scrollY / Math.max(1, document.body.scrollHeight - innerHeight))), { passive: true });
+    addEventListener("deviceorientation", (e) => { if (e.gamma != null) set(0.5 + e.gamma / 90, 0.5 + (e.beta - 45) / 90); }, { passive: true });
+  }
+  // --- sparkle frame: twinkles concentrated along the viewport edges, tinted with the stone's colours ---
+  if (!reduce) {
+    const fc = document.createElement("canvas"); fc.id = "sparkle-frame"; fc.setAttribute("aria-hidden", "true"); document.body.appendChild(fc);
+    const fx = fc.getContext("2d"); let FW, FH, fd, fp = [];
+    const cs = getComputedStyle(document.body);
+    const tints = ["--c1", "--c2", "--c3", "--stone"].map((v) => cs.getPropertyValue(v).trim()).filter(Boolean);
+    if (!tints.length) tints.push("#c9a7ff", "#7fd8ff", "#ffd36a");
+    const band = () => Math.min(56, Math.max(26, innerWidth * 0.035));
+    const place = (p) => { const b = band(), e = Math.floor(Math.random() * 4), d = Math.random() ** 1.8 * b;
+      if (e === 0) { p.x = Math.random() * FW; p.y = d; } else if (e === 1) { p.x = Math.random() * FW; p.y = FH - d; }
+      else if (e === 2) { p.x = d; p.y = Math.random() * FH; } else { p.x = FW - d; p.y = Math.random() * FH; } };
+    const fsize = () => { fd = Math.min(devicePixelRatio || 1, 2); FW = innerWidth; FH = innerHeight; fc.width = FW * fd; fc.height = FH * fd; fx.setTransform(fd, 0, 0, fd, 0, 0);
+      const n = Math.round(Math.min(90, Math.max(36, (FW + FH) / 28)));
+      fp = Array.from({ length: n }, () => { const p = { r: 0.8 + Math.random() * 2.2, ph: Math.random() * 6.28, sp: 0.5 + Math.random() * 1.6, c: tints[Math.floor(Math.random() * tints.length)], life: 0 }; place(p); return p; }); };
+    fsize(); addEventListener("resize", fsize);
+    let fl = 0, frun = !document.hidden;
+    const draw = (t) => { if (!frun) return; requestAnimationFrame(draw); if (t - fl < 45) return; fl = t; fx.clearRect(0, 0, FW, FH);
+      const dark = root.dataset.theme === "dark", b = band();
+      // faint shimmering frame line
+      const g = fx.createLinearGradient(0, 0, FW, FH); tints.forEach((c, i) => g.addColorStop(i / Math.max(1, tints.length - 1), c));
+      fx.globalAlpha = (dark ? 0.22 : 0.16) + 0.06 * Math.sin(t / 1400); fx.strokeStyle = g; fx.lineWidth = 2; fx.strokeRect(3, 3, FW - 6, FH - 6);
+      for (const p of fp) { const a = Math.max(0, Math.sin(t / 1000 * p.sp + p.ph)) ** 4;
+        if (a < 0.02) { if (Math.random() < 0.01) place(p); continue; }
+        fx.globalAlpha = a * (dark ? 0.95 : 0.8); fx.fillStyle = p.c; const r = p.r * (0.7 + a);
+        fx.beginPath(); fx.moveTo(p.x, p.y - r * 2.6); fx.quadraticCurveTo(p.x, p.y, p.x + r * 2.6, p.y); fx.quadraticCurveTo(p.x, p.y, p.x, p.y + r * 2.6);
+        fx.quadraticCurveTo(p.x, p.y, p.x - r * 2.6, p.y); fx.quadraticCurveTo(p.x, p.y, p.x, p.y - r * 2.6); fx.fill();
+        fx.globalAlpha = a * 0.7; fx.fillStyle = "#fff"; fx.beginPath(); fx.arc(p.x, p.y, r * 0.6, 0, 6.283); fx.fill(); }
+      fx.globalAlpha = 1; };
+    requestAnimationFrame(draw);
+    document.addEventListener("visibilitychange", () => { frun = !document.hidden; if (frun) requestAnimationFrame(draw); });
+  }
   // --- glitter: a few twinkling 4-point sparkles on a fixed canvas behind content ---
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const cv = document.createElement("canvas");
