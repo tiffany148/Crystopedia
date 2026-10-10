@@ -96,3 +96,7 @@
   requestAnimationFrame(frame);
   document.addEventListener("visibilitychange", () => { running = !document.hidden; if (running) requestAnimationFrame(frame); });
 })();
+
+// stone pattern: slow parallax (pattern drifts at ~6% of scroll), off under reduced motion
+(()=>{const el=document.getElementById("stone-pattern");if(!el||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+let t=0;addEventListener("scroll",()=>{if(t)return;t=requestAnimationFrame(()=>{t=0;el.style.setProperty("--pat-y",(-scrollY*.06).toFixed(1)+"px")})},{passive:true})})();

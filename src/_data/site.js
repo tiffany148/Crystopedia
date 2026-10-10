@@ -1,4 +1,5 @@
 // Builds every collection the templates need from data/minerals.json + data/metaphysical.json
+import { patternFor } from "../../lib/patterns.js";
 import fs from "node:fs";
 import path from "node:path";
 import { pickColor, paletteFor, CURATED, MULTI } from "../../lib/palette.js";
@@ -176,6 +177,7 @@ const paint = (p) => {
   const c = pickColor({ name: p.name, colors: p.colors, elements: p.elements, parentBase: parentBase && parentBase !== "#b9b4e6" ? parentBase : null });
   colorOf.set(p, c); return c;
 };
+for (const p of pages) p.pattern = patternFor(p.title + " " + (p.metaphysical?.[0]?.name || ""), (p.crystalSystems || [])[0]);
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 

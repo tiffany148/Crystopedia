@@ -485,3 +485,17 @@ body.holo .stone-hero{background-image:linear-gradient(120deg,transparent 20%,rg
 /* ---- sparkle frame canvas ---- */
 #sparkle-frame{position:fixed;inset:0;pointer-events:none;z-index:40}
 .tile.t14{background:linear-gradient(135deg,#2a1a3a,#8e5bb8 45%,#e0607e 75%,#1e8a4a)}
+
+/* ---- Stone pattern layer: natural pattern over the gradient, behind frosted panels ---- */
+#stone-pattern{position:fixed;inset:-8vh -4vw;z-index:0;pointer-events:none;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--c1,#555) 70%,#000),color-mix(in srgb,var(--c2,#555) 60%,#000) 60%,color-mix(in srgb,var(--c3,#555) 70%,#000));
+  -webkit-mask:var(--pat) var(--pat-pos,0 0)/var(--pat-size,480px) var(--pat-rep,repeat);mask:var(--pat) var(--pat-pos,0 0)/var(--pat-size,480px) var(--pat-rep,repeat);
+  opacity:.2;
+  transform:translate3d(0,var(--pat-y,0px),0);will-change:transform;animation:pat-shimmer 14s ease-in-out infinite alternate}
+html[data-theme=dark] #stone-pattern{opacity:.2;background:linear-gradient(135deg,color-mix(in srgb,var(--c3,#fff) 45%,#fff),color-mix(in srgb,var(--c1,#fff) 40%,#fff))}
+@keyframes pat-shimmer{from{opacity:.24}to{opacity:.36}}
+html[data-theme=dark] #stone-pattern{animation-name:pat-shimmer-dk}
+@keyframes pat-shimmer-dk{from{opacity:.18}to{opacity:.3}}
+@media (prefers-reduced-motion:reduce){#stone-pattern{animation:none;transform:none}}
+@media print{#stone-pattern{display:none}}
+body.stone-page>main,body.stone-page>footer{position:relative;z-index:1}
