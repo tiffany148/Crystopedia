@@ -11,7 +11,7 @@ description: "Arkansas quartz, Crater of Diamonds, novaculite, bauxite, wavellit
 </div>
 <section class="where-found ark-map">
   <h2>🗺 Arkansas sites</h2>
-  <div class="stone-map" data-points="{{ site.arkansas.mapPoints | safe }}" role="img" aria-label="Map of Arkansas rock and fossil sites"><noscript>Map needs JavaScript.</noscript></div>
+  <div class="stone-map" data-maxzoom="8" data-points="{{ site.arkansas.mapPoints | safe }}" role="img" aria-label="Map of Arkansas rock and fossil sites"><noscript>Map needs JavaScript.</noscript></div>
   <ul class="ark-sites">{% for s in site.arkansas.sites %}<li><strong>{{ s.n }}</strong>: {{ s.note }}</li>{% endfor %}</ul>
 </section>
 {% for sec in site.arkansas.sections %}

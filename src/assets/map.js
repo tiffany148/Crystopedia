@@ -33,7 +33,7 @@
     });
     const group = L.featureGroup(markers).addTo(map);
     if (pts.length === 1) map.setView([pts[0].la, pts[0].lo], 4);
-    else map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 5 });
+    else map.fitBounds(group.getBounds().pad(0.3), { maxZoom: +(el.dataset.maxzoom || 5) });
   };
   const start = () => load().then(draw).catch(() => { el.textContent = "Map could not be loaded."; });
   if ("IntersectionObserver" in window) {

@@ -450,3 +450,6 @@ html[data-theme=dark] .badge.hz{color:#1a0d00}
 .tile.t13{background:linear-gradient(135deg,#5a0f1e,#9b2335 50%,#e8eef4)}
 .ark-sites{columns:2;gap:2rem;font-size:.92rem}@media(max-width:700px){.ark-sites{columns:1}}
 .ark-dino{margin:2rem 0;padding:1rem 1.3rem;border-radius:22px;background:color-mix(in srgb,var(--card) 70%,transparent);border:1px solid var(--line);backdrop-filter:blur(14px) saturate(1.4)}
+
+@media (min-width:761px) and (max-width:1440px){.brand span{display:none}.nav a{padding:5px 8px;font-size:.8rem}.nav{gap:2px}}
+@media (min-width:761px) and (max-width:1180px){.nav{flex-wrap:wrap;row-gap:4px}}
