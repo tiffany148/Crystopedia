@@ -343,4 +343,6 @@ ENTRIES = [
 ("Red Moonstone","red moonstone","variety",[R,S],["Aries", "Cancer"],[F,W],"Sold as 'red moonstone', it is linked in modern crystal lore to passion, vitality and warm emotional energy.",["passion", "vitality", "emotional warmth"]),
 ("Druzy Fossil Shell","druzy fossil shell","variety",[R,C],["Cancer", "Capricorn"],[W,E_],"Fossil clams lined with sparkling crystals are linked in lore to transformation, patience and hidden beauty.",["transformation", "patience", "hidden beauty"]),
 ("Record Keeper Quartz","record keeper quartz","variety",[C,E],["Aries"],[SP,A],"In crystal lore, 'record keepers' are quartz crystals with raised triangles on their faces, traditionally said to hold ancient wisdom.",["meditation", "ancient wisdom", "insight"]),
+# --- leopard skin jasper ---
+("Leopard Skin Jasper","leopard skin jasper","variety",[R,H],["Gemini", "Virgo"],[E_],"Spotted leopard skin jasper is linked in crystal lore to grounding, stamina and connection with animal spirits.",["grounding", "stamina", "animal connection"]),
 ]

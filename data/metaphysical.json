@@ -7439,5 +7439,29 @@
   "wikidata": null,
   "parent": "Q43010",
   "slug": "record-keeper-quartz"
+ },
+ {
+  "name": "Leopard Skin Jasper",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Heart"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Earth"
+  ],
+  "meaning": "Spotted leopard skin jasper is linked in crystal lore to grounding, stamina and connection with animal spirits.",
+  "uses": [
+   "grounding",
+   "stamina",
+   "animal connection"
+  ],
+  "wikidata": null,
+  "parent": "Q201175",
+  "slug": "leopard-skin-jasper"
  }
 ]

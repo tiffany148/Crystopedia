@@ -244,6 +244,14 @@ const SEE_ALSO = {
   }
 }
 // --- colour families (Wikidata colour words + curated palettes + gradient stops) ------------
+// audited colour corrections for popular stones (known colours / Tiffany's photos)
+const COLOR_FIX = {
+  "wavellite": { set: ["green", "yellow", "white-clear"] }, "zebra jasper": { set: ["black", "white-clear"] },
+  "leopard skin jasper": { set: ["brown", "pink", "black"] }, "dalmatian jasper": { add: ["black"] },
+  "ammonite": { add: ["brown"] }, "desert rose": { set: ["brown", "white-clear"] }, "barite rose": { set: ["brown", "orange"] },
+  "picture jasper": { add: ["brown"] }, "tanzanite": { add: ["purple"] }, "labradorite": { add: ["gray"] },
+  "scolecite": { set: ["white-clear"] }, "celestine": { set: ["blue", "white-clear", "gray"] },
+};
 const NAME_COLOR_WORDS = new Set(["red", "pink", "rose", "blue", "green", "yellow", "golden", "gold", "black", "white", "purple", "orange", "smoky", "clear", "rainbow", "honey", "lavender", "violet", "snow", "lemon", "grey", "gray", "silver", "brown"]);
 const MULTI_NAME = /\b(opal|rainbow|iridescent|labradorite|spectrolite|bismuth|ammolite|abalone|bornite|aura|mystic|peacock|fire agate|ocean jasper|unakite)\b/i;
 for (const p of pages) {
@@ -261,6 +269,8 @@ for (const p of pages) {
     if (new Set([...sf].map((f) => GROUP[f]).filter(Boolean)).size >= 3) fams.add("multicolor");
   }
   if (MULTI_NAME.test([p.name, ...p.metaphysical.map((e) => e.name)].join(" "))) fams.add("multicolor");
+  const fix = COLOR_FIX[p.title.toLowerCase()];
+  if (fix) { if (fix.set) { fams.clear(); fix.set.forEach((f) => fams.add(f)); } (fix.add || []).forEach((f) => fams.add(f)); (fix.drop || []).forEach((f) => fams.delete(f)); }
   p.colorFamilies = FAMILIES.filter((f) => fams.has(f.slug)).map((f) => ({ slug: f.slug, label: f.label, hex: f.hex }));
 }
 
