@@ -1,0 +1,1297 @@
+{
+ "Agate Geode": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz) shell, crystal-lined",
+  "approx": true
+ },
+ "Amazonite": {
+  "f": "KAlSi3O8",
+  "note": "green microcline (K-feldspar), Pb/H2O colour centres",
+  "approx": false
+ },
+ "Amber with Inclusions": {
+  "f": "C10H16O",
+  "note": "fossil tree resin (organic), approximate",
+  "approx": true
+ },
+ "Amethyst Geode": {
+  "f": "SiO2",
+  "note": "amethyst quartz in a chalcedony rind",
+  "approx": true
+ },
+ "Amethyst Stalactite": {
+  "f": "SiO2",
+  "note": "amethyst quartz over a chalcedony core",
+  "approx": true
+ },
+ "Ametrine": {
+  "f": "SiO2",
+  "note": "quartz (amethyst + citrine zones)",
+  "approx": false
+ },
+ "Ammolite": {
+  "f": "CaCO3",
+  "note": "aragonite nacre of ammonite shell",
+  "approx": false
+ },
+ "Ammonite": {
+  "f": "CaCO3",
+  "note": "aragonite/calcite shell, often replaced by pyrite or silica (fossil)",
+  "approx": true
+ },
+ "Anyolite": {
+  "f": "Ca2Al3(SiO4)(Si2O7)O(OH) + Al2O3",
+  "note": "green zoisite with ruby corundum (rock)",
+  "approx": true
+ },
+ "Apache tears": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass (obsidian)",
+  "approx": true
+ },
+ "Apatite": {
+  "f": "Ca5(PO4)3(F,Cl,OH)",
+  "note": "apatite group",
+  "approx": false
+ },
+ "Apophyllite": {
+  "f": "KCa4Si8O20(F,OH)·8H2O",
+  "note": "fluorapophyllite-(K)",
+  "approx": false
+ },
+ "Apophyllite Stalactite": {
+  "f": "KCa4Si8O20(F,OH)·8H2O + SiO2",
+  "note": "apophyllite on a chalcedony core",
+  "approx": true
+ },
+ "Aragonite Sputnik": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Arkansas Quartz": {
+  "f": "SiO2",
+  "note": "quartz",
+  "approx": false
+ },
+ "Aventurine": {
+  "f": "SiO2 + KAl2(AlSi3O10)(OH)2",
+  "note": "quartz with fuchsite/mica platelets (rock)",
+  "approx": true
+ },
+ "Baltic Amber": {
+  "f": "C10H16O",
+  "note": "succinite fossil resin (organic), approximate",
+  "approx": true
+ },
+ "Banded Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Barite Rose": {
+  "f": "BaSO4",
+  "note": "barite (with sand/iron oxide grains)",
+  "approx": false
+ },
+ "Bauxite": {
+  "f": "Al(OH)3 + AlO(OH)",
+  "note": "gibbsite, boehmite, diaspore + iron oxides (rock)",
+  "approx": true
+ },
+ "Benitoite": {
+  "f": "BaTiSi3O9",
+  "note": "benitoite",
+  "approx": false
+ },
+ "Bismuth": {
+  "f": "Bi",
+  "note": "native bismuth (lab-grown crystals oxidise iridescent)",
+  "approx": false
+ },
+ "Black Calcite": {
+  "f": "CaCO3",
+  "note": "calcite with carbon/manganese inclusions",
+  "approx": false
+ },
+ "Black Moonstone": {
+  "f": "KAlSi3O8 / (Na,Ca)Al(Si,Al)3O8",
+  "note": "feldspar with dark inclusions",
+  "approx": true
+ },
+ "Black Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal, dark body",
+  "approx": false
+ },
+ "Black Star Sapphire": {
+  "f": "Al2O3",
+  "note": "corundum with hematite/ilmenite/rutile needles",
+  "approx": false
+ },
+ "Blastoid": {
+  "f": "CaCO3",
+  "note": "calcite plates (fossil)",
+  "approx": true
+ },
+ "Blue Amber": {
+  "f": "C10H16O",
+  "note": "fossil resin (organic), approximate",
+  "approx": true
+ },
+ "Blue Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite, Cu-bearing",
+  "approx": false
+ },
+ "Blue Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Blue Chalcedony": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz",
+  "approx": false
+ },
+ "Blue Halite": {
+  "f": "NaCl",
+  "note": "halite (colour from lattice defects)",
+  "approx": false
+ },
+ "Blue lace agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Blue Moonstone": {
+  "f": "KAlSi3O8 + NaAlSi3O8",
+  "note": "adularia with albite lamellae",
+  "approx": false
+ },
+ "Blue Opal": {
+  "f": "SiO2·nH2O",
+  "note": "common opal, Cu-coloured (often with chrysocolla)",
+  "approx": false
+ },
+ "Blue Topaz": {
+  "f": "Al2SiO4(F,OH)2",
+  "note": "topaz",
+  "approx": false
+ },
+ "Botswana agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Boulder Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal in ironstone",
+  "approx": false
+ },
+ "Brachiopod": {
+  "f": "CaCO3",
+  "note": "calcite shell (fossil)",
+  "approx": true
+ },
+ "Bronzite": {
+  "f": "(Mg,Fe)SiO3",
+  "note": "Fe-bearing enstatite",
+  "approx": false
+ },
+ "Brown Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite, Fe-tinted",
+  "approx": false
+ },
+ "Calamites": {
+  "f": "SiO2 + C",
+  "note": "sandstone/shale cast with carbon film (fossil)",
+  "approx": true
+ },
+ "Calcite Geode": {
+  "f": "CaCO3 + SiO2",
+  "note": "calcite crystals in a chalcedony shell",
+  "approx": true
+ },
+ "Calcite Stalactite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Caribbean Blue Calcite": {
+  "f": "CaCO3",
+  "note": "calcite + aragonite with blue Cu minerals (rock)",
+  "approx": true
+ },
+ "Carnelian": {
+  "f": "SiO2",
+  "note": "chalcedony coloured by iron oxides",
+  "approx": false
+ },
+ "Cat's-Eye Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "orthoclase feldspar",
+  "approx": false
+ },
+ "Cavansite": {
+  "f": "Ca(VO)Si4O10·4H2O",
+  "note": "cavansite",
+  "approx": false
+ },
+ "Cave Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Celestite Geode": {
+  "f": "SrSO4",
+  "note": "celestine in a limestone nodule",
+  "approx": false
+ },
+ "Chain Coral": {
+  "f": "CaCO3",
+  "note": "calcite, often silicified (fossil)",
+  "approx": true
+ },
+ "Chalcedony": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz",
+  "approx": false
+ },
+ "Chalcedony Stalactite": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz",
+  "approx": false
+ },
+ "Charlevoix Stone": {
+  "f": "CaCO3",
+  "note": "calcite-replaced coral (fossil)",
+  "approx": true
+ },
+ "Chiastolite": {
+  "f": "Al2SiO5",
+  "note": "andalusite with carbon cross",
+  "approx": false
+ },
+ "Chocolate Opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal",
+  "approx": false
+ },
+ "Chrysanthemum stone": {
+  "f": "SrSO4 / CaCO3 in CaMg(CO3)2",
+  "note": "celestine or calcite \"petals\" in dolomitic limestone",
+  "approx": true
+ },
+ "Chrysoprase": {
+  "f": "SiO2",
+  "note": "chalcedony, Ni-coloured",
+  "approx": false
+ },
+ "Citrine": {
+  "f": "SiO2",
+  "note": "quartz",
+  "approx": false
+ },
+ "Common Opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal (potch)",
+  "approx": false
+ },
+ "Condor Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Copal": {
+  "f": "C10H16O",
+  "note": "young tree resin (organic), approximate",
+  "approx": true
+ },
+ "Coral": {
+  "f": "CaCO3",
+  "note": "aragonite/calcite skeleton (organic)",
+  "approx": false
+ },
+ "Crazy Lace Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Crinoid": {
+  "f": "CaCO3",
+  "note": "calcite stem plates (fossil)",
+  "approx": true
+ },
+ "Crystal Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal",
+  "approx": false
+ },
+ "Dalmatian Jasper": {
+  "f": "KAlSi3O8 + SiO2 + NaFe(Si2O6)",
+  "note": "feldspar-quartz rock with black aegirine/tourmaline spots",
+  "approx": true
+ },
+ "Dendritic Agate": {
+  "f": "SiO2",
+  "note": "chalcedony with Mn-oxide dendrites",
+  "approx": false
+ },
+ "Dendritic Opal": {
+  "f": "SiO2·nH2O",
+  "note": "common opal with Mn-oxide dendrites",
+  "approx": false
+ },
+ "Desert rose": {
+  "f": "CaSO4·2H2O / BaSO4",
+  "note": "gypsum or barite rosettes with sand",
+  "approx": false
+ },
+ "Dinosaur Bone": {
+  "f": "SiO2",
+  "note": "chalcedony/agate replacing bone (fossil)",
+  "approx": true
+ },
+ "Dogtooth Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Druzy Fossil Shell": {
+  "f": "CaCO3 + SiO2",
+  "note": "shell with drusy quartz/calcite lining (fossil)",
+  "approx": true
+ },
+ "Dryhead Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Emerald": {
+  "f": "Be3Al2Si6O18",
+  "note": "beryl, Cr/V-coloured",
+  "approx": false
+ },
+ "Ethiopian Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious (hydrophane) opal",
+  "approx": false
+ },
+ "Eye Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Fairburn Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Falcon's eye": {
+  "f": "SiO2",
+  "note": "quartz replacing crocidolite (blue tiger's eye)",
+  "approx": false
+ },
+ "Fire agate": {
+  "f": "SiO2",
+  "note": "chalcedony with iron-oxide (limonite) layers",
+  "approx": false
+ },
+ "Fire opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal",
+  "approx": false
+ },
+ "Flos Ferri": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Fortification Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Fossil Brittle Star": {
+  "f": "CaCO3",
+  "note": "calcite plates (fossil)",
+  "approx": true
+ },
+ "Fossil Coral": {
+  "f": "CaCO3",
+  "note": "calcite/aragonite, often agatized (fossil)",
+  "approx": true
+ },
+ "Fossil Gastropod": {
+  "f": "CaCO3",
+  "note": "aragonite/calcite shell (fossil)",
+  "approx": true
+ },
+ "Fossil Sand Dollar": {
+  "f": "CaCO3",
+  "note": "calcite test (fossil)",
+  "approx": true
+ },
+ "Fossil Sea Urchin": {
+  "f": "CaCO3",
+  "note": "calcite test, often flint-filled (fossil)",
+  "approx": true
+ },
+ "Fossil Shark Teeth": {
+  "f": "Ca5(PO4)3F",
+  "note": "fluorapatite enameloid (fossil)",
+  "approx": true
+ },
+ "Fossil Shell": {
+  "f": "CaCO3",
+  "note": "calcite/aragonite shell (fossil)",
+  "approx": true
+ },
+ "Fossil Starfish": {
+  "f": "CaCO3",
+  "note": "calcite plates (fossil)",
+  "approx": true
+ },
+ "Freshwater Mussel Shell": {
+  "f": "CaCO3",
+  "note": "aragonite nacre + conchiolin protein (organic)",
+  "approx": true
+ },
+ "Fuchsite": {
+  "f": "K(Al,Cr)2(AlSi3O10)(OH)2",
+  "note": "chromian muscovite",
+  "approx": false
+ },
+ "Fulgurite": {
+  "f": "SiO2",
+  "note": "lechatelierite (fused silica glass) with sand",
+  "approx": true
+ },
+ "Garnet group": {
+  "f": "X3Y2(SiO4)3",
+  "note": "X = Ca, Mg, Fe, Mn; Y = Al, Fe, Cr (group formula)",
+  "approx": false
+ },
+ "Garnierite": {
+  "f": "(Ni,Mg)3Si2O5(OH)4",
+  "note": "Ni-serpentine/talc mixture",
+  "approx": true
+ },
+ "Geode": {
+  "f": "SiO2",
+  "note": "quartz/chalcedony-lined cavity (rock)",
+  "approx": true
+ },
+ "Gold Sheen Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass",
+  "approx": true
+ },
+ "Goldstone": {
+  "f": "SiO2 + Cu",
+  "note": "man-made glass with copper crystals",
+  "approx": true
+ },
+ "Goshenite": {
+  "f": "Be3Al2Si6O18",
+  "note": "colourless beryl",
+  "approx": false
+ },
+ "Grape Agate": {
+  "f": "SiO2",
+  "note": "botryoidal chalcedony",
+  "approx": false
+ },
+ "Gray Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "orthoclase feldspar",
+  "approx": false
+ },
+ "Green Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Green Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "feldspar",
+  "approx": false
+ },
+ "Green Opal": {
+  "f": "SiO2·nH2O",
+  "note": "common opal (Ni-coloured prase opal)",
+  "approx": false
+ },
+ "Hackmanite": {
+  "f": "Na8Al6Si6O24(Cl,S)2",
+  "note": "S-bearing sodalite",
+  "approx": false
+ },
+ "Heliodor": {
+  "f": "Be3Al2Si6O18",
+  "note": "yellow beryl, Fe-coloured",
+  "approx": false
+ },
+ "Herkimer diamond": {
+  "f": "SiO2",
+  "note": "double-terminated quartz",
+  "approx": false
+ },
+ "Hessonite": {
+  "f": "Ca3Al2(SiO4)3",
+  "note": "grossular garnet",
+  "approx": false
+ },
+ "Hiddenite": {
+  "f": "LiAlSi2O6",
+  "note": "green spodumene",
+  "approx": false
+ },
+ "Honey Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Honey Opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal",
+  "approx": false
+ },
+ "Honeycomb Coral": {
+  "f": "CaCO3",
+  "note": "calcite, often silicified (fossil)",
+  "approx": true
+ },
+ "Horn Coral": {
+  "f": "CaCO3",
+  "note": "calcite skeleton (fossil)",
+  "approx": true
+ },
+ "Hyalite": {
+  "f": "SiO2·nH2O",
+  "note": "opal-AN with trace uranium",
+  "approx": false
+ },
+ "Iceland spar": {
+  "f": "CaCO3",
+  "note": "optical calcite",
+  "approx": false
+ },
+ "Indicolite": {
+  "f": "Na(Li1.5Al1.5)Al6(Si6O18)(BO3)3(OH)3(OH)",
+  "note": "blue elbaite tourmaline",
+  "approx": false
+ },
+ "Indonesian Agatized Coral": {
+  "f": "SiO2",
+  "note": "chalcedony replacing coral (fossil)",
+  "approx": true
+ },
+ "Iolite-Sunstone": {
+  "f": "Mg2Al4Si5O18 + Fe2O3",
+  "note": "cordierite with hematite/feldspar",
+  "approx": true
+ },
+ "Iris Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Jade": {
+  "f": "NaAlSi2O6 / Ca2(Mg,Fe)5Si8O22(OH)2",
+  "note": "jadeite or nephrite (tremolite-actinolite)",
+  "approx": false
+ },
+ "Jasper": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with iron oxides",
+  "approx": true
+ },
+ "Jet": {
+  "f": "C",
+  "note": "lignite coal, mostly carbon (organic)",
+  "approx": true
+ },
+ "K2 Jasper": {
+  "f": "KAlSi3O8 + SiO2 + Cu3(CO3)2(OH)2",
+  "note": "granite with azurite spots (rock)",
+  "approx": true
+ },
+ "Kambaba Jasper": {
+  "f": "SiO2",
+  "note": "chert with fossil stromatolites",
+  "approx": true
+ },
+ "Keokuk Geode": {
+  "f": "SiO2",
+  "note": "chalcedony and quartz (+ calcite, dolomite)",
+  "approx": true
+ },
+ "Kunzite": {
+  "f": "LiAlSi2O6",
+  "note": "pink spodumene, Mn-coloured",
+  "approx": false
+ },
+ "Labradorite": {
+  "f": "(Ca,Na)(Al,Si)4O8",
+  "note": "plagioclase feldspar (An50-70)",
+  "approx": false
+ },
+ "Laguna Agate": {
+  "f": "SiO2",
+  "note": "chalcedony (microcrystalline quartz)",
+  "approx": false
+ },
+ "Lake Superior Agate": {
+  "f": "SiO2",
+  "note": "chalcedony coloured by iron oxides",
+  "approx": false
+ },
+ "Lapis lazuli": {
+  "f": "(Na,Ca)8(AlSiO4)6(SO4,S,Cl)2 + CaCO3 + FeS2",
+  "note": "lazurite + calcite + pyrite (rock)",
+  "approx": true
+ },
+ "Larimar": {
+  "f": "NaCa2Si3O8(OH)",
+  "note": "blue pectolite, Cu-coloured",
+  "approx": false
+ },
+ "Larvikite": {
+  "f": "(Na,K)AlSi3O8",
+  "note": "monzonite rock of ternary feldspar",
+  "approx": true
+ },
+ "Las Choyas Geode": {
+  "f": "SiO2",
+  "note": "chalcedony and quartz in rhyolite",
+  "approx": true
+ },
+ "Lemon Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Leopard Skin Jasper": {
+  "f": "SiO2 + KAlSi3O8",
+  "note": "orbicular rhyolite, often silicified (rock)",
+  "approx": true
+ },
+ "Lepidodendron": {
+  "f": "SiO2 + C",
+  "note": "sandstone/shale with carbon film (fossil)",
+  "approx": true
+ },
+ "Lepidolite": {
+  "f": "K(Li,Al)3(Al,Si,Rb)4O10(F,OH)2",
+  "note": "Li-mica (trilithionite-polylithionite series)",
+  "approx": false
+ },
+ "Libyan desert glass": {
+  "f": "SiO2",
+  "note": "~98% SiO2 natural impact glass",
+  "approx": true
+ },
+ "Lodestone": {
+  "f": "Fe3O4",
+  "note": "naturally magnetised magnetite",
+  "approx": false
+ },
+ "Mahogany Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass with hematite",
+  "approx": true
+ },
+ "Malachite Stalactite": {
+  "f": "Cu2CO3(OH)2",
+  "note": "malachite",
+  "approx": false
+ },
+ "Manganoan calcite": {
+  "f": "(Ca,Mn)CO3",
+  "note": "Mn-bearing calcite",
+  "approx": false
+ },
+ "Mango Calcite": {
+  "f": "(Ca,Mn)CO3",
+  "note": "Mn-bearing calcite",
+  "approx": false
+ },
+ "Matrix Opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal in its host rock",
+  "approx": true
+ },
+ "Megalodon Tooth": {
+  "f": "Ca5(PO4)3F",
+  "note": "fluorapatite (fossil)",
+  "approx": true
+ },
+ "Merkabite Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Meteorite": {
+  "f": "Fe-Ni",
+  "note": "iron-nickel alloy (kamacite/taenite) or silicates (stony)",
+  "approx": true
+ },
+ "Micraster": {
+  "f": "CaCO3",
+  "note": "calcite test, often flint-filled (fossil)",
+  "approx": true
+ },
+ "Moldavite": {
+  "f": "SiO2",
+  "note": "~75-85% SiO2 impact glass (tektite)",
+  "approx": true
+ },
+ "Mookaite": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with iron oxides (radiolarite)",
+  "approx": true
+ },
+ "Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "orthoclase/adularia feldspar with albite lamellae",
+  "approx": false
+ },
+ "Morganite": {
+  "f": "Be3Al2Si6O18",
+  "note": "pink beryl, Mn-coloured",
+  "approx": false
+ },
+ "Moroccan Geode": {
+  "f": "SiO2",
+  "note": "quartz/chalcedony-lined cavity",
+  "approx": true
+ },
+ "Moss agate": {
+  "f": "SiO2",
+  "note": "chalcedony with green hornblende/chlorite inclusions",
+  "approx": false
+ },
+ "Nacre": {
+  "f": "CaCO3",
+  "note": "aragonite platelets + conchiolin protein (organic)",
+  "approx": true
+ },
+ "Needle Quartz": {
+  "f": "SiO2",
+  "note": "quartz",
+  "approx": false
+ },
+ "Nephrite": {
+  "f": "Ca2(Mg,Fe)5Si8O22(OH)2",
+  "note": "tremolite-actinolite amphibole",
+  "approx": false
+ },
+ "Novaculite": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz (chert)",
+  "approx": false
+ },
+ "Nuummite": {
+  "f": "(Mg,Fe)7Si8O22(OH)2",
+  "note": "anthophyllite/gedrite amphibole rock",
+  "approx": true
+ },
+ "Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass",
+  "approx": true
+ },
+ "Ocean Jasper": {
+  "f": "SiO2",
+  "note": "orbicular chalcedony/quartz (rhyolite-hosted)",
+  "approx": true
+ },
+ "Olivine": {
+  "f": "(Mg,Fe)2SiO4",
+  "note": "forsterite-fayalite series",
+  "approx": false
+ },
+ "Opal Doublet & Triplet": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal slice on a backing (assembled)",
+  "approx": true
+ },
+ "Opalite": {
+  "f": "SiO2",
+  "note": "man-made glass",
+  "approx": true
+ },
+ "Opalized Fossil": {
+  "f": "SiO2·nH2O",
+  "note": "opal replacing shell/bone/wood (fossil)",
+  "approx": true
+ },
+ "Orange Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Orthoceras": {
+  "f": "CaCO3",
+  "note": "calcite shell in limestone (fossil)",
+  "approx": true
+ },
+ "Peach Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "orthoclase feldspar",
+  "approx": false
+ },
+ "Pearl": {
+  "f": "CaCO3",
+  "note": "aragonite nacre + conchiolin protein (organic)",
+  "approx": true
+ },
+ "Peridot": {
+  "f": "(Mg,Fe)2SiO4",
+  "note": "gem forsterite olivine",
+  "approx": false
+ },
+ "Petoskey stone": {
+  "f": "CaCO3",
+  "note": "calcite-replaced coral (fossil)",
+  "approx": true
+ },
+ "Petrified wood": {
+  "f": "SiO2",
+  "note": "SiO2 (quartz/chalcedony) replacing wood (fossil)",
+  "approx": true
+ },
+ "Petroleum Quartz": {
+  "f": "SiO2",
+  "note": "quartz with hydrocarbon inclusions",
+  "approx": false
+ },
+ "Picture Jasper": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with iron oxides",
+  "approx": true
+ },
+ "Pink Halite": {
+  "f": "NaCl",
+  "note": "halite",
+  "approx": false
+ },
+ "Pink Jelly Agate": {
+  "f": "SiO2",
+  "note": "chalcedony",
+  "approx": false
+ },
+ "Pink Opal": {
+  "f": "SiO2·nH2O",
+  "note": "common opal with palygorskite",
+  "approx": true
+ },
+ "Plume Agate": {
+  "f": "SiO2",
+  "note": "chalcedony with Fe/Mn-oxide plumes",
+  "approx": false
+ },
+ "Polychrome Jasper": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with iron oxides",
+  "approx": true
+ },
+ "Prasiolite": {
+  "f": "SiO2",
+  "note": "green quartz",
+  "approx": false
+ },
+ "Precious opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal",
+  "approx": false
+ },
+ "Prehnite": {
+  "f": "Ca2Al(AlSi3O10)(OH)2",
+  "note": "prehnite",
+  "approx": false
+ },
+ "Pyrite Sun": {
+  "f": "FeS2",
+  "note": "pyrite/marcasite",
+  "approx": false
+ },
+ "Quartz Geode": {
+  "f": "SiO2",
+  "note": "quartz/chalcedony-lined cavity",
+  "approx": true
+ },
+ "Rainbow Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Rainbow Moonstone": {
+  "f": "(Na,Ca)Al(Si,Al)3O8",
+  "note": "plagioclase feldspar (labradorite)",
+  "approx": false
+ },
+ "Rainbow Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass",
+  "approx": true
+ },
+ "Record Keeper Quartz": {
+  "f": "SiO2",
+  "note": "quartz",
+  "approx": false
+ },
+ "Red Calcite": {
+  "f": "CaCO3",
+  "note": "calcite with hematite",
+  "approx": false
+ },
+ "Red Jasper": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with hematite",
+  "approx": true
+ },
+ "Red Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "feldspar with iron oxides",
+  "approx": true
+ },
+ "Rhodochrosite Stalactite": {
+  "f": "MnCO3",
+  "note": "rhodochrosite",
+  "approx": false
+ },
+ "Rhyolite": {
+  "f": "SiO2 + KAlSi3O8",
+  "note": "~69-77% SiO2 volcanic rock",
+  "approx": true
+ },
+ "Rubellite": {
+  "f": "Na(Li1.5Al1.5)Al6(Si6O18)(BO3)3(OH)3(OH)",
+  "note": "red elbaite tourmaline",
+  "approx": false
+ },
+ "Rutilated quartz": {
+  "f": "SiO2 + TiO2",
+  "note": "quartz with rutile needles",
+  "approx": false
+ },
+ "Sapphire": {
+  "f": "Al2O3",
+  "note": "corundum",
+  "approx": false
+ },
+ "Sardonyx": {
+  "f": "SiO2",
+  "note": "banded chalcedony",
+  "approx": false
+ },
+ "Satin Spar": {
+  "f": "CaSO4·2H2O",
+  "note": "fibrous gypsum",
+  "approx": false
+ },
+ "Sea Biscuit": {
+  "f": "CaCO3",
+  "note": "calcite test (fossil)",
+  "approx": true
+ },
+ "Septaria": {
+  "f": "CaCO3",
+  "note": "calcite-filled clay-ironstone concretion",
+  "approx": true
+ },
+ "Seraphinite": {
+  "f": "(Mg,Fe)5Al(AlSi3O10)(OH)8",
+  "note": "clinochlore (chlorite group)",
+  "approx": false
+ },
+ "Serpentine mineral subgroup": {
+  "f": "Mg3Si2O5(OH)4",
+  "note": "serpentine group (antigorite, lizardite, chrysotile)",
+  "approx": false
+ },
+ "Shepherd's Crown": {
+  "f": "SiO2",
+  "note": "flint cast of an echinoid (fossil)",
+  "approx": true
+ },
+ "Shiva Lingam": {
+  "f": "SiO2",
+  "note": "cryptocrystalline quartz with iron oxides",
+  "approx": true
+ },
+ "Shungite": {
+  "f": "C",
+  "note": "~30-98% carbon (rock)",
+  "approx": true
+ },
+ "Silver Sheen Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass",
+  "approx": true
+ },
+ "Snowflake obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 glass with cristobalite spherulites",
+  "approx": true
+ },
+ "Spirit Quartz": {
+  "f": "SiO2",
+  "note": "amethyst/quartz druse",
+  "approx": false
+ },
+ "Star Beryl": {
+  "f": "Be3Al2Si6O18",
+  "note": "beryl",
+  "approx": false
+ },
+ "Star Diopside": {
+  "f": "CaMgSi2O6",
+  "note": "diopside with magnetite needles",
+  "approx": false
+ },
+ "Star garnet": {
+  "f": "Fe3Al2(SiO4)3",
+  "note": "almandine",
+  "approx": false
+ },
+ "Star Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "orthoclase feldspar",
+  "approx": false
+ },
+ "Star Rose Quartz": {
+  "f": "SiO2",
+  "note": "quartz",
+  "approx": false
+ },
+ "Star Ruby": {
+  "f": "Al2O3",
+  "note": "corundum, Cr-coloured",
+  "approx": false
+ },
+ "Star Sapphire": {
+  "f": "Al2O3",
+  "note": "corundum with rutile needles",
+  "approx": false
+ },
+ "Star Spinel": {
+  "f": "MgAl2O4",
+  "note": "spinel",
+  "approx": false
+ },
+ "Stellar Beam Calcite": {
+  "f": "CaCO3",
+  "note": "calcite",
+  "approx": false
+ },
+ "Stigmaria": {
+  "f": "SiO2 + C",
+  "note": "sandstone/shale cast (fossil)",
+  "approx": true
+ },
+ "Stilbite": {
+  "f": "NaCa4(Si27Al9)O72·28H2O",
+  "note": "stilbite-Ca (zeolite)",
+  "approx": false
+ },
+ "Strawberry Quartz": {
+  "f": "SiO2",
+  "note": "quartz with iron-oxide inclusions",
+  "approx": false
+ },
+ "Sulfur": {
+  "f": "S",
+  "note": "native sulfur (S8 rings)",
+  "approx": false
+ },
+ "Sunstone": {
+  "f": "(Na,Ca)AlSi3O8",
+  "note": "oligoclase feldspar with copper/hematite platelets",
+  "approx": false
+ },
+ "Synthetic Opal": {
+  "f": "SiO2·nH2O",
+  "note": "lab-grown opal (some with resin)",
+  "approx": false
+ },
+ "Tampa Bay Agatized Coral": {
+  "f": "SiO2",
+  "note": "chalcedony replacing coral (fossil)",
+  "approx": true
+ },
+ "Tanzanite": {
+  "f": "Ca2Al3(SiO4)(Si2O7)O(OH)",
+  "note": "blue zoisite, V-coloured",
+  "approx": false
+ },
+ "Tektite": {
+  "f": "SiO2",
+  "note": "~68-82% SiO2 impact glass",
+  "approx": true
+ },
+ "Thousand Layer Quartz": {
+  "f": "SiO2",
+  "note": "quartz with layered inclusions",
+  "approx": false
+ },
+ "Thulite": {
+  "f": "Ca2Al3(SiO4)(Si2O7)O(OH)",
+  "note": "pink zoisite, Mn-coloured",
+  "approx": false
+ },
+ "Thunderegg": {
+  "f": "SiO2",
+  "note": "agate/chalcedony core in rhyolite",
+  "approx": true
+ },
+ "Tiger-iron": {
+  "f": "SiO2 + Fe2O3",
+  "note": "tiger's eye, jasper and hematite (rock)",
+  "approx": true
+ },
+ "Tiger's eye": {
+  "f": "SiO2",
+  "note": "quartz replacing crocidolite fibres",
+  "approx": false
+ },
+ "Tourmalinated Quartz": {
+  "f": "SiO2 + NaFe3Al6(Si6O18)(BO3)3(OH)4",
+  "note": "quartz with schorl needles",
+  "approx": false
+ },
+ "Tourmalines": {
+  "f": "XY3Z6(T6O18)(BO3)3V3W",
+  "note": "tourmaline group formula",
+  "approx": false
+ },
+ "Tree Agate": {
+  "f": "SiO2",
+  "note": "chalcedony with chlorite dendrites",
+  "approx": false
+ },
+ "Trilobite": {
+  "f": "CaCO3",
+  "note": "calcite exoskeleton (fossil)",
+  "approx": true
+ },
+ "Tsavorite": {
+  "f": "Ca3Al2(SiO4)3",
+  "note": "green grossular, V/Cr-coloured",
+  "approx": false
+ },
+ "Twinned Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Unakite": {
+  "f": "KAlSi3O8 + Ca2Al2(Fe,Al)(SiO4)(Si2O7)O(OH) + SiO2",
+  "note": "pink feldspar + epidote + quartz (rock)",
+  "approx": true
+ },
+ "Uranium Glass": {
+  "f": "SiO2 + UO2²⁺",
+  "note": "glass with ~2% uranium (man-made)",
+  "approx": true
+ },
+ "Uruguayan Amethyst Geode": {
+  "f": "SiO2",
+  "note": "amethyst quartz in a chalcedony rind",
+  "approx": true
+ },
+ "Velvet Obsidian": {
+  "f": "SiO2",
+  "note": "~70-75% SiO2 volcanic glass",
+  "approx": true
+ },
+ "Verdelite": {
+  "f": "Na(Li1.5Al1.5)Al6(Si6O18)(BO3)3(OH)3(OH)",
+  "note": "green elbaite tourmaline",
+  "approx": false
+ },
+ "Virgin Valley Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal",
+  "approx": false
+ },
+ "Watermelon Tourmaline": {
+  "f": "Na(Li1.5Al1.5)Al6(Si6O18)(BO3)3(OH)3(OH)",
+  "note": "zoned elbaite",
+  "approx": false
+ },
+ "White Moonstone": {
+  "f": "KAlSi3O8",
+  "note": "adularia/orthoclase feldspar",
+  "approx": false
+ },
+ "White Opal": {
+  "f": "SiO2·nH2O",
+  "note": "precious opal",
+  "approx": false
+ },
+ "Wood Opal": {
+  "f": "SiO2·nH2O",
+  "note": "opal replacing wood (fossil)",
+  "approx": true
+ },
+ "Yellow Aragonite": {
+  "f": "CaCO3",
+  "note": "aragonite",
+  "approx": false
+ },
+ "Yooperlite": {
+  "f": "KAlSi3O8 + Na8Al6Si6O24Cl2",
+  "note": "syenite (alkali feldspar) with sodalite (rock)",
+  "approx": true
+ },
+ "Zebra Jasper": {
+  "f": "SiO2",
+  "note": "microcrystalline quartz with iron/manganese oxides",
+  "approx": true
+ },
+ "Aquamarine": {
+  "f": "Be3Al2Si6O18",
+  "note": "blue beryl, Fe-coloured",
+  "approx": false
+ },
+ "Amber": {
+  "f": "C10H16O",
+  "note": "fossil tree resin (organic), approximate",
+  "approx": true
+ },
+ "Charoite": {
+  "f": "(K,Sr)15-16(Ca,Na)32[Si6O11(O,OH)6]2[Si12O18(O,OH)12]2[Si17O25(O,OH)18]2(OH,F)4·~3H2O",
+  "note": "",
+  "approx": false
+ },
+ "Topaz": {
+  "f": "Al2SiO4(F,OH)2",
+  "note": "",
+  "approx": false
+ },
+ "Malachite": {
+  "f": "Cu2CO3(OH)2",
+  "note": "",
+  "approx": false
+ },
+ "Heliotrope": {
+  "f": "SiO2",
+  "note": "chalcedony with red iron-oxide spots",
+  "approx": false
+ },
+ "Onyx": {
+  "f": "SiO2",
+  "note": "banded chalcedony",
+  "approx": false
+ },
+ "Pietersite": {
+  "f": "SiO2",
+  "note": "brecciated quartz/crocidolite (tiger's eye)",
+  "approx": true
+ }
+}

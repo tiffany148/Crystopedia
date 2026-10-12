@@ -362,7 +362,7 @@ body.stone-page .uv-section a{color:#c4b5fd}
 .uv-section .props th,.uv-section .props td{border-color:rgba(255,255,255,.1)}
 .uv-section .props small{color:#a9a4cf;font-weight:400}
 .uv-section .muted{color:#b3aed6}
-.uv-body{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;align-items:start}
+.uv-body{display:grid;grid-template-columns:1fr 1.2fr;gap:16px;align-items:start}
 @media (max-width:760px){.uv-body{grid-template-columns:1fr}}
 .uv-photo{margin:0}.uv-photo img{width:100%;border-radius:12px;box-shadow:0 0 22px -6px var(--glow)}
 .uv-photo figcaption{font-size:.75rem;color:#a9a4cf;word-break:break-word}

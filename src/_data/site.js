@@ -9,6 +9,7 @@ import { FACTS, EXTRA_COLORS, FOSSIL_GROUP } from "../../lib/collectibles.js";
 import { LOCALITIES } from "../../lib/localities.js";
 import { ARK_SITES, ARK_SECTIONS, ARK_TIPS, ARK_LOCS, ARK_SOURCES } from "../../lib/arkansas.js";
 import { UV, UV_SAFETY } from "../../lib/uv.js";
+import { chemFor } from "../../lib/chem.js";
 import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } from "../../lib/hazards.js";
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
@@ -300,6 +301,13 @@ for (const p of pages) {
 }
 
 // --- collections ---------------------------------------------------------------
+// --- Chemical makeup (lib/chem.js): every full-page stone gets a formula, inherited from its parent mineral where needed ---
+for (const p of pages) {
+  if (!(p.metaphysical?.length || p.handmade || p.formula)) continue;
+  const c = chemFor(p); if (!c) continue;
+  p.chem = c;
+  if (c.source === "curated") { p.formula = (c.approx ? "≈ " : "") + c.formula; if (!p.elements?.length || !c.approx) p.elements = c.elements; }
+}
 // --- Tiffany's own photos (data/own_photos.json): a non-empty src replaces the Commons photo ---
 {
   const op = path.join(ROOT, "data/own_photos.json");
@@ -314,6 +322,22 @@ for (const p of pages) {
     }
     if (o.uv && p.uv) p.uv.uvImg = { src: o.uv.src, thumbSrc: o.uv.thumb, own: true, credit: "Photo © Tiffany Stark", file: "Photo © Tiffany Stark", alt: o.uv.alt, caption: o.uvCaption || "under UV light" };
     if (o.gallery?.length) p.ownGallery = o.gallery.map((g) => ({ ...g, credit }));
+  }
+}
+// --- UV pairs: daylight | under UV, each with a credit (data/uv_credits.json from scripts/fetch_uv_credits.mjs) ---
+{
+  const cp = path.join(ROOT, "data/uv_credits.json");
+  const CR = fs.existsSync(cp) ? JSON.parse(fs.readFileSync(cp, "utf8")) : {};
+  const DAY_FIX = { Clinohedrite: "Hardystonite-Clinohedrite-Calcite-170572.jpg", Esperite: null }; // these Wikidata photos are themselves UV shots (no daylight photo on Commons for esperite)
+  const by = (im) => im ? (im.own ? im.credit : CR[im.file] ? `${CR[im.file].artist} · ${CR[im.file].license} · Wikimedia Commons` : "Wikimedia Commons (see file page)") : null;
+  for (const p of pages) {
+    if (!p.uv) continue;
+    if (DAY_FIX[p.title] === null) { p.uv.day = null; if (p.uv.uvImg) p.uv.uvImg.by = by(p.uv.uvImg); p.uv.pair = false; continue; }
+    if (DAY_FIX[p.title]) { p.img = commons(DAY_FIX[p.title]); p.thumb = commons(DAY_FIX[p.title], 240); }
+    const day = p.img || p.parentImg || null;
+    p.uv.day = day && { ...day, by: by(day), parentPhoto: !p.img };
+    if (p.uv.uvImg) p.uv.uvImg.by = by(p.uv.uvImg);
+    p.uv.pair = !!(p.uv.day && p.uv.uvImg);
   }
 }
 // --- Handle With Care ----------------------------------------------------------------

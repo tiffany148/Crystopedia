@@ -17,12 +17,13 @@ description: "Minerals and stones that glow under ultraviolet light: fluorite, c
 <input class="filter-input" type="search" placeholder="Filter {{ site.uvStones.length }} UV-reactive stones…" oninput="filterCards(this.value)">
 <div class="grid uv-grid" id="cards">{% for c in site.uvStones %}
 <a class="card uv-card" href="{{ c.url }}" style="--glow:{{ c.uv.glow }}">
-  <div class="card-img">{% if c.uv.uvImg %}<img loading="lazy" src="{{ c.uv.uvImg.thumbSrc or (c.uv.uvImg.src | replace('width=480','width=240')) }}" alt="{{ c.title }} under UV">{% elif c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">✺</span>{% endif %}</div>
+  <div class="card-img uv-card-pair"><span class="h day">{% if c.uv.day %}<img loading="lazy" src="{{ c.uv.day.src | replace('width=480','width=240') }}" alt="{{ c.title }} in daylight">{% else %}<span class="gem-ph">☀</span>{% endif %}<i>☀ Daylight</i></span><span class="h uvl">{% if c.uv.uvImg %}<img loading="lazy" src="{{ c.uv.uvImg.thumbSrc or (c.uv.uvImg.src | replace('width=480','width=240')) }}" alt="{{ c.title }} under UV">{% else %}<span class="gem-ph">✺</span>{% endif %}<i>✺ Under UV</i></span></div>
   <div class="card-body"><strong>{{ c.title }}</strong>
     <span class="uv-waves">{% for w in c.uv.waves %}<i>{{ w }}</i>{% endfor %}</span>
     <span class="uv-line">{{ c.uv.lw or c.uv.sw or c.uv.mw }}</span>
   </div>
 </a>{% endfor %}</div>
+<p class="muted small">Photo credits: each stone page lists the photographer and license for its daylight and UV photos. Photos marked © Tiffany Stark are her own.</p>
 <p class="muted small">Search tip: the <a href="/search/">search page</a> has a "UV reaction" filter (longwave, midwave, shortwave, phosphorescent, tenebrescent).</p>
 <script>
 function filterCards(q){q=q.toLowerCase();document.querySelectorAll('#cards .card').forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(q)?'':'none'})}

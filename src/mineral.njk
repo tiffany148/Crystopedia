@@ -25,7 +25,7 @@ eleventyComputed:
       {% if m.birthstones.length %}<p class="birth-badges">{% for b in m.birthstones %}<a class="birth-badge{% if b.traditional %} trad{% endif %}" href="/birthstones/#{{ b.month | lower }}">🎂 {{ b.month }} Birthstone{% if b.traditional %} (traditional){% endif %}</a>{% endfor %}</p>{% endif %}
       {% if m.careTags.length %}<p class="care-chips">{% for t in m.careTags %}<a class="care-chip {{ t.cls }}" href="#care-notes" title="{{ t.why }}">{{ t.icon }} {{ t.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.intentions.length %}<p class="intent-chips" data-pagefind-ignore><small>Crystal lore:</small> {% for i in m.intentions %}<a class="intent-chip" href="/intentions/{{ i.key }}/">{{ i.emoji }} {{ i.label }}</a>{% endfor %}</p>{% endif %}{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
-      {% if m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
+      {% if m.chem %}<div class="chem-box"><span class="chem-label">⚗ Chemical makeup{% if m.chem.approx %} <em>(approximate)</em>{% endif %}</span><p class="big-formula">{% if m.chem.approx %}≈ {% endif %}{{ m.chem.formula }}</p>{% if m.chem.note %}<small class="chem-note">{{ m.chem.note }}</small>{% endif %}{% if m.chem.elements.length %}<span class="el-chips">{% for z in m.chem.elements %}<span class="el-chip">{{ z }}</span>{% endfor %}</span>{% endif %}</div>{% elif m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
       {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.parents.length %}<p>Variety of {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
@@ -117,7 +117,10 @@ eleventyComputed:
         {% if m.uv.ph %}<tr><th>Phosphorescence <small>(afterglow)</small></th><td>{{ m.uv.ph }}</td></tr>{% endif %}
         {% if m.uv.tb %}<tr><th>Tenebrescence <small>(colour change)</small></th><td>{{ m.uv.tb }}</td></tr>{% endif %}
       </table>
-      {% if m.uv.uvImg %}<figure class="uv-photo"><img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light"><figcaption>{% if m.uv.uvImg.own %}{{ m.uv.uvImg.credit }} · {{ m.uv.uvImg.caption }}{% else %}<a href="{{ m.uv.uvImg.credit }}">{{ m.uv.uvImg.file }}</a> · Wikimedia Commons{% endif %}</figcaption></figure>{% endif %}
+      {% if m.uv.day or m.uv.uvImg %}<div class="uv-pair">
+        <figure class="uv-half day">{% if m.uv.day %}<img loading="lazy" src="{{ m.uv.day.src }}" alt="{{ m.title }} in daylight">{% else %}<span class="uv-missing">☀ Daylight photo coming soon</span>{% endif %}<span class="uv-tag">☀ In daylight</span>{% if m.uv.day %}<figcaption>{% if m.uv.day.own %}{{ m.uv.day.by }}{% else %}<a href="{{ m.uv.day.credit }}" rel="noopener">{{ m.uv.day.by }}</a>{% if m.uv.day.parentPhoto %} · parent mineral{% endif %}{% endif %}</figcaption>{% endif %}</figure>
+        <figure class="uv-half uvl">{% if m.uv.uvImg %}<img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light">{% else %}<span class="uv-missing">✺ UV photo coming soon</span>{% endif %}<span class="uv-tag">✺ Under UV</span>{% if m.uv.uvImg %}<figcaption>{% if m.uv.uvImg.own %}{{ m.uv.uvImg.by }} · {{ m.uv.uvImg.caption }}{% else %}<a href="{{ m.uv.uvImg.credit }}" rel="noopener">{{ m.uv.uvImg.by }}</a>{% endif %}</figcaption>{% endif %}</figure>
+      </div>{% endif %}
     </div>
     <p>{{ m.uv.note }}</p>
     <p class="muted small">Reactions vary by locality and specimen; many specimens of a fluorescent species do not glow. {{ site.uvSafety }} Sources: {% for s in m.uv.sources %}<a href="{{ s.url }}" rel="noopener">{{ s.t }}</a>{% if not loop.last %} · {% endif %}{% endfor %}. <a href="/uv-reactive/">More UV-reactive stones →</a></p>

@@ -35,3 +35,5 @@ npm run serve                # local preview on :8080
   - Notable sources (stone-coloured dots) are curated in `lib/localities.js`.
   - Country of origin (P495) is shown as a fallback.
   - The section is hidden when there is no data.
+- **Chemical makeup** – `lib/chem.js` + `data/chem.json`: every full-page stone shows a formula (with subscripts) and element chips in the hero. Varieties inherit the parent mineral's formula; rocks, glasses, organics and fossils show their main composition, marked "approximate". Entries in chem.json also override bad Wikidata formulas (e.g. aquamarine).
+- **UV pairs** – each UV-reactive stone shows "In daylight | Under UV" photos with credits on its page and on `/uv-reactive/`. Tiffany's own UV shots come from `data/own_photos.json` (`uv`); Commons credits are cached in `data/uv_credits.json` (`node scripts/fetch_uv_credits.mjs`).
