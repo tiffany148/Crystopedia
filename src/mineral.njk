@@ -28,7 +28,7 @@ eleventyComputed:
       {% if m.chem %}<div class="chem-box"><span class="chem-label">⚗ Chemical makeup{% if m.chem.approx %} <em>(approximate)</em>{% endif %}</span><p class="big-formula">{% if m.chem.approx %}≈ {% endif %}{{ m.chem.formula }}</p>{% if m.chem.note %}<small class="chem-note">{{ m.chem.note }}</small>{% endif %}{% if m.chem.elements.length %}<span class="el-chips">{% for z in m.chem.elements %}<span class="el-chip">{{ z }}</span>{% endfor %}</span>{% endif %}</div>{% elif m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
       {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
-      {% if m.parents.length %}<p>Variety of {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+      {% if m.parents.length %}<p>{{ m.parentLabel or "Variety of" }} {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}{% if loop.revindex == 2 %} and {% else %}, {% endif %}{% endif %}{% endfor %}{% if m.parentAlso %} {{ m.parentAlso }}{% endif %}.</p>{% endif %}
     </div>
     {% if im %}
     <figure class="mineral-photo hero-photo">

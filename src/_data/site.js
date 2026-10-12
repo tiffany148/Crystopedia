@@ -149,6 +149,38 @@ for (const e of meta) {
   }
 }
 
+// --- parent-link fixes (audit Oct 2026): Wikidata/hand-made parents that were wrong, or that aren't "variety of" relations ---
+{
+  const T = (t) => pages.find((x) => x.title.toLowerCase() === t.toLowerCase());
+  const idOf = (x) => x.id || `hand:${x.slug}`;
+  const FIX = {
+    "Lapis lazuli": { to: ["Lazurite", "Calcite", "Pyrite"], label: "Rock made mainly of" },
+    "Ruby": { to: ["Corundum"] },
+    "Labradorite": { to: ["Albite", "Anorthite"], label: "Plagioclase feldspar between" },
+    "Watermelon Tourmaline": { to: ["Elbaite"] },
+    "Pietersite": { to: ["Tiger's eye", "Quartz"], label: "Brecciated form of" },
+    "Leopard Skin Jasper": { to: ["Rhyolite"], label: "Orbicular", also: "sold as jasper" },
+    "Dalmatian Jasper": { to: ["Jasper"], label: "Trade name; not a true" },
+    "K2 Jasper": { to: ["Azurite"], label: "Granite with spots of" },
+    "Rutilated quartz": { to: ["Quartz"], label: "Variety of", also: "with rutile needles" },
+    "Copal": { to: ["Amber"], label: "Young resin, not yet" },
+    "Synthetic Opal": { to: ["Opal"], label: "Lab-grown imitation of natural" },
+    "Opal Doublet & Triplet": { to: ["Opal"], label: "Assembled stone made with" },
+    "Opalized Fossil": { to: ["Opal"], label: "Fossil replaced by" },
+    "Freshwater Mussel Shell": { to: ["Nacre"], label: "Shell lined with" },
+  };
+  for (const n of ["Agate Geode", "Amethyst Geode", "Calcite Geode", "Celestite Geode", "Quartz Geode", "Keokuk Geode", "Moroccan Geode", "Las Choyas Geode", "Uruguayan Amethyst Geode"]) FIX[n] = { label: "Geode lined with" };
+  for (const n of ["Amethyst Stalactite", "Apophyllite Stalactite", "Calcite Stalactite", "Chalcedony Stalactite", "Malachite Stalactite", "Rhodochrosite Stalactite"]) FIX[n] = { label: "Stalactite form of" };
+  for (const [name, f] of Object.entries(FIX)) {
+    const p = T(name); if (!p) { console.warn("parent fix: no page", name); continue; }
+    if (f.to) {
+      for (const old of p.parentIds || []) { const o = byId.get(old); if (o?.childIds) o.childIds = o.childIds.filter((c) => c !== idOf(p)); }
+      p.parentIds = f.to.map((t) => { const q = T(t); if (!q) console.warn("parent fix: no parent", t); return q; }).filter(Boolean).map((q) => { (q.childIds ||= []).push(idOf(p)); return idOf(q); });
+    }
+    if (f.label) p.parentLabel = f.label;
+    if (f.also) p.parentAlso = f.also;
+  }
+}
 // resolve relations to {title,url}
 for (const p of pages) {
   p.parents = (p.parentIds || []).map((id) => byId.get(id)).filter(Boolean).map((x) => ({ title: x.title, url: x.url }));
