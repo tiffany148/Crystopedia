@@ -170,7 +170,7 @@ eleventyComputed:
 
   {% if m.children.length %}
   <section>
-    <h2>Varieties &amp; related stones</h2>
+    <h2>{% if m.family and m.family.label == "Types of Quartz" %}Related silica stones{% else %}Varieties &amp; related stones{% endif %}</h2>
     <ul class="pill-list">{% for c in m.children %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}</ul>
   </section>
   {% endif %}
