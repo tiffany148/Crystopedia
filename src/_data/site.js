@@ -13,6 +13,7 @@ import { chemFor } from "../../lib/chem.js";
 import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } from "../../lib/hazards.js";
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
+import { rarityFor, RARITY_LABEL, factsFor, COLOR_QUOTES } from "../../lib/crystalfy.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 import { COLLECTOR_NOTES } from "../../lib/collector_notes.js";
 import { LOOKALIKES } from "../../lib/lookalikes.js";
@@ -497,8 +498,10 @@ const card = (p) => {
     knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula,
     thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null,
     typeLabel: p.typeLabel, mohs: p.mohs, tip, hazard: hz,
+    rarity: rarityFor(p), pick: !!p.img?.own,
   };
 };
+
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
   axes: SYSTEM_AXES[s],
@@ -533,7 +536,7 @@ const colorPages = FAMILIES.map((f) => {
   const items = pages.filter((p) => p.colorFamilies.some((c) => c.slug === f.slug))
     .sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
   return { ...f, url: `/colors/${f.slug}/`, count: items.length, featured: items.filter((p) => rank(p) >= 4).length,
-    cards: items.map((p) => ({ ...card(p), heal: p.metaphysical.length > 0 })), top: items.slice(0, 4).map((p) => card(p)) };
+    quote: COLOR_QUOTES[f.slug] || null, cards: items.map((p) => ({ ...card(p), heal: p.metaphysical.length > 0 })), top: items.slice(0, 4).map((p) => card(p)) };
 });
 const geodes = collection("geode");
 const grp = (g, extra = []) => [...pages.filter((p) => p.facts?.group === g), ...extra.map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean)]
@@ -702,4 +705,6 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
+for (const p of pages) { p.rarity = rarityFor(p); p.rarityLabel = RARITY_LABEL[p.rarity]; p.didYouKnow = factsFor(p); p.pick = !!p.img?.own; }
 export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS, lookalikes, compareData };
+

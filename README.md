@@ -1,6 +1,6 @@
 # Crystopedia
 
-An encyclopedia of every known mineral, crystal and gemstone, served at https://crystopedia.com/ (GitHub Pages repo tiffany148.github.io).
+An encyclopedia of every known mineral, crystal and gemstone, served at https://crystopedia.com/ (GitHub Pages repo tiffany148/crystopedia).
 
 * **Data:** [Wikidata](https://www.wikidata.org/) (CC0): every *mineral species* (Q12089225), every *mineral variety* (Q429795), a few gem materials, and the items referenced by the metaphysical list.
 * **Images:** hotlinked from Wikimedia Commons through `Special:FilePath?width=…`. Each image links to its Commons file page for credit and license. No images are stored in this repo.

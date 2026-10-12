@@ -1,0 +1,68 @@
+/* ===== Crystal-fy layer ===== */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+:root{--holo:linear-gradient(115deg,#ff9ad5,#ffe38a 22%,#8affd1 42%,#7ab8ff 62%,#c79bff 80%,#ff9ad5)}
+/* 5. starfield + constellations */
+.starfield{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.55;
+ background-image:
+  radial-gradient(1.2px 1.2px at 7% 12%,#fff8,transparent),radial-gradient(1px 1px at 18% 64%,#cfe8ff9,transparent),
+  radial-gradient(1.5px 1.5px at 33% 28%,#ffe9a8aa,transparent),radial-gradient(1px 1px at 48% 82%,#fff8,transparent),
+  radial-gradient(1.3px 1.3px at 62% 9%,#d9c8ff99,transparent),radial-gradient(1px 1px at 77% 47%,#fff9,transparent),
+  radial-gradient(1.6px 1.6px at 91% 22%,#bff9ffaa,transparent),radial-gradient(1px 1px at 95% 76%,#fff8,transparent),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cg stroke='%2396a8ff' stroke-opacity='.18' stroke-width='.7' fill='none'%3E%3Cpath d='M30 60 L80 40 L120 70 L170 50 M120 70 L110 120'/%3E%3Cpath d='M300 300 L340 270 L380 290 L360 340 L300 300'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.45'%3E%3Ccircle cx='30' cy='60' r='1.6'/%3E%3Ccircle cx='80' cy='40' r='1.3'/%3E%3Ccircle cx='120' cy='70' r='1.8'/%3E%3Ccircle cx='170' cy='50' r='1.2'/%3E%3Ccircle cx='110' cy='120' r='1.4'/%3E%3Ccircle cx='300' cy='300' r='1.5'/%3E%3Ccircle cx='340' cy='270' r='1.2'/%3E%3Ccircle cx='380' cy='290' r='1.7'/%3E%3Ccircle cx='360' cy='340' r='1.3'/%3E%3Ccircle cx='230' cy='190' r='.9'/%3E%3C/g%3E%3C/svg%3E");
+ background-size:auto,auto,auto,auto,auto,auto,auto,auto,420px 420px;animation:twinkle 7s ease-in-out infinite alternate}
+[data-theme=light] .starfield{opacity:.35;filter:invert(.6) hue-rotate(200deg)}
+@keyframes twinkle{to{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.starfield{animation:none}}
+/* 1. holographic crystal-point number badges */
+.card{position:relative}
+.holo-num{position:absolute;z-index:3;top:6px;left:6px;min-width:30px;height:36px;padding:0 6px;display:grid;place-items:center;
+ font:800 .8rem/1 system-ui;color:#2a1a4a;background:var(--holo);background-size:200% 200%;animation:holo 6s linear infinite;
+ clip-path:polygon(50% 0,100% 22%,100% 72%,50% 100%,0 72%,0 22%);text-shadow:0 1px 0 #fff8;filter:drop-shadow(0 2px 3px #0005)}
+@keyframes holo{to{background-position:200% 0}}
+/* 3. rarity */
+.rarity-mini{display:flex;gap:3px;margin-top:4px}.rarity-mini i{width:8px;height:10px;background:#8884;clip-path:polygon(50% 0,100% 35%,50% 100%,0 35%)}
+.rarity-mini i.on{background:var(--holo)}
+.rarity-meter{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:#0006;color:#fff;backdrop-filter:blur(6px);border:1px solid #fff4}
+.rm-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;opacity:.85}
+.rm-gems i{font-style:normal;color:#fff3;font-size:1.1rem;margin-right:1px}
+.rm-gems i.on{background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 3px #b8f)}
+.rm-how{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#fff3;color:#fff;font-size:.7rem;text-decoration:none}
+/* 2. Did You Know */
+.dyk{position:relative;margin:1.6rem 0;padding:1.3rem 1.4rem 1rem;border-radius:28px 28px 28px 6px;
+ background:radial-gradient(circle at 12% 0,#fff6,transparent 40%),linear-gradient(135deg,#2b1858ee,#0f3a4fee);color:#f4f0ff;
+ border:2px solid transparent;background-clip:padding-box;box-shadow:0 0 0 2px #b9a4ff55,0 0 28px #7affea44,inset 0 0 30px #ffffff12}
+.dyk::before,.dyk::after{content:"✦";position:absolute;color:#ffe38a;text-shadow:0 0 8px #ffe38a}
+.dyk::before{top:-12px;right:24px;font-size:1.5rem}.dyk::after{bottom:8px;right:12px;font-size:.9rem;content:"✧"}
+.dyk-badge{position:absolute;top:-14px;left:18px;padding:3px 12px;border-radius:999px;font-weight:800;font-size:.85rem;color:#2a1a4a;background:var(--holo)}
+.dyk p{margin:.35rem 0;font-size:1.02rem}.dyk small{opacity:.6;font-size:.72rem}
+/* 4. Mohs rainbow gauge */
+.mohs-bar{background:linear-gradient(90deg,#ff4d6d,#ff9f1c,#ffe14d,#4ade80,#22d3ee,#3b82f6,#8b5cf6,#d946ef)!important;position:relative}
+.mohs-bar .fill{background:transparent!important;border:2px solid #fff;box-shadow:0 0 0 2px #0008,0 0 12px #fff;border-radius:6px}
+/* 6. facet-cut corner flourishes */
+.facet-frame{position:relative;display:block;clip-path:polygon(16px 0,calc(100% - 16px) 0,100% 16px,100% calc(100% - 16px),calc(100% - 16px) 100%,16px 100%,0 calc(100% - 16px),0 16px)}
+.facet-frame .fc{position:absolute;width:26px;height:26px;background:var(--holo);opacity:.9}
+.fc.tl{top:0;left:0;clip-path:polygon(0 0,100% 0,0 100%)}.fc.tr{top:0;right:0;clip-path:polygon(0 0,100% 0,100% 100%)}
+.fc.bl{bottom:0;left:0;clip-path:polygon(0 0,100% 100%,0 100%)}.fc.br{bottom:0;right:0;clip-path:polygon(100% 0,100% 100%,0 100%)}
+.card-img.facet{clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%,0 12px);position:relative}
+/* 8. Tiffany's Pick */
+.tiffany-pick{display:inline-block;margin:10px auto 0;padding:6px 18px 8px;text-align:center;font-family:"Great Vibes","Brush Script MT",cursive;font-size:1.7rem;line-height:1;
+ color:#7a3fd1;background:linear-gradient(#fff,#fff) padding-box,var(--holo) border-box;border:2px solid transparent;border-radius:14px;transform:rotate(-3deg);box-shadow:0 4px 14px #7a3fd133}
+.tiffany-pick small{display:block;font:700 .6rem/1.4 system-ui;letter-spacing:.14em;text-transform:uppercase;color:#0aa;margin-bottom:2px}
+.pick-mini{position:absolute;right:6px;bottom:6px;font-family:"Great Vibes",cursive;font-size:1rem;padding:1px 8px;border-radius:8px;background:#fffe;color:#7a3fd1;transform:rotate(-4deg)}
+/* 7. colour quotes */
+.color-quote{margin:.8rem auto 1rem;max-width:720px;padding:.8rem 1.2rem;border-left:4px solid;border-image:var(--holo) 1;background:#0003;color:#fff;font-style:italic;border-radius:0 12px 12px 0}
+.color-quote p{margin:0;font-size:1.08rem}.color-quote cite{display:block;margin-top:.3rem;font-size:.82rem;font-style:normal;opacity:.85}
+/* home hero banner + book page */
+.book-banner{position:relative;display:grid;grid-template-columns:minmax(160px,300px) 1fr;gap:1.6rem;align-items:center;margin:1.5rem 0;padding:1.4rem;border-radius:24px;overflow:hidden;color:#fff;text-decoration:none;
+ background:linear-gradient(120deg,#120a2ccc,#063a40cc),var(--bg) center/cover;box-shadow:0 0 0 2px #7affea55,0 12px 40px #0006}
+.book-banner img{width:100%;height:auto;border-radius:6px;box-shadow:0 10px 30px #000a;transform:rotate(-2deg)}
+.book-banner h2{font-size:clamp(1.6rem,4vw,2.6rem);margin:.2rem 0;background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent}
+.book-banner .cta{display:inline-block;margin-top:.6rem;padding:.5rem 1.1rem;border-radius:999px;background:var(--holo);color:#2a1a4a;font-weight:800}
+.book-page h1{background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:clamp(2rem,6vw,3.4rem)}
+.book-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin:1.2rem 0}
+.book-figs figure{margin:0;padding:10px;border-radius:18px;background:#fff1;box-shadow:0 0 0 1px #fff3}
+.book-figs img{width:100%;height:auto;display:block;border-radius:10px}
+.book-figs figcaption{font-size:.85rem;opacity:.85;margin-top:6px}
+.wide-fig{margin:1.2rem 0}.wide-fig img{width:100%;height:auto;border-radius:12px}
+.coming-soon{display:inline-block;padding:.6rem 1.3rem;border-radius:999px;font-weight:800;background:var(--holo);color:#2a1a4a;animation:holo 6s linear infinite;background-size:200% 200%}
+@media (max-width:640px){.book-banner{grid-template-columns:1fr;text-align:center}.book-banner img{max-width:220px;margin:auto}}

@@ -14,6 +14,7 @@ bodyClass: hub color-page
 <nav class="crumbs"><a href="/">Home</a> › <a href="/colors/">Colors</a> › {{ col.label }}</nav>
 <div class="color-hero">
   <h1>{{ col.label }} stones</h1>
+  {% if col.quote %}<blockquote class="color-quote"><p>“{{ col.quote.q }}”</p><cite>— {{ col.quote.by }}</cite></blockquote>{% endif %}
   <p>{{ col.count }} stones · A–Z by name · {{ col.featured }} popular gems &amp; healing crystals</p>
 </div>
 <div class="swatch-strip">{% for c in site.colorPages %}<a class="swatch-btn mini{% if c.slug == col.slug %} current{% endif %}" href="{{ c.url }}" style="--stone:{{ c.hex }};--sw:{{ c.grad }}" title="{{ c.label }}"><span class="swatch"></span><span class="sw-label">{{ c.label }}</span></a>{% endfor %}</div>

@@ -26,13 +26,15 @@ eleventyComputed:
       {% if m.careTags.length %}<p class="care-chips">{% for t in m.careTags %}<a class="care-chip {{ t.cls }}" href="#care-notes" title="{{ t.why }}">{{ t.icon }} {{ t.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.intentions.length %}<p class="intent-chips" data-pagefind-ignore><small>Crystal lore:</small> {% for i in m.intentions %}<a class="intent-chip" href="/intentions/{{ i.key }}/">{{ i.emoji }} {{ i.label }}</a>{% endfor %}</p>{% endif %}{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
       {% if m.chem %}<div class="chem-box"><span class="chem-label">⚗ Chemical makeup{% if m.chem.approx %} <em>(approximate)</em>{% endif %}</span><p class="big-formula">{% if m.chem.approx %}≈ {% endif %}{{ m.chem.formula }}</p>{% if m.chem.note %}<small class="chem-note">{{ m.chem.note }}</small>{% endif %}{% if m.chem.elements.length %}<span class="el-chips">{% for z in m.chem.elements %}<span class="el-chip">{{ z }}</span>{% endfor %}</span>{% endif %}</div>{% elif m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
+      <p class="rarity-meter r{{ m.rarity }}" data-pagefind-ignore><span class="rm-label">Rarity</span><span class="rm-gems">{% for i in range(1,6) %}<i class="{% if i <= m.rarity %}on{% endif %}">◆</i>{% endfor %}</span><b>{{ m.rarityLabel }}</b> <a class="rm-how" href="/about/#rarity" title="How rarity is scored">?</a></p>
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
       {% if m.colorFamilies.length %}<p class="color-chips" data-pagefind-ignore>{% for c in m.colorFamilies %}<a class="color-chip" href="/colors/{{ c.slug }}/" style="--chip:{{ c.hex }}"><i></i>{{ c.label }}</a>{% endfor %}</p>{% endif %}
       {% if m.parents.length %}<p>{{ m.parentLabel or "Variety of" }} {% for p in m.parents %}<a href="{{ p.url }}">{{ p.title }}</a>{% if not loop.last %}{% if loop.revindex == 2 %} and {% else %}, {% endif %}{% endif %}{% endfor %}{% if m.parentAlso %} {{ m.parentAlso }}{% endif %}.</p>{% endif %}
     </div>
     {% if im %}
     <figure class="mineral-photo hero-photo">
-      <img src="{{ im.src }}" alt="{{ im.alt or (m.title + ' specimen') }}" width="480" data-pagefind-meta="image[src]">
+      <span class="facet-frame"><img src="{{ im.src }}" alt="{{ im.alt or (m.title + ' specimen') }}" width="480" data-pagefind-meta="image[src]"><i class="fc tl"></i><i class="fc tr"></i><i class="fc bl"></i><i class="fc br"></i></span>
+      {% if m.pick %}<span class="tiffany-pick" title="Photographed from Tiffany Stark's own collection"><small>✦ from my collection ✦</small>Tiffany's Pick</span>{% endif %}
       <figcaption data-pagefind-ignore>{% if im.own %}{{ im.credit }}{% else %}<a href="{{ im.credit }}" rel="noopener">{{ im.file }}</a> · Wikimedia Commons (see file page for author &amp; license){% if not m.img %} · photo of parent mineral{% endif %}{% endif %}</figcaption>
     </figure>
     {% endif %}
@@ -44,6 +46,10 @@ eleventyComputed:
     <p>{{ m.loreWarning }}</p>
     <p class="muted small">Traditional belief from crystal lore — not a scientific or medical claim.</p>
   </aside>
+  {% endif %}
+
+  {% if m.didYouKnow.length %}
+  <aside class="dyk" data-pagefind-ignore><span class="dyk-badge">✦ Did You Know?</span>{% for f in m.didYouKnow %}<p>{{ f }}</p>{% endfor %}<small>From this page's mineral data.</small></aside>
   {% endif %}
 
   {% set hasProps = m.formula or m.crystalSystems.length or m.mohs or m.density or m.streak.length or m.colors.length %}
