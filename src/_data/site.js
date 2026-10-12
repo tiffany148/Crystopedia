@@ -168,6 +168,7 @@ for (const e of meta) {
     "Opal Doublet & Triplet": { to: ["Opal"], label: "Assembled stone made with" },
     "Opalized Fossil": { to: ["Opal"], label: "Fossil replaced by" },
     "Freshwater Mussel Shell": { to: ["Nacre"], label: "Shell lined with" },
+    "Yenite": { to: ["Ilvaite"], label: "Obsolete synonym of" },
   };
   for (const n of ["Agate Geode", "Amethyst Geode", "Calcite Geode", "Celestite Geode", "Quartz Geode", "Keokuk Geode", "Moroccan Geode", "Las Choyas Geode", "Uruguayan Amethyst Geode"]) FIX[n] = { label: "Geode lined with" };
   for (const n of ["Amethyst Stalactite", "Apophyllite Stalactite", "Calcite Stalactite", "Chalcedony Stalactite", "Malachite Stalactite", "Rhodochrosite Stalactite"]) FIX[n] = { label: "Stalactite form of" };
@@ -181,12 +182,39 @@ for (const e of meta) {
     if (f.also) p.parentAlso = f.also;
   }
 }
-// resolve relations to {title,url}
+// resolve relations to {title,url}; inherit missing photo + scientific fields from the parent
+// so variety pages (Wikidata stubs) aren't blank and stay consistent with their parent mineral
 for (const p of pages) {
   p.parents = (p.parentIds || []).map((id) => byId.get(id)).filter(Boolean).map((x) => ({ title: x.title, url: x.url }));
   p.children = [...new Set(p.childIds || [])].map((id) => byId.get(id)).filter(Boolean)
     .map((x) => ({ title: x.title, url: x.url })).sort((a, b) => a.title.localeCompare(b.title));
-  if (!p.img && p.handmade && p.parentIds[0]) p.parentImg = byId.get(p.parentIds[0])?.img || null;
+  const parent = (p.parentIds || []).map((id) => byId.get(id)).find(Boolean) || null;
+  // Curated Commons pick (handmade or Wikidata page with no image) beats a parent fallback photo
+  if (!p.img) {
+    const file = HAND_IMAGES[p.title] || HAND_IMAGES[p.name]
+      || Object.entries(HAND_IMAGES).find(([k, v]) => v && k.toLowerCase() === p.title.toLowerCase())?.[1];
+    if (file) { p.img = commons(file); p.thumb = commons(file, 240); }
+    else if (parent?.img) p.parentImg = parent.img;
+  }
+  if (parent) {
+    if (!p.formula && parent.formula) p.formula = parent.formula;
+    if (!p.elements?.length && parent.elements?.length) p.elements = [...parent.elements];
+    if (!p.crystalSystems?.length && parent.crystalSystems?.length) p.crystalSystems = [...parent.crystalSystems];
+    if (p.mohsMin == null && parent.mohsMin != null) {
+      p.mohsMin = parent.mohsMin; p.mohsMax = parent.mohsMax;
+      p.mohs = fmtRange(p.mohsMin, p.mohsMax, 2); p.hardnessBucket = hardnessBucket(p.mohsMin);
+    }
+    if (p.densityMin == null && parent.densityMin != null) {
+      p.densityMin = parent.densityMin; p.densityMax = parent.densityMax;
+      p.density = fmtRange(p.densityMin, p.densityMax, 3);
+    }
+    if (!p.colors?.length && parent.colors?.length) p.colors = [...parent.colors];
+    if (!p.streak?.length && parent.streak?.length) p.streak = [...parent.streak];
+    if (!p.luster?.length && parent.luster?.length) p.luster = [...parent.luster];
+    if (!p.cleavage?.length && parent.cleavage?.length) p.cleavage = [...parent.cleavage];
+    if (!p.fracture?.length && parent.fracture?.length) p.fracture = [...parent.fracture];
+    if (!p.description && parent.description) p.description = parent.description;
+  }
   p.typeLabel = p.kindLabel && (p.type === "other" || p.type === "handmade") ? p.kindLabel
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
@@ -442,7 +470,9 @@ const uvStones = pages.filter((p) => p.uv).map((p) => ({ ...card(p), uv: p.uv })
 const uvSafety = UV_SAFETY;
 const rank = (p) => (p.metaphysical.length ? 4 : 0) + (p.isGem || p.type === "gem" ? 3 : 0) + (p.uv || p.facts ? 1 : 0) + (p.img ? 1 : 0) + (p.type === "variety" ? 1 : 0);
 const colorPages = FAMILIES.map((f) => {
-  const items = pages.filter((p) => p.colorFamilies.some((c) => c.slug === f.slug)).sort((a, b) => rank(b) - rank(a) || a.title.localeCompare(b.title));
+  // Always alphabetical by crystal name within each color section
+  const items = pages.filter((p) => p.colorFamilies.some((c) => c.slug === f.slug))
+    .sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
   return { ...f, url: `/colors/${f.slug}/`, count: items.length, featured: items.filter((p) => rank(p) >= 4).length,
     cards: items.map((p) => ({ ...card(p), heal: p.metaphysical.length > 0 })), top: items.slice(0, 4).map((p) => card(p)) };
 });
