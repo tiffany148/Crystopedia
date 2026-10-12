@@ -12,8 +12,9 @@ P.malachite = (() => { let s = ""; for (const [x, y, n] of [[120, 130, 9], [360,
 P.wavellite = (() => { let s = ""; for (const [x, y, R] of [[110, 120, 70], [340, 160, 55], [240, 360, 80], [430, 420, 40]]) { s += circ(x, y, R, 1.4) + circ(x, y, R * .3, 1) + rays(x, y, 4, R, 36, .9); } return S(tile(s)); })();
 P.agate = (() => { let s = ""; for (let i = 1; i <= 14; i++) s += wob(240, 240, i * 16, 3 + i * .5, 4, 1); return S(s); })();
 P.bands = (() => { let s = ""; for (let i = 0; i < 24; i++) s += wave(i * 20 + 10, 12, 1, i * .15, i % 3 ? 1 : 2.4); return S(s); })();
-// Dense stacked "book pages" for Thousand Layer Quartz and similar layered stones
-P.layers = (() => { let s = ""; for (let i = 0; i < 48; i++) s += wave(i * 10 + 6, 3 + (i % 5) * .4, 1.2 + (i % 3) * .15, i * .08, i % 4 ? 0.9 : 2.2); return S(s); })();
+// Dense stacked "book pages" for Thousand Layer Quartz and similar layered stones.
+// Integer frequency + tiled neighbors so CSS mask-repeat seams stay invisible.
+P.layers = (() => { let s = ""; for (let i = 0; i < 48; i++) s += wave(i * 10 + 5, 2.5 + (i % 4) * .35, 1, i * .2, i % 4 ? 0.9 : 2.1); return S(tile(s)); })();
 P.bluelace = (() => { let s = ""; for (let i = 0; i < 20; i++) s += wave(i * 24 + 12, 7, 6, i * .9, i % 4 ? 1.2 : 2.6) ; return S(s); })();
 P.crazylace = (() => { let s = ""; for (let i = 0; i < 16; i++) s += wave(i * 30 + 15, 22, 2 + (i % 3), i * 1.3, 1.5); for (const [x, y] of [[120, 140], [360, 340]]) for (let i = 1; i < 7; i++) s += wob(x, y, i * 10, 3, 6, i); return S(tile(s)); })();
 P.fortification = (() => { let s = ""; for (let i = 1; i <= 12; i++) { const q = i * 18; let d = ""; for (let k = 0; k <= 12; k++) { const a = k / 12 * 2 * Math.PI, rr = q * (k % 2 ? .82 : 1); d += (k ? "L" : "M") + (240 + rr * Math.cos(a)).toFixed(1) + " " + (240 + rr * Math.sin(a)).toFixed(1); } s += `<path d="${d}Z" stroke-width="1.5" stroke-linejoin="round"/>`; } return S(s); })();
