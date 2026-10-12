@@ -162,7 +162,7 @@ for (const e of meta) {
     "Leopard Skin Jasper": { to: ["Rhyolite"], label: "Orbicular", also: "sold as jasper" },
     "Dalmatian Jasper": { to: ["Jasper"], label: "Trade name; not a true" },
     "K2 Jasper": { to: ["Azurite"], label: "Granite with spots of" },
-    "Rutilated quartz": { to: ["Quartz"], label: "Variety of", also: "with rutile needles" },
+    "Rutilated quartz": { to: ["Quartz"], also: "with rutile needles" },
     "Copal": { to: ["Amber"], label: "Young resin, not yet" },
     "Synthetic Opal": { to: ["Opal"], label: "Lab-grown imitation of natural" },
     "Opal Doublet & Triplet": { to: ["Opal"], label: "Assembled stone made with" },
