@@ -9,13 +9,15 @@
   cv.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:45";
   document.body.appendChild(cv);
   const g = cv.getContext("2d"); let W, H, D, amb = [], bok = [], fly = [];
-  const MAXFLY = 140, pick = () => tints[(Math.random() * tints.length) | 0];
+  const mobile = matchMedia("(max-width:700px)").matches;
+  const MAXFLY = mobile ? 48 : 140, pick = () => tints[(Math.random() * tints.length) | 0];
   const size = () => { D = Math.min(devicePixelRatio || 1, 2); W = innerWidth; H = innerHeight; cv.width = W * D; cv.height = H * D; g.setTransform(D, 0, 0, D, 0, 0);
-    const n = Math.round(Math.min(140, Math.max(50, W * H / 9000)));
+    const dens = mobile ? 18000 : 9000;
+    const n = Math.round(Math.min(mobile ? 55 : 140, Math.max(mobile ? 22 : 50, W * H / dens)));
     amb = Array.from({ length: n }, () => { const edge = Math.random() < .6; let x = Math.random() * W, y = Math.random() * H;
       if (edge) { const b = Math.min(120, W * .1); if (Math.random() < .5) x = Math.random() < .5 ? Math.random() * b : W - Math.random() * b; else y = Math.random() < .5 ? Math.random() * b : H - Math.random() * b; }
       return { x, y, r: .6 + Math.random() ** 2 * 3.4, ph: Math.random() * 6.3, sp: .6 + Math.random() * 1.8, c: Math.random() < .5 ? "#fff" : pick(), vx: (Math.random() - .5) * .12, vy: -.03 - Math.random() * .1 }; });
-    bok = Array.from({ length: Math.round(n / 7) }, () => ({ x: Math.random() * W, y: Math.random() * H, r: 14 + Math.random() * 40, c: pick(), ph: Math.random() * 6.3, vx: (Math.random() - .5) * .15, vy: (Math.random() - .5) * .1 })); };
+    bok = Array.from({ length: Math.round(n / (mobile ? 10 : 7)) }, () => ({ x: Math.random() * W, y: Math.random() * H, r: 14 + Math.random() * 40, c: pick(), ph: Math.random() * 6.3, vx: (Math.random() - .5) * .15, vy: (Math.random() - .5) * .1 })); };
   size(); addEventListener("resize", size);
   const star = (x, y, r, a, c) => { g.globalAlpha = a; g.fillStyle = c; g.beginPath(); const k = r * 2.8;
     g.moveTo(x, y - k); g.quadraticCurveTo(x, y, x + k, y); g.quadraticCurveTo(x, y, x, y + k); g.quadraticCurveTo(x, y, x - k, y); g.quadraticCurveTo(x, y, x, y - k); g.fill();
@@ -23,8 +25,8 @@
   const emit = (x, y, n, spd) => { for (let i = 0; i < n && fly.length < MAXFLY; i++) { const a = Math.random() * 6.283, s = spd * (.3 + Math.random());
     fly.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - spd * .3, r: .8 + Math.random() * 2.4, life: 1, c: Math.random() < .4 ? "#fff" : pick() }); } };
   let lx = -1, ly = -1;
-  addEventListener("pointermove", (e) => { if (lx >= 0 && Math.hypot(e.clientX - lx, e.clientY - ly) > 14) emit(e.clientX, e.clientY, e.pointerType === "touch" ? 2 : 1, .8); lx = e.clientX; ly = e.clientY; }, { passive: true });
-  addEventListener("pointerdown", (e) => { const t = e.target.closest("a,button,.chip,label,input[type=submit]"); emit(e.clientX, e.clientY, t ? 26 : 8, t ? 3.2 : 1.6); }, { passive: true });
+  if (!mobile) addEventListener("pointermove", (e) => { if (lx >= 0 && Math.hypot(e.clientX - lx, e.clientY - ly) > 14) emit(e.clientX, e.clientY, e.pointerType === "touch" ? 2 : 1, .8); lx = e.clientX; ly = e.clientY; }, { passive: true });
+  addEventListener("pointerdown", (e) => { const t = e.target.closest("a,button,.chip,label,input[type=submit]"); emit(e.clientX, e.clientY, t ? (mobile ? 10 : 26) : (mobile ? 3 : 8), t ? 3.2 : 1.6); }, { passive: true });
   // hero drift: extra sparkles streaming across the stone hero
   const hero = document.querySelector(".stone-hero, .hub .hero");
   let run = !document.hidden, last = 0;

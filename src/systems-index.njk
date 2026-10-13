@@ -6,6 +6,12 @@ permalink: /crystal-systems/
 ---
 <h1>🔷 Crystal Systems</h1>
 <p class="lead">Every crystal's atoms repeat in a lattice that falls into one of seven crystal systems (plus amorphous materials with no lattice).</p>
-<div class="browse-grid">
-{% for s in site.systems %}<a class="tile t{{ loop.index % 4 + 1 }}" href="{{ s.url }}"><strong>{{ s.title }}</strong><span>{{ s.items.length | number }} minerals</span></a>{% endfor %}
+<div class="browse-grid systems-browse">
+{% for s in site.systems %}
+  <a class="tile t{{ loop.index % 4 + 1 }} system-tile" href="{{ s.url }}">
+    <div class="lattice mini grow-{{ s.key }}" aria-hidden="true"><span class="lat-cell"></span><span class="lat-cell"></span></div>
+    <strong>{{ s.title }}</strong>
+    <span>{{ s.items.length | number }} minerals · {{ s.axes.label }}</span>
+  </a>
+{% endfor %}
 </div>

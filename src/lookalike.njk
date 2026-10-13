@@ -1,0 +1,31 @@
+---
+pagination:
+  data: site.lookalikes
+  size: 1
+  alias: g
+permalink: "{{ g.url }}"
+layout: base.njk
+bodyClass: hub
+eleventyComputed:
+  title: "{{ g.title }}"
+  description: "{{ g.summary }}"
+---
+<nav class="crumbs"><a href="/">Home</a> › <a href="/lookalikes/">Look-alikes</a> › {{ g.title }}</nav>
+<h1>{{ g.title }}</h1>
+<p class="lead">{{ g.summary }}</p>
+
+<section class="lookalike-stones">
+  <h2>Stones in this guide</h2>
+  <div class="grid">
+  {% for c in g.stones %}
+    {% if c.url %}{% include "card.njk" %}{% else %}<div class="card"><div class="card-body"><strong>{{ c.name }}</strong><span class="muted small">Trade name / simulant</span></div></div>{% endif %}
+  {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>How to tell them apart</h2>
+  <ul class="tell-list">{% for t in g.tells %}<li>{{ t }}</li>{% endfor %}</ul>
+</section>
+
+<p><a href="/compare/">Compare these stones side by side →</a> · <a href="/lookalikes/">All look-alike guides</a></p>

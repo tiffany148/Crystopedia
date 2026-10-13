@@ -14,6 +14,8 @@ import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } fr
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
+import { COLLECTOR_NOTES } from "../../lib/collector_notes.js";
+import { LOOKALIKES } from "../../lib/lookalikes.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
@@ -53,6 +55,17 @@ const SYSTEM_INFO = {
   monoclinic: "Three unequal axes, one oblique angle. Gypsum, orthoclase, malachite and azurite are monoclinic.",
   triclinic: "Three unequal axes, no right angles – the least symmetrical system. Kyanite, labradorite and turquoise are triclinic.",
   amorphous: "No ordered crystal lattice at all – e.g. natural glasses and some mineraloids.",
+};
+// Compact axis hints for the lattice grow animation (a,b,c relative lengths + angles)
+const SYSTEM_AXES = {
+  cubic: { a: 1, b: 1, c: 1, label: "a = b = c · 90°" },
+  tetragonal: { a: 1, b: 1, c: 1.45, label: "a = b ≠ c · 90°" },
+  orthorhombic: { a: 1.15, b: .85, c: 1.35, label: "a ≠ b ≠ c · 90°" },
+  hexagonal: { a: 1, b: 1, c: 1.4, label: "a = b ≠ c · 120°" },
+  trigonal: { a: 1, b: 1, c: 1.25, label: "a = b ≠ c · 120° (3-fold)" },
+  monoclinic: { a: 1.2, b: .9, c: 1.1, label: "a ≠ b ≠ c · one oblique" },
+  triclinic: { a: 1.15, b: .95, c: 1.25, label: "a ≠ b ≠ c · all oblique" },
+  amorphous: { a: 1, b: 1, c: 1, label: "no lattice" },
 };
 const GEM_SPECIES = new Set(["diamond", "corundum", "beryl", "topaz", "spinel", "zircon", "chrysoberyl", "opal", "turquoise", "jadeite", "forsterite", "tanzanite", "benitoite", "sphalerite", "titanite", "cordierite", "spodumene", "pyrope", "almandine", "spessartine", "grossular", "andradite", "elbaite", "dravite", "malachite", "rhodochrosite", "lazurite", "sodalite", "tourmalines", "garnet group", "amber", "pearl", "moldavite", "obsidian", "lapis lazuli"]);
 
@@ -439,14 +452,45 @@ const NOTES = {
   "Fire Opal": "Mexican fire opal comes mostly from the Querétaro and Jalisco highlands. It is the classic transparent orange-red opal and may or may not show play-of-colour.",
   "Herkimer Diamond": "Herkimer 'diamonds' are not diamonds. They are naturally double-terminated, very clear quartz crystals from pockets in Cambrian dolostone (about 500 million years old) around Herkimer County, New York. Several fee-dig mines let visitors collect. Some contain black bitumen or fluorescent petroleum inclusions.",
 };
+// Crystal-lore cautions (not scientific/medical claims)
+const LORE_WARNINGS = {
+  "Moldavite": "This stone is very powerful and will rid you of anything in life that isn’t meant to be. Be aware when purchasing/coming into contact with this stone.",
+};
 for (const p of pages) {
   const k = p.title.toLowerCase();
   const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
   const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
+  const cn = Object.entries(COLLECTOR_NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (cn) p.collectorNote = cn;
+  const lw = Object.entries(LORE_WARNINGS).find(([t]) => t.toLowerCase() === k)?.[1]; if (lw) p.loreWarning = lw;
 }
-const card = (p) => ({ knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
+// Clear warning tags derived from Handle With Care data (shown in the hero)
+for (const p of pages) {
+  if (!p.hazard) continue;
+  const tags = [{ label: "⚠ Handle With Care", cls: "hz", href: "/handle-with-care/" }];
+  if (p.hazard.icons.includes("rad")) tags.push({ label: "☢ Radioactive", cls: "hz rad", href: "/handle-with-care/#radioactive" });
+  if (p.hazard.icons.includes("ingest") || p.hazard.icons.includes("dust")) tags.push({ label: "☠ Toxic", cls: "hz toxic", href: "#hz-section" });
+  else if (p.hazard.icons.includes("soluble")) tags.push({ label: "⚠ Hazardous", cls: "hz toxic", href: "#hz-section" });
+  if (p.hazard.icons.includes("noelixir")) tags.push({ label: "🚫 No elixirs", cls: "hz", href: "#hz-section" });
+  tags.push({ label: `${p.hazard.sevLabel} caution`, cls: `hz sev-${p.hazard.severity}`, href: "#hz-section" });
+  p.hazardTags = tags;
+}
+const card = (p) => {
+  const tip = p.mohs ? `H ${p.mohs}` : (p.parents?.[0] ? `Variety of ${p.parents[0].title}` : p.typeLabel);
+  const hz = p.hazard ? {
+    severity: p.hazard.severity,
+    sevLabel: p.hazard.sevLabel,
+    toxic: p.hazard.icons?.some((k) => k === "ingest" || k === "dust" || k === "soluble"),
+    rad: p.hazard.icons?.includes("rad"),
+  } : null;
+  return {
+    knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula,
+    thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null,
+    typeLabel: p.typeLabel, mohs: p.mohs, tip, hazard: hz,
+  };
+};
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
+  axes: SYSTEM_AXES[s],
   items: pages.filter((p) => p.crystalSystems?.includes(s)).map((p) => ({ title: p.title, url: p.url, formula: p.formula })),
 }));
 const letters = [];
@@ -497,6 +541,42 @@ for (const [fam, label, list] of [["stalactite", "Stalactites", stalactites], ["
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
 
+const findPage = (n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase());
+const lookalikes = LOOKALIKES.map((g) => {
+  const stones = g.stones.map((n) => {
+    const p = findPage(n);
+    return p ? { ...card(p), name: p.title } : { title: n, name: n, url: null, thumb: null, style: "" };
+  });
+  return { ...g, url: `/lookalikes/${g.slug}/`, stones };
+});
+for (const g of lookalikes) {
+  for (const s of g.stones) {
+    if (!s.url) continue;
+    const p = findPage(s.title || s.name);
+    if (!p) continue;
+    (p.lookalikes ||= []).push({ title: g.title, url: g.url, summary: g.summary });
+  }
+}
+
+const COMPARE_NAMES = [
+  "Amethyst", "Citrine", "Rose quartz", "Smoky quartz", "Quartz", "Rutilated quartz", "Ametrine",
+  "Labradorite", "Moonstone", "Sunstone", "Fluorite", "Malachite", "Azurite", "Emerald", "Aquamarine",
+  "Ruby", "Sapphire", "Pyrite", "Hematite", "Obsidian", "Lapis lazuli", "Sodalite", "Turquoise", "Howlite",
+  "Carnelian", "Tiger's eye", "Black Tourmaline", "Selenite", "Aventurine", "Garnet", "Topaz", "Opal",
+  "Moldavite", "Hemimorphite", "Smithsonite", "Jade", "Amazonite", "Celestine", "Herkimer diamond",
+  "Goldstone", "Opalite", "Spinel", "Diamond", "Peridot", "Tanzanite", "Kunzite", "Lepidolite",
+];
+const compareData = COMPARE_NAMES.map(findPage).filter(Boolean).map((p) => ({
+  title: p.title, url: p.url, slug: p.slug, formula: p.formula || p.chem?.formula || null,
+  mohs: p.mohs, density: p.density, systems: p.crystalSystems || [],
+  colors: (p.colors?.length ? p.colors : (p.colorFamilies || []).map((c) => c.label)).slice(0, 6),
+  typeLabel: p.typeLabel, parents: (p.parents || []).map((x) => x.title),
+  uv: !!p.uv, hazard: p.hazard ? p.hazard.severity : null,
+  tip: p.collectorNote || p.note || null,
+  thumb: (p.thumb || p.img || p.parentImg)?.src || null,
+  style: p.palette?.cardStyle || "",
+}));
+
 healing.sort((a, b) => a.name.localeCompare(b.name));
 for (const e of healing) { const own = pickColor({ name: e.name, colors: [], elements: [] }); e.style = (own[1] === "neutral" ? e.page.palette : paletteFor(own[0], own[1], { name: e.name })).cardStyle; delete e.page; }
 // --- pairings ----------------------------------------------------------------------
@@ -523,7 +603,9 @@ for (const p of pages) {
   const w = look(WET); if (w) add("wet", w);
   const su = look(SUN); if (su) add("sun", su);
   const tx = look(TOXIC_EXTRA) || (p.hazard ? p.hazard.why : null);
-  if (tx && !/safe as a polished/.test(tx)) add("toxic", tx);
+  // Every Handle With Care stone gets a clear toxic/hazard chip (polished-safe still warned for elixirs/dust)
+  if (tx) add("toxic", tx);
+  else if (p.hazard) add("toxic", p.hazard.why);
   if (p.mohsHi && p.mohsHi < 5) add("soft", `Mohs ${p.mohs}: softer than a steel knife, so it scratches easily. Store it apart from harder stones.`);
   const pr = look(PAIR); if (pr) add("pair", "Crystal lore: " + pr);
 }
@@ -591,4 +673,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS, lookalikes, compareData };
