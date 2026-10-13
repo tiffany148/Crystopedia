@@ -1,4 +1,5 @@
-<a class="card" href="{{ c.url }}"{% if c.style %} style="{{ c.style }}"{% endif %}>
+<a class="card" href="{{ c.url }}"{% if c.style %} style="{{ c.style }}"{% endif %}{% if c.tip %} data-tip="{{ c.tip }}"{% endif %}>
   <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
   <div class="card-body"><strong>{{ c.title }}</strong>{% if c.formula %}<span class="formula">{{ c.formula }}</span>{% endif %}<span class="muted small">{{ c.typeLabel }}{% if c.mohs %} · H {{ c.mohs }}{% endif %}</span></div>
+  {% if c.tip %}<span class="card-tip" aria-hidden="true">{{ c.tip }}</span>{% endif %}
 </a>

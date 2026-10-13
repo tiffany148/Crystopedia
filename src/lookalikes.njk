@@ -1,0 +1,22 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Look-alikes & fakes
+permalink: /lookalikes/
+description: Tell popular crystals apart from treatments, dyes and common fakes — citrine vs heated amethyst, turquoise vs dyed howlite, and more.
+---
+<h1>🕵️ Look-alikes &amp; fakes</h1>
+<p class="lead">Shoppers meet treated, dyed and imitation stones every day. These guides focus on practical tells — not lab certificates.</p>
+<p class="disclaimer">These tips help you ask better questions. For valuable purchases, get a gemological appraisal.</p>
+
+<div class="lookalike-grid">
+{% for g in site.lookalikes %}
+  <a class="lookalike-card" href="{{ g.url }}">
+    <h2>{{ g.title }}</h2>
+    <p>{{ g.summary }}</p>
+    <span class="muted small">{% for s in g.stones %}{{ s.title or s.name }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+  </a>
+{% endfor %}
+</div>
+
+<p class="muted"><a href="/compare/">Compare two stones side by side →</a></p>

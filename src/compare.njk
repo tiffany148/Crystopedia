@@ -1,0 +1,28 @@
+---
+layout: base.njk
+bodyClass: hub
+title: Compare crystals
+permalink: /compare/
+description: Compare two crystals side by side — hardness, density, crystal system, colour, UV and collector tips.
+---
+<h1>⚖ Compare crystals</h1>
+<p class="lead">Pick two stones and see hardness, density, crystal system, colour, UV reaction and collector tips side by side.</p>
+
+<div class="compare-tool">
+  <div class="compare-picks">
+    <label>Stone A
+      <input id="cmp-a" class="filter-input" type="search" list="cmp-names" placeholder="e.g. Amethyst" autocomplete="off">
+    </label>
+    <label>Stone B
+      <input id="cmp-b" class="filter-input" type="search" list="cmp-names" placeholder="e.g. Citrine" autocomplete="off">
+    </label>
+    <datalist id="cmp-names"></datalist>
+  </div>
+  <div class="compare-quick chips" id="cmp-quick"></div>
+  <div id="cmp-out" class="compare-out" aria-live="polite">
+    <p class="muted">Choose two stones to compare. Try Amethyst vs Citrine, or Turquoise vs Howlite.</p>
+  </div>
+</div>
+
+<p class="muted small">Also useful: <a href="/lookalikes/">Look-alikes &amp; fakes</a> · <a href="/identify/">Crystal Identifier</a></p>
+<script src="/assets/compare.js" defer></script>

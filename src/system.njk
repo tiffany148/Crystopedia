@@ -10,8 +10,20 @@ eleventyComputed:
   title: "{{ s.title }} crystal system"
 ---
 <nav class="crumbs"><a href="/">Home</a> › <a href="/crystal-systems/">Crystal systems</a> › {{ s.title }}</nav>
-<h1>{{ s.title }} crystal system</h1>
-<p class="lead">{{ s.info }}</p>
+<div class="system-hero">
+  <div>
+    <h1>{{ s.title }} crystal system</h1>
+    <p class="lead">{{ s.info }}</p>
+    <p class="axis-label">{{ s.axes.label }}</p>
+  </div>
+  <div class="lattice grow-{{ s.key }}" aria-hidden="true" title="{{ s.axes.label }}">
+    <span class="lat-cell"></span>
+    <span class="lat-cell"></span>
+    <span class="lat-cell"></span>
+    <span class="lat-cell"></span>
+    <i class="ax ax-a"></i><i class="ax ax-b"></i><i class="ax ax-c"></i>
+  </div>
+</div>
 <p>{{ s.items.length | number }} minerals in Crystopedia are recorded as {{ s.key }}.</p>
 <input class="filter-input" type="search" placeholder="Filter…" oninput="q=this.value.toLowerCase();document.querySelectorAll('.index-list li').forEach(li=>li.style.display=li.textContent.toLowerCase().includes(q)?'':'none')">
 <ul class="index-list">{% for i in s.items %}<li><a href="{{ i.url }}">{{ i.title }}</a>{% if i.formula %} <span class="formula">{{ i.formula }}</span>{% endif %}</li>{% endfor %}</ul>

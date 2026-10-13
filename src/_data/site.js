@@ -14,6 +14,8 @@ import { HAZARDS, HAZARD_ICONS, HAZARD_GROUPS, ELIXIR_NOTES, ELIXIR_DEFAULT } fr
 import { FAMILIES, familiesFromWords, familyOfHex, GROUP } from "../../lib/colors.js";
 import { CURATED_ID } from "../../lib/identify-curated.js";
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
+import { COLLECTOR_NOTES } from "../../lib/collector_notes.js";
+import { LOOKALIKES } from "../../lib/lookalikes.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
@@ -53,6 +55,17 @@ const SYSTEM_INFO = {
   monoclinic: "Three unequal axes, one oblique angle. Gypsum, orthoclase, malachite and azurite are monoclinic.",
   triclinic: "Three unequal axes, no right angles – the least symmetrical system. Kyanite, labradorite and turquoise are triclinic.",
   amorphous: "No ordered crystal lattice at all – e.g. natural glasses and some mineraloids.",
+};
+// Compact axis hints for the lattice grow animation (a,b,c relative lengths + angles)
+const SYSTEM_AXES = {
+  cubic: { a: 1, b: 1, c: 1, label: "a = b = c · 90°" },
+  tetragonal: { a: 1, b: 1, c: 1.45, label: "a = b ≠ c · 90°" },
+  orthorhombic: { a: 1.15, b: .85, c: 1.35, label: "a ≠ b ≠ c · 90°" },
+  hexagonal: { a: 1, b: 1, c: 1.4, label: "a = b ≠ c · 120°" },
+  trigonal: { a: 1, b: 1, c: 1.25, label: "a = b ≠ c · 120° (3-fold)" },
+  monoclinic: { a: 1.2, b: .9, c: 1.1, label: "a ≠ b ≠ c · one oblique" },
+  triclinic: { a: 1.15, b: .95, c: 1.25, label: "a ≠ b ≠ c · all oblique" },
+  amorphous: { a: 1, b: 1, c: 1, label: "no lattice" },
 };
 const GEM_SPECIES = new Set(["diamond", "corundum", "beryl", "topaz", "spinel", "zircon", "chrysoberyl", "opal", "turquoise", "jadeite", "forsterite", "tanzanite", "benitoite", "sphalerite", "titanite", "cordierite", "spodumene", "pyrope", "almandine", "spessartine", "grossular", "andradite", "elbaite", "dravite", "malachite", "rhodochrosite", "lazurite", "sodalite", "tourmalines", "garnet group", "amber", "pearl", "moldavite", "obsidian", "lapis lazuli"]);
 
@@ -181,12 +194,38 @@ for (const e of meta) {
     if (f.also) p.parentAlso = f.also;
   }
 }
-// resolve relations to {title,url}
+// resolve relations; inherit missing photo + scientific fields from the parent
+// so variety stubs aren't blank and stay consistent with their parent mineral
 for (const p of pages) {
   p.parents = (p.parentIds || []).map((id) => byId.get(id)).filter(Boolean).map((x) => ({ title: x.title, url: x.url }));
   p.children = [...new Set(p.childIds || [])].map((id) => byId.get(id)).filter(Boolean)
     .map((x) => ({ title: x.title, url: x.url })).sort((a, b) => a.title.localeCompare(b.title));
-  if (!p.img && p.handmade && p.parentIds[0]) p.parentImg = byId.get(p.parentIds[0])?.img || null;
+  const parent = (p.parentIds || []).map((id) => byId.get(id)).find(Boolean) || null;
+  if (!p.img) {
+    const file = HAND_IMAGES[p.title] || HAND_IMAGES[p.name]
+      || Object.entries(HAND_IMAGES).find(([k, v]) => v && k.toLowerCase() === p.title.toLowerCase())?.[1];
+    if (file) { p.img = commons(file); p.thumb = commons(file, 240); }
+    else if (parent?.img) p.parentImg = parent.img;
+  }
+  if (parent) {
+    if (!p.formula && parent.formula) p.formula = parent.formula;
+    if (!p.elements?.length && parent.elements?.length) p.elements = [...parent.elements];
+    if (!p.crystalSystems?.length && parent.crystalSystems?.length) p.crystalSystems = [...parent.crystalSystems];
+    if (p.mohsMin == null && parent.mohsMin != null) {
+      p.mohsMin = parent.mohsMin; p.mohsMax = parent.mohsMax;
+      p.mohs = fmtRange(p.mohsMin, p.mohsMax, 2); p.hardnessBucket = hardnessBucket(p.mohsMin);
+    }
+    if (p.densityMin == null && parent.densityMin != null) {
+      p.densityMin = parent.densityMin; p.densityMax = parent.densityMax;
+      p.density = fmtRange(p.densityMin, p.densityMax, 3);
+    }
+    if (!p.colors?.length && parent.colors?.length) p.colors = [...parent.colors];
+    if (!p.streak?.length && parent.streak?.length) p.streak = [...parent.streak];
+    if (!p.luster?.length && parent.luster?.length) p.luster = [...parent.luster];
+    if (!p.cleavage?.length && parent.cleavage?.length) p.cleavage = [...parent.cleavage];
+    if (!p.fracture?.length && parent.fracture?.length) p.fracture = [...parent.fracture];
+    if (!p.description && parent.description) p.description = parent.description;
+  }
   p.typeLabel = p.kindLabel && (p.type === "other" || p.type === "handmade") ? p.kindLabel
     : { species: "IMA mineral species", variety: "Mineral variety", gem: "Gem material", other: "Mineral material", handmade: "Trade name / variety" }[p.type];
   p.chakras = [...new Set(p.metaphysical.flatMap((m) => m.chakras))];
@@ -415,10 +454,19 @@ for (const p of pages) {
   const k = p.title.toLowerCase();
   const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
   const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
+  const cn = Object.entries(COLLECTOR_NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (cn) p.collectorNote = cn;
 }
-const card = (p) => ({ knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula, thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null, typeLabel: p.typeLabel, mohs: p.mohs });
+const card = (p) => {
+  const tip = p.mohs ? `H ${p.mohs}` : (p.parents?.[0] ? `Variety of ${p.parents[0].title}` : p.typeLabel);
+  return {
+    knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula,
+    thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null,
+    typeLabel: p.typeLabel, mohs: p.mohs, tip,
+  };
+};
 const systems = SYSTEM_ORDER.map((s) => ({
   key: s, title: cap(s), info: SYSTEM_INFO[s], url: `/crystal-systems/${s}/`,
+  axes: SYSTEM_AXES[s],
   items: pages.filter((p) => p.crystalSystems?.includes(s)).map((p) => ({ title: p.title, url: p.url, formula: p.formula })),
 }));
 const letters = [];
@@ -466,6 +514,41 @@ for (const [fam, label, list] of [["stalactite", "Stalactites", stalactites], ["
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);
+
+const findPage = (n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase());
+const lookalikes = LOOKALIKES.map((g) => {
+  const stones = g.stones.map((n) => {
+    const p = findPage(n);
+    return p ? { ...card(p), name: p.title } : { title: n, name: n, url: null, thumb: null, style: "" };
+  });
+  return { ...g, url: `/lookalikes/${g.slug}/`, stones };
+});
+for (const g of lookalikes) {
+  for (const s of g.stones) {
+    if (!s.url) continue;
+    const p = findPage(s.title || s.name);
+    if (!p) continue;
+    (p.lookalikes ||= []).push({ title: g.title, url: g.url, summary: g.summary });
+  }
+}
+
+const COMPARE_NAMES = [
+  "Amethyst", "Citrine", "Rose quartz", "Smoky quartz", "Quartz", "Rutilated quartz", "Ametrine",
+  "Labradorite", "Moonstone", "Sunstone", "Fluorite", "Malachite", "Azurite", "Emerald", "Aquamarine",
+  "Ruby", "Sapphire", "Pyrite", "Hematite", "Obsidian", "Lapis lazuli", "Sodalite", "Turquoise", "Howlite",
+  "Carnelian", "Tiger's eye", "Black Tourmaline", "Selenite", "Aventurine", "Garnet", "Topaz", "Opal",
+  "Moldavite", "Hemimorphite", "Smithsonite", "Jade", "Amazonite", "Celestine", "Herkimer diamond",
+  "Goldstone", "Opalite", "Spinel", "Diamond", "Peridot", "Tanzanite", "Kunzite", "Lepidolite",
+];
+const compareData = COMPARE_NAMES.map(findPage).filter(Boolean).map((p) => ({
+  title: p.title, url: p.url, slug: p.slug, formula: p.formula || p.chem?.formula || null,
+  mohs: p.mohs, density: p.density, systems: p.crystalSystems || [], colors: (p.colors || []).slice(0, 6),
+  typeLabel: p.typeLabel, parents: (p.parents || []).map((x) => x.title),
+  uv: !!p.uv, hazard: p.hazard ? p.hazard.severity : null,
+  tip: p.collectorNote || p.note || null,
+  thumb: (p.thumb || p.img || p.parentImg)?.src || null,
+  style: p.palette?.cardStyle || "",
+}));
 
 healing.sort((a, b) => a.name.localeCompare(b.name));
 for (const e of healing) { const own = pickColor({ name: e.name, colors: [], elements: [] }); e.style = (own[1] === "neutral" ? e.page.palette : paletteFor(own[0], own[1], { name: e.name })).cardStyle; delete e.page; }
@@ -561,4 +644,4 @@ const arkansas = {
   tips: ARK_TIPS.map(([title, text, src]) => ({ title, text, src })),
   sources: Object.values(ARK_SOURCES),
 };
-export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS };
+export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS, lookalikes, compareData };
