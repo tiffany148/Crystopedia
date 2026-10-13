@@ -299,3 +299,19 @@ html[data-theme=dark] .card-tip{color:#f5f3ff;background:rgba(20,16,40,.92);bord
   .uv-layer{transition:none}
   .card-tip{transition:none}
 }
+
+/* Clear toxic / warning tags on stone pages + cards */
+.stone-hero .badge.hz.toxic{background:linear-gradient(135deg,#fecaca,#ef4444)!important;color:#450a0a!important;border-color:#fecaca!important;font-weight:800}
+.stone-hero .badge.hz.rad{background:linear-gradient(135deg,#bbf7d0,#16a34a)!important;color:#052e16!important;border-color:#86efac!important;font-weight:800}
+.stone-hero .badge.hz.sev-high{background:linear-gradient(135deg,#fee2e2,#b91c1c)!important;color:#fff!important;border-color:#fecaca!important}
+.stone-hero .badge.hz.sev-moderate{background:linear-gradient(135deg,#ffedd5,#ea580c)!important;color:#1c0a00!important;border-color:#fdba74!important}
+.stone-hero .badge.hz.sev-low{background:linear-gradient(135deg,#fef9c3,#ca8a04)!important;color:#1a1400!important;border-color:#fde68a!important}
+.stone-hero .badge.hz{margin:.15rem .2rem .15rem 0}
+.care-chip.toxic{background:#fee2e2!important;color:#7f1d1d!important;border:2px solid #ef4444!important;font-weight:800}
+.lore-warning{margin:.7rem 0 .3rem;padding:.75rem .95rem;border-radius:14px;border:2px solid #c4b5fd;background:linear-gradient(135deg,rgba(237,233,254,.95),rgba(255,255,255,.9));color:#1e1b3a;line-height:1.45;max-width:42rem}
+html[data-theme=dark] .lore-warning{background:linear-gradient(135deg,rgba(76,29,149,.45),rgba(20,16,40,.9));color:#f5f3ff;border-color:#a78bfa}
+.card-hz-tag{position:absolute;top:8px;left:8px;z-index:4;padding:.2rem .5rem;border-radius:999px;font-size:.68rem;font-weight:800;letter-spacing:.02em;color:#450a0a;background:linear-gradient(135deg,#fecaca,#ef4444);border:1px solid #fff;box-shadow:0 4px 12px rgba(127,29,29,.35)}
+.card-hz-tag.rad{color:#052e16;background:linear-gradient(135deg,#bbf7d0,#22c55e)}
+.card.hz-card{outline:2px solid color-mix(in srgb,#ef4444 55%,transparent)}
+.card.hz-card.sev-high{outline-color:#b91c1c}
+.card.hz-card.sev-moderate{outline-color:#ea580c}

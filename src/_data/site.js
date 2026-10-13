@@ -450,18 +450,40 @@ const NOTES = {
   "Fire Opal": "Mexican fire opal comes mostly from the Querétaro and Jalisco highlands. It is the classic transparent orange-red opal and may or may not show play-of-colour.",
   "Herkimer Diamond": "Herkimer 'diamonds' are not diamonds. They are naturally double-terminated, very clear quartz crystals from pockets in Cambrian dolostone (about 500 million years old) around Herkimer County, New York. Several fee-dig mines let visitors collect. Some contain black bitumen or fluorescent petroleum inclusions.",
 };
+// Crystal-lore cautions (not scientific/medical claims)
+const LORE_WARNINGS = {
+  "Moldavite": "This stone is very powerful and will rid you of anything in life that isn’t meant to be. Be aware when purchasing/coming into contact with this stone.",
+};
 for (const p of pages) {
   const k = p.title.toLowerCase();
   const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
   const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
   const cn = Object.entries(COLLECTOR_NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (cn) p.collectorNote = cn;
+  const lw = Object.entries(LORE_WARNINGS).find(([t]) => t.toLowerCase() === k)?.[1]; if (lw) p.loreWarning = lw;
+}
+// Clear warning tags derived from Handle With Care data (shown in the hero)
+for (const p of pages) {
+  if (!p.hazard) continue;
+  const tags = [{ label: "⚠ Handle With Care", cls: "hz", href: "/handle-with-care/" }];
+  if (p.hazard.icons.includes("rad")) tags.push({ label: "☢ Radioactive", cls: "hz rad", href: "/handle-with-care/#radioactive" });
+  if (p.hazard.icons.includes("ingest") || p.hazard.icons.includes("dust")) tags.push({ label: "☠ Toxic", cls: "hz toxic", href: "#hz-section" });
+  else if (p.hazard.icons.includes("soluble")) tags.push({ label: "⚠ Hazardous", cls: "hz toxic", href: "#hz-section" });
+  if (p.hazard.icons.includes("noelixir")) tags.push({ label: "🚫 No elixirs", cls: "hz", href: "#hz-section" });
+  tags.push({ label: `${p.hazard.sevLabel} caution`, cls: `hz sev-${p.hazard.severity}`, href: "#hz-section" });
+  p.hazardTags = tags;
 }
 const card = (p) => {
   const tip = p.mohs ? `H ${p.mohs}` : (p.parents?.[0] ? `Variety of ${p.parents[0].title}` : p.typeLabel);
+  const hz = p.hazard ? {
+    severity: p.hazard.severity,
+    sevLabel: p.hazard.sevLabel,
+    toxic: p.hazard.icons?.some((k) => k === "ingest" || k === "dust" || k === "soluble"),
+    rad: p.hazard.icons?.includes("rad"),
+  } : null;
   return {
     knownAs: p.knownAs, style: p.palette.cardStyle, title: p.title, url: p.url, formula: p.formula,
     thumb: p.thumb || p.parentImg && { ...p.parentImg, src: p.parentImg.src.replace("width=480", "width=240") } || null,
-    typeLabel: p.typeLabel, mohs: p.mohs, tip,
+    typeLabel: p.typeLabel, mohs: p.mohs, tip, hazard: hz,
   };
 };
 const systems = SYSTEM_ORDER.map((s) => ({
@@ -577,7 +599,9 @@ for (const p of pages) {
   const w = look(WET); if (w) add("wet", w);
   const su = look(SUN); if (su) add("sun", su);
   const tx = look(TOXIC_EXTRA) || (p.hazard ? p.hazard.why : null);
-  if (tx && !/safe as a polished/.test(tx)) add("toxic", tx);
+  // Every Handle With Care stone gets a clear toxic/hazard chip (polished-safe still warned for elixirs/dust)
+  if (tx) add("toxic", tx);
+  else if (p.hazard) add("toxic", p.hazard.why);
   if (p.mohsHi && p.mohsHi < 5) add("soft", `Mohs ${p.mohs}: softer than a steel knife, so it scratches easily. Store it apart from harder stones.`);
   const pr = look(PAIR); if (pr) add("pair", "Crystal lore: " + pr);
 }

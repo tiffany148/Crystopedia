@@ -19,11 +19,12 @@ eleventyComputed:
     {% if im %}<div class="hero-backdrop" style="background-image:url('{{ im.src }}')" aria-hidden="true"></div>{% endif %}
     <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="mineral-intro">
-      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.hazard %} <a class="badge hz" href="/handle-with-care/">⚠ Handle With Care</a>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
+      <span data-pagefind-ignore><span class="badge">{{ m.typeLabel }}</span>{% if m.isGem %} <span class="badge gem">Gemstone</span>{% endif %}{% if m.metaphysical.length %} <span class="badge heal">Healing crystal</span>{% endif %}{% if m.hazardTags %}{% for t in m.hazardTags %}<a class="badge {{ t.cls }}" href="{{ t.href }}">{{ t.label }}</a>{% endfor %}{% elif m.hazard %}<a class="badge hz" href="/handle-with-care/">⚠ Handle With Care</a>{% endif %}{% if m.uv %} <a class="badge uv" href="/uv-reactive/" style="--glow:{{ m.uv.glow }}">✺ Glows under UV</a>{% endif %}</span>
       <h1 data-pagefind-meta="title">{{ m.title }}</h1>
       {% if m.knownAs %}<p class="known-as"><span>✦ {{ m.knownAs | replace(" (Handle With Care)", "") }} ✦</span>{% if "(Handle With Care)" in m.knownAs %} <a class="badge hz" href="/handle-with-care/">⚠ Handle With Care</a>{% endif %}</p>{% endif %}
       {% if m.birthstones.length %}<p class="birth-badges">{% for b in m.birthstones %}<a class="birth-badge{% if b.traditional %} trad{% endif %}" href="/birthstones/#{{ b.month | lower }}">🎂 {{ b.month }} Birthstone{% if b.traditional %} (traditional){% endif %}</a>{% endfor %}</p>{% endif %}
       {% if m.careTags.length %}<p class="care-chips">{% for t in m.careTags %}<a class="care-chip {{ t.cls }}" href="#care-notes" title="{{ t.why }}">{{ t.icon }} {{ t.label }}</a>{% endfor %}</p>{% endif %}
+      {% if m.loreWarning %}<aside class="lore-warning" role="note"><strong>Crystal lore caution:</strong> {{ m.loreWarning }} <span class="muted small">(traditional belief, not a scientific or medical claim)</span></aside>{% endif %}
       {% if m.intentions.length %}<p class="intent-chips" data-pagefind-ignore><small>Crystal lore:</small> {% for i in m.intentions %}<a class="intent-chip" href="/intentions/{{ i.key }}/">{{ i.emoji }} {{ i.label }}</a>{% endfor %}</p>{% endif %}{% if m.aka %}<p class="aka" data-pagefind-weight="5">Also known as: {{ m.aka | join(", ") }}</p>{% endif %}
       {% if m.chem %}<div class="chem-box"><span class="chem-label">⚗ Chemical makeup{% if m.chem.approx %} <em>(approximate)</em>{% endif %}</span><p class="big-formula">{% if m.chem.approx %}≈ {% endif %}{{ m.chem.formula }}</p>{% if m.chem.note %}<small class="chem-note">{{ m.chem.note }}</small>{% endif %}{% if m.chem.elements.length %}<span class="el-chips">{% for z in m.chem.elements %}<span class="el-chip">{{ z }}</span>{% endfor %}</span>{% endif %}</div>{% elif m.formula %}<p class="big-formula">{{ m.formula }}</p>{% endif %}
       {% if m.description %}<p class="lead">{{ m.description | cap }}.</p>{% endif %}
@@ -97,7 +98,7 @@ eleventyComputed:
   {% endif %}
 
   {% if m.hazard %}
-  <section class="hz-section sev-{{ m.hazard.severity }}">
+  <section class="hz-section sev-{{ m.hazard.severity }}" id="hz-section">
     <h2>⚠ Handle With Care <span class="sev">{{ m.hazard.sevLabel }} caution</span></h2>
     <p class="hz-icons">{% for i in m.hazard.iconList %}<span class="hz-icon" title="{{ i.label }}">{{ i.icon }} {{ i.label }}</span>{% endfor %}</p>
     <p><strong>Why:</strong> {{ m.hazard.why }}</p>
