@@ -542,7 +542,8 @@ const COMPARE_NAMES = [
 ];
 const compareData = COMPARE_NAMES.map(findPage).filter(Boolean).map((p) => ({
   title: p.title, url: p.url, slug: p.slug, formula: p.formula || p.chem?.formula || null,
-  mohs: p.mohs, density: p.density, systems: p.crystalSystems || [], colors: (p.colors || []).slice(0, 6),
+  mohs: p.mohs, density: p.density, systems: p.crystalSystems || [],
+  colors: (p.colors?.length ? p.colors : (p.colorFamilies || []).map((c) => c.label)).slice(0, 6),
   typeLabel: p.typeLabel, parents: (p.parents || []).map((x) => x.title),
   uv: !!p.uv, hazard: p.hazard ? p.hazard.severity : null,
   tip: p.collectorNote || p.note || null,
