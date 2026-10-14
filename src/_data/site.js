@@ -434,7 +434,7 @@ for (const p of pages) {
 const ALIASES = {
   "Freshwater Mussel Shell": ["Unionidae", "River mussel shell"], "Druzy Fossil Shell": ["Crystal fossil shell", "Fossil clam", "Crystallized clam"], "Record Keeper Quartz": ["Record keeper"],
   "Bismuth": ["Native bismuth", "Bismuth crystal", "Rainbow bismuth", "Hopper bismuth"], "Amethyst Stalactite": ["Amethyst flower", "Amethyst star slice"], "Rhodochrosite Stalactite": ["Inca rose"],
-  "Manganoan calcite": ["Mangano Calcite", "Mangano calcite", "Pink calcite", "Manganocalcite"],
+  "Manganoan calcite": ["Mangano Calcite", "Mangano calcite", "Pink calcite", "Manganocalcite", "Mango calcite"],
   "Iceland spar": ["Optical calcite", "Optical-grade calcite"],
   "Moonstone": ["Raw moonstone", "Rough moonstone"],
   "Fire Opal": ["Mexican fire opal"], "Common Opal": ["Potch", "Potch opal"], "Green Opal": ["Prase opal"], "Dendritic Opal": ["Moss opal"],
