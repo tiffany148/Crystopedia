@@ -102,4 +102,6 @@ body.opal-page{overflow-x:hidden}
 .gold-star.inline{position:relative;display:inline-block;top:4px;right:auto;width:22px;height:22px}
 .sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* What's inside numbers: dark outline + drop shadow for legibility */
-.inside-list .n{-webkit-text-stroke:3px #1a0b2e;paint-order:stroke fill;filter:drop-shadow(0 2px 2px rgba(0,0,0,.45));font-size:1.5rem}
+.inside-list .n{-webkit-text-stroke:1px #111;filter:drop-shadow(0 1px 1px rgba(0,0,0,.15));font-size:1.5rem;padding:0;box-shadow:none;border:0}
+/* sparkly silver starburst: draw the SVG itself (silver strokes + shadow + glitter) instead of masking */
+#stone-pattern.pat-starburst,#stone-pattern2.pat-starburst{-webkit-mask:none!important;mask:none!important;background:var(--pat) 0 0/480px repeat!important;opacity:.85!important}
