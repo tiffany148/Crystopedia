@@ -1,0 +1,13 @@
+{#- Reusable holographic crystal sticker. Usage:
+  {% from "sticker.njk" import sticker %}{{ sticker("point", "top:12%;left:3%", -8, 64) }}
+  shapes: point | gem | cluster | diamond | star -#}
+{% macro sticker(shape="point", pos="", tilt=-6, size=60, cls="") %}
+<span class="holo-sticker {{ cls }}" style="{{ pos }};--tilt:{{ tilt }}deg;--sz:{{ size }}px" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><linearGradient id="hs-{{ shape }}-{{ tilt }}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9ad5"/><stop offset=".25" stop-color="#ffe38a"/><stop offset=".5" stop-color="#8affd1"/><stop offset=".72" stop-color="#7ab8ff"/><stop offset="1" stop-color="#c79bff"/></linearGradient></defs>
+{% set f = "url(#hs-" + shape + "-" + tilt + ")" %}
+{% if shape == "point" %}<path d="M50 4 L72 30 L66 96 L34 96 L28 30 Z" fill="{{ f }}"/><path d="M50 4 L50 96 M28 30 L72 30" stroke="#fff" stroke-width="2" fill="none" opacity=".8"/>
+{% elif shape == "gem" %}<path d="M20 30 L35 12 H65 L80 30 L50 90 Z" fill="{{ f }}"/><path d="M20 30 H80 M35 12 L42 30 L50 90 L58 30 L65 12" stroke="#fff" stroke-width="2" fill="none" opacity=".8"/>
+{% elif shape == "cluster" %}<path d="M30 92 L22 40 L32 22 L40 40 L38 92Z M44 92 L42 26 L52 6 L62 26 L58 92Z M64 92 L64 46 L74 32 L82 48 L74 92Z" fill="{{ f }}"/><path d="M32 22 L32 92 M52 6 L52 92 M74 32 L74 92" stroke="#fff" stroke-width="1.6" opacity=".75"/>
+{% elif shape == "diamond" %}<path d="M50 4 L92 50 L50 96 L8 50 Z" fill="{{ f }}"/><path d="M50 4 L50 96 M8 50 H92 M29 27 L71 73 M71 27 L29 73" stroke="#fff" stroke-width="1.6" opacity=".6"/>
+{% else %}<path d="M50 2 L60 40 L98 50 L60 60 L50 98 L40 60 L2 50 L40 40 Z" fill="{{ f }}"/>{% endif %}
+</svg></span>
+{% endmacro %}

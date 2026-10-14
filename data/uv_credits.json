@@ -16,7 +16,7 @@
   "license": "Public domain"
  },
  "Autunite sous UV (France).jpg": {
-  "artist": "Parent Géry",
+  "artist": "Parent G\u00e9ry",
   "license": "Public domain"
  },
  "Sodalith - Rohstein.jpg": {
@@ -48,7 +48,7 @@
   "license": "CC BY-SA 3.0"
  },
  "Calcite (Mexique) .jpg": {
-  "artist": "Géry PARENT",
+  "artist": "G\u00e9ry PARENT",
   "license": "Public domain"
  },
  "Scheelite MHNT.MIN.2004.0.88 (p).jpg": {
@@ -71,7 +71,7 @@
   "artist": "Christian Rewitzer",
   "license": "CC BY-SA 3.0"
  },
- "Autunite carrière Les Oudots.jpg": {
+ "Autunite carri\u00e8re Les Oudots.jpg": {
   "artist": "Didier Descouens",
   "license": "CC BY-SA 4.0"
  },
@@ -88,15 +88,15 @@
   "license": "CC BY-SA 3.0"
  },
  "Hackmanite, winchite 1.JPG": {
-  "artist": "Parent Géry",
+  "artist": "Parent G\u00e9ry",
   "license": "CC BY-SA 3.0"
  },
  "Hackmanite, winchite sous UVL 2.JPG": {
-  "artist": "Parent Géry",
+  "artist": "Parent G\u00e9ry",
   "license": "CC BY-SA 3.0"
  },
  "Tugtupite, UVL.JPG": {
-  "artist": "Parent Géry",
+  "artist": "Parent G\u00e9ry",
   "license": "CC BY-SA 3.0"
  },
  "Wernerite - Fluorescence.gif": {
@@ -152,7 +152,7 @@
   "license": "CC BY 2.0"
  },
  "Hardystonite4664-9.jpg": {
-  "artist": "Henk Smeets – tomeikminerals.com",
+  "artist": "Henk Smeets \u2013 tomeikminerals.com",
   "license": "CC BY 4.0"
  },
  "Meionite, Calcite-481996.jpg": {
@@ -168,7 +168,11 @@
   "license": "CC BY-SA 3.0"
  },
  "Calcite sous UV (Mexique) 1.2.JPG": {
-  "artist": "Parent Géry",
+  "artist": "Parent G\u00e9ry",
+  "license": "CC BY-SA 3.0"
+ },
+ "Scapolite-40988.jpg": {
+  "artist": "Robert M. Lavinsky",
   "license": "CC BY-SA 3.0"
  }
 }

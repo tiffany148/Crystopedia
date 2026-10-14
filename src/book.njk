@@ -2,12 +2,18 @@
 layout: base.njk
 title: The Book
 permalink: /book/
-bodyClass: stone-page book-page
-pagePattern: bands
-bodyStyle: "--stone:#00e0d0;--stone-deep:#009d92;--stone-accent:hsl(176 100% 32%);--stone-accent-dk:hsl(176 100% 78%);--pg:#549a97,#52dacf,#71f5ea,#befff8;--dk:#032120,#053b37,#07554e,#097166;--hero:#046a66,#00c8b8,#2ef0e0,#9ffff5;--hero-scrim:rgba(255,255,255,0.32);--hero-ink:#1e1b3a;--hero-ink-soft:rgba(30,27,58,.8);--hero-chip:rgba(255,255,255,.55);--c1:#046a66;--c2:#2ef0e0;--c3:#9ffff5"
+bodyClass: stone-page book-page opal-page
+pagePattern: starburst
+bodyStyle: "--c1:#ff9ad5;--c2:#7affea;--c3:#c79bff;--stone:#c79bff;--hero:#ff9ad5,#7affea,#c79bff,#ffe38a;--hero-scrim:rgba(255,255,255,.35);--hero-ink:#1e1b3a;--hero-ink-soft:rgba(30,27,58,.8);--hero-chip:rgba(255,255,255,.55)"
 description: "Crystopedia: The Complete Encyclopedia of Crystals, Minerals, Gems & Fossils by Tiffany Stark, coming soon in print."
 ---
 <article class="mineral">
+{% from "sticker.njk" import sticker %}
+<div class="sticker-layer" aria-hidden="true">
+{{ sticker("point","top:-6px;left:-40px",-14,58) }}{{ sticker("gem","top:120px;right:-30px",10,56) }}{{ sticker("star","top:820px;left:-40px",8,46,"m-hide") }}
+{{ sticker("cluster","top:900px;right:-44px",-8,70) }}{{ sticker("diamond","top:1500px;left:-38px",12,50,"m-hide") }}{{ sticker("point","top:1640px;right:-36px",18,54,"m-hide") }}
+{{ sticker("gem","top:2250px;left:-40px",-10,58,"m-hide") }}{{ sticker("star","top:2380px;right:-34px",-16,44,"m-hide") }}{{ sticker("cluster","top:3000px;left:-42px",6,64,"m-hide") }}{{ sticker("diamond","top:3150px;right:-38px",-6,48,"m-hide") }}
+</div>
 <nav class="crumbs"><a href="/">Home</a> › The Book</nav>
 <div class="mineral-head stone-hero">
   <div class="hero-backdrop" style="background-image:url('/assets/book/group-quartz-teal.webp')" aria-hidden="true"></div>
@@ -24,6 +30,22 @@ description: "Crystopedia: The Complete Encyclopedia of Crystals, Minerals, Gems
     <figcaption>The front cover</figcaption>
   </figure>
 </div>
+<section>
+  <h2>What's inside</h2>
+  <ul class="inside-list">
+    <li><span class="n">{{ site.bookStats.colors }}</span><b>Color sections, A to Z</b>Stones sorted by color in rainbow order, alphabetical within each color, with rainbow edge tabs you can thumb to.</li>
+    <li><span class="n">{{ site.bookStats.stonePages }}</span><b>Full stone pages</b>Photo, chemical formula, crystal system, rainbow Mohs gauge, rarity meter, Did You Know facts, locator map, and lore kept separate from science.</li>
+    <li><span class="n">{{ site.bookStats.reference | number }}</span><b>Compact A–Z reference</b>Every mineral species, variety and gem on Crystopedia: formula, crystal system, hardness, density and type locality.</li>
+    <li><span class="n">{{ site.bookStats.uv }}</span><b>UV Glow</b>Fluorescent stones with daylight and under-UV photos side by side, plus a UV Glow section.</li>
+    <li><b>⚠ Care, toxic &amp; lore warnings</b>Don't-get-wet, fades-in-sun and Handle With Care chips on the stone pages, plus a Handle With Care section on radioactive, toxic and fibrous minerals.</li>
+    <li><span class="n">{{ site.bookStats.fossils }}</span><b>Fossils</b>Ammonites, trilobites, petrified wood and more, in their own section.</li>
+    <li><span class="n">{{ site.bookStats.geodes }}</span><b>Geodes</b>Crystal-lined geodes and nodules.</li>
+    <li><b>🎂 Birthstones &amp; Arkansas</b>Birthstones by month (modern and traditional), and Arkansas Stones &amp; Fossils.</li>
+    <li><b>🔷 Guides</b>Mohs hardness guide, the crystal systems, a glossary, and indexes by name and chakra.</li>
+    <li><b>💜 Tiffany's collection</b>Pieces from Tiffany's own shelves, with a Tiffany's Pick star on stones photographed from her collection, and About the Author.</li>
+    <li><b>🔎 A little secret…</b>Somewhere in these pages there's a hidden surprise. Can you spy it?</li>
+  </ul>
+</section>
 <section>
   <h2>The covers</h2>
   <div class="book-figs">

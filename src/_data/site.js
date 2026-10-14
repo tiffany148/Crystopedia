@@ -279,6 +279,7 @@ for (const p of pages) { const nums = (v) => String(v || "").match(/\d+(\.\d+)?/
   const dn = nums(p.density); if (dn.length) { const d = (Math.min(...dn) + Math.max(...dn)) / 2; p.densityVal = d; p.densityPct = Math.max(0, Math.min(1, (d - 1) / 9)); } }
 for (const p of pages) p.pattern = patternFor(p.title + " " + (p.metaphysical?.[0]?.name || ""), (p.crystalSystems || [])[0]);
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
+{ const hm = pages.find((p) => p.title === "Hemimorphite"); if (hm && hm.mohsMin == null) { hm.mohsMin = 4.5; hm.mohsMax = 5; hm.mohs = "4.5 – 5"; hm.mohsLo = 4.5; hm.mohsHi = 5; } } // well-established value (Mindat/GIA); Wikidata lacks it
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
 // --- cross-links ("see also") -----------------------------------------------------------------
@@ -402,7 +403,7 @@ for (const p of pages) {
 {
   const cp = path.join(ROOT, "data/uv_credits.json");
   const CR = fs.existsSync(cp) ? JSON.parse(fs.readFileSync(cp, "utf8")) : {};
-  const DAY_FIX = { Clinohedrite: "Hardystonite-Clinohedrite-Calcite-170572.jpg", Esperite: null }; // these Wikidata photos are themselves UV shots (no daylight photo on Commons for esperite)
+  const DAY_FIX = { Clinohedrite: "Hardystonite-Clinohedrite-Calcite-170572.jpg", Wernerite: "Scapolite-40988.jpg", Esperite: null }; // Wernerite = old name for intermediate scapolite // these Wikidata photos are themselves UV shots (no daylight photo on Commons for esperite)
   const by = (im) => im ? (im.own ? im.credit : CR[im.file] ? `${CR[im.file].artist} · ${CR[im.file].license} · Wikimedia Commons` : "Wikimedia Commons (see file page)") : null;
   for (const p of pages) {
     if (!p.uv) continue;
@@ -708,5 +709,17 @@ const arkansas = {
   sources: Object.values(ARK_SOURCES),
 };
 for (const p of pages) { p.rarity = rarityFor(p); p.rarityLabel = RARITY_LABEL[p.rarity]; p.didYouKnow = factsFor(p); p.pick = !!p.img?.own; }
-export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS, lookalikes, compareData };
+// Real counts for the /book/ "What's inside" list (same filters as the book builder)
+const _p1 = pages.filter((p) => p.metaphysical?.length || p.handmade);
+const _kind = (p) => p.kindLabel || p.typeLabel || "";
+const bookStats = {
+  stonePages: _p1.length,
+  reference: pages.filter((p) => ["species", "variety", "gem"].includes(p.type)).length,
+  fossils: _p1.filter((p) => /fossil/i.test(_kind(p))).length,
+  geodes: _p1.filter((p) => /geode/i.test(_kind(p))).length,
+  uv: _p1.filter((p) => p.uv).length,
+  hazards: hazards.length || 0,
+  colors: FAMILIES.length,
+};
+export default { birthstones, intentPages, stalactites, calcites, opals, aragonites, halites, ambers, arkansas, hazards, hazardIcons, starStones, catsEyes, obsidians, moonstones, colorPages, uvStones, uvSafety, fossils, geodes, mapStats, identify, intentions, pairingsData, pages, systems, letters, gems, popular, healing, stats, chakras: CHAKRAS, lookalikes, compareData, bookStats };
 

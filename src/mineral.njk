@@ -131,15 +131,7 @@ eleventyComputed:
         {% if m.uv.ph %}<tr><th>Phosphorescence <small>(afterglow)</small></th><td>{{ m.uv.ph }}</td></tr>{% endif %}
         {% if m.uv.tb %}<tr><th>Tenebrescence <small>(colour change)</small></th><td>{{ m.uv.tb }}</td></tr>{% endif %}
       </table>
-      {% if m.uv.day and m.uv.uvImg %}
-      <div class="uv-toggle">
-        <button type="button" class="uv-btn" data-uv-btn aria-pressed="false">☀ Showing daylight — tap for UV</button>
-        <div class="uv-stage">
-          <figure class="uv-layer day"><img loading="lazy" src="{{ m.uv.day.src }}" alt="{{ m.title }} in daylight"><span class="uv-tag">☀ In daylight</span><figcaption>{% if m.uv.day.own %}{{ m.uv.day.by }}{% else %}<a href="{{ m.uv.day.credit }}" rel="noopener">{{ m.uv.day.by }}</a>{% if m.uv.day.parentPhoto %} · parent mineral{% endif %}{% endif %}</figcaption></figure>
-          <figure class="uv-layer uvl"><img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light"><span class="uv-tag">✺ Under UV</span><figcaption>{% if m.uv.uvImg.own %}{{ m.uv.uvImg.by }} · {{ m.uv.uvImg.caption }}{% else %}<a href="{{ m.uv.uvImg.credit }}" rel="noopener">{{ m.uv.uvImg.by }}</a>{% endif %}</figcaption></figure>
-        </div>
-      </div>
-      {% elif m.uv.day or m.uv.uvImg %}
+      {% if m.uv.day or m.uv.uvImg %}
       <div class="uv-pair">
         <figure class="uv-half day">{% if m.uv.day %}<img loading="lazy" src="{{ m.uv.day.src }}" alt="{{ m.title }} in daylight">{% else %}<span class="uv-missing">☀ Daylight photo coming soon</span>{% endif %}<span class="uv-tag">☀ In daylight</span>{% if m.uv.day %}<figcaption>{% if m.uv.day.own %}{{ m.uv.day.by }}{% else %}<a href="{{ m.uv.day.credit }}" rel="noopener">{{ m.uv.day.by }}</a>{% if m.uv.day.parentPhoto %} · parent mineral{% endif %}{% endif %}</figcaption>{% endif %}</figure>
         <figure class="uv-half uvl">{% if m.uv.uvImg %}<img loading="lazy" src="{{ m.uv.uvImg.src }}" alt="{{ m.title }} under UV light">{% else %}<span class="uv-missing">✺ UV photo coming soon</span>{% endif %}<span class="uv-tag">✺ Under UV</span>{% if m.uv.uvImg %}<figcaption>{% if m.uv.uvImg.own %}{{ m.uv.uvImg.by }} · {{ m.uv.uvImg.caption }}{% else %}<a href="{{ m.uv.uvImg.credit }}" rel="noopener">{{ m.uv.uvImg.by }}</a>{% endif %}</figcaption>{% endif %}</figure>
@@ -149,7 +141,6 @@ eleventyComputed:
     <p>{{ m.uv.note }}</p>
     <p class="muted small">Reactions vary by locality and specimen; many specimens of a fluorescent species do not glow. {{ site.uvSafety }} Sources: {% for s in m.uv.sources %}<a href="{{ s.url }}" rel="noopener">{{ s.t }}</a>{% if not loop.last %} · {% endif %}{% endfor %}. <a href="/uv-reactive/">More UV-reactive stones →</a></p>
   </section>
-  <script src="/assets/uv-toggle.js" defer></script>
   {% endif %}
 
   {% if m.mapPoints or m.typeLocText.length %}

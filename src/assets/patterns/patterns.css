@@ -38,3 +38,5 @@
 #stone-pattern.pat-lattice-monoclinic,#stone-pattern2.pat-lattice-monoclinic{--pat:url(/assets/patterns/lattice-monoclinic.svg);}
 #stone-pattern.pat-lattice-triclinic,#stone-pattern2.pat-lattice-triclinic{--pat:url(/assets/patterns/lattice-triclinic.svg);}
 #stone-pattern.pat-lattice-amorphous,#stone-pattern2.pat-lattice-amorphous{--pat:url(/assets/patterns/lattice-amorphous.svg);}
+
+#stone-pattern.pat-starburst,#stone-pattern2.pat-starburst{--pat:url(/assets/patterns/starburst.svg);}

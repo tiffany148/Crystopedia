@@ -72,3 +72,25 @@
 .mineral-intro .badge.hz.toxic{background:linear-gradient(135deg,#3a0a0a,#b3122e);color:#fff;box-shadow:0 0 0 2px #fff8,0 0 14px #ff3b5c99}
 .mineral-intro .badge.hz.rad{background:linear-gradient(135deg,#1d2a00,#7bdc00);color:#fff}
 .badge.lore{font-weight:800;color:#fff;background:linear-gradient(135deg,#3b0f6b,#a35bd0,#18e0d0);box-shadow:0 0 0 2px #fff8,0 0 14px #c9a2ff99}
+
+/* ===== reusable holographic crystal sticker ===== */
+.holo-sticker{position:absolute;z-index:1;width:var(--sz,60px);height:var(--sz,60px);transform:rotate(var(--tilt,-6deg));pointer-events:none;
+ padding:5px;border-radius:22%;background:#fff;box-shadow:0 3px 0 #0001,0 6px 14px #0004;filter:saturate(1.15)}
+.holo-sticker svg{width:100%;height:100%;display:block;filter:drop-shadow(0 0 4px #fff)}
+.holo-sticker::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,transparent 35%,#fff9 48%,transparent 60%);background-size:250% 100%;animation:card-sweep 6s ease-in-out infinite}
+@media (max-width:720px){.holo-sticker.m-hide{display:none}.holo-sticker{--sz:40px!important}}
+@media (prefers-reduced-motion:reduce){.holo-sticker::after{animation:none}}
+/* ===== opalescent book page ===== */
+body.opal-page{background:
+ radial-gradient(ellipse 60% 45% at 10% 8%,#ffd6ec 0,transparent 70%),radial-gradient(ellipse 55% 50% at 92% 18%,#c9fff4 0,transparent 70%),
+ radial-gradient(ellipse 60% 50% at 50% 60%,#e3d4ff 0,transparent 70%),radial-gradient(ellipse 50% 40% at 15% 92%,#fff0bf 0,transparent 70%),
+ linear-gradient(135deg,#fde7f3,#e6fbff 35%,#efe4ff 65%,#fff6dc);background-size:200% 200%;background-attachment:fixed;animation:opal-shift 22s ease-in-out infinite alternate}
+@keyframes opal-shift{to{background-position:100% 100%}}
+html[data-theme=dark] body.opal-page{background:radial-gradient(ellipse 60% 45% at 10% 8%,#5a1e4a,transparent 70%),radial-gradient(ellipse 55% 50% at 92% 18%,#0e4a50,transparent 70%),radial-gradient(ellipse 60% 50% at 50% 60%,#2c1a5a,transparent 70%),radial-gradient(ellipse 50% 40% at 15% 92%,#4a3a10,transparent 70%),#0c0a18;background-attachment:fixed}
+body.opal-page .mineral{position:relative}
+body.opal-page .mineral>section{box-shadow:0 0 0 2px #fff,0 0 18px #ff9ad588,0 0 34px #7affea66,0 0 54px #c79bff55!important}
+.inside-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0;padding:0;list-style:none}
+.inside-list li{padding:.75rem 1rem;border-radius:16px;background:linear-gradient(135deg,#fff8,#fff4);border:1.5px solid #fff;box-shadow:0 0 12px #c79bff44}
+.inside-list b{display:block;font-size:1.02rem}
+.inside-list .n{background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900;font-size:1.3rem}
+@media (prefers-reduced-motion:reduce){body.opal-page{animation:none}}
