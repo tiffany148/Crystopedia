@@ -511,7 +511,11 @@ for (const p of pages) {
   let g = letters.find((x) => x.letter === L);
   if (!g) letters.push((g = { letter: L, slug: L === "#" ? "other" : L.toLowerCase(), items: [] }));
   p.azSlug = g.slug;
-  g.items.push({ title: p.title, url: p.url, formula: p.formula, typeLabel: p.typeLabel });
+  const azImg = p.thumb || p.parentImg || null;
+  g.items.push({
+    title: p.title, url: p.url, formula: p.formula, typeLabel: p.typeLabel,
+    thumb: azImg ? { src: String(azImg.src || "").replace(/width=\d+/, "width=80") || azImg.src } : null,
+  });
 }
 letters.sort((a, b) => (a.letter === "#") - (b.letter === "#") || a.letter.localeCompare(b.letter));
 

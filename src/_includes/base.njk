@@ -20,8 +20,8 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="30" height="30"><span>Crystopedia</span></a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
-    <nav class="nav">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var o=document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',o?'true':'false');this.textContent=o?'✕':'☰'">☰</button>
+    <nav class="nav" id="site-nav">
       <a href="/a-z/a/">A–Z</a>
       <a href="/gemstones/">Gemstones</a>
       <a href="/colors/">Colors</a>
