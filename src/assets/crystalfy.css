@@ -73,13 +73,12 @@
 .mineral-intro .badge.hz.rad{background:linear-gradient(135deg,#1d2a00,#7bdc00);color:#fff}
 .badge.lore{font-weight:800;color:#fff;background:linear-gradient(135deg,#3b0f6b,#a35bd0,#18e0d0);box-shadow:0 0 0 2px #fff8,0 0 14px #c9a2ff99}
 
-/* ===== reusable holographic crystal sticker ===== */
-.holo-sticker{position:absolute;z-index:1;width:var(--sz,60px);height:var(--sz,60px);transform:rotate(var(--tilt,-6deg));pointer-events:none;
- padding:5px;border-radius:22%;background:#fff;box-shadow:0 3px 0 #0001,0 6px 14px #0004;filter:saturate(1.15)}
-.holo-sticker svg{width:100%;height:100%;display:block;filter:drop-shadow(0 0 4px #fff)}
-.holo-sticker::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,transparent 35%,#fff9 48%,transparent 60%);background-size:250% 100%;animation:card-sweep 6s ease-in-out infinite}
-@media (max-width:720px){.holo-sticker.m-hide{display:none}.holo-sticker{--sz:40px!important}}
-@media (prefers-reduced-motion:reduce){.holo-sticker::after{animation:none}}
+/* ===== reusable holographic crystal sticker (standalone graphic: no backing) ===== */
+.holo-sticker{position:absolute;z-index:1;width:var(--sz,150px);height:var(--sz,150px);transform:rotate(var(--tilt,-6deg));pointer-events:none;background:none;padding:0;border:0;box-shadow:none}
+.holo-sticker svg{width:100%;height:100%;display:block;overflow:visible;filter:drop-shadow(0 0 6px #fff) drop-shadow(0 0 16px #c79bffaa) drop-shadow(0 0 26px #7affea77);animation:sticker-hue 9s linear infinite}
+@keyframes sticker-hue{to{filter:drop-shadow(0 0 6px #fff) drop-shadow(0 0 16px #7affeaaa) drop-shadow(0 0 26px #ff9ad577) hue-rotate(40deg)}}
+@media (max-width:720px){.holo-sticker.m-hide{display:none}.holo-sticker{width:70px!important;height:70px!important}}
+@media (prefers-reduced-motion:reduce){.holo-sticker svg{animation:none}}
 /* ===== opalescent book page ===== */
 body.opal-page{background:
  radial-gradient(ellipse 60% 45% at 10% 8%,#ffd6ec 0,transparent 70%),radial-gradient(ellipse 55% 50% at 92% 18%,#c9fff4 0,transparent 70%),
@@ -94,3 +93,4 @@ body.opal-page .mineral>section{box-shadow:0 0 0 2px #fff,0 0 18px #ff9ad588,0 0
 .inside-list b{display:block;font-size:1.02rem}
 .inside-list .n{background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900;font-size:1.3rem}
 @media (prefers-reduced-motion:reduce){body.opal-page{animation:none}}
+body.opal-page{overflow-x:hidden}

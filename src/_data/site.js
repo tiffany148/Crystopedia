@@ -280,6 +280,9 @@ for (const p of pages) { const nums = (v) => String(v || "").match(/\d+(\.\d+)?/
 for (const p of pages) p.pattern = patternFor(p.title + " " + (p.metaphysical?.[0]?.name || ""), (p.crystalSystems || [])[0]);
 for (const p of pages) { const [base, src] = paint(p); p.palette = paletteFor(base, src, { name: p.metaphysical[0]?.name || p.name, colors: p.colors }); if (!MULTI_HAS(p) && p.metaphysical[0]) p.palette = paletteFor(base, src, { name: p.name, colors: p.colors }); }
 { const hm = pages.find((p) => p.title === "Hemimorphite"); if (hm && hm.mohsMin == null) { hm.mohsMin = 4.5; hm.mohsMax = 5; hm.mohs = "4.5 – 5"; hm.mohsLo = 4.5; hm.mohsHi = 5; } } // well-established value (Mindat/GIA); Wikidata lacks it
+{ const em = pages.find((p) => p.title === "Emerald"); if (em && em.mohs === "7.6") { em.mohsMin = 7.5; em.mohsMax = 8; em.mohs = "7.5 – 8"; em.mohsLo = 7.5; em.mohsHi = 8; } } // emerald = beryl, Mohs 7.5–8
+// Calcite is Mohs 3 by definition (Mohs scale reference mineral); Wikidata's 3.04 is a bad value inherited by every calcite variety
+for (const p of pages) { if (p.mohsMin === 3.04 || p.mohsMax === 3.04) { p.mohsMin = 3; p.mohsMax = 3; p.mohs = "3"; p.mohsLo = 3; p.mohsHi = 3; } }
 pages.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 
 // --- cross-links ("see also") -----------------------------------------------------------------
