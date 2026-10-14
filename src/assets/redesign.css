@@ -4,7 +4,7 @@ html[data-theme=dark]{--gl-a:rgba(22,16,44,.66);--gl-b:rgba(12,8,28,.5);--gl-edg
 @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
 
 /* ---------- Header: glass with animated gradient border ---------- */
-.site-header{background:linear-gradient(120deg,rgba(30,20,80,.72),rgba(76,29,149,.62) 55%,rgba(14,116,144,.62));backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border-bottom:0}
+.site-header{background:linear-gradient(120deg,rgba(30,20,80,.72),rgba(76,29,149,.62) 55%,rgba(14,116,144,.62));backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border-bottom:0;overflow:visible}
 .site-header::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:linear-gradient(90deg,#f0abfc,#67e8f9,#fde68a,#a78bfa,#f0abfc);background-size:200% 100%;animation:hdr-flow 6s linear infinite;box-shadow:0 0 12px rgba(167,139,250,.8)}
 @keyframes hdr-flow{to{background-position:200% 0}}
 
