@@ -1,4 +1,6 @@
-<a class="card" href="{{ c.url }}"{% if c.style %} style="{{ c.style }}"{% endif %}>
+<a class="card{% if c.hazard %} hz-card sev-{{ c.hazard.severity }}{% endif %}" href="{{ c.url }}"{% if c.style %} style="{{ c.style }}"{% endif %}{% if c.tip %} data-tip="{{ c.tip }}"{% endif %}>
+  {% if c.hazard %}<span class="card-hz-tag{% if c.hazard.rad %} rad{% elif c.hazard.toxic %} toxic{% endif %}" aria-label="Handle with care">{% if c.hazard.rad %}☢ Radioactive{% elif c.hazard.toxic %}☠ Toxic{% else %}⚠ Caution{% endif %}</span>{% endif %}
   <div class="card-img">{% if c.thumb %}<img loading="lazy" src="{{ c.thumb.src }}" alt="{{ c.title }}">{% else %}<span class="gem-ph">◆</span>{% endif %}</div>
   <div class="card-body"><strong>{{ c.title }}</strong>{% if c.formula %}<span class="formula">{{ c.formula }}</span>{% endif %}<span class="muted small">{{ c.typeLabel }}{% if c.mohs %} · H {{ c.mohs }}{% endif %}</span></div>
+  {% if c.tip %}<span class="card-tip" aria-hidden="true">{{ c.tip }}</span>{% endif %}
 </a>
