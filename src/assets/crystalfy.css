@@ -66,3 +66,9 @@
 .wide-fig{margin:1.2rem 0}.wide-fig img{width:100%;height:auto;border-radius:12px}
 .coming-soon{display:inline-block;padding:.6rem 1.3rem;border-radius:999px;font-weight:800;background:var(--holo);color:#2a1a4a;animation:holo 6s linear infinite;background-size:200% 200%}
 @media (max-width:640px){.book-banner{grid-template-columns:1fr;text-align:center}.book-banner img{max-width:220px;margin:auto}}
+
+/* bold warning chips */
+.mineral-intro .badge.hz{font-weight:800;letter-spacing:.02em;box-shadow:0 0 0 2px #fff8,0 0 14px #f5c40088}
+.mineral-intro .badge.hz.toxic{background:linear-gradient(135deg,#3a0a0a,#b3122e);color:#fff;box-shadow:0 0 0 2px #fff8,0 0 14px #ff3b5c99}
+.mineral-intro .badge.hz.rad{background:linear-gradient(135deg,#1d2a00,#7bdc00);color:#fff}
+.badge.lore{font-weight:800;color:#fff;background:linear-gradient(135deg,#3b0f6b,#a35bd0,#18e0d0);box-shadow:0 0 0 2px #fff8,0 0 14px #c9a2ff99}

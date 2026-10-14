@@ -473,7 +473,7 @@ for (const p of pages) {
   const a = Object.entries(ALIASES).find(([t]) => t.toLowerCase() === k)?.[1]; if (a) p.aka = a;
   const n = Object.entries(NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (n) p.note = n;
   const cn = Object.entries(COLLECTOR_NOTES).find(([t]) => t.toLowerCase() === k)?.[1]; if (cn) p.collectorNote = cn;
-  const lw = Object.entries(LORE_WARNINGS).find(([t]) => t.toLowerCase() === k)?.[1]; if (lw) p.loreWarning = lw;
+  const lw = Object.entries(LORE_WARNINGS).find(([t]) => t.toLowerCase() === k)?.[1]; if (lw) { p.loreWarning = lw; p.loreTag = { label: "✧ Energy caution (lore)", why: "Crystal lore, not science: " + lw }; }
 }
 // Clear warning tags derived from Handle With Care data (shown in the hero)
 for (const p of pages) {
@@ -484,6 +484,8 @@ for (const p of pages) {
   else if (p.hazard.icons.includes("soluble")) tags.push({ label: "⚠ Hazardous", cls: "hz toxic", href: "#hz-section" });
   if (p.hazard.icons.includes("noelixir")) tags.push({ label: "🚫 No elixirs", cls: "hz", href: "#hz-section" });
   tags.push({ label: `${p.hazard.sevLabel} caution`, cls: `hz sev-${p.hazard.severity}`, href: "#hz-section" });
+  const why = String(p.hazard.why || "").split(/(?<=\.)\s/)[0];
+  for (const t of tags) t.why = why;
   p.hazardTags = tags;
 }
 const card = (p) => {
