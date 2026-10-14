@@ -2,11 +2,21 @@
 layout: base.njk
 title: About & how to use Crystopedia
 permalink: /about/
-bodyClass: hub
+bodyClass: stone-page stone-dark
+pagePattern: lattice-hexagonal
+bodyStyle: "--stone:#8e44ad;--stone-deep:#5c2c70;--stone-accent:hsl(282 45% 32%);--stone-accent-dk:hsl(282 55% 78%);--pg:#7a5c90,#9a70b4,#bb8ecd,#e4cff2;--dk:#14051f,#220e2e,#34183f,#441a61;--hero:#3b0f5c,#6a2c91,#9b59b6,#d7b8ec;--hero-scrim:transparent;--hero-ink:#ffffff;--hero-ink-soft:rgba(255,255,255,.88);--hero-chip:rgba(255,255,255,.18);--c1:#3b0f5c;--c2:#9b59b6;--c3:#d7b8ec"
 ---
+<article class="mineral">
 <nav class="crumbs"><a href="/">Home</a> › About</nav>
-<h1>About Crystopedia</h1>
-<p>Crystopedia brings every IMA mineral species together with the popular crystals, gems and fossils collectors love. Mineral data comes from Wikidata; folklore is kept clearly separate from science.</p>
+<div class="mineral-head stone-hero">
+  <div class="hero-backdrop" style="background-image:url('/assets/book/group-amethyst.webp')" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="mineral-intro">
+    <h1>About Crystopedia</h1>
+    <p class="lead">Crystopedia brings every IMA mineral species together with the popular crystals, gems and fossils collectors love. Mineral data comes from Wikidata; folklore is kept clearly separate from science.</p>
+  </div>
+</div>
+<section>
 <h2>Reading a stone page</h2>
 <ul>
 <li><span class="holo-num" style="position:static;display:inline-grid">1</span> Holographic crystal points number the stones in each list.</li>
@@ -14,7 +24,9 @@ bodyClass: hub
 <li>The <strong>Mohs rainbow gauge</strong> runs from 1 (talc) to 10 (diamond); the outlined band shows the stone's hardness range.</li>
 <li><span class="tiffany-pick" style="font-size:1.1rem;padding:2px 10px">Tiffany's Pick</span> marks stones photographed from Tiffany Stark's own collection.</li>
 </ul>
-<h2 id="rarity">How rarity is scored</h2>
+</section>
+<section id="rarity">
+<h2>How rarity is scored</h2>
 <p>True geological abundance isn't recorded for most minerals, so the 1–5 crystal meter is a <strong>proxy for how often a collector is likely to come across the stone</strong>:</p>
 <ol>
 <li><strong>Common</strong>: widely sold in crystal shops (it's in our healing-crystal list).</li>
@@ -24,3 +36,5 @@ bodyClass: hub
 <li><strong>Very rare</strong>: neither; it's documented almost only in the scientific literature.</li>
 </ol>
 <p>A short list of famously rare gems (benitoite, painite, red beryl, grandidierite, musgravite, jeremejevite, taaffeite, poudretteite at 5; alexandrite, tanzanite, Paraíba tourmaline, padparadscha, demantoid and black opal at 4) is set by hand. Treat the meter as a guide, not a measurement.</p>
+</section>
+</article>

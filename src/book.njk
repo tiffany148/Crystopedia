@@ -2,22 +2,42 @@
 layout: base.njk
 title: The Book
 permalink: /book/
-bodyClass: hub book-page
+bodyClass: stone-page book-page
+pagePattern: bands
+bodyStyle: "--stone:#00e0d0;--stone-deep:#009d92;--stone-accent:hsl(176 100% 32%);--stone-accent-dk:hsl(176 100% 78%);--pg:#549a97,#52dacf,#71f5ea,#befff8;--dk:#032120,#053b37,#07554e,#097166;--hero:#046a66,#00c8b8,#2ef0e0,#9ffff5;--hero-scrim:rgba(255,255,255,0.32);--hero-ink:#1e1b3a;--hero-ink-soft:rgba(30,27,58,.8);--hero-chip:rgba(255,255,255,.55);--c1:#046a66;--c2:#2ef0e0;--c3:#9ffff5"
 description: "Crystopedia: The Complete Encyclopedia of Crystals, Minerals, Gems & Fossils by Tiffany Stark, coming soon in print."
 ---
+<article class="mineral">
 <nav class="crumbs"><a href="/">Home</a> › The Book</nav>
-<h1>Crystopedia, the Book</h1>
-<p class="lead"><strong>The Complete Encyclopedia of Crystals, Minerals, Gems &amp; Fossils</strong> by Tiffany Stark: a full-color, page-by-page journey through the stones on this site, sorted by color with rainbow edge tabs.</p>
-<p><span class="coming-soon">✦ Coming soon to Amazon ✦</span></p>
-<div class="book-figs">
-  <figure><img src="/assets/book/front-cover.webp" alt="Crystopedia front cover: rainbow title, holographic crescent moon and a quartz cluster with spheres" width="900" height="1174"><figcaption>The front cover</figcaption></figure>
-  <figure><img src="/assets/book/hardcover-mock.webp" alt="Hardcover mockup with holographic spine" loading="lazy" width="1376" height="843"><figcaption>Hardcover mockup with holographic spine</figcaption></figure>
+<div class="mineral-head stone-hero">
+  <div class="hero-backdrop" style="background-image:url('/assets/book/group-quartz-teal.webp')" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="mineral-intro">
+    <span><span class="badge">📖 Print edition</span> <span class="badge gem">Full color</span></span>
+    <h1>Crystopedia, the Book</h1>
+    <p class="known-as"><span>✦ The Complete Encyclopedia of Crystals, Minerals, Gems &amp; Fossils ✦</span></p>
+    <p class="lead">By Tiffany Stark: a full-color, page-by-page journey through the stones on this site, sorted by color with rainbow edge tabs.</p>
+    <p><span class="coming-soon">✦ Coming soon to Amazon ✦</span></p>
+  </div>
+  <figure class="mineral-photo hero-photo">
+    <span class="facet-frame"><img src="/assets/book/front-cover.webp" alt="Crystopedia front cover: rainbow title, holographic crescent moon and a quartz cluster with spheres" width="900" height="1174"><i class="fc tl"></i><i class="fc tr"></i><i class="fc bl"></i><i class="fc br"></i></span>
+    <figcaption>The front cover</figcaption>
+  </figure>
 </div>
-<figure class="wide-fig"><img src="/assets/book/full-wrap.webp" alt="Full cover wrap: back, spine and front" loading="lazy" width="1376" height="843"><figcaption class="muted small">The full wrap: back cover, spine and front.</figcaption></figure>
-<h2>✦ The crystal groups</h2>
-<div class="book-figs">
-  <figure class="facet-frame"><img src="/assets/book/group-collection.webp" alt="Generated group of crystals" loading="lazy" width="1280" height="720"></figure>
-  <figure class="facet-frame"><img src="/assets/book/group-quartz-teal.webp" alt="Quartz and teal crystal group" loading="lazy" width="1280" height="720"></figure>
-  <figure class="facet-frame"><img src="/assets/book/group-amethyst.webp" alt="Amethyst geode crystal group" loading="lazy" width="1280" height="720"></figure>
-</div>
-<p class="muted small">Cover and crystal-group artwork is digitally generated art for the book. Photos inside the book and on this site are credited on each stone's page.</p>
+<section>
+  <h2>The covers</h2>
+  <div class="book-figs">
+    <figure><img src="/assets/book/hardcover-mock.webp" alt="Hardcover mockup with holographic spine" loading="lazy" width="1376" height="843"><figcaption>Hardcover mockup with holographic spine</figcaption></figure>
+    <figure><img src="/assets/book/full-wrap.webp" alt="Full cover wrap: back, spine and front" loading="lazy" width="1376" height="843"><figcaption>The full wrap: back cover, spine and front</figcaption></figure>
+  </div>
+</section>
+<section>
+  <h2>The crystal groups</h2>
+  <div class="book-figs">
+    <figure><span class="facet-frame"><img src="/assets/book/group-collection.webp" alt="Generated group of crystals" loading="lazy" width="1280" height="720"><i class="fc tl"></i><i class="fc tr"></i><i class="fc bl"></i><i class="fc br"></i></span></figure>
+    <figure><span class="facet-frame"><img src="/assets/book/group-quartz-teal.webp" alt="Quartz and teal crystal group" loading="lazy" width="1280" height="720"><i class="fc tl"></i><i class="fc tr"></i><i class="fc bl"></i><i class="fc br"></i></span></figure>
+    <figure><span class="facet-frame"><img src="/assets/book/group-amethyst.webp" alt="Amethyst geode crystal group" loading="lazy" width="1280" height="720"><i class="fc tl"></i><i class="fc tr"></i><i class="fc bl"></i><i class="fc br"></i></span></figure>
+  </div>
+  <p class="muted small">Cover and crystal-group artwork is digitally generated art for the book. Photos inside the book and on this site are credited on each stone's page.</p>
+</section>
+</article>
