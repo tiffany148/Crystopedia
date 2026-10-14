@@ -441,7 +441,13 @@ const ALIASES = {
   "Barite Rose": ["Rose rock", "Baryte rose"], "Desert rose": ["Selenite rose", "Gypsum rose", "Sand rose"], "Satin Spar": ["Satin spar selenite"],
   "Petroleum Quartz": ["Petroleum included quartz", "Oil quartz", "Hydrocarbon quartz"], "Blue Amber": ["Dominican blue amber"], "Herkimer Diamond": ["Herkimer quartz"],
   "Pink Halite": ["Pink salt"], "Blue Halite": ["Blue salt"],
+  "Quartz": ["Clear Quartz", "Rock crystal", "Rock Crystal", "Crystal quartz"],
+  "Golden Healer": ["Golden healer quartz", "Iron-stained quartz", "Limonite quartz"],
+  "Fire Quartz": ["Hematoid quartz", "Hematite quartz", "Ferruginous quartz"],
+  "Garden Quartz": ["Lodolite", "Lodolite quartz", "Scenic quartz", "Inclusion quartz"],
+  "Lithium Quartz": ["Lithium-included quartz", "Pink lithium quartz"],
 };
+
 const NOTES = {
   "Hemimorphite": "Blue banded 'hemimorphite' on the market is often smithsonite, or an intergrowth of both zinc minerals. Hemimorphite is a zinc silicate (Mohs 4.5–5) and does not fizz in acid. Smithsonite is a zinc carbonate (Mohs 4–4.5) and fizzes in warm dilute acid. Telling them apart reliably needs testing, so specimens are often labelled 'hemimorphite/smithsonite'.",
   "Smithsonite": "Blue smithsonite and hemimorphite are often mixed up, and many blue banded pieces contain both. Smithsonite is the denser zinc carbonate and fizzes in warm dilute acid, while hemimorphite is a silicate.",
@@ -451,6 +457,11 @@ const NOTES = {
   "Halite": "Halite colours: clear to white is pure salt. Pink to red usually comes from salt-loving microbes (archaea), as at Searles Lake, California. Blue to violet comes from radiation-damaged colour centres, often next to sylvite. Orange or brown usually comes from iron oxide or clay inclusions.",
   "Fire Opal": "Mexican fire opal comes mostly from the Querétaro and Jalisco highlands. It is the classic transparent orange-red opal and may or may not show play-of-colour.",
   "Herkimer Diamond": "Herkimer 'diamonds' are not diamonds. They are naturally double-terminated, very clear quartz crystals from pockets in Cambrian dolostone (about 500 million years old) around Herkimer County, New York. Several fee-dig mines let visitors collect. Some contain black bitumen or fluorescent petroleum inclusions.",
+  "Quartz": "Clear (colourless) quartz is the classic 'master healer' of crystal lore and the parent species of amethyst, rose quartz, smoky quartz, citrine and many other varieties. Arkansas Quartz is a separate locality page for Ouachita Mountain crystals. See Types of Quartz below for every major variety on Crystopedia.",
+  "Golden Healer": "'Golden healer' is a trade name for quartz stained gold by iron oxides (goethite or limonite), not a separate mineral species. Colour ranges from pale honey to deep amber. Some pieces are coated; others are coloured through.",
+  "Fire Quartz": "Also sold as hematoid quartz. The red to orange colour comes from hematite or goethite inclusions, not from heat treatment of amethyst (that makes citrine). Specimens vary from lightly freckled clear quartz to solid rusty-orange masses.",
+  "Garden Quartz": "Also sold as lodolite or scenic quartz. The 'garden' look is chlorite, clay and other mineral inclusions trapped in clear quartz. It is a trade name, not a separate IMA species.",
+  "Lithium Quartz": "'Lithium quartz' is a crystal-trade name for soft pink to lilac quartz. Colour is usually from fine inclusions; lithium content is rarely assayed, so pieces vary.",
 };
 // Crystal-lore cautions (not scientific/medical claims)
 const LORE_WARNINGS = {
@@ -535,8 +546,22 @@ const ambers = grp("amber", ["Amber", "Amber with Inclusions"]);
 const apophyllites = grp("apophyllite", ["Apophyllite", "Fluorapophyllite-(K)", "Fluorapophyllite-(Na)", "Fluorapophyllite-(NH₄)", "Fluorapophyllite-(Cs)", "Hydroxyapophyllite-(K)", "Hydroxyapophyllite-(NH₄)", "Stilbite"]);
 const stalactites = grp("stalactite", []);
 const desertRoses = grp("desert-rose", ["Desert rose", "Barite Rose", "Selenite"]);
-for (const [fam, label, list] of [["stalactite", "Stalactites", stalactites], ["calcite", "Calcite family", calcites], ["opal", "Opal family", opals], ["aragonite", "Aragonite family", aragonites], ["halite", "Halite family", halites], ["amber", "Amber family", ambers], ["apophyllite", "Apophyllite family", apophyllites], ["desert-rose", "Desert rose forms", desertRoses], ["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones]])
-  for (const c of list) { const p = pages.find((x) => x.url === c.url); if (p && !p.family) p.family = { label, cards: list.filter((x) => x.url !== c.url) }; }
+// Macrocrystalline / named quartz varieties (Arkansas Quartz keeps its own page; agates & geodes stay as related children)
+const quartzes = grp("quartz", [
+  "Quartz", "Rock crystal", "Arkansas Quartz", "Amethyst", "Rose quartz", "Smoky quartz", "Citrine", "Ametrine",
+  "Rutilated quartz", "Tourmalinated Quartz", "Strawberry Quartz", "Spirit Quartz", "Prasiolite", "Prase",
+  "Herkimer diamond", "Iris quartz", "Star quartz", "Star Rose Quartz", "Needle Quartz", "Petroleum Quartz",
+  "Thousand Layer Quartz", "Record Keeper Quartz", "Golden Healer", "Fire Quartz", "Garden Quartz", "Lithium Quartz",
+  "Aventurine",
+]);
+for (const [fam, label, list] of [["stalactite", "Stalactites", stalactites], ["calcite", "Calcite family", calcites], ["opal", "Opal family", opals], ["aragonite", "Aragonite family", aragonites], ["halite", "Halite family", halites], ["amber", "Amber family", ambers], ["apophyllite", "Apophyllite family", apophyllites], ["desert-rose", "Desert rose forms", desertRoses], ["obsidian", "Obsidian family", obsidians], ["moonstone", "Moonstone types", moonstones], ["quartz", "Types of Quartz", quartzes]])
+  for (const c of list) {
+    const p = pages.find((x) => x.url === c.url); if (!p || p.family) continue;
+    p.family = { label, cards: list.filter((x) => x.url !== c.url) };
+    // Avoid listing the same stones twice (family cards + children pills)
+    const famUrls = new Set(list.map((x) => x.url));
+    p.children = (p.children || []).filter((ch) => !famUrls.has(ch.url));
+  }
 
 const popular = ["Amethyst", "Rose quartz", "Quartz", "Labradorite", "Fluorite", "Malachite", "Emerald", "Pyrite", "Citrine", "Obsidian", "Lapis lazuli", "Moonstone"]
   .map((n) => pages.find((p) => p.title.toLowerCase() === n.toLowerCase())).filter(Boolean).map(card);

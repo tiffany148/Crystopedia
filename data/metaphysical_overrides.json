@@ -666,5 +666,21 @@
  "Blue Topaz": {
   "qid": null,
   "parent": "Q134985"
+ },
+ "Golden Healer": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Fire Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Garden Quartz": {
+  "qid": null,
+  "parent": "Q43010"
+ },
+ "Lithium Quartz": {
+  "qid": null,
+  "parent": "Q43010"
  }
 }

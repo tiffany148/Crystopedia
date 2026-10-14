@@ -1293,5 +1293,25 @@
   "f": "SiO2",
   "note": "brecciated quartz/crocidolite (tiger's eye)",
   "approx": true
+ },
+ "Golden Healer": {
+  "f": "SiO2",
+  "note": "quartz with iron-oxide staining (goethite/limonite)",
+  "approx": false
+ },
+ "Fire Quartz": {
+  "f": "SiO2",
+  "note": "quartz with hematite/goethite inclusions (hematoid)",
+  "approx": false
+ },
+ "Garden Quartz": {
+  "f": "SiO2",
+  "note": "quartz with chlorite/clay inclusions (lodolite)",
+  "approx": false
+ },
+ "Lithium Quartz": {
+  "f": "SiO2",
+  "note": "pink-lilac quartz (trade name)",
+  "approx": false
  }
 }

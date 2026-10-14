@@ -2680,5 +2680,37 @@
    "focus",
    "calm"
   ]
+ },
+ "Golden Healer": {
+  "knownAs": "The Golden Healer (trade name)",
+  "intentions": [
+   "healing",
+   "confidence",
+   "transformation"
+  ]
+ },
+ "Fire Quartz": {
+  "knownAs": "Hematoid Quartz / Fire Quartz",
+  "intentions": [
+   "confidence",
+   "grounding",
+   "creativity"
+  ]
+ },
+ "Garden Quartz": {
+  "knownAs": "Lodolite / The Garden Stone",
+  "intentions": [
+   "abundance",
+   "intuition",
+   "grounding"
+  ]
+ },
+ "Lithium Quartz": {
+  "knownAs": "Stone of Soft Calm (trade name)",
+  "intentions": [
+   "calm",
+   "love",
+   "healing"
+  ]
  }
 }

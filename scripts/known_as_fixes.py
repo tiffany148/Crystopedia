@@ -174,4 +174,8 @@ FIX = {
  "Kunzite": ("Stone of Divine Love", None), "Morganite": ("The Pink Beryl of Love", None), "Black Kyanite": ("The Witch's Broom", None),
  "Zebra Jasper": ("Stone of Balance in Black & White", None), "Charoite": ("Stone of Spiritual Courage", None), "Malachite": ("The Guardian of Travellers", None),
  "Blue Topaz": ("Stone of Clear Communication", ["communication", "focus", "calm"]),
+ "Golden Healer": ("The Golden Healer (trade name)", ["healing", "confidence", "transformation"]),
+ "Fire Quartz": ("Hematoid Quartz / Fire Quartz", ["confidence", "grounding", "creativity"]),
+ "Garden Quartz": ("Lodolite / The Garden Stone", ["abundance", "intuition", "grounding"]),
+ "Lithium Quartz": ("Stone of Soft Calm (trade name)", ["calm", "love", "healing"]),
 }

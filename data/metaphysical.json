@@ -7488,5 +7488,105 @@
   "wikidata": null,
   "parent": "Q134985",
   "slug": "blue-topaz"
+ },
+ {
+  "name": "Golden Healer",
+  "kind": "variety",
+  "chakras": [
+   "Crown",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Leo",
+   "Aries"
+  ],
+  "elements": [
+   "Fire",
+   "Spirit"
+  ],
+  "meaning": "Iron-stained 'golden healer' quartz is linked in modern crystal lore to warmth, vitality and amplifying healing intentions.",
+  "uses": [
+   "healing",
+   "vitality",
+   "optimism"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "golden-healer"
+ },
+ {
+  "name": "Fire Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Root",
+   "Sacral"
+  ],
+  "zodiac": [
+   "Aries",
+   "Leo"
+  ],
+  "elements": [
+   "Fire",
+   "Earth"
+  ],
+  "meaning": "Also sold as hematoid quartz, fire quartz carries iron-oxide inclusions and is linked in lore to courage, motivation and grounded energy.",
+  "uses": [
+   "courage",
+   "motivation",
+   "grounding"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "fire-quartz"
+ },
+ {
+  "name": "Garden Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Third Eye"
+  ],
+  "zodiac": [
+   "Virgo",
+   "Taurus"
+  ],
+  "elements": [
+   "Earth",
+   "Spirit"
+  ],
+  "meaning": "Lodolite or 'garden quartz' holds mossy inclusions that crystal lore links to growth, manifestation and inner landscapes.",
+  "uses": [
+   "growth",
+   "manifesting",
+   "connection to nature"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "garden-quartz"
+ },
+ {
+  "name": "Lithium Quartz",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Libra",
+   "Pisces"
+  ],
+  "elements": [
+   "Water",
+   "Spirit"
+  ],
+  "meaning": "Pink-lilac lithium-included quartz is linked in modern crystal lore to calm, emotional balance and gentle uplift.",
+  "uses": [
+   "calm",
+   "emotional balance",
+   "soothing"
+  ],
+  "wikidata": null,
+  "parent": "Q43010",
+  "slug": "lithium-quartz"
  }
 ]

@@ -347,4 +347,9 @@ ENTRIES = [
 ("Leopard Skin Jasper","leopard skin jasper","variety",[R,H],["Gemini", "Virgo"],[E_],"Spotted leopard skin jasper is linked in crystal lore to grounding, stamina and connection with animal spirits.",["grounding", "stamina", "animal connection"]),
 # --- blue topaz ---
 ("Blue Topaz","blue topaz","variety",[T,E],["Sagittarius", "Scorpio"],[W,A],"Blue topaz is linked in crystal lore to clear communication, calm focus and speaking one's truth.",["communication", "focus", "calm"]),
+# --- quartz family trade varieties ---
+("Golden Healer","golden healer","variety",[C,P],["Leo", "Aries"],[F,SP],"Iron-stained 'golden healer' quartz is linked in modern crystal lore to warmth, vitality and amplifying healing intentions.",["healing", "vitality", "optimism"]),
+("Fire Quartz","fire quartz","variety",[R,S],["Aries", "Leo"],[F,E_],"Also sold as hematoid quartz, fire quartz carries iron-oxide inclusions and is linked in lore to courage, motivation and grounded energy.",["courage", "motivation", "grounding"]),
+("Garden Quartz","garden quartz","variety",[H,E],["Virgo", "Taurus"],[E_,SP],"Lodolite or 'garden quartz' holds mossy inclusions that crystal lore links to growth, manifestation and inner landscapes.",["growth", "manifesting", "connection to nature"]),
+("Lithium Quartz","lithium quartz","variety",[H,C],["Libra", "Pisces"],[W,SP],"Pink-lilac lithium-included quartz is linked in modern crystal lore to calm, emotional balance and gentle uplift.",["calm", "emotional balance", "soothing"]),
 ]
