@@ -325,3 +325,7 @@ html[data-theme=dark] body.stone-page .mineral>aside.lore-warning{background:lin
 .cmp-tip{background:#f4f1fb !important;border:1px solid #cfc6ea;font-size:1rem;line-height:1.55}
 .cmp-tip strong{color:#2b1f5c !important}
 .cmp-tip a{color:#3b2a8f !important;text-decoration:underline}
+/* home: crystal group graphic behind the top third */
+.hub main{position:relative;isolation:isolate}
+.hub main::before{content:"";position:absolute;z-index:-1;left:50%;top:-10px;width:min(1280px,115%);height:620px;transform:translateX(-50%);background:url(/assets/home-crystals.webp) center top/contain no-repeat;opacity:.45;pointer-events:none;filter:saturate(1.1)}
+@media (max-width:760px){.hub main::before{height:420px;width:150%}}
