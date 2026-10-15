@@ -320,3 +320,8 @@ html[data-theme=dark] body.stone-page .mineral>aside.lore-warning{background:lin
 .card.hz-card{outline:2px solid color-mix(in srgb,#ef4444 55%,transparent)}
 .card.hz-card.sev-high{outline-color:#b91c1c}
 .card.hz-card.sev-moderate{outline-color:#ea580c}
+/* readable collector notes */
+.cmp-tip,.cmp-tip *{color:#1f1b2e !important}
+.cmp-tip{background:#f4f1fb !important;border:1px solid #cfc6ea;font-size:1rem;line-height:1.55}
+.cmp-tip strong{color:#2b1f5c !important}
+.cmp-tip a{color:#3b2a8f !important;text-decoration:underline}
