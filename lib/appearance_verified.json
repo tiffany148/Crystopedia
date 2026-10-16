@@ -1,0 +1,1154 @@
+{
+ "ammolite": {
+  "wiki": "https://en.wikipedia.org/wiki/Ammolite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ammolite"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "bismuth": {
+  "wiki": "https://en.wikipedia.org/wiki/Bismuth",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bismuth"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "bornite": {
+  "wiki": "https://en.wikipedia.org/wiki/Bornite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bornite"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "chalcopyrite": {
+  "wiki": "https://en.wikipedia.org/wiki/Chalcopyrite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chalcopyrite"
+  ],
+  "feats": [],
+  "dropped": [
+   "rainbow"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "covellite": {
+  "wiki": "https://en.wikipedia.org/wiki/Covellite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Covellite"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "fire agate": {
+  "wiki": "https://en.wikipedia.org/wiki/Fire_agate",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fire_agate"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "iris agate": {
+  "wiki": "https://en.wikipedia.org/wiki/Agate",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Agate"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "agate": {
+  "wiki": "https://en.wikipedia.org/wiki/Agate",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Agate"
+  ],
+  "feats": [
+   "rainbow",
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "hematite": {
+  "wiki": "https://en.wikipedia.org/wiki/Hematite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hematite"
+  ],
+  "feats": [],
+  "dropped": [
+   "rainbow"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "nacre": {
+  "wiki": "https://en.wikipedia.org/wiki/Nacre",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nacre"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "pearl": {
+  "wiki": "https://en.wikipedia.org/wiki/Pearl",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pearl"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "freshwater mussel shell": {
+  "wiki": "https://en.wikipedia.org/wiki/Nacre",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nacre"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "rainbow obsidian": {
+  "wiki": "https://en.wikipedia.org/wiki/Obsidian",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Obsidian"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "obsidian": {
+  "wiki": "https://en.wikipedia.org/wiki/Obsidian",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Obsidian"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "gold sheen obsidian": {
+  "wiki": "https://en.wikipedia.org/wiki/Obsidian",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Obsidian"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "silver sheen obsidian": {
+  "wiki": "https://en.wikipedia.org/wiki/Obsidian",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Obsidian"
+  ],
+  "feats": [
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "rainbow moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular",
+   "rainbow"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "calcite": {
+  "wiki": "https://en.wikipedia.org/wiki/Calcite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Calcite"
+  ],
+  "feats": [],
+  "dropped": [
+   "phantom",
+   "inclusions"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "fluorite": {
+  "wiki": "https://en.wikipedia.org/wiki/Fluorite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fluorite"
+  ],
+  "feats": [],
+  "dropped": [
+   "phantom",
+   "colorchange"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "iceland spar": {
+  "wiki": "https://en.wikipedia.org/wiki/Calcite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Calcite"
+  ],
+  "feats": [],
+  "dropped": [
+   "rainbow"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Quartz",
+   "https://en.wikipedia.org/wiki/Phantom_quartz",
+   "https://en.wikipedia.org/wiki/Chatoyancy"
+  ],
+  "feats": [
+   "phantom",
+   "cateye"
+  ],
+  "dropped": [
+   "inclusions",
+   "star"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "amethyst": {
+  "wiki": "https://en.wikipedia.org/wiki/Amethyst",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Amethyst",
+   "https://en.wikipedia.org/wiki/Phantom_quartz"
+  ],
+  "feats": [
+   "phantom"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "smoky quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Smoky_quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Smoky_quartz"
+  ],
+  "feats": [
+   "phantom"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "arkansas quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Quartz",
+   "https://en.wikipedia.org/wiki/Phantom_quartz"
+  ],
+  "feats": [
+   "phantom"
+  ],
+  "dropped": [
+   "inclusions"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "garden quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Quartz",
+   "https://en.wikipedia.org/wiki/Phantom_quartz"
+  ],
+  "feats": [
+   "phantom"
+  ],
+  "dropped": [
+   "inclusions"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "rutilated quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Rutilated_quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rutilated_quartz"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "needle quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Rutilated_quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rutilated_quartz"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "tourmalinated quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Quartz"
+  ],
+  "feats": [],
+  "dropped": [
+   "inclusions"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "rose quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Rose_quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rose_quartz"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star rose quartz": {
+  "wiki": "https://en.wikipedia.org/wiki/Rose_quartz",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rose_quartz"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "emerald": {
+  "wiki": "https://en.wikipedia.org/wiki/Emerald",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Emerald"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [
+   "cateye",
+   "star"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "aquamarine": {
+  "wiki": "https://en.wikipedia.org/wiki/Aquamarine_(gem)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Aquamarine_(gem)",
+   "https://en.wikipedia.org/wiki/Chatoyancy"
+  ],
+  "feats": [
+   "cateye",
+   "inclusions"
+  ],
+  "dropped": [
+   "star"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "beryl": {
+  "wiki": "https://en.wikipedia.org/wiki/Beryl",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Beryl",
+   "https://en.wikipedia.org/wiki/Chatoyancy"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [
+   "star",
+   "inclusions"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "star beryl": {
+  "wiki": "https://en.wikipedia.org/wiki/Beryl",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Beryl"
+  ],
+  "feats": [],
+  "dropped": [
+   "star"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "amber": {
+  "wiki": "https://en.wikipedia.org/wiki/Amber",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Amber"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "amber with inclusions": {
+  "wiki": "https://en.wikipedia.org/wiki/Amber",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Amber"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "baltic amber": {
+  "wiki": "https://en.wikipedia.org/wiki/Baltic_amber",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Baltic_amber"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "copal": {
+  "wiki": "https://en.wikipedia.org/wiki/Copal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Copal"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "dendritic agate": {
+  "wiki": "https://en.wikipedia.org/wiki/Agate",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Agate"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "moss agate": {
+  "wiki": "https://en.wikipedia.org/wiki/Moss_agate",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moss_agate"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "diamond": {
+  "wiki": "https://en.wikipedia.org/wiki/Diamond",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Diamond"
+  ],
+  "feats": [
+   "inclusions"
+  ],
+  "dropped": [
+   "colorchange"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "alexandrite": {
+  "wiki": "https://en.wikipedia.org/wiki/Alexandrite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Alexandrite"
+  ],
+  "feats": [
+   "colorchange",
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "chrysoberyl": {
+  "wiki": "https://en.wikipedia.org/wiki/Chrysoberyl",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chrysoberyl"
+  ],
+  "feats": [
+   "cateye",
+   "colorchange"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "hackmanite": {
+  "wiki": "https://en.wikipedia.org/wiki/Hackmanite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hackmanite"
+  ],
+  "feats": [
+   "colorchange"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "sapphire": {
+  "wiki": "https://en.wikipedia.org/wiki/Sapphire",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sapphire"
+  ],
+  "feats": [
+   "star",
+   "colorchange",
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star sapphire": {
+  "wiki": "https://en.wikipedia.org/wiki/Star_sapphire",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Star_sapphire"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "black star sapphire": {
+  "wiki": "https://en.wikipedia.org/wiki/Star_sapphire",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Star_sapphire"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star ruby": {
+  "wiki": "https://en.wikipedia.org/wiki/Ruby",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ruby"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "ruby": {
+  "wiki": "https://en.wikipedia.org/wiki/Ruby",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ruby"
+  ],
+  "feats": [
+   "star",
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "corundum": {
+  "wiki": "https://en.wikipedia.org/wiki/Corundum",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Corundum",
+   "https://en.wikipedia.org/wiki/Asterism_(gemology)"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star spinel": {
+  "wiki": "https://en.wikipedia.org/wiki/Spinel",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Spinel",
+   "https://en.wikipedia.org/wiki/Asterism_(gemology)"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star garnet": {
+  "wiki": "https://en.wikipedia.org/wiki/Garnet",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Garnet"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "garnet group": {
+  "wiki": "https://en.wikipedia.org/wiki/Garnet",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Garnet"
+  ],
+  "feats": [
+   "star",
+   "colorchange"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "almandine": {
+  "wiki": "https://en.wikipedia.org/wiki/Almandine",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Almandine",
+   "https://en.wikipedia.org/wiki/Asterism_(gemology)"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "star diopside": {
+  "wiki": "https://en.wikipedia.org/wiki/Diopside",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Diopside",
+   "https://en.wikipedia.org/wiki/Asterism_(gemology)"
+  ],
+  "feats": [
+   "star"
+  ],
+  "dropped": [
+   "cateye"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "star moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "star",
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular",
+   "cateye",
+   "star"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "black moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "blue moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "gray moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "green moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "white moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "peach moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "red moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "cat's-eye moonstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Moonstone_(gemstone)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Moonstone_(gemstone)"
+  ],
+  "feats": [
+   "cateye",
+   "adular"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "tiger's eye": {
+  "wiki": "https://en.wikipedia.org/wiki/Tiger's_eye",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tiger's_eye"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "falcon's eye": {
+  "wiki": "https://en.wikipedia.org/wiki/Tiger's_eye",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tiger's_eye"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "tiger-iron": {
+  "wiki": "https://en.wikipedia.org/wiki/Tiger's_eye",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tiger's_eye"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "apatite": {
+  "wiki": "https://en.wikipedia.org/wiki/Apatite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Apatite"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "tourmalines": {
+  "wiki": "https://en.wikipedia.org/wiki/Tourmaline",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tourmaline",
+   "https://en.wikipedia.org/wiki/Chatoyancy"
+  ],
+  "feats": [
+   "cateye",
+   "inclusions"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "nephrite": {
+  "wiki": "https://en.wikipedia.org/wiki/Nephrite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nephrite"
+  ],
+  "feats": [],
+  "dropped": [
+   "cateye"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "selenite": {
+  "wiki": "https://en.wikipedia.org/wiki/Selenite_(mineral)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Selenite_(mineral)"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "satin spar": {
+  "wiki": "https://en.wikipedia.org/wiki/Gypsum",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gypsum"
+  ],
+  "feats": [],
+  "dropped": [
+   "cateye"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "pietersite": {
+  "wiki": "https://en.wikipedia.org/wiki/Pietersite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pietersite"
+  ],
+  "feats": [
+   "cateye"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "black opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "white opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "boulder opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "crystal opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "ethiopian opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "fire opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Fire_opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fire_opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "precious opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "matrix opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "virgin valley opal": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "opal doublet & triplet": {
+  "wiki": "https://en.wikipedia.org/wiki/Opal",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Opal"
+  ],
+  "feats": [
+   "play"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "labradorite": {
+  "wiki": "https://en.wikipedia.org/wiki/Labradorite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Labradorite"
+  ],
+  "feats": [
+   "labrador"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "larvikite": {
+  "wiki": "https://en.wikipedia.org/wiki/Larvikite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Larvikite"
+  ],
+  "feats": [
+   "labrador"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "sunstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Sunstone",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sunstone"
+  ],
+  "feats": [
+   "aventur"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "aventurine": {
+  "wiki": "https://en.wikipedia.org/wiki/Aventurine",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Aventurine"
+  ],
+  "feats": [
+   "aventur"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "fuchsite": {
+  "wiki": "https://en.wikipedia.org/wiki/Muscovite",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Muscovite"
+  ],
+  "feats": [],
+  "dropped": [
+   "aventur"
+  ],
+  "fetched": true,
+  "v2": true
+ },
+ "goldstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Goldstone_(glass)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Goldstone_(glass)"
+  ],
+  "feats": [
+   "aventur"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ },
+ "iolite-sunstone": {
+  "wiki": "https://en.wikipedia.org/wiki/Sunstone",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sunstone"
+  ],
+  "feats": [
+   "aventur"
+  ],
+  "dropped": [],
+  "fetched": true,
+  "v2": true
+ }
+}
