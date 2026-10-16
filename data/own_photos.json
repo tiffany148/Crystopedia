@@ -1,12 +1,40 @@
 {
  "_readme": "Tiffany's own photos. Put the file in src/assets/own/ and set src to /assets/own/<file> (or a full https URL). Leave src empty to keep the Commons photo. Optional: thumb (small version) and gallery: a list of {src, thumb, alt}. Optional: caption (appended to the credit, e.g. 'under UV light') and uv: {src, thumb, alt}, which replaces the 'Under UV' photo on the page and on the UV hub.",
  "Iris Agate": {
-  "src": "",
-  "credit": "Photo © Tiffany Stark"
+  "src": "/assets/own/iris-agate.jpg",
+  "credit": "Photo © Tiffany Stark",
+  "thumb": "/assets/own/iris-agate-sm.jpg",
+  "alt": "Iris agate slice backlit to show its banding and fine lines",
+  "gallery": [
+   {
+    "src": "/assets/own/iris-agate.jpg",
+    "thumb": "/assets/own/iris-agate-sm.jpg",
+    "alt": "Iris agate slice backlit to show its banding and fine lines"
+   },
+   {
+    "src": "/assets/own/iris-agate-slice-2.jpg",
+    "thumb": "/assets/own/iris-agate-slice-2-sm.jpg",
+    "alt": "Iris agate slice, second view"
+   }
+  ]
  },
  "Sea Biscuit": {
-  "src": "",
-  "credit": "Photo © Tiffany Stark"
+  "src": "/assets/own/sea-biscuit.jpg",
+  "credit": "Photo © Tiffany Stark",
+  "thumb": "/assets/own/sea-biscuit-sm.jpg",
+  "alt": "Fossil sea biscuit (sea urchin) showing its five-petal star pattern",
+  "gallery": [
+   {
+    "src": "/assets/own/sea-biscuit.jpg",
+    "thumb": "/assets/own/sea-biscuit-sm.jpg",
+    "alt": "Fossil sea biscuit (sea urchin) showing its five-petal star pattern"
+   },
+   {
+    "src": "/assets/own/sea-biscuit-back.jpg",
+    "thumb": "/assets/own/sea-biscuit-back-sm.jpg",
+    "alt": "Back (underside) of a fossil sea biscuit"
+   }
+  ]
  },
  "Arkansas Quartz": {
   "src": "/assets/own/arkansas-quartz-snow-point.jpg",
@@ -120,7 +148,29 @@
   "src": "/assets/own/star-rose-quartz.jpg",
   "thumb": "/assets/own/star-rose-quartz-sm.jpg",
   "alt": "Star rose quartz sphere showing a six-rayed star",
-  "credit": "Photo © Tiffany Stark"
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/star-rose-quartz.jpg",
+    "thumb": "/assets/own/star-rose-quartz-sm.jpg",
+    "alt": "Star rose quartz sphere showing a six-rayed star"
+   },
+   {
+    "src": "/assets/own/star-rose-quartz-sphere-2.jpg",
+    "thumb": "/assets/own/star-rose-quartz-sphere-2-sm.jpg",
+    "alt": "Star rose quartz sphere with six-rayed star"
+   },
+   {
+    "src": "/assets/own/star-rose-quartz-sphere-3.jpg",
+    "thumb": "/assets/own/star-rose-quartz-sphere-3-sm.jpg",
+    "alt": "Star rose quartz sphere, second view"
+   },
+   {
+    "src": "/assets/own/aura-star-rose-quartz.jpg",
+    "thumb": "/assets/own/aura-star-rose-quartz-sm.jpg",
+    "alt": "Aura star rose quartz sphere with iridescent sheen"
+   }
+  ]
  },
  "Labradorite": {
   "src": "/assets/own/labradorite-gold-flash.jpg",
@@ -142,6 +192,11 @@
     "src": "/assets/own/labradorite-towers.jpg",
     "thumb": "/assets/own/labradorite-towers-sm.jpg",
     "alt": "Labradorite towers"
+   },
+   {
+    "src": "/assets/own/labradorite-palm-stone.jpg",
+    "thumb": "/assets/own/labradorite-palm-stone-sm.jpg",
+    "alt": "Labradorite palm stone in hand with blue flash"
    }
   ]
  },
@@ -244,7 +299,19 @@
   "credit": "Photo © Tiffany Stark",
   "src": "/assets/own/apophyllite-stilbite-chalcedony.jpg",
   "thumb": "/assets/own/apophyllite-stilbite-chalcedony-sm.jpg",
-  "alt": "Apophyllite on blue chalcedony with stilbite"
+  "alt": "Apophyllite on blue chalcedony with stilbite",
+  "gallery": [
+   {
+    "src": "/assets/own/apophyllite-stilbite-chalcedony.jpg",
+    "thumb": "/assets/own/apophyllite-stilbite-chalcedony-sm.jpg",
+    "alt": "Apophyllite on blue chalcedony with stilbite"
+   },
+   {
+    "src": "/assets/own/apophyllite-stilbite-cluster.jpg",
+    "thumb": "/assets/own/apophyllite-stilbite-cluster-sm.jpg",
+    "alt": "Clear apophyllite crystals with peach stilbite on matrix"
+   }
+  ]
  },
  "Stilbite": {
   "credit": "Photo © Tiffany Stark",
@@ -348,6 +415,25 @@
    "thumb": "/assets/own/blue-fluorite-uv-sm.jpg",
    "alt": "Blue fluorite under UV"
   },
-  "uvCaption": "blue fluorite under UV"
+  "uvCaption": "blue fluorite under UV",
+  "gallery": [
+   {
+    "src": "/assets/own/fluorite-specimen-uv.jpg",
+    "thumb": "/assets/own/fluorite-specimen-uv-sm.jpg",
+    "alt": "Fluorite specimen glowing blue under UV light"
+   }
+  ]
+ },
+ "Amazonite": {
+  "src": "/assets/own/amazonite.jpg",
+  "thumb": "/assets/own/amazonite-sm.jpg",
+  "alt": "Polished amazonite egg with teal-green color and white veining",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Ethiopian Opal": {
+  "src": "/assets/own/ethiopian-opal.jpg",
+  "thumb": "/assets/own/ethiopian-opal-sm.jpg",
+  "alt": "Four rough Ethiopian opal specimens in display boxes showing play-of-color",
+  "credit": "Photo © Tiffany Stark"
  }
 }
