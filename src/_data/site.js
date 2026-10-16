@@ -712,7 +712,8 @@ const arkansas = {
   sources: Object.values(ARK_SOURCES),
 };
 for (const p of pages) { p.rarity = rarityFor(p); p.rarityLabel = RARITY_LABEL[p.rarity]; p.didYouKnow = factsFor(p); p.pick = !!p.img?.own; }
-// Real counts for the /book/ "What's inside" list (same filters as the book builder)
+// Real counts for the /book/ "What's inside" list. Same filters as the book builder (build_sections.mjs: part1/isFossil/isGeode/uvS, ref) and make_cover.mjs, so they always match the printed book.
+// Verified 10/16/2026 against the book build: colors 14, stone pages 339 (297 in color sections + 31 fossils + 11 geodes), reference 6,497, UV Glow 15, fossils 31, geodes 11.
 const _p1 = pages.filter((p) => p.metaphysical?.length || p.handmade);
 const _kind = (p) => p.kindLabel || p.typeLabel || "";
 const bookStats = {

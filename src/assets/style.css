@@ -522,3 +522,18 @@ html[data-theme=dark] #stone-pattern{animation-name:pat-shimmer-dk}
 @media (prefers-reduced-motion:reduce){#stone-pattern{animation:none;transform:none}}
 @media print{#stone-pattern{display:none}}
 body.stone-page>main,body.stone-page>footer{position:relative;z-index:1}
+
+/* About the Author footer block (text + decorative graphics only; no personal photos on the site) */
+.author-foot{display:flex;gap:1.4rem;align-items:flex-start;margin:0 0 1.6rem;padding:1.3rem 1.5rem;border-radius:18px;background:linear-gradient(135deg,rgba(199,155,255,.16),rgba(122,255,234,.10) 55%,rgba(255,154,213,.14));border:1px solid rgba(255,227,138,.45);box-shadow:0 0 28px rgba(199,155,255,.18) inset}
+.author-foot .af-photos{display:flex;flex-direction:column;gap:.8rem;flex:0 0 190px}.author-foot .af-photos img,.author-foot .af-more img{width:100%;height:auto;display:block}
+.author-foot .af-body{flex:1;min-width:0}.author-foot .af-more{display:flex;gap:.7rem;margin-top:1rem;align-items:flex-end}.author-foot .af-more .facet-frame{flex:1 1 0}.author-foot .af-more .facet-frame:last-child{flex:1.5 1 0}
+.author-foot .gold-star.inline{width:1.1em;height:1.1em;display:inline-block;vertical-align:-.15em}.author-foot .gold-star svg{width:100%;height:100%}
+.author-foot h2{margin:0;font-size:1.35rem;color:#ffe38a;-webkit-text-fill-color:#ffe38a;background:none}
+.author-foot h3{margin:.1rem 0 .6rem;font-size:1.05rem;color:#fff;-webkit-text-fill-color:#fff;background:none}
+.author-foot p{margin:0 0 .7rem;color:#e6e2ff;line-height:1.6}.author-foot p:last-child{margin-bottom:0}
+@media (max-width:700px){.author-foot{flex-direction:column;align-items:center}.author-foot .af-photos{flex-direction:row;flex:none;width:100%;max-width:420px}.author-foot .af-photos .facet-frame{flex:1}}
+/* Handle With Care severity pill: always readable (h2 gradient text must not bleed into it) */
+.hz-section h2 .sev,h2 .sev{-webkit-text-fill-color:#fff!important;color:#fff!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.hz-section.sev-high h2 .sev,h2 .sev.sev-high{background-color:#d9381e!important;background-image:none!important}
+.hz-section.sev-moderate h2 .sev,h2 .sev.sev-moderate{background-color:#c2650a!important;background-image:none!important}
+.hz-section.sev-low h2 .sev,h2 .sev.sev-low{background-color:#4a7a1f!important;background-image:none!important}
