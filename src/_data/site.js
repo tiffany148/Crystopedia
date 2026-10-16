@@ -17,6 +17,7 @@ import { rarityFor, RARITY_LABEL, factsFor, COLOR_QUOTES } from "../../lib/cryst
 import { buildPairings, INTENTIONS } from "../../lib/pairings.js";
 import { COLLECTOR_NOTES } from "../../lib/collector_notes.js";
 import { LOOKALIKES } from "../../lib/lookalikes.js";
+import { appearanceFor } from "../../lib/appearance.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..", "..");
 const minerals = JSON.parse(fs.readFileSync(path.join(ROOT, "data/minerals.json"), "utf8"));
@@ -715,6 +716,7 @@ for (const p of pages) { p.rarity = rarityFor(p); p.rarityLabel = RARITY_LABEL[p
 // Real counts for the /book/ "What's inside" list. Same filters as the book builder (build_sections.mjs: part1/isFossil/isGeode/uvS, ref) and make_cover.mjs, so they always match the printed book.
 // Verified 10/16/2026 against the book build: colors 14, stone pages 339 (297 in color sections + 31 fossils + 11 geodes), reference 6,497, UV Glow 15, fossils 31, geodes 11.
 const _p1 = pages.filter((p) => p.metaphysical?.length || p.handmade);
+for (const p of _p1) p.appearance = appearanceFor(p); // "What It Looks Like" + "Can also be found with" (shared with the book)
 const _kind = (p) => p.kindLabel || p.typeLabel || "";
 const bookStats = {
   stonePages: _p1.length,

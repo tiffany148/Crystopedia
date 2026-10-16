@@ -51,6 +51,15 @@ eleventyComputed:
   {% if m.didYouKnow.length %}
   <aside class="dyk" data-pagefind-ignore><span class="dyk-badge">✦ Did You Know?</span>{% for f in m.didYouKnow %}<p>{{ f }}</p>{% endfor %}<small>From this page's mineral data.</small></aside>
   {% endif %}
+  {% if m.appearance %}
+  <section class="look-box" id="what-it-looks-like" data-pagefind-ignore>
+    <h2>👁️ What It Looks Like</h2>
+    <dl class="look-rows">{% for r in m.appearance.rows %}<div><dt>{{ r[0] }}</dt><dd>{{ r[1] }}</dd></div>{% endfor %}</dl>
+    {% if m.appearance.features %}<p class="look-feats"><b>Can also be found with:</b> {% for f in m.appearance.features.items %}<span class="look-chip look-{{ f.code }}"><i aria-hidden="true">{{ f.icon }}</i>{{ f.label }}</span>{% endfor %}</p>{% endif %}
+    <small class="look-src">{% if m.appearance.generic %}General description from this page's mineral data; looks vary by locality.{% else %}Based on standard references{% endif %}{% for u in m.appearance.sources %} · <a href="{{ u }}" rel="noopener">source</a>{% endfor %}{% if m.appearance.features %}{% for u in m.appearance.features.sources %} · <a href="{{ u }}" rel="noopener">effect source</a>{% endfor %}{% endif %}</small>
+  </section>
+  {% endif %}
+
 
   {% set hasProps = m.formula or m.crystalSystems.length or m.mohs or m.density or m.streak.length or m.colors.length %}
   {% if not m.handmade and (hasProps or not m.facts) %}
