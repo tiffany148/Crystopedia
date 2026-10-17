@@ -121,10 +121,27 @@
   "credit": "Photo © Tiffany Stark"
  },
  "Hemimorphite": {
-  "src": "/assets/own/hemimorphite.jpg",
-  "thumb": "/assets/own/hemimorphite-sm.jpg",
-  "alt": "Blue banded hemimorphite/smithsonite freeform",
-  "credit": "Photo © Tiffany Stark"
+  "src": "/assets/own/hemimorphite-tower.jpg",
+  "thumb": "/assets/own/hemimorphite-tower-sm.jpg",
+  "alt": "Hemimorphite tower in daylight with a pale turquoise starburst of radiating fibres",
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/hemimorphite-tower.jpg",
+    "thumb": "/assets/own/hemimorphite-tower-sm.jpg",
+    "alt": "Hemimorphite tower in daylight with a pale turquoise starburst of radiating fibres"
+   },
+   {
+    "src": "/assets/own/hemimorphite.jpg",
+    "thumb": "/assets/own/hemimorphite-sm.jpg",
+    "alt": "Blue banded hemimorphite/smithsonite freeform"
+   },
+   {
+    "src": "/assets/own/hemimorphite-druzy-banded.jpg",
+    "thumb": "/assets/own/hemimorphite-druzy-banded-sm.jpg",
+    "alt": "Turquoise hemimorphite druzy with banding"
+   }
+  ]
  },
  "Pink Jelly Agate": {
   "src": "/assets/own/pink-jelly-agate.jpg",
@@ -435,5 +452,41 @@
   "thumb": "/assets/own/ethiopian-opal-sm.jpg",
   "alt": "Four rough Ethiopian opal specimens in display boxes showing play-of-color",
   "credit": "Photo © Tiffany Stark"
+ },
+ "Orange Calcite": {
+  "src": "/assets/own/orange-calcite.jpg",
+  "thumb": "/assets/own/orange-calcite-sm.jpg",
+  "alt": "Banded orange calcite tower showing cream, honey and amber layers",
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/orange-calcite.jpg",
+    "thumb": "/assets/own/orange-calcite-sm.jpg",
+    "alt": "Banded orange calcite tower showing cream, honey and amber layers"
+   },
+   {
+    "src": "/assets/own/orange-calcite-tower-2.jpg",
+    "thumb": "/assets/own/orange-calcite-tower-2-sm.jpg",
+    "alt": "Second banded orange calcite tower with honey and cream layers"
+   }
+  ]
+ },
+ "Ocean Jasper": {
+  "src": "/assets/own/ocean-jasper-flame-1.jpg",
+  "thumb": "/assets/own/ocean-jasper-flame-1-sm.jpg",
+  "alt": "Ocean jasper flame carving in soft pink and sea-green orbicular patterns",
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/ocean-jasper-flame-1.jpg",
+    "thumb": "/assets/own/ocean-jasper-flame-1-sm.jpg",
+    "alt": "Ocean jasper flame carving in soft pink and sea-green orbicular patterns"
+   },
+   {
+    "src": "/assets/own/ocean-jasper-flame-2.jpg",
+    "thumb": "/assets/own/ocean-jasper-flame-2-sm.jpg",
+    "alt": "Ocean jasper flame carving, second view showing pink banding and teal speckles"
+   }
+  ]
  }
 }
