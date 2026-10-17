@@ -242,6 +242,11 @@
     "src": "/assets/own/raw-moonstone.jpg",
     "thumb": "/assets/own/raw-moonstone-sm.jpg",
     "alt": "Raw (rough) moonstone showing a blue flash"
+   },
+   {
+    "src": "/assets/own/raw-moonstone-2.jpg",
+    "thumb": "/assets/own/raw-moonstone-2-sm.jpg",
+    "alt": "Raw moonstone crystals on a shelf showing blue flashes"
    }
   ],
   "credit": "Photo © Tiffany Stark"
@@ -586,6 +591,48 @@
   "src": "/assets/own/rainbow-moonstone-sphere.jpg",
   "thumb": "/assets/own/rainbow-moonstone-sphere-sm.jpg",
   "alt": "Rainbow moonstone sphere with a blue-white adularescent glow and dark tourmaline specks",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Pink Halite": {
+  "src": "/assets/own/pink-halite.jpg",
+  "thumb": "/assets/own/pink-halite-sm.jpg",
+  "alt": "Pink halite cluster of stepped, hopper-like cubic crystals",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Purpurite": {
+  "src": "/assets/own/purpurite.jpg",
+  "thumb": "/assets/own/purpurite-sm.jpg",
+  "alt": "Rough purpurite with a vivid purple-magenta surface",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Aquamarine": {
+  "gallery": [
+   {
+    "src": "/assets/own/aquamarine-muscovite-red-apatite.jpg",
+    "thumb": "/assets/own/aquamarine-muscovite-red-apatite-sm.jpg",
+    "alt": "Combined specimen: aquamarine crystals in muscovite mica with red apatite"
+   }
+  ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Muscovite": {
+  "gallery": [
+   {
+    "src": "/assets/own/aquamarine-muscovite-red-apatite.jpg",
+    "thumb": "/assets/own/aquamarine-muscovite-red-apatite-sm.jpg",
+    "alt": "Combined specimen: aquamarine crystals in muscovite mica with red apatite"
+   }
+  ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Apatite": {
+  "gallery": [
+   {
+    "src": "/assets/own/aquamarine-muscovite-red-apatite.jpg",
+    "thumb": "/assets/own/aquamarine-muscovite-red-apatite-sm.jpg",
+    "alt": "Combined specimen: aquamarine crystals in muscovite mica with red apatite"
+   }
+  ],
   "credit": "Photo © Tiffany Stark"
  }
 }
