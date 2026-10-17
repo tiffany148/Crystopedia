@@ -445,7 +445,34 @@
   "src": "/assets/own/amazonite.jpg",
   "thumb": "/assets/own/amazonite-sm.jpg",
   "alt": "Polished amazonite egg with teal-green color and white veining",
-  "credit": "Photo © Tiffany Stark"
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/amazonite.jpg",
+    "thumb": "/assets/own/amazonite-sm.jpg",
+    "alt": "Polished amazonite egg with teal-green color and white veining"
+   },
+   {
+    "src": "/assets/own/amazonite-sheen-closeup.jpg",
+    "thumb": "/assets/own/amazonite-sheen-closeup-sm.jpg",
+    "alt": "Close-up of polished amazonite with a metallic sheen and fine pale veining"
+   },
+   {
+    "src": "/assets/own/amazonite-freeform-egg.jpg",
+    "thumb": "/assets/own/amazonite-freeform-egg-sm.jpg",
+    "alt": "Polished amazonite freeform egg in pale teal with white veining"
+   },
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-1.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-1-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, lepidolite flash catching the light"
+   },
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-2.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-2-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, second view"
+   }
+  ]
  },
  "Ethiopian Opal": {
   "src": "/assets/own/ethiopian-opal.jpg",
@@ -512,5 +539,47 @@
     "alt": "Volcano agate tower glowing under UV light, second view"
    }
   ]
+ },
+ "Seraphinite": {
+  "src": "/assets/own/seraphinite-sphere.jpg",
+  "thumb": "/assets/own/seraphinite-sphere-sm.jpg",
+  "alt": "Seraphinite sphere showing silky green feathery chatoyant fibres",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Smoky quartz": {
+  "gallery": [
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-1.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-1-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, lepidolite flash catching the light"
+   },
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-2.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-2-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, second view"
+   }
+  ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Lepidolite": {
+  "gallery": [
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-1.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-1-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, lepidolite flash catching the light"
+   },
+   {
+    "src": "/assets/own/amazonite-smoky-lepidolite-sphere-2.jpg",
+    "thumb": "/assets/own/amazonite-smoky-lepidolite-sphere-2-sm.jpg",
+    "alt": "Combined specimen: amazonite sphere with smoky quartz and lepidolite, second view"
+   }
+  ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Sunstone": {
+  "src": "/assets/own/confetti-sunstone-sphere.jpg",
+  "thumb": "/assets/own/confetti-sunstone-sphere-sm.jpg",
+  "alt": "Confetti (lattice) sunstone sphere with orange and gold glittering copper-platelet sparkles",
+  "credit": "Photo © Tiffany Stark"
  }
 }
