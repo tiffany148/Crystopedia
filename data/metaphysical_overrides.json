@@ -686,5 +686,13 @@
  "Volcano Agate": {
   "qid": null,
   "parent": "Q123314"
+ },
+ "Cotton Candy Agate": {
+  "qid": null,
+  "parent": "Q123314"
+ },
+ "Carborundum": {
+  "qid": null,
+  "parent": "Q418215"
  }
 }

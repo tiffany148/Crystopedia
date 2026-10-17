@@ -1318,5 +1318,15 @@
   "f": "SiO2",
   "note": "agate / chalcedony (microcrystalline quartz)",
   "approx": false
+ },
+ "Cotton Candy Agate": {
+  "f": "SiO2",
+  "note": "jasper / chalcedony breccia (microcrystalline quartz)",
+  "approx": false
+ },
+ "Carborundum": {
+  "f": "SiC",
+  "note": "silicon carbide (man-made moissanite)",
+  "approx": false
  }
 }

@@ -388,7 +388,19 @@
   "credit": "Photo © Tiffany Stark",
   "src": "/assets/own/wavellite.jpg",
   "thumb": "/assets/own/wavellite-sm.jpg",
-  "alt": "Green botryoidal wavellite from Arkansas"
+  "alt": "Green botryoidal wavellite from Arkansas",
+  "gallery": [
+   {
+    "src": "/assets/own/wavellite.jpg",
+    "thumb": "/assets/own/wavellite-sm.jpg",
+    "alt": "Green botryoidal wavellite from Arkansas"
+   },
+   {
+    "src": "/assets/own/wavellite-2.jpg",
+    "thumb": "/assets/own/wavellite-2-sm.jpg",
+    "alt": "Three wavellite pieces showing rounded, pale green botryoidal surfaces"
+   }
+  ]
  },
  "Freshwater Mussel Shell": {
   "credit": "Photo © Tiffany Stark",
@@ -633,6 +645,66 @@
     "alt": "Combined specimen: aquamarine crystals in muscovite mica with red apatite"
    }
   ],
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Golden Healer": {
+  "src": "/assets/own/golden-healer-egg.jpg",
+  "thumb": "/assets/own/golden-healer-egg-sm.jpg",
+  "alt": "Polished golden healer quartz egg with honey-gold iron staining and internal fractures",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Fire Quartz": {
+  "src": "/assets/own/fire-quartz-egg.jpg",
+  "thumb": "/assets/own/fire-quartz-egg-sm.jpg",
+  "alt": "Polished fire quartz egg in deep red-brown with a flash of asterism",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Cotton Candy Agate": {
+  "src": "/assets/own/cotton-candy-agate.jpg",
+  "thumb": "/assets/own/cotton-candy-agate-sm.jpg",
+  "alt": "Cotton candy agate block: peach-pink jasper fragments in pale chalcedony with a small druzy pocket",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Apophyllite Stalactite": {
+  "src": "/assets/own/apophyllite-stalactite.jpg",
+  "thumb": "/assets/own/apophyllite-stalactite-sm.jpg",
+  "alt": "Apophyllite stalactite covered in glittering cream-white crystals",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Moss agate": {
+  "src": "/assets/own/moss-agate-towers.jpg",
+  "thumb": "/assets/own/moss-agate-towers-sm.jpg",
+  "alt": "Two polished moss agate towers with green moss-like inclusions, one with a druzy pocket",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Carborundum": {
+  "src": "/assets/own/carborundum.jpg",
+  "thumb": "/assets/own/carborundum-sm.jpg",
+  "alt": "Rough carborundum (silicon carbide) with a dark, glittering rainbow-tinted surface",
+  "credit": "Photo © Tiffany Stark"
+ },
+ "Blue Aragonite": {
+  "src": "/assets/own/blue-aragonite.jpg",
+  "thumb": "/assets/own/blue-aragonite-sm.jpg",
+  "alt": "Polished blue aragonite slab with teal, cream and brown bands",
+  "credit": "Photo © Tiffany Stark",
+  "gallery": [
+   {
+    "src": "/assets/own/blue-aragonite.jpg",
+    "thumb": "/assets/own/blue-aragonite-sm.jpg",
+    "alt": "Polished blue aragonite slab with teal, cream and brown bands"
+   },
+   {
+    "src": "/assets/own/blue-aragonite-2.jpg",
+    "thumb": "/assets/own/blue-aragonite-2-sm.jpg",
+    "alt": "Blue aragonite slab with a blue calcite-like crystal beside it, second view"
+   }
+  ]
+ },
+ "Velvet Obsidian": {
+  "src": "/assets/own/velvet-obsidian-moon.jpg",
+  "thumb": "/assets/own/velvet-obsidian-moon-sm.jpg",
+  "alt": "Velvet obsidian crescent moon with dark brown and black banding",
   "credit": "Photo © Tiffany Stark"
  }
 }

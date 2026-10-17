@@ -7612,5 +7612,55 @@
   "wikidata": null,
   "parent": "Q43010",
   "slug": "lithium-quartz"
+ },
+ {
+  "name": "Cotton Candy Agate",
+  "kind": "variety",
+  "chakras": [
+   "Heart",
+   "Crown"
+  ],
+  "zodiac": [
+   "Gemini",
+   "Virgo"
+  ],
+  "elements": [
+   "Water",
+   "Air"
+  ],
+  "meaning": "Cotton candy agate is linked in crystal lore to self-love, gentle comfort and resilience: broken pieces joined back together.",
+  "uses": [
+   "self-love",
+   "comfort",
+   "resilience"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "cotton-candy-agate"
+ },
+ {
+  "name": "Carborundum",
+  "kind": "mineral",
+  "chakras": [
+   "Root",
+   "Solar Plexus"
+  ],
+  "zodiac": [
+   "Capricorn",
+   "Aries"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Carborundum is linked in crystal lore to protection, endurance and steady resolve, echoing its reputation as a very hard material.",
+  "uses": [
+   "protection",
+   "endurance",
+   "focus"
+  ],
+  "wikidata": null,
+  "parent": "Q418215",
+  "slug": "carborundum"
  }
 ]
