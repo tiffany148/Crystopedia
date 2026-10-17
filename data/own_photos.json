@@ -488,5 +488,29 @@
     "alt": "Ocean jasper flame carving, second view showing pink banding and teal speckles"
    }
   ]
+ },
+ "Volcano Agate": {
+  "src": "/assets/own/volcano-agate.jpg",
+  "thumb": "/assets/own/volcano-agate-sm.jpg",
+  "alt": "Volcano agate tower in daylight: a gray agate center in a creamy white rind",
+  "credit": "Photo © Tiffany Stark",
+  "uv": {
+   "src": "/assets/own/volcano-agate-uv.jpg",
+   "thumb": "/assets/own/volcano-agate-uv-sm.jpg",
+   "alt": "The same volcano agate tower under a UV lamp"
+  },
+  "uvCaption": "under UV light",
+  "gallery": [
+   {
+    "src": "/assets/own/volcano-agate.jpg",
+    "thumb": "/assets/own/volcano-agate-sm.jpg",
+    "alt": "Volcano agate tower in daylight"
+   },
+   {
+    "src": "/assets/own/volcano-agate-uv-2.jpg",
+    "thumb": "/assets/own/volcano-agate-uv-2-sm.jpg",
+    "alt": "Volcano agate tower glowing under UV light, second view"
+   }
+  ]
  }
 }

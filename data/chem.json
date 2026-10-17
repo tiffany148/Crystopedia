@@ -1313,5 +1313,10 @@
   "f": "SiO2",
   "note": "pink-lilac quartz (trade name)",
   "approx": false
+ },
+ "Volcano Agate": {
+  "f": "SiO2",
+  "note": "agate / chalcedony (microcrystalline quartz)",
+  "approx": false
  }
 }

@@ -5172,6 +5172,30 @@
   "slug": "condor-agate"
  },
  {
+  "name": "Volcano Agate",
+  "kind": "variety",
+  "chakras": [
+   "Root"
+  ],
+  "zodiac": [
+   "Aries",
+   "Scorpio"
+  ],
+  "elements": [
+   "Earth",
+   "Fire"
+  ],
+  "meaning": "Volcano agate is linked in crystal lore to inner fire, resilience and steady transformation.",
+  "uses": [
+   "resilience",
+   "grounding",
+   "transformation"
+  ],
+  "wikidata": null,
+  "parent": "Q123314",
+  "slug": "volcano-agate"
+ },
+ {
   "name": "Plume Agate",
   "kind": "variety",
   "chakras": [
